@@ -79,11 +79,11 @@ i:hover {
 /* ===== #header ===== */
 
 .navbar .brand {
-    font-size: 32px;
-    text-shadow: 0.05em 0.05em #000;
+    font-size: 3em;
+    text-shadow: 0.03em 0.03em #000;
     font-weight: 400;
+    color: #4384d3;
 	margin-left: 5px;
-    color: #4b76aa;
 	font-family: Georgia, "Times New Roman",
 	          Times, serif;
 }
@@ -2249,9 +2249,7 @@ a:hover {
 a:focus {
     color: #000000;
 }
-.navbar .brand {
-    color: #00B4FF;
-}
+
 ::-moz-selection {
 background:#515151;
 color:#FFFFFF;
@@ -2279,7 +2277,7 @@ color:#FFFFFF;
     color: #FFFFFF;
 }
 .navbar .btn-navbar {
-    background-color: #00B4FF;
+    background-color: #4384d3;
     color: #FFFFFF;
 }
 .navbar .btn-navbar:hover{
