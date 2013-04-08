@@ -91,8 +91,6 @@
 	border: 2px dashed rgba(150,150,150,0.4);
 	border-radius: 50%;
 	position: relative;
-	background:url(../images/flight-school-blue.png) no-repeat center center;
-	background-size: 80%;
 	margin-left:10%;
 }
 
@@ -183,49 +181,39 @@ bottom: -35%;
 }
 
 /* First Slide */
-/*
-.slider-wrapper .bg-1 .sl-slide-inner,
-.slider-wrapper .bg-1 .sl-content-slice {
-	background: #FFFFFF;
-}
+
 .slider-wrapper .bg-1 .deco {
-    bottom: 56%;
-    height: 298px;
-    left: 39.5%;
-    margin: 0 0 0 -273px;
-    width: 940px;
+	background:url(../images/community.png) no-repeat center center;
+	background-size: 100%;
+	
 }
 
 
 /* Second Slide */
-/*
+
 .slider-wrapper .bg-2 .sl-slide-inner,
 .slider-wrapper .bg-2 .sl-content-slice {
 	background: #111111;
 }
 
-.slider-wrapper .bg-2 [data-icon]:after,
-.slider-wrapper .bg-2 h2 {
-	color: #fff;
+.slider-wrapper .bg-2 .deco {
+	background:url(../images/idea-machine.png) no-repeat center center;
+	background-size: 80%;
+	
 }
+
 /* Third Slide */
-/*
+
 .slider-wrapper .bg-3 .sl-slide-inner,
 .slider-wrapper .bg-3 .sl-content-slice {
 	background: #FFFFFF;
 }
 
 .slider-wrapper .bg-3 .deco {
-
-}
-
-.slider-wrapper .bg-3 h2,
-.slider-wrapper .bg-3 blockquote{
-	color: #111111;
-}
-
-.slider-wrapper .bg-3 blockquote:before {
-	color: #c46c96;
+		background:url(../images/flight-school.png) no-repeat center center;
+		background-size: 80%;
+		
+	
 }
 
 /* Forth Slide */
