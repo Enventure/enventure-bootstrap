@@ -83,7 +83,6 @@
 /* Content elements */
 
 .slider-wrapper .deco {
-	vertical-align:middle;
 	border-color: rgba(255,255,255,0.5);
 	width: 15%;
 	height: 25%;
@@ -99,6 +98,8 @@
 
 .btn.btn-large {
 float: right;
+position: relative;
+bottom: -35%;
 }
 
 .slider-wrapper [data-icon]:after {
@@ -128,8 +129,8 @@ float: right;
 	left: 10%;
 	text-align: center;
 	line-height: 50px;
-	bottom: 67%;
-	margin: 0 0 -120px 0;
+	bottom: 44.5%;
+	margin: 0 0 0 0;
 	text-shadow: 0.03em 0.03em #515151;
 }
 
@@ -414,6 +415,15 @@ float: right;
 
 /* Media Queries for custom slider */
 
+@media screen and (max-width: 767px) {
+	.slider-wrapper .sl-slide h2{
+		text-align:right;
+	}
+	.btn.btn-large {
+		margin-bottom:-45px;
+		margin-right:-2%;
+	}
+	/*
 @media screen and (max-width: 660px) {
 	.slider-wrapper .deco {
 	    height: 200px;
