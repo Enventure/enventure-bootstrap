@@ -83,12 +83,14 @@
 /* Content elements */
 
 .slider-wrapper .deco {
-    bottom: 35%;
-    height: 282px;
-    left: 50%;
-    margin: 0 0 0 -298px;
-    position: absolute;
-    width: 613px;
+	border-color: rgba(255,255,255,0.5);
+	width: 264px;
+	height: 264px;
+	border: 2px dashed rgba(150,150,150,0.4);
+	border-radius: 50%;
+	position: relative;
+	margin: 8% 0% 0 9%;
+	background:url(../images/flight-school-blue.png) no-repeat center center;
 }
 
 .btn.btn-large {
@@ -125,6 +127,7 @@ float: right;
 	line-height: 50px;
 	bottom: 67%;
 	margin: 0 0 -120px 0;
+	text-shadow: 0.03em 0.03em #515151;
 }
 
 .slider-wrapper .sl-slide blockquote {
@@ -162,7 +165,7 @@ float: right;
 	height: 75px;
 	font-size: 200px;
 	z-index: -1;
-	left: -80px;
+	left: -120px;
 	top: 35px;
 	content: '\201C';
 }
@@ -210,20 +213,7 @@ float: right;
 }
 
 .slider-wrapper .bg-3 .deco {
-	border-color: #fff;
-	border-color: rgba(255,255,255,0.5);
-	width: 264px;
-	height: 264px;
-	border: 2px dashed #ddd;
-	border: 2px dashed rgba(150,150,150,0.4);
-	border-radius: 50%;
-	position: absolute;
-	bottom: 50%;
-	left: 50%;
-	margin: 0 0 0 -130px;
-	background:url(../images/flight-school-blue.png) no-repeat center center;
-	height:200px;
-	width:200px;
+
 }
 
 .slider-wrapper .bg-3 h2,
@@ -464,17 +454,3 @@ float: right;
 		font-size: 120px;
 		left: -45px;
 	}
-
-	.demo-2 .sl-slider-wrapper {
-		height: 500px;
-	}
-
-	.demo-2 .sl-slider h2 {
-		font-size: 36px;
-	}
-
-	.demo-2 .sl-slider blockquote {
-		font-size: 16px;
-	}
-
-}
