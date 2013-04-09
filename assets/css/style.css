@@ -52,6 +52,8 @@ img {
     height: auto;
     max-width: 100%;
     vertical-align: middle;
+	margin:auto;
+	float:none;
 }
 ::-moz-selection {
 background:#026873;
@@ -578,7 +580,6 @@ text-align: center;
 }
 .separator {
     margin-bottom: 20px;
-    margin-top: 40px;
 }
 .lines {
     display: table-row;
@@ -742,10 +743,10 @@ background-color: #47a1a1;
 .section-features .info-features {
     margin-bottom: 30px;
     padding: 0 3%;
-    text-align: center;
+    text-align: middle;
 }
 .section-features .img-features {
-    width: 150px;
+    height: 150px;
 }
 
 .section-features .info-features > i {
