@@ -640,6 +640,9 @@ text-align: center;
 
 /* ===== #home ===== */
 
+.section-wrapper.subscribe {
+	background: #eeeeee;
+}
 
 .section-wrapper.lastest-work {
     background: #4B76AA;
@@ -2469,7 +2472,7 @@ background: #515151;
     background: #00B4FF;
 }
 .section-features {
-    background-color: #EEEEEE;
+    background-color: #ffffff;
 }
 .section-features .info-features > i {
     color: #515151;
