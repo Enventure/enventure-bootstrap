@@ -639,13 +639,23 @@ text-align: center;
 }
 
 /* ===== #home ===== */
+.grey {
+	background:#eeeeee;
+}
 
 .section-wrapper.subscribe {
-	background: #eeeeee;
+}
+
+.enventure-ltblue {
+	background: #5a8dcc;
+}
+
+.enventure-blue {
+	background: #4b76aa;
 }
 
 .section-wrapper.lastest-work {
-    background: #5a8dcc;
+    
 }
 .section-wrapper {
     padding-bottom: 30px;
