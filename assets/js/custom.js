@@ -242,3 +242,21 @@ var mup_widget = {
         return "http://api.meetup.com" + path + "?callback=?&" + jQuery.param(jQuery.extend({ key: $api_key }, params));
     }
 };
+
+/* smooth scroll*/
+!function ($) {
+    $(function(){
+
+        var $root = $('html, body');
+
+        $('a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
+        });
+    })
+}(window.jQuery)
