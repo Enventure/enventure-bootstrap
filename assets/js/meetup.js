@@ -1,35 +1,3 @@
-<html>
-<head>
-	
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-
-<script src="local.js"></script>
-<script src="api_key.js"></script>
-<script id="config" type="text/javascript" charset="utf-8">
-  var $parameters = {
-    urlname: "enventure",
-    width: 300,
-    height:570,
-    _name: "Meetup Group Stats",
-    _description: "Shows basic stats on your favorite Meetup group."
-  };
-  var $queries = {
-    groups: function() { 
-      return mup_widget.api_call("/groups", {group_urlname: $parameters.urlname});
-    },
-    events: function() {
-      return mup_widget.api_call("/events", {group_urlname: $parameters.urlname, page: '1'});
-    }
-  };
-</script>
-<!-- start: CSS -->
-<link rel="stylesheet" href="assets/css/bootstrap.css">
-<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
-<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/meetup.css">
-<!-- end: CSS -->
-
-<script type="text/javascript" charset="utf-8">
 	mup_widget.with_jquery(function($, ctx) {
 		var	group = '',
 				months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
@@ -111,8 +79,10 @@
 			$('.mug-badge', ctx).append(
 				'<div class="mup-widget">\
 					<div class="mup-bd">\
+						<h3>' + addLink( group.name, group.link ) + '</h3>\
+                        <h4> <div style="padding-top:5px;"><span class="mup-tlabel">EST. '+ getFormattedDate(group.created)+'</span></div></h4>\
+						<span class="mup-stats">' + addImage(group.photo_url,group.name)+numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
                         <span class="mup-stats"><div class="next-event"></div></span>\
-						<span class="mup-stats">' +numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
                         <h4><a href="www.meetup.com/enventure"><button type="button" class="btn-dark btn-large">JOIN</button></a></h4>\
 					</div>\
 					<div class="mup-ft">\
@@ -164,14 +134,3 @@
 	    }
 	  });
 	});
-</script>
-<style type="text/css" media="screen">
-
-
-
-</style>
-</head>
-<body>
-	<div class="mug-badge"></div>
-</body>
-</html>
