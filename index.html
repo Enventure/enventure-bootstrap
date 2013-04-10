@@ -30,10 +30,10 @@
 
 </head>
 
-<body class="home">
+<body class="home" data-spy="scroll" data-target=".navbar">
 
 <!-- start: slider -->
-<div class="slider-wrapper slider-wrapper">
+<div id="home" class="slider-wrapper slider-wrapper">
 
             <div id="slider" class="sl-slider-wrapper">
 
@@ -99,12 +99,12 @@
 						<span><i class="icon-reorder"></i></span>
 					</a>
 
-					<a class="brand" href="index.html">enventure.</a>
+					<a class="brand" href="#home">enventure.</a>
 
 					<div id="top-navigation" class="nav-collapse subnav-collapse collapse ">
 						<ul class="nav pull-right">
 							<li class="active">
-								<a href="index.html">Home</a>
+								<a href="#home">Home</a>
 							</li>
 							<li class="dropdown">
 								<a data-toggle="dropdown" class="dropdown-toggle" href="#">About<b class="caret"></b></a>
@@ -114,8 +114,8 @@
 									<li><a href="team.html">Team</a></li>												
 								</ul>
 							</li>
-							<li class=""><a href="events.html">Events</a></li>
-							<li class=""><a href="learn.html">Learn</a></li>
+							<li class=""><a href="#events">Events</a></li>
+							<li class=""><a href="#learn">Learn</a></li>
 							<li class=""><a href="matchmaking.html">Match</a></li>
 							<li class=""><a href="flight-school.html">Incubator</a></li>
 							
@@ -137,6 +137,7 @@
 					<h1>the report title</h1>
 					<p>we send out weekly meetup aanouncements, relevant headlines, houston events, and special announcements</p>
 					<p><strong>and monthly reports</strong></p>
+					<p>read the most recent newsletter <a href="#" target="_blank">here</a></p>
                     </div>
 				<div class="span6">
                     <div id="mc_embed_signup">
@@ -160,30 +161,7 @@
 	<!--End mc_embed_signup-->
 
 	<!-- start: section-features -->
-	<div class="section-features">
-		<div class="container">
-			<div class="row">
-				<div class="span4">	
-					<div class="mug-badge"></div>
-				</div>
-				<div class="span4">
-					<div class="info-features">
-						<img alt="title" src="assets/images/idea-machine.png" class="img">
-						<p style="text-align:center">Event 2</p>
-					</div>
-				</div>
-				<div class="span4">
-					<div class="info-features">
-						<img alt="title" src="assets/images/flight-school.png" class="img">
-						<p style="text-align:center">Event 3</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- end: section-features -->	
-
-	<!-- start: lastest-work -->
-	<div class="section-wrapper lastest-work">
+	<div id="events" class="section-features">
 		<div class="container">
 			<div class="row">
 				<div class="span12">
@@ -191,7 +169,42 @@
 						<div class="left">
 							<div class="lines">
 								<div>
-								<h2 class="lines-title">Latest Works</h2>
+								<h2 class="lines-title">Events</h2>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="span3">
+					<div class="info-features">
+						<img alt="title" src="assets/images/idea-machine.png" class="img">
+					</div>
+				</div>
+				<div class="span5">
+					<div class="info-features">
+						<h1>featured event</h1>
+						<p>Event info paragraph.</p>
+						<a class="btn btn-large btn-block btn-info" href="http://www.brownpapertickets.com/event/369180" target="_blank">Register</a>
+					</div>
+				</div>
+				<div class="span4">
+					<h2>next meetup:</h2>
+					<div class="mug-badge"></div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end: section-features -->	
+
+	<!-- start: lastest-work -->
+	<div id="learn" class="section-wrapper lastest-work">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="separator">
+						<div class="left">
+							<div class="lines">
+								<div>
+								<h2 class="lines-title">Learn</h2>
 								</div>
 							</div>
 						</div>
@@ -200,19 +213,19 @@
 				<div class="span3">
 					<div class="white-content">
 						<div class="img-mask hover-mask">
-							<img src="assets/images/large/6.jpg" alt="Photo-Work-1">
+							<iframe width=auto src="http://www.youtube.com/embed/c876c4AR2Bo?rel=0" frameborder="0" allowfullscreen></iframe>
 							<div class="flip-container">
 							  <div class="flipper">
 							    <div class="back">
 							      <div class="flip-b">
-							      	<a href="#"><span class="icon-back"><i class="icon-plus"></i></span></a>
+							      	<a href="#cohnmodal"><span class="icon-back"><i class="icon-plus"></i></span></a>
 							      </div>
 							    </div>
 							  </div>
 							</div>			
 						</div>							
-						<a href="#"><h5>Even App <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum iaculis elit non posuere. Duis.</p>
+						<a href="#"><h5>Billy Cohn, MD <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
+						<p>Bench to Biotech: "Building the Tools of Innovation for Tomorrow"</p>
 					</div>
 				</div>
 				<div class="span3">
@@ -229,8 +242,8 @@
 							  </div>
 							</div>											
 						</div>
-						<a href="#"><h5>Even App <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum iaculis elit non posuere. Duis.</p>						
+						<a href="#"><h5>Nancy Chang, Glauco Souza, Jack Gill, and Brad Burke <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
+						<p>Bench to Biotech: Launching Your First Startup</p>						
 					</div>
 				</div>
 				<div class="span3">
@@ -273,42 +286,6 @@
 		</div>
 	</div><!-- end: lastest-work -->
 
-	<!-- start: Testimonial -->
-	<div class="section-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="span12">
-					<div class="separator">
-						<div class="left">
-							<div class="lines">
-								<div>
-								<h2 class="lines-title">Client Testimonials</h2>
-								</div>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="span4">
-				  <blockquote>
-				    <p>Simplicity is not the goal. It is the by-product of a good idea and modest expectations.</p>
-				    <small>Paul Rand <a href="#"><i class="icon-external-link"></i></a></small> 
-				  </blockquote>
-				</div>
-				<div class="span4">
-				  <blockquote>
-				    <p>It is a pretty recognizable brand name. Originally it was “Jerry’s Guide to the World Wide Web” but we settled on “Yahoo”.</p>
-				    <small>Jerry Yang <a href="#"><i class="icon-external-link"></i></a></small> 
-				  </blockquote>
-				</div>
-				<div class="span4">
-				  <blockquote>
-				    <p>To achieve great things, two things are needed: a plan, and not quite enough time.</p>
-				    <small>Leonard Bernstein <a href="#"><i class="icon-external-link"></i></a></small> 
-				  </blockquote>
-				</div>
-			</div>
-	  	</div>
-	</div><!-- end: Testimonial -->
 
 	<!-- start: client -->
 	<div class="section-wrapper section-testimonial">
@@ -319,7 +296,7 @@
 						<div class="left">
 							<div class="lines">
 								<div>
-								<h2 class="lines-title">Clients</h2>
+								<h2 class="lines-title">Partners</h2>
 								</div>
 							</div>
 						</div>
@@ -329,10 +306,10 @@
 					<div class="white-content client-container thumbnail-client">
 					  <div class="client-flipper">
 					    <div class="client-front">
-					    	<img src="assets/images/client/1.png" alt="Client-1">
+					    	<img src="assets/images/client/1.png" alt="BioHouston">
 					    </div>
 					    <div class="client-back">
-							<span class="client-back-title">Photoshop <a href="#"><i class="icon-external-link"></i></a></span>
+							<span class="client-back-title">BioHouston <a href="http://www.biohouston.org" target="_blank"><i class="icon-external-link"></i></a></span>
 					    </div>
 					  </div>
 					</div>
@@ -341,10 +318,10 @@
 					<div class="white-content client-container thumbnail-client" >
 					  <div class="client-flipper">
 					    <div class="client-front">
-					    	<img src="assets/images/client/2.png" alt="Client-2">
+					    	<img src="assets/images/client/2.png" alt="HATRC">
 					    </div>
 					    <div class="client-back">
-							<span class="client-back-title">Jquery <a href="#"><i class="icon-external-link"></i></a></span>
+							<span class="client-back-title">HATRC <a href="http://brc.rice.edu/about.shtml" target="_blank"><i class="icon-external-link"></i></a></span>
 					    </div>
 					  </div>
 					</div>
@@ -353,10 +330,10 @@
 					<div class="white-content client-container thumbnail-client" >
 					  <div class="client-flipper">
 					    <div class="client-front">
-					    	<img src="assets/images/client/3.png" alt="Client-3">
+					    	<img src="assets/images/client/3.png" alt="Rice Alliance">
 					    </div>
 					    <div class="client-back">
-							<span class="client-back-title">CSS3 <a href="#"><i class="icon-external-link"></i></a></span>
+							<span class="client-back-title">Rice Alliance <a href="http://alliance.rice.edu" target="_blank"><i class="icon-external-link"></i></a></span>
 					    </div>
 					  </div>
 					</div>
@@ -365,10 +342,10 @@
 					<div class="white-content client-container thumbnail-client" >
 					  <div class="client-flipper">
 					    <div class="client-front">
-					    	<img src="assets/images/client/4.png" alt="Client-4">
+					    	<img src="assets/images/client/4.png" alt="Brightwork CoResearch">
 					    </div>
 					    <div class="client-back">
-							<span class="client-back-title">GitHub <a href="#"><i class="icon-external-link"></i></a></span>
+							<span class="client-back-title">Brightwork CoResearch <a href="http://www.brightworkcoresearch.com" target="_blank"><i class="icon-external-link"></i></a></span>
 					    </div>
 					  </div>
 					</div>
@@ -377,10 +354,10 @@
 					<div class="white-content client-container thumbnail-client" >
 					  <div class="client-flipper">
 					    <div class="client-front">
-					    	<img src="assets/images/client/5.png" alt="Client-5">
+					    	<img src="assets/images/client/5.png" alt="H20 Houston">
 					    </div>
 					    <div class="client-back">
-							<span class="client-back-title">HTML5 <a href="#"><i class="icon-external-link"></i></a></span>
+							<span class="client-back-title">Health 2.0 Houston <a href="http://health20houston.com/" target="_blank"><i class="icon-external-link"></i></a></span>
 					    </div>
 					  </div>
 					</div>
@@ -461,13 +438,13 @@
 							<div class="">
 								<div class="lines">
 									<div>
-									<h3 class="lines-title">Work with us</h3>
+									<h3 class="lines-title">who we are</h3>
 									</div>
 								</div>
 							</div>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat perspiciatis facere voluptatibus nostrum nam sit sapiente vitae quasi fugit reiciendis dconsectetur adipisicing elit. Placeat perspiciatis facere voluptatibus nostrum nam sit sapiente vitae quasi fugit </p>				
-						<a class="span 4 project" href="contact.html"><button type="button" class="btn-dark btn-large">Start a project</button></a>
+						<p>building a community for houston's medical entrepreneurs...</p>				
+						<a class="span 4 project" href="about.html"><button type="button" class="btn-dark btn-large">about us</button></a>
 
 					</div>
 
@@ -498,6 +475,21 @@
 </footer><!-- end: footer -->
 
 </div><!-- end: sticky area -->	
+	
+<div id="cohnmodal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+	  <iframe width="560" height="315" src="http://www.youtube.com/embed/c876c4AR2Bo?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
 
 
 <!-- start: script -->
@@ -614,7 +606,7 @@
 					<div class="mup-bd">\
                         <span class="mup-stats"><div class="next-event"></div></span>\
 						<span class="mup-stats">' +numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
-                        <h4><a href="www.meetup.com/enventure"><button type="button" class="btn-dark btn-large">JOIN</button></a></h4>\
+                        <h4><a <a class="btn btn-large btn-block btn-info" href="www.meetup.com/enventure">JOIN</button></a></h4>\
 					</div>\
 					<div class="mup-ft">\
 						<div class="mup-logo"><div style="float:left;">'+addLink('<img src="http://img1.meetupstatic.com/84869143793177372874/img/birddog/everywhere_widget.png">','http://www.meetup.com')+'</div><div style="float:right;"><div style="float:right;">'+addStarRating(group.rating)+'</div><br><div style="float:right;"><span class="mup-tlabel">Group Rating</span></div></div></div>\
