@@ -1052,7 +1052,13 @@ textarea[readonly] {
   color: #cad2d3;
   cursor: default; }
 
-
+input,
+textarea,
+.uneditable-input {
+  width: 192px; }
+ 
+.checkbox,
+.radio {
   margin-bottom: 12px;
   padding-left: 32px;
   position: relative;
