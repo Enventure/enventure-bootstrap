@@ -118,7 +118,7 @@
 							<li class=""><a href="#learn">Learn</a></li>
 							<li class=""><a href="matchmaking.html">Match</a></li>
 							<li class=""><a href="flight-school.html">Incubator</a></li>
-							
+							<li class=""><a href="donate.html">Donate</a></li>
 							
 						</ul>
 					</div>	
@@ -216,37 +216,37 @@
 					</div>	
 				</div>
 				<div class="span3">
+					<div id="cohnModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
 					<div class="white-content">
 						<div class="img-mask hover-mask">
-							<iframe width=auto src="http://www.youtube.com/embed/c876c4AR2Bo?rel=0" frameborder="0" allowfullscreen></iframe>
-							<div class="flip-container">
-							  <div class="flipper">
-							    <div class="back">
-							      <div class="flip-b">
-							      	<a href="#cohnmodal"><span class="icon-back"><i class="icon-plus"></i></span></a>
-							      </div>
-							    </div>
-							  </div>
-							</div>			
+							<div class="embed-container">
+							<iframe src="http://www.youtube.com/embed/c876c4AR2Bo?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
 						</div>							
-						<a href="#"><h5>Billy Cohn, MD <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
+						<a href="#cohnModal" data-toggle="modal"><h5>Billy Cohn, MD <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
 						<p>Bench to Biotech: "Building the Tools of Innovation for Tomorrow"</p>
 					</div>
 				</div>
 				<div class="span3">
 					<div class="white-content">
+						
 						<div class="img-mask hover-mask">
-							<img src="assets/images/large/7.jpg" alt="Photo-Work-2">
-							<div class="flip-container">
-							  <div class="flipper">
-							    <div class="back">
-							      <div class="flip-b">
-							      	<a href="#"><span class="icon-back"><i class="icon-plus"></i></span></a>
-							      </div>
-							    </div>
-							  </div>
-							</div>											
+							<div class="embed-container">
+							<iframe width="560" height="315" src="http://www.youtube.com/embed/XfwzqI3wthk?rel=0" frameborder="0" allowfullscreen></iframe>									
 						</div>
+							</div>
 						<a href="#"><h5>Nancy Chang, Glauco Souza, Jack Gill, and Brad Burke <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
 						<p>Bench to Biotech: Launching Your First Startup</p>						
 					</div>
@@ -293,6 +293,31 @@
 		</div>
 	<!-- end: learn -->
 
+	<!-- start: flight school -->
+	<div class="grey">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<h1>flight school</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: flight school -->
+	
+	<!-- start: match -->
+	<div class="yellow">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<h1>match</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: match -->
+
+	
 
 	<!-- start: partners -->
 	<div class="section-wrapper section-testimonial">
@@ -451,7 +476,7 @@
 							</div>
 						</div>
 						<p>building a community for houston's medical entrepreneurs...</p>				
-						<a class="span 4 project" href="about.html"><button type="button" class="btn-dark btn-large">about us</button></a>
+						<a class="span 4 project" href="donate.html"><button type="button" class="btn-dark btn-large">donate</button></a>
 
 					</div>
 
@@ -482,21 +507,6 @@
 </footer><!-- end: footer -->
 
 </div><!-- end: sticky area -->	
-	
-<div id="cohnmodal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Modal header</h3>
-  </div>
-  <div class="modal-body">
-    <p>One fine body…</p>
-	  <iframe width="560" height="315" src="http://www.youtube.com/embed/c876c4AR2Bo?rel=0" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
-  </div>
-</div>
 
 
 <!-- start: script -->
@@ -511,6 +521,9 @@
 <script src="assets/js/dropkick.js"></script>
 <script src="assets/js/tweet.js"></script>
 <script src="assets/js/custom.js"></script>
+	<script src="assets/js/modal.js"></script>
+	<script src="assets/js/dropdown.js"></script>
+	<script src="assets/js/scrollspy.js"></script>
 <script src="api_key.js"></script>
 <script id="config" type="text/javascript" charset="utf-8">
   var $parameters = {

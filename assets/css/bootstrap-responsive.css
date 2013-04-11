@@ -928,7 +928,7 @@
   .media .pull-left,
   .media .pull-right {
     display: block;
-    float: none;
+		float:none;
     margin-bottom: 10px;
   }
   .media-object {
