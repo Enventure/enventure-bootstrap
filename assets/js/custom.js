@@ -236,11 +236,3 @@ var mup_widget = {
             });
         });
       }(window.jQuery)
-		  
-		  /* auto hide nav */
-		  $('#myTab a').click(function (e) {
-				e.preventDefault();
-				$(this).tab('show');
-				if ($('.btn').is(":visible"))
-					$('.btn').click();
-			});
