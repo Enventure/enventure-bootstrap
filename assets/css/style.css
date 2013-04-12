@@ -2776,6 +2776,12 @@ white{
 	color:white;
 }
 
+.subtitle{
+	line-height: 40px;
+	float:right;
+	font-style:italic;
+}
+
 /*hide tags */
 .show-under-720,
 .show-under-600{
