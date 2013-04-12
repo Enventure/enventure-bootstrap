@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 
 
-/* --------------------- Sticky nav --------------------- */
+/* -------------------- Sticky nav --------------------- */
 
     function UpdateTableHeaders() {
        $(".persist-area").each(function() {
