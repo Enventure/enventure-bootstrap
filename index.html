@@ -127,13 +127,12 @@
 
 	<!-- Begin MailChimp Signup Form -->
 	<div class="grey">
-		<div class="section-wrapper subscribe">
+		<div class="section-wrapper">
 			<div class="container">
 				<div class="row">
 					<div class="span6">
-						<h1>the report title</h1>
-						<p>we send out weekly meetup aanouncements, relevant headlines, houston events, and special announcements</p>
-						<p><strong>and monthly reports</strong></p>
+						<h2>hello, houston!</h2>
+						<p>sign up to receive weekly event calendars, relevant headlines, market reports</p>
 						<p>read the most recent newsletter <a href="#" target="_blank">here</a></p>
 						</div>
 					<div class="span6">
@@ -182,7 +181,6 @@
 					</div>
 				</div>
 				<div class="span4">
-					<h2>next meetup:</h2>
 					<div class="mug-badge"></div>
 				</div>
 			</div>
@@ -231,33 +229,50 @@
 		</div>
 	</div>
 	<!-- end: learn -->
-
-	<!-- start: flight school -->
-	<div class="grey">
-		<a class="anchor" id="incubate"></a>
-		<div class="container">
-			<div class="row">
-				<div class="span6">
-					<h1>flight school</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end: flight school -->
 	
 	<!-- start: match -->
-	<div class="yellow">
+	<div class="grey">
 		<a class="anchor" id="match"></a>
 		<div class="container">
 			<div class="row">
-				<div class="span6">
-					<h1>match</h1>
+				<div class="span12">
+					<div class="left">
+					<h1>match</h1><h4 class="pull-right">help us help you</h4>
+						</div>
+				</div>
+				<div class="tabbable tabs-left">
+  					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">individuals</a></li>
+						<li><a href="#tab2" data-toggle="tab">companies</a></li>
+					</ul>
+  					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<p>tab 1</p>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<p>tab 2</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- end: match -->
 
+	<!-- start: flight school -->
+	<div class="yellow">
+		<a class="anchor" id="incubate"></a>
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<h1>flight school</h1>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- end: flight school -->
+	
 	
 
 	<!-- start: partners -->
@@ -563,6 +578,7 @@
 			$('.mug-badge', ctx).append(
 				'<div class="mup-widget">\
 					<div class="mup-bd">\
+						<h4>next meetup</h4>\
                         <span class="mup-stats"><div class="next-event"></div></span>\
 						<span class="mup-stats">' +numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
                         <h4><a <a class="btn btn-large btn-block" href="www.meetup.com/enventure">JOIN</button></a></h4>\
