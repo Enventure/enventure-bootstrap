@@ -2775,6 +2775,10 @@ body {padding-top: 0px;}
 
 a.anchor{display: block; position: relative; top: -100px; visibility: hidden;}
 
+white{
+	color:white;
+}
+
 
 /*hide tags */
 .show-under-720,
