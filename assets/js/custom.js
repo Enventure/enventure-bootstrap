@@ -244,19 +244,16 @@ var mup_widget = {
 };
 
 /* smooth scroll*/
-!function ($) {
-    $(function(){
 
-        var $root = $('html, body');
-
-        $('a').click(function() {
-            var href = $.attr(this, 'href');
-            $root.animate({
-                scrollTop: $(href).offset().top
-            }, 500, function () {
-                window.location.hash = href;
+      !function ($) {
+        $('a[href^="#"]:not([data-toggle])').bind('click.smoothscroll',function (e) {
+            e.preventDefault();
+            var target = this.hash;
+                $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 500, 'swing', function () {
+                window.location.hash = target;
             });
-            return false;
         });
-    })
-}(window.jQuery)
+      }(window.jQuery)
