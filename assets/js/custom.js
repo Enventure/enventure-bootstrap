@@ -1,22 +1,4 @@
 
-/* -------------------- CSS switch --------------------- */
-
-
-if($.cookie("css")) {
-    $("link.switchable").attr("href",$.cookie("css"));
-}
-
-$(document).ready(function() {
-    $("#cssSwitch li a").click(function() { 
-        $("link.switchable").attr("href",$(this).attr('rel'));
-        $.cookie("css",$(this).attr('rel'), {expires: 30, path: '/'});
-        $('body').hide().fadeIn(1250);
-        return false;
-    });
-});
-
-
-
 /* -------------------- todo UI --------------------- */
 
 
@@ -257,3 +239,11 @@ var mup_widget = {
             });
         });
       }(window.jQuery)
+		  
+		  /* auto hide nav */
+		  $('#myTab a').click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+				if ($('.btn').is(":visible"))
+					$('.btn').click();
+			});
