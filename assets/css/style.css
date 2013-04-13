@@ -984,8 +984,7 @@ blockquote small:before {
     background-size: cover;
     overflow: hidden;
 }
-.slider-wrapper .bg-2 [data-icon]:after, .slider-wrapper .bg-2 h2 {
-}
+
 .slider-wrapper .bg-3 .sl-slide-inner, .slider-wrapper .bg-3 .sl-content-slice {
     background-image: url("../images/home-slider/home-slider-3.jpg");
     background-position: 0 center;
@@ -993,11 +992,6 @@ blockquote small:before {
     background-size: cover;
     overflow: hidden;
 }
-.slider-wrapper .bg-3 h2, .slider-wrapper .bg-3 blockquote {
-}
-
-
-
 
 /* ===== #social-icon ===== */
 
@@ -2128,7 +2122,6 @@ body {padding-top: 0px;}
 .img-mask .flip-container, .img-mask .back {top: 22px;}
 .img-title {right: 5%;}
 .map-info {left: 56%;top: 46%;}
-.slider-wrapper .bg-1 .deco {width: 400px;}
 .navbar .container {width: auto;}
 }    
 
@@ -2779,6 +2772,13 @@ white{
 	line-height: 40px;
 	float:right;
 	font-style:italic;
+}
+
+rectangle {
+width:100%;
+	height:25%;
+	background:whitesmoke;
+	opacity:0.3;
 }
 
 /*hide tags */
