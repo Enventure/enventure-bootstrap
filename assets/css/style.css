@@ -876,7 +876,7 @@ blockquote small:before {
 .sl-slider-wrapper {
     border-top: none;
     width: 800px;
-    height: 400px;
+    height: 300px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -899,7 +899,7 @@ blockquote small:before {
     z-index: 1;
 }
 .slider-wrapper .sl-slider-wrapper{
-    height: 500px;
+    height: 400px;
 }
 .slider-img{
     z-index: 60;
@@ -2770,7 +2770,7 @@ body {padding-top: 0px;}
 
 /*custom will*/
 
-a.anchor{display: block; position: relative; top: -100px; visibility: hidden;}
+/*a.anchor{display: block; position: relative; top: -100px; visibility: hidden;}*/
 
 white{
 	color:white;
