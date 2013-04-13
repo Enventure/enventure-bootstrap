@@ -5,6 +5,9 @@ doesn't smooth scroll unless at top
 i like how the nav bar retracts, but contact isn't lined up
 nav dots?
 lightning color?
+.slider-wrapper .sl-slide blockquote {
+bottom: 70% is screwing up the quote
+}
 
 there are 2 navbars, one hidden and one shown for persist from javascript
 
@@ -34,3 +37,10 @@ color
 container
 row
 span
+
+working:
+color
+section-wrapper
+container
+row
+spans

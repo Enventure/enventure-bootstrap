@@ -976,8 +976,7 @@ blockquote small:before {
     background-size: cover;
     overflow: hidden;
 }
-.slider-wrapper .sl-slide h2 {
-}
+
 .slider-wrapper .bg-2 .sl-slide-inner, .slider-wrapper .bg-2 .sl-content-slice {
     background-image: url("../images/home-slider/home-slider-2.jpg");
     background-position: 0 center;
