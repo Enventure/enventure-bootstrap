@@ -13,6 +13,7 @@ name="keywords"> <!-- end: Meta -->
     <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/meetup.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-fileupload.css">
     <!-- end: CSS -->
 
 
@@ -250,18 +251,27 @@ name="keywords"> <!-- end: Meta -->
 					</ul>
   					<div class="tab-content">
 						<div class="tab-pane active" id="tab1">
-							<div class="span5">
+							<div class="span4">
 							<h3><enventure>enventure</enventure> resumes</h3>
 								<p>Submit your information directly through enventure.org.</p>
+								<div class="fileupload fileupload-new" data-provides="fileupload">
+									<div class="input-append">
+										<div class="uneditable-input span3">
+											<i class="icon-file fileupload-exists"></i>
+											<span class="fileupload-preview"></span>
+										</div>
+										<span class="btn btn-file">
+											<span class="fileupload-new">Select file</span>
+											<span class="fileupload-exists">Change</span>
+											<input type="file" />
+										</span>
+										<a class="btn fileupload-exists" data-dismiss="fileupload" href="#">Remove</a>			
+									</div>
+								</div>
 							</div>
-							<div class="span5">
+							<div class="span4">
 								<h3><a href="http://www.enventure.org/wp-content/uploads/2013/03/angellist-logo21.png"><img class="alignleft size-full wp-image-1396" alt="angellist-logo3" src="http://www.enventure.org/wp-content/uploads/2013/03/angellist-logo21.png" width="130" height="26" /></a></h3><p> Create an AngelList profile that allows you to connect with startups and investors.</p>
-							</div>
-							<div class="span5">
-						<a class="btn btn-block separator" href="http://www.enventure.org/student-industry-internship-application-2013" alt="Student Internships Application">upload resumes</a>
-						</div>
-							<div class="span5">
-								<a href="http://www.enventure.org/get-involved/student-industry-internship-application-2013-angellist" class="btn btn-block">AngelList</a></div>
+								<a href="http://www.enventure.org/get-involved/student-industry-internship-application-2013-angellist" class="btn btn-block btn-large">AngelList</a></div>
 							</div>
 						<div class="tab-pane" id="tab2">
 							<p>tab 2</p>
@@ -449,10 +459,7 @@ name="keywords"> <!-- end: Meta -->
 						</div>
 						<p>building a community for houston's medical entrepreneurs...</p>				
 						<a class="span 4 project" href="donate.html"><button type="button" class="btn-dark btn-large">donate</button></a>
-
 					</div>
-
-
 				</div>
 			</div>
 		</div>
@@ -495,6 +502,7 @@ name="keywords"> <!-- end: Meta -->
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/dropdown.js"></script>
 <script src="api_key.js"></script>
+<script src="assets/js/fileupload.js"></script>
 <script id="config" type="text/javascript" charset="utf-8">
   var $parameters = {
     urlname: "enventure",

@@ -2782,18 +2782,27 @@ width:100%;
 }
 
 /*hide tags */
-.show-under-720,
+.show-under-980,
+.show-under-768,
 .show-under-600{
 	display:none;
 }
 
-
-@media screen and (max-width: 719px) {
-	.hide-under-720 {
+@media screen and (max-width: 979px) {
+	.hide-under-980 {
 		display: none;
 	}
-	.show-under-720 {
-		display: inline;
+	.show-under-980 {
+		display: inherit;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hide-under-768 {
+		display: none;
+	}
+	.show-under-768 {
+		display: inherit;
 	}
 }
 
@@ -2802,6 +2811,6 @@ width:100%;
 		display: none;
 	}
 	.show-under-600 {
-		display:inline
+		display:inherit;
 	}
 }
