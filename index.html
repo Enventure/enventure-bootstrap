@@ -130,16 +130,19 @@ name="keywords"> <!-- end: Meta -->
 		<div class="section-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="span6">
+					<div class="span3">
+						<img src="assets/images/community.png" alt="Community">
+					</div>
+					<div class="span5">
 						<h2>Hello, Houston!</h2>
 						<p>sign up to receive weekly event updates, relevant news, and educational <em>flight decks</em></p>
 						<p>read the most recent newsletter <a href="http://us5.campaign-archive1.com/?u=ef4088dbaa790eaf363197ef4&id=106b65a7ae&e=" target="_blank">here</a></p>
 					</div>
-					<div class="span6">
+					<div class="span4">
 						<div id="mc_embed_signup">
 							<form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 								<div class="mc-field-group">
-									<input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email span6" id="mce-EMAIL">
+									<input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 								</div>
 								<div id="mce-responses" class="clear">
 									<div class="response" id="mce-error-response" style="display:none">Sorry let's try that again.
@@ -154,6 +157,7 @@ name="keywords"> <!-- end: Meta -->
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -168,20 +172,20 @@ name="keywords"> <!-- end: Meta -->
 				<div class="span12">
 						<h1>events<a class="btn btn-large pull-right" href="events.html">calendar</a></h1>				
 				</div>
-					<div class="span3">
-							<div class="info-features">
-								<img alt="title" src="assets/images/event.jpg" class="border">
-							</div>
-					</div>
-					<div class="span5">
-						<div class="info-features">
-							<h3><a href="http://miteftexas.org/meetinginfo.php?id=38&ts=1366234048" target="_blank">Bob Metcalfe on Startup Innovations</a></h3><h4>April 24, 2013</h4>
-							<p>Hear Professor Bob Metcalfe, a giant in the world of Information Technology and one of the world’s great entrepreneurs (inventor of the Ethernet, founder of 3Com, Forbes Rich List!) talk about innovation, start-ups, and how to turn your business idea into reality.</p>
-							<a class="btn btn-large btn-block separator" href="https://miteftexas.org/meet-reg1.php?id=38" target="_blank">Register</a>
-						</div>
-					</div>
 				<div class="span4">
-					<div class="mug-badge"></div>
+						<div class="mug-badge"></div>
+				</div>
+				<div class="span5">
+					<div class="info-features">
+						<h4><a href="http://miteftexas.org/meetinginfo.php?id=38&ts=1366234048" target="_blank">Bob Metcalfe on Startup Innovations</a></h4><h4>April 24, 2013</h4>
+						<p>Hear Professor Bob Metcalfe, one of the world’s great entrepreneurs (inventor of the Ethernet, founder of 3Com, Forbes Rich List!) talk about innovation, start-ups, and how to turn your business idea into reality.</p>
+						<a class="btn btn-large btn-block separator" href="https://miteftexas.org/meet-reg1.php?id=38" target="_blank">Register</a>
+					</div>
+				</div>
+				<div class="span3">
+						<div class="info-features">
+							<img alt="title" src="assets/images/event.jpg" class="border">
+						</div>
 				</div>
 			</div>
 		</div>
@@ -202,7 +206,10 @@ name="keywords"> <!-- end: Meta -->
 							</div>
 						</div>
 					</div>
-					<div class="span4 offset2">
+					<div class="span3">
+						<img src="assets/images/idea-machine.png" alt="Learn">
+					</div>
+					<div class="span4">
 						<div class="white-content">
 							<div class="img-mask hover-mask">
 								<div class="embed-container">
@@ -294,15 +301,18 @@ name="keywords"> <!-- end: Meta -->
 			<a class="anchor" id="incubate"></a>
 			<div class="container">
 				<div class="row">
-				<div class="span6">
-					<h1>flight school</h1>
+					<div class="span6">
+						<h1>flight school</h1>
+					</div>
+					<div class="span6">
+						<h4 class="subtitle">incubating ideas through pilot stage</h4>
+					</div>
 				</div>
-				<div class="span6">
-					<h4 class="subtitle">incubating ideas through pilot stage</h4>
-				</div>
-			</div>
 				<div class="row">
-					<div class="span12">
+					<div class="span5">
+						<img src="assets/images/flight-school.png" alt="Flight School">
+					</div>
+					<div class="span7">
 						<a href="http://angel.co/enventure" class="btn btn-large btn-block" target="_blank">Apply via AngelList</a>
 					</div>
 				</div>
@@ -622,13 +632,10 @@ name="keywords"> <!-- end: Meta -->
 			$('.mug-badge', ctx).append(
 				'<div class="mup-widget">\
 					<div class="mup-bd">\
-						<h4>next meetup</h4>\
+						<h3>next meetup</h3>\
                         <span class="mup-stats"><div class="next-event"></div></span>\
 						<span class="mup-stats">' +numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
                         <h4><a <a class="btn btn-large btn-block" href="www.meetup.com/enventure">JOIN</button></a></h4>\
-					</div>\
-					<div class="mup-ft">\
-						<div class="mup-logo"><div style="float:left;">'+addLink('<img src="http://img1.meetupstatic.com/84869143793177372874/img/birddog/everywhere_widget.png">','http://www.meetup.com')+'</div><div style="float:right;"><div style="float:right;">'+addStarRating(group.rating)+'</div><br><div style="float:right;"><span class="mup-tlabel">Group Rating</span></div></div></div>\
 					</div>\
 				</div>'
 				);
