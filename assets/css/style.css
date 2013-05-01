@@ -2745,6 +2745,10 @@ white{
 	color:white;
 }
 
+light{
+	color:#CCC;
+}
+
 .grey {
 	background:#eeeeee;
 }
