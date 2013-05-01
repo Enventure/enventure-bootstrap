@@ -2820,3 +2820,12 @@ width:100%;
 		display:inherit;
 	}
 }
+
+input {
+	width: 100%;
+}
+
+.bottom {
+	position:absolute;
+	bottom:0;
+}
