@@ -11,6 +11,11 @@ bottom: 70% is screwing up the quote
 
 there are 2 navbars, one hidden and one shown for persist from javascript
 
+redirects from old blog posts:
+301 generator for htaccess
+http://seo-website-designer.com/HtAccess-301-Redirect-Generator
+make sure to save old blog links first
+
 original theme sections:
 section- padding
 anchor
