@@ -129,7 +129,7 @@ $(document).ready(function() {
             username: "enventuremed",
             join_text: "auto",
             avatar_size: 24,
-            count: 3,
+            count: 2,
 			/*
             auto_join_text_default: "we said,",
             auto_join_text_ed: "we",
