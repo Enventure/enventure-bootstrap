@@ -128,8 +128,8 @@ $(document).ready(function() {
         $(".tweet").tweet({
             username: "enventuremed",
             join_text: "auto",
-            avatar_size: 24,
-            count: 2,
+            avatar_size: 36,
+            count: 3,
 			/*
             auto_join_text_default: "we said,",
             auto_join_text_ed: "we",
