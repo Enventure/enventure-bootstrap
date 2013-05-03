@@ -96,8 +96,6 @@
 
 .slider-wrapper .btn.btn-large {
 float: right;
-position: relative;
-bottom: -35%;
 }
 
 .slider-wrapper [data-icon]:after {
@@ -410,6 +408,7 @@ bottom: -35%;
 	.slider-wrapper .btn.btn-large {
 		margin-bottom:-45px;
 	}
+}
 	
 @media screen and (max-width: 660px) {
 	.slider-wrapper .deco {
@@ -418,11 +417,11 @@ bottom: -35%;
 		bottom: -32%;
 	}
 
-.slider-wrapper .sl-slide blockquote p {
-	width:90%;
-	line-height:1.0;
-	top:-200%;
-}
+	.slider-wrapper .sl-slide blockquote p {
+		width:90%;
+		line-height:1.0;
+		top:-200%;
+	}
 
 	.slider-wrapper .sl-slide blockquote {
 		margin-bottom: -120px;
@@ -439,3 +438,20 @@ bottom: -35%;
 		font-size: 0px;
 		left: -45px;
 	}
+}
+		
+/* will */
+.slider-wrapper .btn {
+	padding: 20px;
+	position: absolute;
+	left: 10%;
+	text-align: center;
+	line-height: 50px;
+	bottom: 44.5%;
+	margin: 0 0 0 0;
+	-webkit-animation: moveUp 1s ease-in-out both;
+	-moz-animation: moveUp 1s ease-in-out both;
+	-o-animation: moveUp 1s ease-in-out both;
+	-ms-animation: moveUp 1s ease-in-out both;
+	animation: moveUp 1s ease-in-out both;s
+		}
