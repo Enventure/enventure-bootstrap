@@ -182,7 +182,7 @@ float: right;
 
 .slider-wrapper .bg-1 .deco {
 	background:url(../images/community.png) no-repeat center center;
-	background-size: 100%;
+	background-size: 90%;
 	
 }
 
@@ -196,7 +196,7 @@ float: right;
 
 .slider-wrapper .bg-2 .deco {
 	background:url(../images/idea-machine.png) no-repeat center center;
-	background-size: 80%;
+	background-size: 35%;
 	
 }
 
@@ -209,7 +209,7 @@ float: right;
 
 .slider-wrapper .bg-3 .deco {
 		background:url(../images/flight-school.png) no-repeat center center;
-		background-size: 80%;
+		background-size: 60%;
 		
 	
 }
@@ -439,8 +439,16 @@ float: right;
 		left: -45px;
 	}
 }
+
+@media screen and (max-width: 480px) {
+
+	.slider-wrapper .sl-slide h2 {
+	    font-size: 2em;
+	}
+
+}
 		
-/* will */
+/* will *//*
 .slider-wrapper .btn {
 	padding: 20px;
 	position: absolute;
@@ -453,5 +461,5 @@ float: right;
 	-moz-animation: moveUp 1s ease-in-out both;
 	-o-animation: moveUp 1s ease-in-out both;
 	-ms-animation: moveUp 1s ease-in-out both;
-	animation: moveUp 1s ease-in-out both;s
+	animation: moveUp 1s ease-in-out both;
 		}
