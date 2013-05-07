@@ -2070,7 +2070,6 @@ footer a:hover {
 @media (min-width: 768px) and (max-width: 979px) { 
 body {padding-top: 0px;}
 #top-navigation .nav {border-top: 1px solid #026873;}
-#top-navigation .nav {margin-bottom: 0;margin-top: 10px;padding-top: 10px;}
 .client-container, .client-front, .client-back {width: 84px;height: 84px;}
 .thumbnail-box {margin-left: 0px;}
 .btn-sign {margin-top: -45px; }
@@ -2125,7 +2124,6 @@ body {padding-top: 0px;}
     padding-right: 0px;}
     .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {font-weight: normal;}    
     #top-navigation .nav {border-top: 1px solid #026873;}
-    #top-navigation .nav {margin-bottom: 0;margin-top: 10px;padding-top: 10px;}
     .navbar .pull-right {float: none;}
     .client-container, .client-front, .client-back {width: 100px;height: 100px;}
     .thumbnail-client{float: left;margin: 10px;}
@@ -2186,7 +2184,7 @@ body {padding-top: 0px;}
     #coming button {margin-top: -10px;}    
 }
 
-  }
+  
    
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -2196,6 +2194,12 @@ body {padding-top: 0px;}
     #search button{margin-top: 0px; } 
     #newsletter button {margin-top: 0px;}
     #coming button {margin-top: 0px;}
+	.slider-wrapper .sl-slider-wrapper {height: 250px;}
+	.navbar .brand {
+		font-size: 2em;
+		text-shadow: 0.03em 0.03em #000;
+		font-weight: 400;
+	}
 
 }
 @media (min-width: 0) and (max-width: 480px) and (orientation:landscape) {
@@ -2209,6 +2213,22 @@ body {padding-top: 0px;}
     .section-portfolio .container{margin-left: 10px;}
 }
 
+/* ===== @Tablets to Phones ===== */
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+body {padding-top: 0px;}
+#top-navigation .nav {border-top: 1px solid #515151;}
+.nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {background-color: #00B4FF;color:#FFFFFF;text-shadow: 0 0 0 #FFFFFF;}
+.navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown > a:focus .caret {border-bottom-color: #FFFFFF;border-top-color: #FFFFFF;}
+}
+
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 767px) {
+    .nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {background-color: #00B4FF;color:#FFFFFF;text-shadow: 0 0 0 #FFFFFF;}
+    .navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown > a:focus .caret {border-bottom-color: #FFFFFF;border-top-color: #FFFFFF;}  
+    #top-navigation .nav {border-top: 1px solid #515151;}
+  }
 
 /* from color */
 /*
@@ -2706,22 +2726,7 @@ footer a:hover {
     color: #FFFFFF;
 }
 
-/* ===== @Tablets to Phones ===== */
- 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-body {padding-top: 0px;}
-#top-navigation .nav {border-top: 1px solid #515151;}
-.nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {background-color: #00B4FF;color:#FFFFFF;text-shadow: 0 0 0 #FFFFFF;}
-.navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown > a:focus .caret {border-bottom-color: #FFFFFF;border-top-color: #FFFFFF;}
-}
 
-  /* Landscape phone to portrait tablet */
-  @media (max-width: 767px) {
-    .nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {background-color: #00B4FF;color:#FFFFFF;text-shadow: 0 0 0 #FFFFFF;}
-    .navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown > a:focus .caret {border-bottom-color: #FFFFFF;border-top-color: #FFFFFF;}  
-    #top-navigation .nav {border-top: 1px solid #515151;}
-  }
 
 /* responsive youtube embed */
 .embed-container {
