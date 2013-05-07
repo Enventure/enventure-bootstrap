@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 /* -------------------- Sticky nav --------------------- */
-
+/*
     function UpdateTableHeaders() {
        $(".persist-area").each(function() {
        
@@ -54,7 +54,14 @@ $(document).ready(function() {
        
     });
 
+/* smooth scroll*/
+/*
+$('#nav ul li a').bind('click', function(e) {
+   e.preventDefault();
+   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 300);
 
+   // edit: Opera requires the "html" elm. animated
+});
 
 
 
