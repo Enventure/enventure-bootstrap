@@ -225,6 +225,7 @@ var mup_widget = {
 };
 
 /* smooth scroll*/
+/*
       !function ($) {
         $('a[href^="#"]').bind('click.smoothscroll',function (e) {
             e.preventDefault();
@@ -238,3 +239,11 @@ var mup_widget = {
         });
       }(window.jQuery)
 		 
+		  
+/*scrollspy call*/
+$('a[href^="#"]').bind('click', function(e) {
+   e.preventDefault();
+   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 600);
+
+   // edit: Opera requires the "html" elm. animated
+});
