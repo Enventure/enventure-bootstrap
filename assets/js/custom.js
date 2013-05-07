@@ -225,9 +225,8 @@ var mup_widget = {
 };
 
 /* smooth scroll*/
-
       !function ($) {
-        $('a[href^="#"]:not([data-toggle])').bind('click.smoothscroll',function (e) {
+        $('a[href^="#"]').bind('click.smoothscroll',function (e) {
             e.preventDefault();
             var target = this.hash;
                 $target = $(target);
@@ -238,3 +237,4 @@ var mup_widget = {
             });
         });
       }(window.jQuery)
+		 
