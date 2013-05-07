@@ -2887,7 +2887,6 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
         display: block;
         float: none;
         max-width: 40%;
-		max-height: 300px;
         margin: 0 auto 20px;
       }
     }
