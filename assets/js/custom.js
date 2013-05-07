@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 /* -------------------- Sticky nav --------------------- */
-
+/*
     function UpdateTableHeaders() {
        $(".persist-area").each(function() {
        

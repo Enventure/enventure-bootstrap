@@ -121,12 +121,14 @@ i:hover {
 .navbar .nav > li > a:active {
     color: #7cc4bd;
 } 
+
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #c3deca;
 }
+
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     background-color: transparent;
     color: #eff0e9;
@@ -2254,9 +2256,12 @@ color:#FFFFFF;
 .navbar .nav > li > a:active {
     color: #000000;
 } 
+
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-    color: #EEEEEE;
+    background-color: #515151;
+    color: #FFFFFF;
 }
+
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     color: #FFFFFF;
 }
