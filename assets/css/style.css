@@ -22,7 +22,7 @@ body {
     background-color: #eff0e9;
     color: #026873;
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 300;
     line-height: 20px;
     margin: 0;
@@ -2915,3 +2915,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
       }
 
     }
+
+/*will*/
+h6{
+	text-align:center
+}
