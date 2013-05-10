@@ -2920,3 +2920,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 h6{
 	text-align:center
 }
+
+.minimal {
+	max-width:50%;
+	margin-left:auto;
+margin-right:auto;
+}
