@@ -2755,6 +2755,10 @@ white{
 	color:white;
 }
 
+.nav-tabs > li > a {
+	color:white;
+}
+
 light{
 	color:#CCC;
 }
