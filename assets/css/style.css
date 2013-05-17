@@ -37,7 +37,7 @@ a:hover {
 }
 a:focus {
     text-decoration: none;
-    outline-offset: 0px;
+    outline-offset: 0;
     color: #7cc4bd;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -87,14 +87,14 @@ i:hover {
 }
 
 .navbar{
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 /* ===== #navigation ===== */
 
 
 .home{
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .floatingHeader {
@@ -125,6 +125,7 @@ i:hover {
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     background-color: transparent;
     -webkit-box-shadow: none;
+	-moz-box-shadow: none;
     box-shadow: none;
     color: #c3deca;
 }
@@ -146,7 +147,7 @@ i:hover {
     color: #eff0e9;
     float: right;
     padding: 7px 10px;
-    text-shadow: 0 0px 0 rgba(0, 0, 0, 0.0);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
     border-width: 0;
     border-radius: 2px;
 }
@@ -170,7 +171,7 @@ i:hover {
     background-color: #026873;
     background-image: none;
     background-repeat: repeat-x;
-    -webkit-box-shadow: none
+    -webkit-box-shadow: none;
     box-shadow: none;
     min-height: 40px;
     padding: 10px 0;
