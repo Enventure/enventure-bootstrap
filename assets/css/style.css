@@ -83,7 +83,8 @@ i:hover
 	text-shadow: .03em .03em #000;
 	color: #4384d3;
 	margin-left: 5px;
-	font: 400 3em Georgia,"Times New Roman",Times,serif
+	font: 400 3em Georgia,"Times New Roman",Times,serif;
+	line-height:inherit
 }
 
 .navbar
@@ -181,6 +182,10 @@ i:hover
 
 .navbar-inner
 {
+	padding-left:0;
+	padding-right:0;
+	padding-top:10px;
+	padding-bottom:10px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	min-height: 40px;
