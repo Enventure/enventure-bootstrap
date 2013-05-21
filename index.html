@@ -251,10 +251,23 @@
 								<white>
 									<ul class="thumbnails">
 										<li class="span3">
-											<div class="thumbnail thumbnail-boxy">
-												<img src="assets/learn/crowdfunding.cover.jpeg" alt="">
-												<h3>Thumbnail label</h3>
-												<p>Thumbnail caption...</p>
+											<div class="thumbnail">
+												<a href="#myModal" role="button" data-toggle="modal"><img class="border" src="assets/learn/crowdfunding.cover.jpeg" alt=""></a>
+												<p>Implications of the JOBS act for crowdfunding your startup</p>
+												<!-- Modal -->
+												<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+														<h3 id="myModalLabel">Modal header</h3>
+													</div>
+													<div class="modal-body">
+														<p>One fine body…</p>
+													</div>
+													<div class="modal-footer">
+														<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+														<button class="btn btn-primary">Save changes</button>
+													</div>
+												</div>
 											</div>
 										</li>	
 									</ul>
@@ -750,12 +763,12 @@
 							'<div class="mup-widget error">\
 <div class="errorMsg">Oops. No results for "' + $parameters.urlname + '"</div>\
 		</div>');
-						}
-						else {
-							group = data.results[0];
-							$('.mug-badge', ctx);
-							$('.mug-badge', ctx).append(
-								'<div class="mup-widget">\
+					}
+					else {
+						group = data.results[0];
+						$('.mug-badge', ctx);
+						$('.mug-badge', ctx).append(
+							'<div class="mup-widget">\
 <div class="mup-bd">\
 <h3>next meetup</h3>\
 <span class="mup-stats"><div class="next-event"></div></span>\
@@ -806,8 +819,8 @@
 								}
 							});
 						}
-					});
 				});
+			});
 		</script>
 		<!-- end: script -->
 		
