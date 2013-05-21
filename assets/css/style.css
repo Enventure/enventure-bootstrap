@@ -2109,8 +2109,8 @@ hr
 
 .ribbon-wrapper
 {
-	width: 85px;
-	height: 88px;
+	width: 170px;
+	height: 176px;
 	overflow: hidden;
 	position: absolute;
 	top: -5px;
@@ -2129,9 +2129,9 @@ hr
 	-o-transform: rotate(45deg);
 	position: relative;
 	padding: 7px 0;
-	left: -5px;
-	top: 15px;
-	width: 120px;
+	left: 28px;
+	top: 38px;
+	width: 180px;
 	background: #026873;
 	color: #fff;
 	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.3);
