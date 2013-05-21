@@ -208,6 +208,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="span12">
+							
 							<h1><white><strong>learn</strong></white></h1>
 						</div>
 					</div>
@@ -223,6 +224,7 @@
 					</div>
 					<div class="row">
 						<div class="span12">
+							
 							<blockquote class="span8 offset2"><p>Whether you're interested in Houston's startup <strong>culture</strong>, generating new <strong>solutions</strong> to medical needs, or taking that idea to <strong>pilot stage</strong>, <enventure>enventure</enventure> has you covered.</p></blockquote>
 						</div>
 					</div>
@@ -247,10 +249,14 @@
 							</div>
 							<div class="tab-pane fade" id="tab2">
 								<white>
-									<ul>
-										<li>enventure library</li>
-										<li>flight decks</li>
-										<li>RH links?</li>
+									<ul class="thumbnails">
+										<li class="span3">
+											<div class="thumbnail thumbnail-boxy">
+												<img src="assets/learn/crowdfunding.cover.jpeg" alt="">
+												<h3>Thumbnail label</h3>
+												<p>Thumbnail caption...</p>
+											</div>
+										</li>	
 									</ul>
 								</white>
 							</div>
@@ -422,18 +428,18 @@
 											</ul>
 										</div>
 									</div> <!-- /todo list -->
-									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="span8 offset2">
-								<a href="http://angel.co/enventure" class="btn btn-large btn-block" target="_blank">Apply via AngelList</a>
-							</div>
+					</div>
+					<div class="row">
+						<div class="span8 offset2">
+							<a href="http://angel.co/enventure" class="btn btn-large btn-block" target="_blank">Apply via AngelList</a>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		
 		<!-- end: flight school -->
 		
@@ -647,6 +653,8 @@
 		<script src="assets/js/custom.js"></script>
 		<script src="assets/js/dropdown.js"></script>
 		<script src="assets/js/bootstrap-tab.js"></script>
+		<script src="assets/js/bootstrap-modal.js"></script>
+		<script src="assets/js/bootstrap-carousel.js"></script>
 		<script src="api_key.js"></script>
 		<script id="config" type="text/javascript" charset="utf-8">
 			
@@ -741,7 +749,7 @@
 						$('.mug-badge', ctx).append(
 							'<div class="mup-widget error">\
 <div class="errorMsg">Oops. No results for "' + $parameters.urlname + '"</div>\
-			</div>');
+		</div>');
 						}
 						else {
 							group = data.results[0];
@@ -756,50 +764,50 @@
 		</div>\
 		</div>'
 			);
-								
-								$.getJSON($queries.events(), function(data) {
-									if (data.status && data.status.match(/^200/) == null) {
-										alert(data.status + ": " + data.details);
-									} else {
-										if (data.results.length == 0) {
-											$('.next-event', ctx).append('<span class="mup-tlabel">'+addLink('Suggest new ideas for Meetups!',group.link)+'</span>');
-										}
-										else {
-											var event = data.results[0];
-											var city;
-											if (event.venue_city == "") {
-												city = group.city;
-											} else {
-												city = event.venue_city;
-											}
-											var state_country;
-											if (event.venue_state == "") {
-												if (group.state == "") {
-													state_country = group.country.toUpperCase();
-												} else {
-													state_country = group.state;
-												}
-											} else {
-												state_country = event.venue_state;
-											}
-											var venue;
-											if (event.venue_name == "") {
-												if (event.venue_address1 == "") {
-													venue = "";
-												} else {
-													venue = event.venue_address1+ " - ";
-												}
-											} else {
-												venue = event.venue_name + " - ";
-											}
-											var location = venue + city + ", " + state_country;
-											$('.next-event', ctx).append('<h4><div class="mup-tlabel">'+getFormattedDate(parseInt(event.utc_time)) + ' &nbsp | &nbsp ' + getFormattedTime(parseInt(event.utc_time)) + "</div>" + addLink(event.name, event.event_url)+'<div class="mup-tlabel">' + location + "</div></h4>");
-										}
+							
+							$.getJSON($queries.events(), function(data) {
+								if (data.status && data.status.match(/^200/) == null) {
+									alert(data.status + ": " + data.details);
+								} else {
+									if (data.results.length == 0) {
+										$('.next-event', ctx).append('<span class="mup-tlabel">'+addLink('Suggest new ideas for Meetups!',group.link)+'</span>');
 									}
-								});
-							}
-						});
+									else {
+										var event = data.results[0];
+										var city;
+										if (event.venue_city == "") {
+											city = group.city;
+										} else {
+											city = event.venue_city;
+										}
+										var state_country;
+										if (event.venue_state == "") {
+											if (group.state == "") {
+												state_country = group.country.toUpperCase();
+											} else {
+												state_country = group.state;
+											}
+										} else {
+											state_country = event.venue_state;
+										}
+										var venue;
+										if (event.venue_name == "") {
+											if (event.venue_address1 == "") {
+												venue = "";
+											} else {
+												venue = event.venue_address1+ " - ";
+											}
+										} else {
+											venue = event.venue_name + " - ";
+										}
+										var location = venue + city + ", " + state_country;
+										$('.next-event', ctx).append('<h4><div class="mup-tlabel">'+getFormattedDate(parseInt(event.utc_time)) + ' &nbsp | &nbsp ' + getFormattedTime(parseInt(event.utc_time)) + "</div>" + addLink(event.name, event.event_url)+'<div class="mup-tlabel">' + location + "</div></h4>");
+									}
+								}
+							});
+						}
 					});
+				});
 		</script>
 		<!-- end: script -->
 		
