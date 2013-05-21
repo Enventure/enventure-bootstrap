@@ -944,7 +944,7 @@ blockquote
 
 blockquote p
 {
-	background: #c3deca;
+	background: #fff;
 	border-radius: 2px;
 	padding: 20px;
 	position: relative;
@@ -964,7 +964,7 @@ blockquote p:after,blockquote p:before
 
 blockquote p:after
 {
-	border-top-color: #c3deca;
+	border-top-color: #fff;
 	border-width: 10px;
 	left: 10%;
 	margin-left: -10px
@@ -3029,12 +3029,21 @@ background: #515151;
 .accordion-inner {
     border: 0px solid #F4F5F7;
 }
-blockquote p {
+blockquote p *:not(whitest){
     background: none repeat scroll 0 0 #EEEEEE;
 }
-blockquote p:after {
+blockquote p:after *:not(whitest){
     border-top-color: #EEEEEE;
 }
+
+blockquote whitest{
+    background: none repeat scroll 0 0 #fff;
+	
+}
+blockquote whitest:after{
+    border-top-color: #fff;
+}
+
 .carousel-control {
     background: none repeat scroll 0 0 #00B4FF;
     border: 0px solid #FFFFFF;
@@ -3283,6 +3292,9 @@ footer a:hover {
 
 white{
 	color:white;
+}
+white-bg{
+	background-color:white;
 }
 
 .nav-tabs > li > a {
