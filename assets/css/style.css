@@ -324,7 +324,7 @@ textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type=
 
 .todo-search
 {
-	background: url(../images/flat/todo/search.png) no-repeat 92% center /
+	
 }
 
 .todo li.todo-done
@@ -2902,7 +2902,7 @@ textarea:focus,
     color: #00B4FF;
 }
 .todo-search {
-    background: url("../images/flat/todo/search.png") no-repeat scroll 92% center / 16px 16px #EEEEEE;
+     
 }
 .todo li {
     background: url("../images/flat/todo/todo.png") no-repeat scroll 92% center / 20px 20px #000000;
