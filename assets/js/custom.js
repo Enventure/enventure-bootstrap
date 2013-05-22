@@ -238,10 +238,11 @@ window.location.hash = target;
 });
 });
 }(window.jQuery)
-
+/
 
 /*scrollspy call*/
-$('a[href^="#"]').bind('click', function(e) {
+
+$('a[href^="#"]:not([data-slide])').bind('click', function(e) {
 	e.preventDefault();
 	$('html, body').animate({ scrollTop: $(this.hash).offset().top }, 600);
 	
