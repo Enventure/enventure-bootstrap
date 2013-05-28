@@ -1304,7 +1304,8 @@ blockquote small:before
 .img-title
 {
 	position: absolute;
-	right: 25%
+	right: 25%;
+		max-height:100%;
 }
 
 .carousel-indicators
@@ -3308,6 +3309,10 @@ light{
 
 .enventure-blue {
 	background: #4384d3;
+}
+
+env-blue{
+color:#4384d3
 }
 
 .yellow {

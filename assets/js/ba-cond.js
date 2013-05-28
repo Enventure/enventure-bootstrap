@@ -8,5 +8,7 @@
  * 
  * Based on suggestions and sample code by Stephen Band and DBJDBJ in the
  * jquery-dev Google group: http://bit.ly/jqba1
+ * 
+ * jquery conditionals
  */
 (function($){$.fn.cond=function(){var e,a=arguments,b=0,f,d,c;while(!f&&b<a.length){f=a[b++];d=a[b++];f=$.isFunction(f)?f.call(this):f;c=!d?f:f?d.call(this,f):e}return c!==e?c:this}})(jQuery);
