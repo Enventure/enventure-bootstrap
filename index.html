@@ -114,8 +114,6 @@
 								<li class=""><a href="#learn">learn</a></li>
 								<li class=""><a href="#match">match</a></li>
 								<li class=""><a href="#incubate">incubate</a></li>
-								<li class=""><a href="donate.html">donate</a></li>
-								<li class=""><a href="about.html">about</a></li>
 							</ul>
 						</div>	
 					</div>
@@ -691,16 +689,16 @@
 					<div class="row">
 						<div class="span12">
 							<blockquote><black>
-							<p class="text-center"><enventure>enventure</enventure> is building a <strong>home</strong> for Houston’s medical innovators.</p>
-							<p class="text-center">Through regular <strong>meetups</strong>, stimulating <strong>lectures</strong>, hands-on <strong>workshops</strong>, one-on-one <strong>mentorship</strong>, diverse educational programs, and accessible <strong>funding</strong> for early stage medical startups, our non-profit aims to be the <strong>community</strong> and networking hub for young and aspiring medical entrepreneurs.</p>
-							<p class="text-center"><strong>Join us</strong> in giving Houston the <strong>momentum</strong> it needs to become the <strong>#1 city</strong> for life science entrepreneurship.</p>
-							</black>
-								</blockquote>
+								<p class="text-center"><enventure>enventure</enventure> is building a <strong>home</strong> for Houston’s medical innovators.</p>
+								<p class="text-center">Through regular <strong>meetups</strong>, stimulating <strong>lectures</strong>, hands-on <strong>workshops</strong>, one-on-one <strong>mentorship</strong>, diverse educational programs, and accessible <strong>funding</strong> for early stage medical startups, our non-profit aims to be the <strong>community</strong> and networking hub for young and aspiring medical entrepreneurs.</p>
+								<p class="text-center"><strong>Join us</strong> in giving Houston the <strong>momentum</strong> it needs to become the <strong>#1 city</strong> for life science entrepreneurship.</p>
+								</black>
+							</blockquote>
 							<ul class="footer-links">
 								<li>
-								<p><small><light>Copyright &copy; 2013 <enventure>enventure</enventure>. All rights reserved. <enventure>enventure</enventure> is a not for profit community.</light></small></p>
+									<p><small><light>Copyright &copy; 2013 <enventure>enventure</enventure>. All rights reserved. <enventure>enventure</enventure> is a not for profit community.</light></small></p>
 								</li>
-									<li>
+								<li>
 									<a class="thumbnail-social-icon" href="http://www.facebook.com/enventuremed" target="_blank"><img alt="" src="assets/images/social-icon/Facebook.png"></a>
 								</li>
 								<li>
@@ -717,7 +715,7 @@
 		<!-- end: sticky area -->	
 		
 		
-		<!-- start: script -->
+		<!-- start: js load -->
 		<script src="assets/js/jquery.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/modernizr.js"></script>
@@ -733,9 +731,11 @@
 		<script src="assets/js/bootstrap-tab.js"></script>
 		<script src="assets/js/bootstrap-carousel.js"></script>
 		<script src="api_key.js"></script>
-		<script id="config" type="text/javascript" charset="utf-8">
-			
-			/*meetup script*/
+		<script id="config" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- end: js load -->
+		<!-- start: meetup script -->
+		<script>
 			var $parameters = {
 				urlname: "enventure",
 				width: 300,
@@ -743,14 +743,14 @@
 				_name: "Meetup Group Stats",
 				_description: "Shows basic stats on your favorite Meetup group."
 			};
-			var $queries = {
-				groups: function() { 
-					return mup_widget.api_call("/groups", {group_urlname: $parameters.urlname});
-				},
-				events: function() {
-					return mup_widget.api_call("/events", {group_urlname: $parameters.urlname, page: '1'});
-				}
-			};
+	var $queries = {
+		groups: function() { 
+			return mup_widget.api_call("/groups", {group_urlname: $parameters.urlname});
+		},
+		events: function() {
+			return mup_widget.api_call("/events", {group_urlname: $parameters.urlname, page: '1'});
+		}
+	};
 		</script>
 		<script type="text/javascript" charset="utf-8">
 			mup_widget.with_jquery(function($, ctx) {
@@ -886,7 +886,21 @@
 				});
 			});
 		</script>
-		<!-- end: script -->
+		<!-- end: meetup script -->
+		
+		<!-- start: google analytics -->
+		
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+									})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-41228343-1', 'enventure.org');
+			ga('send', 'pageview');
+			
+		</script>
+		<!-- end: google analytics -->
 		
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
