@@ -57,7 +57,7 @@
 							<span><i class="icon-reorder"></i></span>
 						</a>
 						
-						<a class="brand" href="#home">enventure.</a>
+						<a class="brand" href="index.html">enventure.</a>
 						
 						<div id="top-navigation" class="nav-collapse subnav-collapse collapse">
 							<ul class="nav pull-right">
@@ -75,7 +75,7 @@
 			
 		</header>
 		
-
+		
 		<!-- start: section-events -->
 		<div class="section-wrapper">
 			<a class="anchor" id="events"></a>
@@ -107,7 +107,7 @@
 						<div class="responsive-iframe-container">
 							<iframe class="hide-under-768" src="https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
 							<iframe class="show-under-768" src="https://www.google.com/calendar/embed?showTitle=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
+							
 						</div>
 					</div>
 				</div>
@@ -115,7 +115,7 @@
 		</div>
 		
 		<!-- end: section-events -->	
-
+		
 		
 		<!-- start: footer -->
 		<footer>
@@ -216,6 +216,7 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/modernizr.js"></script>
 		<script src="assets/js/ba-cond.js"></script>
+		<script src="assets/js/isotope.js"></script>
 		<script src="assets/js/cookie.js"></script>
 		<script src="assets/js/dropkick.js"></script>
 		<script src="assets/js/tweet.js"></script>
@@ -233,14 +234,14 @@
 				_name: "Meetup Group Stats",
 				_description: "Shows basic stats on your favorite Meetup group."
 			};
-	var $queries = {
-		groups: function() { 
-			return mup_widget.api_call("/groups", {group_urlname: $parameters.urlname});
-		},
-		events: function() {
-			return mup_widget.api_call("/events", {group_urlname: $parameters.urlname, page: '1'});
-		}
-	};
+			var $queries = {
+				groups: function() { 
+					return mup_widget.api_call("/groups", {group_urlname: $parameters.urlname});
+				},
+				events: function() {
+					return mup_widget.api_call("/events", {group_urlname: $parameters.urlname, page: '1'});
+				}
+			};
 		</script>
 		<script type="text/javascript" charset="utf-8">
 			mup_widget.with_jquery(function($, ctx) {
