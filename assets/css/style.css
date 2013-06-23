@@ -3494,3 +3494,7 @@ black{
     width: 100%;
     height: 100%;
 }
+
+.blog-img-content img {
+	max-height:225px;
+}
