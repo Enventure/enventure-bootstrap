@@ -3,7 +3,11 @@ body
 	color: #026873;
 	margin: 0;
 	font: 300 1em/20px "Lato",sans-serif;
-	background: #eff0e9
+	background: #eff0e9;
+}
+
+.first{
+    padding-top:77px
 }
 
 a
@@ -89,7 +93,7 @@ i:hover
 
 .navbar
 {
-	margin-bottom: 0
+	margin-bottom: -77px
 }
 
 .home
@@ -3498,3 +3502,4 @@ black{
 .blog-img-content img {
 	max-height:225px;
 }
+

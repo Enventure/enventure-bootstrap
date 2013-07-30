@@ -248,3 +248,32 @@ $('a[href^="#"]:not([data-slide])').bind('click', function(e) {
 	
 	// edit: Opera requires the "html" elm. animated
 });
+
+/*sticky nav*/
+/* Handles the page being scrolled by ensuring the navigation is always in
+ * view.
+ */
+function handleScroll(){
+
+  // check that this is a relatively modern browser
+  if (window.XMLHttpRequest){
+
+    // determine the distance scrolled down the page
+    var offset = window.pageYOffset
+               ? window.pageYOffset
+               : document.documentElement.scrollTop;
+
+    // set the appropriate class on the navigation
+    document.getElementById('navigation').className =
+        (offset > 400 ? 'navbar navbar-fixed-top' : 'navbar');
+
+  }
+
+}
+
+// add the scroll event listener
+if (window.addEventListener){
+  window.addEventListener('scroll', handleScroll, false);
+}else{
+  window.attachEvent('onscroll', handleScroll);
+}

@@ -4355,7 +4355,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar {
   *position: relative;
-  *z-index: 2;
+  *z-index 1;
   margin-bottom: 20px;
   overflow: visible;
 }
