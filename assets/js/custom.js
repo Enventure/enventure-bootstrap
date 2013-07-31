@@ -265,7 +265,7 @@ function handleScroll(){
 
     // set the appropriate class on the navigation
     document.getElementById('navigation').className =
-        (window.innerWidth >= 980 ? (offset > 400 ? 'navbar navbar-fixed-top' : 'navbar'):(window.innerWidth >= 768 ? (offset > 400 ? 'navbar navbar-fixed-top-66' : 'navbar'):((window.innerWidth >= 480 ? (offset > 350 ? 'navbar navbar-fixed-top-46' : 'navbar'):(offset > 250 ? 'navbar navbar-fixed-top-46' : 'navbar')))));
+        (window.innerWidth >= 980 ? (offset > 400 ? 'navbar navbar-fixed-top' : 'navbar'):(window.innerWidth >= 768 ? (offset > 400 ? 'navbar navbar-fixed-top' : 'navbar'):((window.innerWidth >= 480 ? (offset > 350 ? 'navbar navbar-fixed-top' : 'navbar'):(offset > 250 ? 'navbar navbar-fixed-top' : 'navbar')))));
       document.getElementById('first').className =
         (window.innerWidth >= 980 ? (offset > 400 ? 'first grey' : 'grey'):(window.innerWidth >= 768 ? (offset > 400 ? 'first-66 grey' : 'grey'):((window.innerWidth >= 480 ? (offset > 350 ? 'first-46 grey' : 'grey'):(offset > 250 ? 'first-46 grey' : 'grey')))));
 
