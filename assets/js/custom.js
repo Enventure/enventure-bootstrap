@@ -266,6 +266,8 @@ function handleScroll(){
     // set the appropriate class on the navigation
     document.getElementById('navigation').className =
         (offset > 400 ? 'navbar navbar-fixed-top' : 'navbar');
+      document.getElementById('first').className =
+        (offset > 400 ? 'first grey' : 'grey');
 
   }
 

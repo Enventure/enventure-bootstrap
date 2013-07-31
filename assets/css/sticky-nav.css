@@ -1,3 +1,8 @@
-body {
-  padding-top: 177px;
+.first{
+    padding-top:77px;
+}
+
+.navbar-fixed-top
+{
+	margin-bottom: -77px
 }

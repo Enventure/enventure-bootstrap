@@ -6,10 +6,6 @@ body
 	background: #eff0e9;
 }
 
-.first{
-    padding-top:77px
-}
-
 a
 {
 	color: #47a1a1;
@@ -91,9 +87,9 @@ i:hover
 	line-height:inherit
 }
 
-.navbar
-{
-	margin-bottom: -77px
+.navbar{
+    background: #515151;
+  margin-bottom: 0
 }
 
 .home
@@ -3309,7 +3305,7 @@ light{
 }
 
 .grey {
-	background:#eeeeee;
+	background:#eeeeee
 }
 
 .enventure-blue {
