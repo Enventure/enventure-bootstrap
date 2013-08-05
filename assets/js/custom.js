@@ -286,6 +286,6 @@ if (window.addEventListener){
 
 //clickable divs
 $(".clickMe").click(function(){
-     window.location=$(this).find("a").attr("href"); 
+     myWindow=window.open($(this).find("a").attr("href"),'_blank'); 
      return false;
 });

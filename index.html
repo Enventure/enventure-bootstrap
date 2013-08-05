@@ -22,11 +22,11 @@
 <link href="assets/css/isotope.css" rel="stylesheet">
 <link href="assets/css/slider.css" rel="stylesheet">
 <link href="assets/css/flat-ui.css" rel="stylesheet">
-
-
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/meetup.css">
+
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
 <!-- end: CSS -->
 
 <!-- start: google analytics -->
@@ -198,19 +198,21 @@
             <section id="SandBox" class="anim150">
 			<nav class="wrapper ns wf">
 				<div class="set ib">
-					<h5>Filter</h5>
 					<ul>
 						<li class="button filter anim150" data-role="button" data-filter="all">View All</li>
-						<li class="button filter anim150" data-tole="button" data-filter="hit">Health IT</li>
-                        <li class="button filter anim150" data-filter="devices">Devices</li>
-                        <li class="button filter anim150" data-filter="biotech">Biotech</li>
-						<li class="button filter anim150" data-filter="edu">Open Education</li>
-						<li class="button filter anim150" data-filter="space">Office Space</li>
-                        <li class="button filter anim150" data-filter="accelerator">Accelerator</li>
+						<li class="button filter anim150" data-tole="button" data-filter="hit"><i class="icon-terminal"></i> Health IT</li>
+                        <li class="button filter anim150" data-filter="devices"><i class="icon-stethoscope"></i> Devices</li>
+                        <li class="button filter anim150" data-filter="biotech"><i class="icon-beaker"></i> Biotech</li>
+						<li class="button filter anim150" data-filter="edu"><i class="icon-key"></i> Biz Education</li>
+						<li class="button filter anim150" data-filter="space"><i class="icon-group"></i> CoWorking</li>
+                        <li class="button filter anim150" data-filter="accelerator"><i class="icon-rocket"></i> Accelerator</li>
+                        <!--
                         <li class="button filter anim150" data-filter="seed">Seed Funding</li>
                         <li class="button filter anim150" data-filter="vc">VC Funding</li>
-                        <li class="button filter anim150" data-filter="job">Job Matching</li>
-                        <li class="button filter anim150" data-filter="md">MD Services</li>
+-->
+                        <li class="button filter anim150" data-filter="jobs"><i class="icon-puzzle-piece"></i> Job Matching</li>
+                        <li class="button filter anim150" data-filter="meetup"><i class="icon-coffee"></i> Meetups</li>
+                        <!--<li class="button filter anim150" data-filter="md"><i class="icon-user-md"></i> MD Services</li>-->
 						<li class="break"></li>
 					</ul>
 				</div>
@@ -219,7 +221,7 @@
 			</nav>
 			<div class="wrapper">
 				<ul class="wf ns">
-					<li class="mix hit devices biotech edu space accelerator seed job" data-name="enventure">
+					<li class="mix hit devices biotech edu space accelerator jobs" data-name="enventure">
 						<div class="content anim150">
 							
 							<div class="spinner wf">
@@ -236,7 +238,7 @@
 						</div>
 					</li>
 					<li class="mix edu" data-name="rice alliance">
-						<div class="clickMe content">
+						<div class="content">
 							<div class="spinner wf">
 								<span class="side s_left">
 									<span class="fill"></span>
@@ -245,10 +247,10 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/ra.jpg" onload="imgLoaded($(this))"/>
-							</div>
-                            <a href="http://alliance.rice.edu" target="_blank"></a>
+				                <a href="http://alliance.rice.edu"></a>
+                            </div>
 						</div>
 					</li>
 					<li class="mix hit edu" data-name="health 2.0 houston">
@@ -261,8 +263,9 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/h20.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://www.health20houston.com"></a>
 							</div>
 
 						</div>
@@ -277,8 +280,9 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/bh.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://www.biohouston.org"></a>
 							</div>
 
 						</div>
@@ -293,8 +297,9 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/ph.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://www.platformhouston.com"></a>
 							</div>
 						</div>
 					</li>
@@ -308,12 +313,13 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/os.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://www.owlspark.com"></a>
 							</div>
 						</div>
 					</li>
-					<li class="mix md" data-name="Society of Physician Entrepreneurs">
+					<!--<li class="mix md" data-name="Society of Physician Entrepreneurs">
 						<div class="content">
 							<div class="spinner wf">
 								<span class="side s_left">
@@ -323,11 +329,13 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/sope.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://sopenet.org"></a>
 							</div>
 						</div>
-					</li>
+					</li>-->
+                    
 					<li class="mix space edu" data-name="brightwork">
 						<div class="content">
 							<div class="spinner wf">
@@ -338,12 +346,13 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/bw.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://brightworkcoresearch.com"></a>
 							</div>
 						</div>
 					</li>
-					<li class="mix space hit biotech devices accelerator" data-name="HTC">
+                    <li class="mix space" data-name="caroline collective">
 						<div class="content">
 							<div class="spinner wf">
 								<span class="side s_left">
@@ -353,8 +362,41 @@
 									<span class="fill"></span>
 								</span>
 							</div>
-							<div class="img_wrapper anim150">
+							<div class="clickMe img_wrapper anim150">
+								<img src="assets/images/map/cc.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://carolinecollective.cc"></a>
+							</div>
+						</div>
+					</li>
+                    <li class="mix jobs" data-name="AngelList">
+						<div class="content">
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="clickMe img_wrapper anim150">
+								<img src="assets/images/map/al.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://angel.co"></a>
+							</div>
+						</div>
+					</li>
+					<li class="mix biotech devices accelerator" data-name="HTC">
+						<div class="content">
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="clickMe img_wrapper anim150">
 								<img src="assets/images/map/htc.jpg" onload="imgLoaded($(this))"/>
+                                <a href="http://www.houstontech.org"></a>
 							</div>
 						</div>
 					</li>
@@ -1091,12 +1133,16 @@
 								</div>
 							</div>	
 							<ul class="contact-footer">
-								<li>
-									<i class="icon-phone"></i> (832) 224-6395
-								</li>
+								
 								<li>
 									<i class="icon-envelope-alt"></i> <a href="mailto:team@enventure.org?Subject=Website%20Question">team@enventure.org</a> 
-								</li>						
+								</li>
+                                <li>
+									<i class="icon-phone"></i> (832) 224-6395
+								</li>
+                                <li>
+									<i class="icon-map-marker"></i> 6500 Main St #1040<br>   Houston, TX 77030
+								</li>
 							</ul>
 							
 							<form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

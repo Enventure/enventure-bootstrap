@@ -266,8 +266,8 @@ h6 {
       background-color: #5dade2; }
     .btn.btn-info:active, .btn.btn-info.active {
       background-color: #2383c4; }
-  .btn.btn-danger {
-    background-color: #e74c3c; }
+  /*.btn.btn-danger {
+    background-color: #e74c3c; }*/
     .btn.btn-danger:hover, .btn.btn-danger:focus {
       background-color: #ec7063; }
     .btn.btn-danger:active, .btn.btn-danger.active {

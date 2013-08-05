@@ -3522,3 +3522,8 @@ black{
   display: inline-block; /* required for webkit browsers */
 }
 }
+
+.btn-danger {
+  background-color: #bf0a30;
+  *background-color: #bf0a30;
+}
