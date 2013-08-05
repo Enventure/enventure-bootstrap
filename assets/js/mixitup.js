@@ -32,9 +32,9 @@
 					filterSelector : '.filter',
 					sortSelector : '.sort',
 					buttonEvent: 'click',
-					effects : ['fade', 'scale'],
+					effects : ['fade', 'scale', 'grayscale'],
 					listEffects : null,
-					easing : 'smooth',
+					easing : 'windback',
 					layoutMode: 'grid',
 					targetDisplayGrid : 'inline-block',
 					targetDisplayList: 'block',
@@ -503,17 +503,10 @@
 		
 		// SETUP EASING
 
-		config.easingFallback = 'ease-in-out';
-		if(config.easing == 'smooth')config.easing = 'cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-		if(config.easing == 'snap')config.easing = 'cubic-bezier(0.77, 0, 0.175, 1)';
-		if(config.easing == 'windback'){
+		
 			config.easing = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
 			config.easingFallback = 'cubic-bezier(0.175, 0.885, 0.320, 1)'; // Fall-back for old webkit, with no values > 1 or < 1
-		};
-		if(config.easing == 'windup'){
-			config.easing = 'cubic-bezier(0.6, -0.28, 0.735, 0.045)',
-			config.easingFallback = 'cubic-bezier(0.6, 0.28, 0.735, 0.045)';
-		};
+		
 		
 		// USE LIST SPECIFIC EFFECTS IF DECLARED
 		
@@ -522,13 +515,9 @@
 		// BUILD EFFECTS STRINGS & SKIP IF IE8
 	
 		if (Array.prototype.indexOf){
-			config.fade = effectsOut.indexOf('fade') > -1 ? '0' : '';
-			config.scale = effectsOut.indexOf('scale') > -1 ? 'scale(.01)' : '';
-			config.rotateZ = effectsOut.indexOf('rotateZ') > -1 ? 'rotate(180deg)' : '';
-			config.rotateY = effectsOut.indexOf('rotateY') > -1 ? 'rotateY(90deg)' : '';
-			config.rotateX = effectsOut.indexOf('rotateX') > -1 ? 'rotateX(90deg)' : '';
-			config.blur = effectsOut.indexOf('blur') > -1 ? 'blur(8px)' : '';
-			config.grayscale = effectsOut.indexOf('grayscale') > -1 ? 'grayscale(100%)' : '';
+			config.fade = '0';
+			config.scale = 'scale(.01)';
+			config.grayscale = 'grayscale(100%)';
 		};
 		
 		// DECLARE NEW JQUERY OBJECTS FOR GROUPING
