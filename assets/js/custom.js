@@ -283,3 +283,9 @@ if (window.addEventListener){
 }else{
   window.attachEvent('onscroll', handleScroll);
 }
+
+//clickable divs
+$(".clickMe").click(function(){
+     window.location=$(this).find("a").attr("href"); 
+     return false;
+});
