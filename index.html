@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="assets/css/sticky-nav.css">
 <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
 <link href="assets/css/font-awesome.css" rel="stylesheet">
-<link href="assets/css/font-awesome-ie7.min.css" rel="stylesheet">
+<link href="assets/css/font-awesome-ie7.css" rel="stylesheet">
 <link href="assets/css/isotope.css" rel="stylesheet">
 <link href="assets/css/slider.css" rel="stylesheet">
 <link href="assets/css/flat-ui.css" rel="stylesheet">
@@ -43,6 +43,9 @@
 	})();
 	
 </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/js/mixitup.js"></script>
 <!-- end: google analytics -->
 
 <!--[if IE 9]>
@@ -159,15 +162,9 @@
 								<img class="featurette-image smaller pull-left" src="assets/images/texas.png">
 								<h2 class="featurette-heading">Hello, <span class="muted">Houston.</span></h2>
 								<p class="lead">Sign up to receive weekly event updates, relevant news, and educational resources.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="span8 offset2">
-							<div class="row-fluid">
-								<div id="mc_embed_signup">
+                                <div id="mc_embed_signup">
 									<form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-										<div class="span6 mc-field-group">
+										<div class="span4 mc-field-group">
 											<input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 											
 										</div>
@@ -178,15 +175,16 @@
 												<p>We'll be sending you updates each week on Houston happenings.</p>
 											</div>
 										</div>
-										<div class="span6 clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-block">
+										<div class="span3 clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-block">
 										</div>
 									</form>
 								</div>
-							</div>
+                            </div>
 						</div>
 					</div>
+					
                     <div class="row">
-                        <h2 align="center">What can <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#map">#htx</button> do for you?</h2>
+                        <h2 align="center">What can <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#map"><i class="icon-map-marker"></i> Houston <i class="icon-sort-by-attributes"></i></button> do for you?</h2>
                     </div>
 				</div>
 			</div>
@@ -195,16 +193,24 @@
 		<!--End mc_embed_signup-->
 		
         <!-- start: meta map-->
-        <div id="map" class="collapse out shadow">
+        <div id="map" class="collapse in shadow">
             <section id="SandBox" class="anim150">
 			<nav class="wrapper ns wf">
 				<div class="set ib">
 					<h5>Filter</h5>
 					<ul>
 						<li class="button filter anim150" data-role="button" data-filter="all">View All</li>
-						<li class="button filter anim150" data-tole="button" data-filter="dogs">Dogs</li>
-						<li class="button filter anim150" data-filter="cats">Cats</li>
-						<li class="button filter anim150" data-filter="krakens">Krakens</li>
+						<li class="button filter anim150" data-tole="button" data-filter="hit">Health IT</li>
+                        <li class="button filter anim150" data-filter="cats">Cats</li>
+                        <li class="button filter anim150" data-filter="devices">Devices</li>
+                        <li class="button filter anim150" data-filter="biotech">Biotech</li>
+						<li class="button filter anim150" data-filter="edu">Open Education</li>
+						<li class="button filter anim150" data-filter="space">Office Space</li>
+                        <li class="button filter anim150" data-filter="accelerator">Accelerator</li>
+                        <li class="button filter anim150" data-filter="seed">Seed Funding</li>
+                        <li class="button filter anim150" data-filter="funding">VC Funding</li>
+                        <li class="button filter anim150" data-filter="job">Job Matching</li>
+                        <li class="button filter anim150" data-filter="md">MD Services</li>
 						<li class="break"></li>
 					</ul>
 				</div>
@@ -255,9 +261,9 @@
 			</nav>
 			<div class="wrapper">
 				<ul class="wf ns">
-					<li class="mix dogs" data-name="Walter" data-age="8">
+					<li class="mix hit devices biotech edu space accelerator seed funding job" data-name="enventure">
 						<div class="content anim150">
-							<h5>Walter</h5>
+							<h5>enventure</h5>
 							<div class="spinner wf">
 								<span class="side s_left">
 									<span class="fill"></span>
@@ -267,10 +273,9 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/walter.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/en.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
-						<h4>Age: 8</h4>
 					</li>
 					<li class="mix cats" data-name="Bucky" data-age="9">
 						<div class="content">
@@ -284,7 +289,7 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/bucky.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/ra.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
 						<h4>Age: 9</h4>
@@ -301,7 +306,7 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/greg.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/h20.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
 						<h4>Age: 7</h4>
@@ -318,7 +323,7 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/abby.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/ph.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
 						<h4>Age: 2</h4>
@@ -335,7 +340,7 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/francis.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/os.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
 						<h4>Age: 5</h4>
@@ -352,7 +357,7 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/kraken.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/sope.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
 						<h4>Age: 3978</h4>
@@ -369,7 +374,7 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/lady.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/bw.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
 						<h4>Age: 3</h4>
@@ -386,7 +391,7 @@
 								</span>
 							</div>
 							<div class="img_wrapper anim150">
-								<img src="im/theo.jpg" onload="imgLoaded($(this))"/>
+								<img src="assets/images/map/htc.jpg" onload="imgLoaded($(this))"/>
 							</div>
 						</div>
 						<h4>Age: 1</h4>
@@ -1185,7 +1190,6 @@
 	
 	
 	<!-- start: js load -->
-	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/modernizr.js"></script>
 	<script src="assets/js/ba-cond.js"></script>
@@ -1199,7 +1203,6 @@
 	<script src="assets/js/dropdown.js"></script>
 	<script src="assets/js/bootstrap-tab.js"></script>
 	<script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/mixitup.js"></script>
 	<script src="api_key.js"></script>
 	<script id="config" type="text/javascript" charset="utf-8"></script>
 	
