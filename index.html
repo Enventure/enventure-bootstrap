@@ -1,1381 +1,1551 @@
-<!DOCTYPE html> <html lang="en"> <head>
-
-<!-- start:  Meta --> 
-<meta charset="utf-8">
-<title>Houston's Medical Entrepreneurs</title> 
-<meta  name="description" content="Building a community for Houston's medical entrepreneurs and innovators focused on medical devices, biotechnology, pharmaceuticals, and health IT.">  
-<meta  name="keywords" content="medical  devices, pharma,  health  IT,  incubator, medical,  biotech,  biodesign">
-<meta  name="author" content="enventure">
-<!-- end: Meta -->
-
-<!-- start: Mobile Specific -->
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<!-- end: Mobile Specific -->
-
-<!-- start: CSS -->
-<link href="mixitup.css" rel="stylesheet"> 
-<link rel="stylesheet" href="assets/css/bootstrap.css">
-<link rel="stylesheet" href="assets/css/sticky-nav.css">
-<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
-<link href="assets/css/font-awesome.css" rel="stylesheet">
-<link href="assets/css/font-awesome-ie7.css" rel="stylesheet">
-<link href="assets/css/isotope.css" rel="stylesheet">
-<link href="assets/css/slider.css" rel="stylesheet">
-<link href="assets/css/flat-ui.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/meetup.css">
-
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-
-<!-- end: CSS -->
-
-<!-- start: google analytics -->
-<script type="text/javascript">
-	
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-41228343-1']);
-	_gaq.push(['_trackPageview']);
-	
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-	
-</script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="assets/js/mixitup.js"></script>
-<script src="assets/js/mixitupextra.js"></script>
-<!-- end: google analytics -->
-
-<!--[if IE 9]>
-<style>.img-mask .flipper {display: none;}</style>
-<![endif]-->  
-<!--[if IE 8]>
-<style>.boxy{position:relative;width:150px;height:150px;}.flipper {overflow: hidden;}.subscribe input[type="text"], .subscribe textarea {width: 35%;}.plan-background {background-position: center;background-repeat: repeat-x;border:none;} .sign-background {background-position: center;background-repeat: repeat-x;border:none;}.countdown-background {background-position: center;background-repeat: repeat-x;border:none;}.page-title {background-position: center;background-repeat: repeat-x;border:none;}.img-mask .flipper {display: none;}</style>	
-<![endif]-->
-
-<!-- Fav and touch icons -->
-<link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-144.png">
-<link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72.png">
-<link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-57.png">
-<link rel="shortcut icon" href="assets/ico/favicon.png">
-
-</head>
-
-<body class="home">
-	
-	<!-- start: slider -->
+<!DOCTYPE html>
+<html lang="en">
     
-			<a class="" id="top"></a>
-	<div id="home" class="slider-wrapper">
-		<div id="slider" class="sl-slider-wrapper">
-			<div class="sl-slider">
-				<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-					<div class="sl-slide-inner">
-						<div class="deco" data-icon=""></div>
-						<blockquote><p>houston's medical entrepreneurs</p></blockquote>
-						<h2>Community</h2>
-						<a href="#events"><h2><span class="pull-right btn btn-large">learn more</span></h2></a>		
-					</div>
-				</div>
-				
-				<div class="sl-slide bg-2" data-orientation="vertical">
-					<div class="sl-slide-inner">
-						<div class="deco" data-icon=""></div>
-						<blockquote><p>generating medical solutions</p></blockquote>
-						<h2>Idea Machine</h2>
-						<a href="#learn"><h2><span class="btn btn-large">learn more</span></h2></a>
-					</div>
-				</div>
-				
-				<div class="sl-slide bg-3" data-orientation="horizontal">
-					<div class="sl-slide-inner">
-						<div class="deco" data-icon=""></div>
-						<blockquote><p>incubating your ideas through pilot stage</p></blockquote>
-						<h2>Flight School</h2>	
-						<a href="#incubate"><h2><span class="btn btn-large">learn more</span></h2></a>	
-					</div>
-				</div>				
-			</div>
-			<!-- /sl-slider -->
-			
-			<nav id="nav-arrows" class="nav-arrows">
-				<span class="nav-arrow-prev">Previous</span>
-				<span class="nav-arrow-next">Next</span>
-			</nav>
-			
-			<nav id="nav-dots" class="nav-dots">
-				<span class="nav-dot-current"></span>
-				<span></span>
-				<span></span>
-			</nav>
-			
-		</div>
-		<!-- /slider-wrapper -->
-	</div>
-	<!-- end: slider -->	
-	
-	<!-- start: sticky area -->
-		<header id="header">
-			
-			<!--start: navbar -->
-            <div id="navigation" class="navbar">
-                
-                    <div class="navbar-inner">
-                        <div class="container">
-                            <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
-                                <span><i class="icon-reorder"></i></span>
+    <head>
+        <!-- start: Meta -->
+        <meta charset="utf-8">
+        <title>Houston's Medical Entrepreneurs</title>
+        <meta name="description" content="Building a community for Houston's medical entrepreneurs and innovators focused on medical devices, biotechnology, pharmaceuticals, and health IT.">
+        <meta name="keywords" content="medical  devices, pharma,  health  IT,  incubator, medical,  biotech,  biodesign">
+        <meta name="author" content="enventure">
+        <!-- end: Meta -->
+        <!-- start: Mobile Specific -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <!-- end: Mobile Specific -->
+        <!-- start: CSS -->
+        <link href="assets/css/mixitup.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/sticky-nav.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href="assets/css/isotope.css" rel="stylesheet">
+        <link href="assets/css/slider.css" rel="stylesheet">
+        <link href="assets/css/flat-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/meetup.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <!-- end: CSS -->
+        <!-- start: google analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-41228343-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="assets/js/mixitup.js"></script>
+        <script src="assets/js/mixitupextra.js"></script>
+        <!-- end: google analytics -->
+        <!--[if IE 9]>
+<style>
+.img-mask .flipper {
+display: none;
+}
+</style>
+<![endif]-->
+        <!--[if IE 8]>
+<style>
+.boxy {
+position:relative;
+width:150px;
+height:150px;
+}
+.flipper {
+overflow: hidden;
+}
+.subscribe input[type="text"], .subscribe textarea {
+width: 35%;
+}
+.plan-background {
+background-position: center;
+background-repeat: repeat-x;
+border:none;
+}
+.sign-background {
+background-position: center;
+background-repeat: repeat-x;
+border:none;
+}
+.countdown-background {
+background-position: center;
+background-repeat: repeat-x;
+border:none;
+}
+.page-title {
+background-position: center;
+background-repeat: repeat-x;
+border:none;
+}
+.img-mask .flipper {
+display: none;
+}
+</style>
+<![endif]-->
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+    </head>
+    
+    <body class="home">
+        <!-- start: slider -->
+        <a class="" id="top"></a>
+        <div id="home" class="slider-wrapper">
+            <div id="slider" class="sl-slider-wrapper">
+                <div class="sl-slider">
+                    <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                        <div class="sl-slide-inner">
+                            <div class="deco" data-icon=""></div>
+                            <blockquote>
+                                <p>houston's medical entrepreneurs</p>
+                            </blockquote>
+                            <h2>Community</h2>
+                            <a href="#events">
+                                <h2>
+                                    <span class="pull-right btn btn-large">learn more</span>
+                                </h2>
                             </a>
-                            
-                            <a class="brand" href="#home">enventure.</a>
-                            
-                            <div id="top-navigation" class="nav-collapse subnav-collapse collapse">
-                                <ul class="nav pull-right">
-                                    <li class=""><a href="#events">events</a></li>
-                                    <li class=""><a href="#learn">learn</a></li>
-                                    <li class=""><a href="#match">match</a></li>
-                                    <li class=""><a href="#incubate">incubate</a></li>
-                                    <li class=""><a href="#top">top</a></li>
-                                </ul>
-                            </div>	
+                        </div>
+                    </div>
+                    <div class="sl-slide bg-2" data-orientation="vertical">
+                        <div class="sl-slide-inner">
+                            <div class="deco" data-icon=""></div>
+                            <blockquote>
+                                <p>generating medical solutions</p>
+                            </blockquote>
+                            <h2>Idea Machine</h2>
+                            <a href="#learn">
+                                <h2>
+                                    <span class="btn btn-large">learn more</span>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sl-slide bg-3" data-orientation="horizontal">
+                        <div class="sl-slide-inner">
+                            <div class="deco" data-icon=""></div>
+                            <blockquote>
+                                <p>incubating your ideas through pilot stage</p>
+                            </blockquote>
+                            <h2>Flight School</h2>
+                            <a href="#incubate">
+                                <h2>
+                                    <span class="btn btn-large">learn more</span>
+                                </h2>
+                            </a>
                         </div>
                     </div>
                 </div>
-            
-			<!--end: navbar -->
-			
-		</header>
-		
-		
-		<!-- Begin MailChimp Signup Form -->
-		<div id="first" class="grey">
-			<div class="section-wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="span12">
-							<blockquote>
-								<p style="text-align:center"><enventure>enventure</enventure> is your <strong>home</strong> for medical entrepreneurship in Houston.</p>
-							</blockquote>
-							<div class="featurette">
-								<img class="featurette-image smaller pull-left" src="assets/images/texas.png">
-								<h2 class="featurette-heading">Hello, <span class="muted">Houston.</span></h2>
-								<p class="lead">Sign up to receive weekly event updates, relevant news, and educational resources.</p>
-                                <div id="mc_embed_signup">
-									<form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-										<div class="span4 mc-field-group">
-											<input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-											
-										</div>
-										<div id="mce-responses" class="clear">
-											<div class="response" id="mce-error-response" style="display:none">Sorry let's try that again.
-											</div>
-											<div class="response" id="mce-success-response" style="display:none"><h4>Clear some room in your inbox.</h4>
-												<p>We'll be sending you updates each week on Houston happenings.</p>
-											</div>
-										</div>
-										<div class="span3 clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-block">
-										</div>
-									</form>
-								</div>
-                            </div>
-						</div>
-					</div>
-					
-                    <div class="row">
-                        <h1 align="center">What can <button type="button" class="btn btn-large btn-danger" data-toggle="collapse" data-target="#map"><i class="icon-sort-by-attributes"></i>&nbsp&nbsp Houston <i class="icon-map-marker"></i></button> do for you?</h2>
+                <!-- /sl-slider -->
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+                <nav id="nav-dots" class="nav-dots">
+                    <span class="nav-dot-current"></span>
+                    <span></span>
+                    <span></span>
+                </nav>
+            </div>
+            <!-- /slider-wrapper -->
+        </div>
+        <!-- end: slider -->
+        <!-- start: sticky area -->
+        <header id="header">
+            <!--start: navbar -->
+            <div id="navigation" class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+                            <span>
+                                <i class="icon-reorder"></i>
+                            </span>
+                        </a>
+                        <a class="brand" href="#home">enventure.</a>
+                        <div id="top-navigation" class="nav-collapse subnav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <li class="">
+                                    <a href="#events">events</a>
+                                </li>
+                                <li class="">
+                                    <a href="#learn">learn</a>
+                                </li>
+                                <li class="">
+                                    <a href="#match">match</a>
+                                </li>
+                                <li class="">
+                                    <a href="#incubate">incubate</a>
+                                </li>
+                                <li class="">
+                                    <a href="#top">top</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-				</div>
-			</div>
-		</div>
-		
-		<!--End mc_embed_signup-->
-		
-        <!-- start: meta map-->
-        <div id="map" class="collapse out shadow">
-            <section id="SandBox" class="anim150">
-			<nav class="wrapper ns wf">
-				<div class="set ib">
-					<ul>
-						<li class="button filter anim150" data-role="button" data-filter="all">View All</li>
-						<li class="button filter anim150" data-tole="button" data-filter="hit"><i class="icon-terminal"></i> Health IT</li>
-                        <li class="button filter anim150" data-filter="devices"><i class="icon-stethoscope"></i> Devices</li>
-                        <li class="button filter anim150" data-filter="biotech"><i class="icon-beaker"></i> Biotech</li>
-						<li class="button filter anim150" data-filter="edu"><i class="icon-book"></i> Education</li>
-						<li class="button filter anim150" data-filter="space"><i class="icon-group"></i> CoWorking</li>
-                        <li class="button filter anim150" data-filter="accelerator"><i class="icon-rocket"></i> Accelerator</li>
-                        <!--
-                        <li class="button filter anim150" data-filter="seed">Seed Funding</li>
-                        <li class="button filter anim150" data-filter="vc">VC Funding</li>
--->
-                        <li class="button filter anim150" data-filter="jobs"><i class="icon-puzzle-piece"></i> Job Matching</li>
-                        <li class="button filter anim150" data-filter="meetup"><i class="icon-coffee"></i> Meetups</li>
-                        <!--<li class="button filter anim150" data-filter="md"><i class="icon-user-md"></i> MD Services</li>-->
-						<li class="break"></li>
-					</ul>
-				</div>
-			
-				<div class="break ib"></div>
-			</nav>
-			<div class="wrapper">
-				<ul class="wf ns">
-					<li class="mix hit devices biotech edu space accelerator jobs" data-name="enventure">
-						<div class="content anim150">
-							
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="img_wrapper anim150">
-								<img src="assets/images/map/en.jpg" onload="imgLoaded($(this))"/>
-							</div>
-						</div>
-					</li>
-					<li class="mix edu" data-name="rice alliance">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/ra.jpg" onload="imgLoaded($(this))"/>
-				                <a href="http://alliance.rice.edu"></a>
+                </div>
+            </div>
+            <!--end: navbar -->
+        </header>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="first" class="grey">
+            <div class="section-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <blockquote>
+                                <p style="text-align:center">
+                                    <enventure>enventure</enventure> is your
+                                    <strong>home</strong> for medical entrepreneurship in Houston.</p>
+                            </blockquote>
+                            <div class="featurette">
+                                <img class="featurette-image smaller pull-left" src="assets/images/texas.png">
+                                <h2 class="featurette-heading">Hello,
+                                    <span class="muted">Houston.</span>
+                                </h2>
+                                <p class="lead">Sign up to receive weekly event updates, relevant news, and educational resources.</p>
+                                <div id="mc_embed_signup">
+                                    <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div class="span4 mc-field-group">
+                                            <input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                        </div>
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display:none">Sorry let's try that again.</div>
+                                            <div class="response" id="mce-success-response" style="display:none">
+                                                <h4>Clear some room in your inbox.</h4>
+                                                <p>We'll be sending you updates each week on Houston happenings.</p>
+                                            </div>
+                                        </div>
+                                        <div class="span3 clear">
+                                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-block">
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-						</div>
-					</li>
-					<li class="mix hit edu" data-name="health 2.0 houston">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/h20.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://www.health20houston.com"></a>
-							</div>
-
-						</div>
-					</li>
-                    <li class="mix hit biotech devices edu" data-name="biohouston">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/bh.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://www.biohouston.org"></a>
-							</div>
-
-						</div>
-					</li>
-					<li class="mix edu space" data-name="platform houston">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/ph.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://www.platformhouston.com"></a>
-							</div>
-						</div>
-					</li>
-					<li class="mix accelerator seed" data-name="owl spark">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/os.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://www.owlspark.com"></a>
-							</div>
-						</div>
-					</li>
-					<!--<li class="mix md" data-name="Society of Physician Entrepreneurs">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/sope.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://sopenet.org"></a>
-							</div>
-						</div>
-					</li>-->
-                    
-					<li class="mix space edu" data-name="brightwork">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/bw.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://brightworkcoresearch.com"></a>
-							</div>
-						</div>
-					</li>
-                    <li class="mix space" data-name="caroline collective">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/cc.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://carolinecollective.cc"></a>
-							</div>
-						</div>
-					</li>
-                    <li class="mix jobs" data-name="AngelList">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/al.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://angel.co"></a>
-							</div>
-						</div>
-					</li>
-					<li class="mix biotech devices accelerator" data-name="HTC">
-						<div class="content">
-							<div class="spinner wf">
-								<span class="side s_left">
-									<span class="fill"></span>
-								</span>
-								<span class="side s_right">
-									<span class="fill"></span>
-								</span>
-							</div>
-							<div class="clickMe img_wrapper anim150">
-								<img src="assets/images/map/htc.jpg" onload="imgLoaded($(this))"/>
-                                <a href="http://www.houstontech.org"></a>
-							</div>
-						</div>
-					</li>
-					
-					<li class="gap ib"></li>
-					<li class="gap ib"></li>
-					<li class="gap ib"></li>
-					<li class="break ib"></li>
-				</ul>
-			</div>
-		</section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 align="center">What can
+                            <button type="button" class="btn btn-large btn-danger" data-toggle="collapse" data-target="#map">
+                                <i class="icon-sort-by-attributes"></i>&nbsp&nbsp Houston
+                                <i class="icon-map-marker"></i>
+                            </button> do for you?</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End mc_embed_signup-->
+        <!-- start: meta map-->
+        <div id="map" class="collapse out">
+            <section id="SandBox" class="shadow anim150">
+                <nav class="wrapper ns wf">
+                    <div class="set ib">
+                        <ul>
+                            <li class="button filter anim150" data-role="button" data-filter="all">View All</li>
+                            <li class="button filter anim150" data-tole="button" data-filter="hit">
+                                <i class="icon-terminal"></i> Health IT</li>
+                            <li class="button filter anim150" data-filter="devices">
+                                <i class="icon-stethoscope"></i> Devices</li>
+                            <li class="button filter anim150" data-filter="biotech">
+                                <i class="icon-beaker"></i> Biotech</li>
+                            <li class="button filter anim150" data-filter="edu">
+                                <i class="icon-book"></i> Education</li>
+                            <li class="button filter anim150" data-filter="space">
+                                <i class="icon-group"></i> CoWorking</li>
+                            <li class="button filter anim150" data-filter="accelerator">
+                                <i class="icon-rocket"></i> Accelerator</li>
+                            <!-- <li class="button filter anim150" data-filter="seed">Seed Funding</li>
+<li class="button filter anim150" data-filter="vc">VC Funding</li>
+-->
+                            <li class="button filter anim150" data-filter="jobs">
+                                <i class="icon-puzzle-piece"></i> Job Matching</li>
+                            <li class="button filter anim150" data-filter="meetup">
+                                <i class="icon-coffee"></i> Meetups</li>
+                            <!--<li class="button filter anim150" data-filter="md"><i class="icon-user-md"></i> MD Services</li>-->
+                            <li class="break"></li>
+                        </ul>
+                    </div>
+                    <div class="break ib"></div>
+                </nav>
+                <div class="wrapper">
+                    <ul class="wf ns">
+                        <li class="mix hit devices biotech edu space accelerator jobs" data-name="enventure">
+                            <div class="content anim150">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="img_wrapper anim150">
+                                    <img src="assets/images/map/en.jpg" onload="imgLoaded($(this))" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix edu" data-name="rice alliance">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/ra.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://alliance.rice.edu"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix hit edu" data-name="health 2.0 houston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/h20.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.health20houston.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix hit biotech devices edu" data-name="biohouston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/bh.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.biohouston.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix edu space" data-name="platform houston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/ph.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.platformhouston.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix accelerator seed" data-name="owl spark">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/os.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.owlspark.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--<li class="mix md" data-name="Society of Physician Entrepreneurs">
+<div class="content">
+<div class="spinner wf">
+<span class="side s_left">
+<span class="fill"></span>
+</span>
+<span class="side s_right">
+<span class="fill"></span>
+</span>
+</div>
+<div class="clickMe img_wrapper anim150">
+<img src="assets/images/map/sope.jpg" onload="imgLoaded($(this))"/>
+<a href="http://sopenet.org"></a>
+</div>
+</div>
+</li>-->
+                        <li class="mix space edu" data-name="brightwork">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/bw.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://brightworkcoresearch.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix space" data-name="caroline collective">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/cc.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://carolinecollective.cc"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix jobs" data-name="AngelList">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/al.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://angel.co"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix biotech devices accelerator" data-name="HTC">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/htc.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.houstontech.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gap ib"></li>
+                        <li class="gap ib"></li>
+                        <li class="gap ib"></li>
+                        <li class="break ib"></li>
+                    </ul>
+                </div>
+            </section>
         </div>
         <!-- end: meta map-->
-    
-		<!-- start: section-events -->
-		<div class="section-wrapper">
-			<a class="anchor" id="events"></a>
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<h1><strong>events</strong><a class="btn pull-right" href="calendar.html">full calendar</a></h1>
-						
-					</div>
-				</div>
-				<div class="row">
-					<div class="span4">
+        <!-- start: section-events -->
+        <div class="section-wrapper">
+            <a class="anchor" id="events"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <h1>
+                            <strong>events</strong>
+                            <a class="btn pull-right" href="calendar.html">full calendar</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
                         <img class="small" src="assets/images/community.png">
-						<div class="mug-badge"></div>
-					</div>
-					<div class="span8">
-						<div class="todo mrm">
-										<div>
-											<h2 class="todo-search grey">School is in Session: Fall 2013 Workshops</h2>
-										</div>
-										<ul>
-											<li>
-												<div class="todo-icon icon-laptop"></div>
-												<a href="http://www.meetup.com/enventure/events/132140902/" target="_blank"><div class="todo-content">
-													<h4 class="todo-name alignleft">
-														 <strong>Software IP and Patenting</strong></h4>
-                                                        <h4 class="todo-name alignright">August 7</h4>
-													<div style="clear: both;"></div>
-													David McEwing clears the fog around software patenting
-												</div></a>
-											</li>
-											
-											<li>
-												<div class="todo-icon icon-unlock"></div>
-												<div class="todo-content">
-													<h4 class="todo-name alignleft">
-														<strong>Licensing Your Technology</strong></h4>
-                                                   <h4 class="todo-name alignright">September</h4>
-													<div style="clear: both;"></div>
-                                                    
-													Kevin Slawin MD: founder Bellicum Pharmaceuticals
-												</div>
-											</li>
-											
-											<li>
-												<div class="todo-icon icon-briefcase"></div>
-												<div class="todo-content">
-													<h4 class="todo-name alignleft">
-														<strong>Company Formation and Corporate Docs</strong></h4>
-                                                    <h4 class="todo-name alignright">October</h4>
-													<div style="clear: both;"></div>
-													Meg Boulware, Patent Attorney
-												</div>
-											</li>
-											
-											<li>
-												<div class="todo-icon icon-shopping-cart"></div>
-												<div class="todo-content">
-													<h4 class="todo-name alignleft">
-														<strong>Venture Deals, Mergers, and Aquisitions</strong></h4>
-                                                    <h4 class="todo-name alignright">November</h4>
-													<div style="clear: both;"></div>
-													Greg Guidroz: exiting CFO Tanox, Jim Graham: Santé Ventures
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div> <!-- /todo list -->
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		
-		<!-- end: section-events -->		
-		
-		<!-- start: learn -->
-		<div class="enventure-blue">
-			<div class="section-wrapper">
-				<a class="anchor" id="learn"></a>
-				<div class="container">
-					<div class="row">
-						<div class="span12">
-							<h1><white><strong>learn</strong></white></h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="span12">
-							<div class="featurette">
-								<img class="featurette-image pull-right smaller" src="assets/images/idea-machine.png">
-								<h2 class="featurette-heading"><white>DIY <light>curriculum.</light></white></h2>
-								<p class="lead"><white>Curated and original content for <strong>current</strong> and <strong>future</strong> medical entrepreneurs.</white></p>
-							</div>
-						</div>
-					</div>
-					<div class="tabbable">
-						<ul class="nav nav-tabs">
-							<li class="active">
-								<a href="#tab4" data-toggle="tab"><whites><i class="icon-large icon-user-md"></i> lectures</whites></a>
-								
-							</li>
-							<!--
-                            <li><a href="#tab1" data-toggle="tab"><whites><i class="icon-large fui-location-24"></i> local</whites></a></li>
-							-->
-                            <li><a href="#tab2" data-toggle="tab"><whites><i class="icon-large icon-hospital"></i> library</whites></a></li>
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane fade" id="tab1">
-								<white>
-									<h3>Local News/Articles/Resources</h3></white>
-								<div class="section-wrapper section-blog">
-									
-									<div class="container">
-										
-										<div class="row">
-											
-											<div class="span12">
-												
-												<div class="row">
-													
-													<div class="span6">
-														
-														<div class="white-content extra-padding">
-															
-															<div class="blog-info">
-																<a href="post.html"><div class="blog-title"><h4>BioHouston Breakfast with New TMC President, Dr. Robbins</h4></div></a>
-															</div>
-															<div class="clearfix"></div>
-															<div class="row-fluid">
-																
-																<div class="blog-img-content">
-																	<a href="post.html"><img src="assets/images/blog/robbins.jpg" alt="Photo-1"></a>
-																</div>											
-																<div class="blog-content">		
-																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis hic illo ab alias porro reiciendis suscipit necessitatibus beatae veniam cum impedit. necessitatibus beatae veniam cum impedit. Voluptates ipsum eligendi labore sint magni earum nam..</p>	
-																</div>
-																<span class="blog-calendar"><i class="icon-calendar pull-left"></i> May 5, 2013<br><i class="icon-user pull-left"></i> Amy Hurwitz</span>
-																<a class="btn pull-right" href="post.html">Read More</a>
-																
-															</div>
-															
-														</div>			
-														
-													</div>
-													
-													<div class="span6">
-														
-														<div class="white-content extra-padding">
-															
-															<div class="blog-info">
-																<a href="post.html"><div class="blog-title"><h4>HATRC: Houston's Newest Accelerator and Stuff</h4></div></a>
-															</div>
-															<div class="clearfix"></div>
-															<div class="row-fluid">
-																<div class="blog-img-content">
-																	<a href="post.html"><img src="assets/images/blog/possibilities.jpg" alt="Photo-1"></a>
-																</div>
-																<div class="blog-content">		
-																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis hic illo ab alias porro reiciendis suscipit necessitatibus beatae veniam cum impedit. necessitatibus beatae veniam cum impedit. Voluptates ipsum eligendi labore sint magni earum nam..</p>	
-																</div>
-																<span class="blog-calendar"><i class="icon-calendar pull-left"></i> Dec 4, 2012<br><i class="icon-user pull-left"></i> Matt Pautz</span>
-																<a class="btn pull-right" href="post.html">Read More</a>
-															</div>
-															
-														</div>
-														
-													</div>					
-													
-												</div>
-												
-												<div class="row">
-													
-													<div class="span6">
-														
-														<div class="white-content extra-padding">
-															
-															<div class="blog-info">
-																<a href="post.html"><div class="blog-title"><h4>BRIC</h4></div></a>
-																<a href="post.html" class="inline-link"><span><i class="icon-heart"></i>5</span></a>
-																<a href="post.html" class="inline-link"><span><i class="icon-comments"></i>9</span></a>
-															</div>
-															<div class="clearfix"></div>
-															<div class="row-fluid">
-																
-																<div class="blog-img-content">
-																	<a href="post.html"><img src="assets/images/large/4.jpg" alt="Photo-1"></a>
-																</div>
-																<div class="blog-content">		
-																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis hic illo ab alias porro reiciendis suscipit necessitatibus beatae veniam cum impedit. necessitatibus beatae veniam cum impedit. Voluptates ipsum eligendi labore sint magni earum nam..</p>	
-																</div>
-																<span class="blog-calendar"><i class="icon-calendar pull-left"></i> Jan 18, 2013</span>
-																<a class="btn pull-right" href="post.html">Read More</a>
-															</div>
-															
-														</div>
-														
-													</div>
-													
-													<div class="span6">
-														
-														<div class="white-content extra-padding">
-															
-															<div class="blog-info">
-																<a href="post.html"><div class="blog-title"><h4>Jeff Article</h4></div></a>
-																<a href="post.html" class="inline-link"><span><i class="icon-heart"></i>5</span></a>
-																<a href="post.html" class="inline-link"><span><i class="icon-comments"></i>9</span></a>
-															</div>
-															<div class="clearfix"></div>
-															<div class="row-fluid">
-																
-																<div class="blog-img-content">
-																	<a href="post.html"><img src="assets/images/large/2.jpg" alt="Photo-1"></a>
-																</div>
-																<div class="blog-content">		
-																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis hic illo ab alias porro reiciendis suscipit necessitatibus beatae veniam cum impedit. necessitatibus beatae veniam cum impedit. Voluptates ipsum eligendi labore sint magni earum nam..</p>	
-																</div>
-																<span class="blog-calendar"><i class="icon-calendar pull-left"></i> Jan 18, 2013</span>
-																<a class="btn pull-right" href="post.html">Read More</a>
-															</div>
-															
-														</div>
-														
-													</div>					
-													
-												</div>
-												
-												
-												
-												
-											</div>	
-											
-											
-											
-										</div>
-									</div>
-									
-								</div><!-- end: blog -->
-								
-								
-							</div>
-							<div class="tab-pane fade" id="tab2">
-								<white>
-									<div class="container">
-                                        <!--
-										<div class="row">
-											<h3>Recommended Reading</h3>
-											<div class="span3">
-												<div class="info-features">
-													<a href="http://www.meetup.com/enventure/events/127318612/" target="_blank" class="thumbnail" role="button"><img class="border" src="assets/images/event.png" alt="Idea-Machine"></a>
-												</div>
-											</div>
-										</div>
-                                        -->
-										<div class="row">
-											<h3>Workshops</h3>
-											<ul class="thumbnails">
-												<li class="span3">
-													<a href="#CFModal" class="thumbnail" role="button" data-toggle="modal"><img class="border" src="assets/learn/crowdfunding.cover.jpeg" alt=""></a>
-													<p>Implications of the JOBS act for crowdfunding your startup</p>
-													<!-- Modal -->
-													<div id="CFModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="CFModalLabel" aria-hidden="true">
-														<div class="modal-header">
-															<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-															<h3 id="CFModalLabel">Crowdfunding</h3>
-														</div>
-														<div class="modal-body">
-															
-															<div id="CFCarousel" class="carousel slide ">
-																<ol class="carousel-indicators">
-																	<li data-target="#CFCarousel" data-slide-to="0" class="active"></li>
-																	<li data-target="#CFCarousel" data-slide-to="1"></li>
-																	<li data-target="#CFCarousel" data-slide-to="2"></li>
-																	<li data-target="#CFCarousel" data-slide-to="3"></li>
-																	<li data-target="#CFCarousel" data-slide-to="4"></li>
-																	<li data-target="#CFCarousel" data-slide-to="5"></li>
-																	<li data-target="#CFCarousel" data-slide-to="6"></li>
-																	<li data-target="#CFCarousel" data-slide-to="7"></li>
-																	<li data-target="#CFCarousel" data-slide-to="8"></li>
-																	<li data-target="#CFCarousel" data-slide-to="9"></li>
-																	<li data-target="#CFCarousel" data-slide-to="10"></li>
-																	<li data-target="#CFCarousel" data-slide-to="11"></li>
-																	<li data-target="#CFCarousel" data-slide-to="12"></li>
-																	<li data-target="#CFCarousel" data-slide-to="13"></li>
-																	<li data-target="#CFCarousel" data-slide-to="14"></li>
-																	<li data-target="#CFCarousel" data-slide-to="15"></li>
-																</ol>
-																<!-- Carousel items -->
-																<div class="carousel-inner">
-																	<div class="active item"><img alt="" src="assets/learn/Crowdfunding.001.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.002.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.003.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.004.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.005.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.006.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.007.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.008.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.009.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.010.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.011.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.012.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.013.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.014.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/Crowdfunding.015.jpeg"></div>
-																</div>
-																<!-- Carousel nav -->
-																<a class="carousel-control left" href="#CFCarousel" data-slide="prev">&lsaquo;</a>
-																<a class="carousel-control right" href="#CFCarousel" data-slide="next">&rsaquo;</a>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="span3">
-													
-													<a href="#IPModal" class="thumbnail" role="button" data-toggle="modal"><img class="border" src="assets/learn/IP.cover.jpeg" alt=""></a>
-													<p>Intro to intellectual property and provisional patents</p>
-													<!-- Modal -->
-													<div id="IPModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="IPModalLabel" aria-hidden="true">
-														<div class="modal-header">
-															<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-															<h3 id="IPModalLabel">IP 101</h3>
-														</div>
-														<div class="modal-body">
-															
-															<div id="IPCarousel" class="carousel slide ">
-																<ol class="carousel-indicators">
-																	<li data-target="#IPCarousel" data-slide-to="0" class="active"></li>
-																	<li data-target="#IPCarousel" data-slide-to="1"></li>
-																	<li data-target="#IPCarousel" data-slide-to="2"></li>
-																	<li data-target="#IPCarousel" data-slide-to="3"></li>
-																	<li data-target="#IPCarousel" data-slide-to="4"></li>
-																	<li data-target="#IPCarousel" data-slide-to="5"></li>
-																	<li data-target="#IPCarousel" data-slide-to="6"></li>
-																	<li data-target="#IPCarousel" data-slide-to="7"></li>
-																	<li data-target="#IPCarousel" data-slide-to="8"></li>
-																	<li data-target="#IPCarousel" data-slide-to="9"></li>
-																	<li data-target="#IPCarousel" data-slide-to="10"></li>
-																	<li data-target="#IPCarousel" data-slide-to="11"></li>
-																	<li data-target="#IPCarousel" data-slide-to="12"></li>
-																	<li data-target="#IPCarousel" data-slide-to="13"></li>
-																	<li data-target="#IPCarousel" data-slide-to="14"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="15"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="16"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="17"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="18"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="19"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="20"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="21"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="22"></li>
-																	
-																	<li data-target="#IPCarousel" data-slide-to="23"></li>
-																	
-																</ol>
-																<!-- Carousel items -->
-																<div class="carousel-inner">
-																	<div class="active item"><img alt="" src="assets/learn/IP.001.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.002.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.003.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.004.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.005.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.006.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.007.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.008.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.009.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.010.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.011.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.012.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.013.jpeg"></div>
-																	<div class="item"><img alt="" src="assets/learn/IP.014.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.015.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.016.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.017.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.018.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.019.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.020.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.021.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.022.jpeg"></div>
-																	
-																	<div class="item"><img alt="" src="assets/learn/IP.023.jpeg"></div>
-																</div>
-																<!-- Carousel nav -->
-																<a class="carousel-control left" href="#IPCarousel" data-slide="prev">&lsaquo;</a>
-																<a class="carousel-control right" href="#IPCarousel" data-slide="next">&rsaquo;</a>
-															</div>
-														</div>
-													</div>
-													
-												</li>	
-											</ul>
-										</div>
-									</div>
-								</white>
-							</div>
-							
-							<div class="tab-pane fade in active" id="tab4">
-								<div class="row">
-									<div class="span4">
-										<div class="white-content">
-											<div class="img-mask hover-mask">
-												<div class="embed-container">
-													<iframe src="http://www.youtube.com/embed/c876c4AR2Bo?rel=0" frameborder="0" allowfullscreen></iframe>
-												</div>
-											</div>							
-											<a href="#cohnModal" data-toggle="modal"><h5>Billy Cohn, MD <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
-											<p>Bench to Biotech: "Building the Tools of Innovation for Tomorrow"</p>
-										</div>
-									</div>
-									<div class="span4">
-										<div class="white-content">
-											<div class="img-mask hover-mask">
-												<div class="embed-container">
-													<iframe width="560" height="315" src="http://www.youtube.com/embed/XfwzqI3wthk?rel=0" frameborder="0" allowfullscreen></iframe>									
-												</div>
-											</div>
-											<a href="#"><h5>Nancy Chang, Glauco Souza, Jack Gill, and Brad Burke <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
-											<p>Bench to Biotech: "Launching Your First Startup"</p>						
-										</div>
-									</div>
-									<div class="span4">
-										<div class="white-content">
-											<div class="img-mask hover-mask">
-												<div class="embed-container">
-													<iframe src="http://www.youtube.com/embed/irILymcgQp0?rel=0" frameborder="0" allowfullscreen></iframe>
-												</div>
-											</div>							
-											<a href="#"><h5>Rodney Perkins, MD <span class="white-title"><i class="icon-chevron-right"></i></span></h5></a>
-											<p>Bench to Biotech: "Lifetime Lessons from a Stanford Medical Entrepreneur"</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="span12">
-						<blockquote><p><enventure>enventure</enventure> wants to learn from you, too. What content would you like to see next?</p></blockquote>
-						<a class="btn btn-dark" href="mailto:team+learn@enventure.org?Subject=Learn%20Content%20Suggestion" target="_blank">Let us know.</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- end: learn -->
-	
-	<!-- start: match -->
-	<div class="grey">
-		<div class="section-wrapper">
-			<a class="anchor" id="match"></a>
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<h1><strong>match</strong></h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span12">
-						<div class="featurette">
-							<img class="featurette-image smaller pull-left" src="assets/images/match.png">
-							<h2 class="featurette-heading">Find your <span class="muted">Match.</span></h2>
-							<p class="lead">The <strong>match</strong> program connects talented students and aspiring entrepreneurs with local medical startups.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span6">
-						<h3>Talent:</h3>
-						<blockquote><whitest><p>Experience startup culture. Take charge of a project. Love what you do.</p></whitest></blockquote>
-						<p>Send us your resume and a cover letter, and <enventure>enventure</enventure> will attempt to match you with the right Houston startups.</p>
-					</div>
-					<div class="span6">
-						<h3>Startups:</h3>
-						<blockquote><p>Complete projects you've always wanted to do, but never had the bandwidth for.</p></blockquote>
-						<p>Send us a quick email, and <enventure>enventure</enventure> will match your startup with qualified students and aspiring entrepreneurs.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span8 offset2">
-						<a href="mailto:team+match@enventure.org?Subject=enventure%20match" target="_blank" class="btn btn-block btn-large">Connect</a>
-					</div>
-				</div>
-				<!--
-<h6>and we highly recommend</h6>
+                        <div class="mug-badge"></div>
+                    </div>
+                    <div class="span8">
+                        <div class="todo mrm">
+                            <div>
+                                <h2 class="todo-search grey">School is in Session: Fall 2013 Workshops</h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="todo-icon icon-laptop"></div>
+                                    <a href="http://www.meetup.com/enventure/events/132140902/" target="_blank">
+                                        <div class="todo-content">
+                                            <h4 class="todo-name alignleft">
+                                                <strong>Software IP and Patenting</strong>
+                                            </h4>
+                                            <h4 class="todo-name alignright">August 7</h4>
+                                            <div style="clear: both;"></div>David McEwing clears the fog around software patenting</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="todo-icon icon-unlock"></div>
+                                    <div class="todo-content">
+                                        <h4 class="todo-name alignleft">
+                                            <strong>Licensing Your Technology</strong>
+                                        </h4>
+                                        <h4 class="todo-name alignright">September</h4>
+                                        <div style="clear: both;"></div>Kevin Slawin MD: founder Bellicum Pharmaceuticals</div>
+                                </li>
+                                <li>
+                                    <div class="todo-icon icon-briefcase"></div>
+                                    <div class="todo-content">
+                                        <h4 class="todo-name alignleft">
+                                            <strong>Company Formation and Corporate Docs</strong>
+                                        </h4>
+                                        <h4 class="todo-name alignright">October</h4>
+                                        <div style="clear: both;"></div>Meg Boulware, Patent Attorney</div>
+                                </li>
+                                <li>
+                                    <div class="todo-icon icon-shopping-cart"></div>
+                                    <div class="todo-content">
+                                        <h4 class="todo-name alignleft">
+                                            <strong>Venture Deals, Mergers, and Aquisitions</strong>
+                                        </h4>
+                                        <h4 class="todo-name alignright">November</h4>
+                                        <div style="clear: both;"></div>Greg Guidroz: exiting CFO Tanox, Jim Graham: Santé Ventures</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /todo list -->
+                </div>
+            </div>
+        </div>
+        <!-- end: section-events -->
+        <!-- start: learn -->
+        <div class="enventure-blue">
+            <div class="section-wrapper">
+                <a class="anchor" id="learn"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <h1>
+                                <white>
+                                    <strong>learn</strong>
+                                </white>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <div class="featurette">
+                                <img class="featurette-image pull-right smaller" src="assets/images/idea-machine.png">
+                                <h2 class="featurette-heading">
+                                    <white>DIY
+                                        <light>curriculum.</light>
+                                    </white>
+                                </h2>
+                                <p class="lead">
+                                    <white>Curated and original content for
+                                        <strong>current</strong> and
+                                        <strong>future</strong> medical entrepreneurs.</white>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#tab1" data-toggle="tab">
+                                    <whites>
+                                        <i class="icon-large fui-location-24"></i> local</whites>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab4" data-toggle="tab">
+                                    <whites>
+                                        <i class="icon-large icon-user-md"></i> lectures</whites>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab2" data-toggle="tab">
+                                    <whites>
+                                        <i class="icon-large icon-hospital"></i> library</whites>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab1">
+                                <white>
+                                    <h3>Local News / Articles / Resources</h3>
+                                </white>
+                                <div class="section-wrapper section-blog">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="span12">
+                                                <div class="row">
+                                                    <div class="span6">
+                                                        <div class="white-content extra-padding">
+                                                            <div class="blog-info">
+                                                                <a href="post.html">
+                                                                    <div class="blog-title">
+                                                                        <h4>BioHouston Breakfast with New TMC President, Dr. Robbins</h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="row-fluid">
+                                                                <div class="blog-img-content">
+                                                                    <a href="post.html">
+                                                                        <img src="assets/images/blog/robbins.jpg" alt="Photo-1">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="blog-content">
+                                                                    <p>Dr. Robert Robbins, the new Texas Medical Center (TMC) President as of November 5th, 2012, addressed the community and discussed his vision for Houston’s vibrant future in biotechnology at BioHouston’s most recent spring breakfast event.</p>
+                                                                </div>
+                                                                <span class="blog-calendar">
+                                                                    <i class="icon-calendar pull-left"></i>May 5, 2013
+                                                                    <br>
+                                                                    <i class="icon-user pull-left"></i>Amy Hurwitz</span>
+                                                                <a class="btn pull-right" href="http://enventure.tumblr.com/post/57465347690/biohouston-breakfast-with-new-tmc-president-dr" target="_blank">Read More</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="span6">
+
+<div class="white-content extra-padding">
+
+<div class="blog-info">
+<a href="post.html"><div class="blog-title"><h4>HATRC: Houston's Newest Accelerator and Stuff</h4></div></a>
+</div>
+<div class="clearfix"></div>
+<div class="row-fluid">
+<div class="blog-img-content">
+<a href="post.html"><img src="assets/images/blog/possibilities.jpg" alt="Photo-1"></a>
+</div>
+<div class="blog-content">		
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis hic illo ab alias porro reiciendis suscipit necessitatibus beatae veniam cum impedit. necessitatibus beatae veniam cum impedit. Voluptates ipsum eligendi labore sint magni earum nam..</p>	
+</div>
+<span class="blog-calendar"><i class="icon-calendar pull-left"></i> Dec 4, 2012<br><i class="icon-user pull-left"></i> Matt Pautz</span>
+<a class="btn pull-right" href="post.html">Read More</a>
+</div>
+
+</div>
+
+</div>					
+
+</div>
+
 <div class="row">
-<div class="span4 offset2">
-<img class="" src="assets/images/angellist-logo-trans.png">
+
+<div class="span6">
+
+<div class="white-content extra-padding">
+
+<div class="blog-info">
+<a href="post.html"><div class="blog-title"><h4>BRIC</h4></div></a>
+<a href="post.html" class="inline-link"><span><i class="icon-heart"></i>5</span></a>
+<a href="post.html" class="inline-link"><span><i class="icon-comments"></i>9</span></a>
 </div>
-<div class="span4">
-<a href="http://angel.co/join" class="btn btn-large" target="_blank">Join AngelList</a>
+<div class="clearfix"></div>
+<div class="row-fluid">
+
+<div class="blog-img-content">
+<a href="post.html"><img src="assets/images/large/4.jpg" alt="Photo-1"></a>
 </div>
+<div class="blog-content">		
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis hic illo ab alias porro reiciendis suscipit necessitatibus beatae veniam cum impedit. necessitatibus beatae veniam cum impedit. Voluptates ipsum eligendi labore sint magni earum nam..</p>	
 </div>
-<div class="row">
-<div class="span8 offset2">
-<p align="center"><enventure>enventure's</enventure> platform of choice for connecting<br><strong>talent</strong> with <strong>startups</strong> with <strong>investors</strong></p>
+<span class="blog-calendar"><i class="icon-calendar pull-left"></i> Jan 18, 2013</span>
+<a class="btn pull-right" href="post.html">Read More</a>
 </div>
+
 </div>
+
+</div>
+
+<div class="span6">
+
+<div class="white-content extra-padding">
+
+<div class="blog-info">
+<a href="post.html"><div class="blog-title"><h4>Jeff Article</h4></div></a>
+<a href="post.html" class="inline-link"><span><i class="icon-heart"></i>5</span></a>
+<a href="post.html" class="inline-link"><span><i class="icon-comments"></i>9</span></a>
+</div>
+<div class="clearfix"></div>
+<div class="row-fluid">
+
+<div class="blog-img-content">
+<a href="post.html"><img src="assets/images/large/2.jpg" alt="Photo-1"></a>
+</div>
+<div class="blog-content">		
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis hic illo ab alias porro reiciendis suscipit necessitatibus beatae veniam cum impedit. necessitatibus beatae veniam cum impedit. Voluptates ipsum eligendi labore sint magni earum nam..</p>	
+</div>
+<span class="blog-calendar"><i class="icon-calendar pull-left"></i> Jan 18, 2013</span>
+<a class="btn pull-right" href="post.html">Read More</a>
+</div>
+
+</div>
+
+</div>		
 -->
-			</div>
-		</div>
-	</div>
-	<!-- end: match -->
-	
-	<!-- start: flight school -->
-	<div class="yellow">
-		<div class="section-wrapper wrapper">
-			<div class="ribbon-wrapper">
-				<div class="ribbon">Coming Soon!</div>
-			</div>
-			<a class="anchor" id="incubate"></a>
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<h1><strong>flight school</strong></h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span12">
-						<div class="featurette">
-							<img class="featurette-image smaller pull-right" src="assets/images/flight-school.png">
-							<h2 class="featurette-heading">Incubating your ideas<br><span class="muted">through pilot stage.</span></h2>
-							
-							<div class="row demo-samples">
-								<div class="span12">
-									<div class="todo mrm">
-										<div>
-											<h2 class="todo-search grey">What can <env-blue><enventure>enventure</enventure></env-blue> do for <env-blue>you</env-blue>?</h2>
-										</div>
-										<ul>
-											<li>
-												<div class="todo-icon fui-man-24"></div>
-												<div class="todo-content">
-													<h4 class="todo-name">
-														Experienced <strong>mentorship</strong>
-													</h4>
-													In-house CEO to kickstart your team
-												</div>
-											</li>
-											
-											<li>
-												<div class="todo-icon icon-money"></div>
-												<div class="todo-content">
-													<h4 class="todo-name">
-														Startup <strong>capital</strong>
-													</h4>
-													$150k seed investment from local VC and angel investors
-												</div>
-											</li>
-											
-											<li>
-												<div class="todo-icon icon-beaker"></div>
-												<div class="todo-content">
-													<h4 class="todo-name">
-														Inspired <strong>surroundings</strong>
-													</h4>
-													Dedicated lab and prototyping space in the Texas Medical Center
-												</div>
-											</li>
-											
-											<li>
-												<div class="todo-icon icon-lightbulb"></div>
-												<div class="todo-content">
-													<h4 class="todo-name">
-														Relevant <strong>curriculum</strong>
-													</h4>
-													Weekly lectures on the topics your startup needs to succeed
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div> <!-- /todo list -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span8 offset2">
-						<a href="http://angel.co/enventure" class="btn btn-large btn-block" target="_blank">Apply via AngelList</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- end: flight school -->
-	
-	
-	
-	<!-- start: partners -->
-	<div class="section-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="span12">
-					<div class="separator">
-						<div class="left">
-							<div class="lines">
-								<div>
-									<h1>partners</h1>
-								</div>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="span2">
-					<div class="white-content client-container thumbnail-client">
-						<div class="client-flipper">
-							<div class="client-front">
-								<img src="assets/images/client/1.png" alt="BioHouston">
-							</div>
-							<div class="client-back">
-								<span class="client-back-title">BioHouston <a href="http://www.biohouston.org" target="_blank"><i class="icon-external-link"></i></a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="span2">
-					<div class="white-content client-container thumbnail-client" >
-						<div class="client-flipper">
-							<div class="client-front">
-								<img src="assets/images/client/2.png" alt="Rice Alliance">
-							</div>
-							<div class="client-back">
-								<span class="client-back-title">Rice Alliance <a href="http://alliance.rice.edu" target="_blank"><i class="icon-external-link"></i></a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="span2">
-					<div class="white-content client-container thumbnail-client" >
-						<div class="client-flipper">
-							<div class="client-front">
-								<img src="assets/images/client/3.png" alt="BRC">
-							</div>
-							<div class="client-back">
-								<span class="client-back-title">Bioscience Research Collaborative <a href="http://brc.rice.edu" target="_blank"><i class="icon-external-link"></i></a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="span2">
-					<div class="white-content client-container thumbnail-client" >
-						<div class="client-flipper">
-							<div class="client-front">
-								<img src="assets/images/client/4.png" alt="Sante">
-							</div>
-							<div class="client-back">
-								<span class="client-back-title">Sante Ventures <a href="http://www.santeventures.com" target="_blank"><i class="icon-external-link"></i></a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="span2">
-					<div class="white-content client-container thumbnail-client" >
-						<div class="client-flipper">
-							<div class="client-front">
-								<img src="assets/images/client/5.png" alt="H20 Houston">
-							</div>
-							<div class="client-back">
-								<span class="client-back-title">Health 2.0 Houston <a href="http://health20houston.com/" target="_blank"><i class="icon-external-link"></i></a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="span2">
-					<div class="white-content client-container thumbnail-client" >
-						<div class="client-flipper">
-							<div class="client-front">
-								<img src="assets/images/client/6.png" alt="NASA">
-							</div>
-							<div class="client-back">
-								<span class="client-back-title">NASA <a href="http://www.nasa.gov/" target="_blank"><i class="icon-external-link"></i></a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- end: partners -->
-	
-	<!-- start: footer -->
-	<footer>
-		<div class="pre-footer">
-			<div class="container">
-				<div class="row-fluid">
-					<div class="section-wrapper clearfix">
-						
-						<div class="span6">
-							<div class="separator">
-								<div class="">
-									<div class="lines">
-										<div>
-											<h3 class="lines-title">tweets</h3>
-										</div>
-									</div>
-								</div>
-							</div>	
-							<div class="tweet"></div> 
-						</div>
-						
-						<div class="span6">
-							<div class="separator">
-								<div class="">
-									<div class="lines">
-										<div>
-											<h3 class="lines-title">contact</h3>
-										</div>
-									</div>
-								</div>
-							</div>	
-							<ul class="contact-footer">
-								
-								<li>
-									<i class="icon-envelope-alt"></i> <a href="mailto:team@enventure.org?Subject=Website%20Question">team@enventure.org</a> 
-								</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end: blog -->
+                            </div>
+                            <div class="tab-pane fade" id="tab2">
+                                
+                                <div class="section-wrapper section-blog">
+                                    <div class="container">
+                                        
+                                        <white>
+                                            <h3>Workshops</h3>
+                                        </white>
+                                        <div class="row">
+                                            <div class="span12">
+                                                <ul class="thumbnails">
+                                                    <li class="span3">
+                                                        <a href="#CFModal" class="thumbnail" role="button" data-toggle="modal">
+                                                            <img class="border" src="assets/learn/crowdfunding.cover.jpeg" alt="">
+                                                        </a>
+                                                        <white><p>Implications of the JOBS act for crowdfunding your startup</p></white>
+                                                        <!-- Modal -->
+                                                        <div id="CFModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="CFModalLabel" aria-hidden="true">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                <h3 id="CFModalLabel">Crowdfunding</h3>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="CFCarousel" class="carousel slide ">
+                                                                    <ol class="carousel-indicators">
+                                                                        <li data-target="#CFCarousel" data-slide-to="0" class="active"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="1"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="2"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="3"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="4"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="5"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="6"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="7"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="8"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="9"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="10"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="11"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="12"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="13"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="14"></li>
+                                                                        <li data-target="#CFCarousel" data-slide-to="15"></li>
+                                                                    </ol>
+                                                                    <!-- Carousel items -->
+                                                                    <div class="carousel-inner">
+                                                                        <div class="active item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.001.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.002.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.003.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.004.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.005.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.006.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.007.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.008.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.009.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.010.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.011.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.012.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.013.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.014.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/Crowdfunding.015.jpeg">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Carousel nav -->
+                                                                    <a class="carousel-control left" href="#CFCarousel" data-slide="prev">&lsaquo;</a>
+                                                                    <a class="carousel-control right" href="#CFCarousel" data-slide="next">&rsaquo;</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="span3">
+                                                        <a href="#IPModal" class="thumbnail" role="button" data-toggle="modal">
+                                                            <img class="border" src="assets/learn/IP.cover.jpeg" alt="">
+                                                        </a>
+                                                        <white> <p>Intro to intellectual property and provisional patents</p></white>
+                                                        <!-- Modal -->
+                                                        <div id="IPModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="IPModalLabel" aria-hidden="true">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                <h3 id="IPModalLabel">IP 101</h3>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="IPCarousel" class="carousel slide ">
+                                                                    <ol class="carousel-indicators">
+                                                                        <li data-target="#IPCarousel" data-slide-to="0" class="active"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="1"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="2"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="3"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="4"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="5"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="6"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="7"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="8"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="9"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="10"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="11"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="12"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="13"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="14"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="15"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="16"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="17"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="18"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="19"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="20"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="21"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="22"></li>
+                                                                        <li data-target="#IPCarousel" data-slide-to="23"></li>
+                                                                    </ol>
+                                                                    <!-- Carousel items -->
+                                                                    <div class="carousel-inner">
+                                                                        <div class="active item">
+                                                                            <img alt="" src="assets/learn/IP.001.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.002.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.003.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.004.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.005.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.006.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.007.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.008.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.009.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.010.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.011.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.012.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.013.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.014.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.015.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.016.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.017.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.018.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.019.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.020.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.021.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.022.jpeg">
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img alt="" src="assets/learn/IP.023.jpeg">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Carousel nav -->
+                                                                    <a class="carousel-control left" href="#IPCarousel" data-slide="prev">&lsaquo;</a>
+                                                                    <a class="carousel-control right" href="#IPCarousel" data-slide="next">&rsaquo;</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <white>
+                                            <h3>Recommended Reading</h3>
+                                        </white>
+                                        <div class="row">
+                                            <div class="span3">
+                                                <div class="info-features">
+                                                    <a href="http://www.amazon.com/Biodesign-Process-Innovating-Medical-Technologies/dp/0521517427/ref=sr_1_1/183-6496398-1885033?ie=UTF8&qid=1375744367&sr=8-1&keywords=biodesign" target="_blank" class="thumbnail" role="button"><img class="border" src="assets/images/books/bd.jpg" alt="BioDesign"></a>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="info-features">
+                                                    <a href="http://www.amazon.com/Venture-Deals-Smarter-Lawyer-Capitalist/dp/1118443616/ref=sr_1_1?ie=UTF8&qid=1375744407&sr=8-1&keywords=venture+deals" target="_blank" class="thumbnail" role="button"><img class="border" src="assets/images/books/vd.jpg" alt="Venture Deals"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="tab-pane fade" id="tab4">
+                                <div class="row">
+                                    <div class="span4">
+                                        <div class="white-content">
+                                            <div class="img-mask hover-mask">
+                                                <div class="embed-container">
+                                                    <iframe src="http://www.youtube.com/embed/c876c4AR2Bo?rel=0" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <a href="#cohnModal" data-toggle="modal">
+                                                <h5>Billy Cohn, MD
+                                                    <span class="white-title">
+                                                        <i class="icon-chevron-right"></i>
+                                                    </span>
+                                                </h5>
+                                            </a>
+                                            <p>Bench to Biotech: "Building the Tools of Innovation for Tomorrow"</p>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="white-content">
+                                            <div class="img-mask hover-mask">
+                                                <div class="embed-container">
+                                                    <iframe width="560" height="315" src="http://www.youtube.com/embed/XfwzqI3wthk?rel=0" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <a href="#">
+                                                <h5>Nancy Chang, Glauco Souza, Jack Gill, and Brad Burke
+                                                    <span class="white-title">
+                                                        <i class="icon-chevron-right"></i>
+                                                    </span>
+                                                </h5>
+                                            </a>
+                                            <p>Bench to Biotech: "Launching Your First Startup"</p>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="white-content">
+                                            <div class="img-mask hover-mask">
+                                                <div class="embed-container">
+                                                    <iframe src="http://www.youtube.com/embed/irILymcgQp0?rel=0" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <a href="#">
+                                                <h5>Rodney Perkins, MD
+                                                    <span class="white-title">
+                                                        <i class="icon-chevron-right"></i>
+                                                    </span>
+                                                </h5>
+                                            </a>
+                                            <p>Bench to Biotech: "Lifetime Lessons from a Stanford Medical Entrepreneur"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span12">
+                        <blockquote>
+                            <p>
+                                <enventure>enventure</enventure> wants to learn from you, too. What content would you like to see next?</p>
+                        </blockquote>
+                        <a class="btn btn-dark" href="mailto:team+learn@enventure.org?Subject=Learn%20Content%20Suggestion" target="_blank">Let us know.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: learn -->
+        <!-- start: match -->
+        <div class="grey">
+            <div class="section-wrapper">
+                <a class="anchor" id="match"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <h1>
+                                <strong>match</strong>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <div class="featurette">
+                                <img class="featurette-image smaller pull-left" src="assets/images/match.png">
+                                <h2 class="featurette-heading">Find your
+                                    <span class="muted">Match.</span>
+                                </h2>
+                                <p class="lead">The
+                                    <strong>match</strong>program connects talented students and aspiring entrepreneurs with local medical startups.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span6">
+                            <h3>Talent:</h3>
+                            <blockquote>
+                                <whitest>
+                                    <p>Experience startup culture. Take charge of a project. Love what you do.</p>
+                                </whitest>
+                            </blockquote>
+                            <p>Send us your resume and a cover letter, and
+                                <enventure>enventure</enventure>will attempt to match you with the right Houston startups.</p>
+                        </div>
+                        <div class="span6">
+                            <h3>Startups:</h3>
+                            <blockquote>
+                                <p>Complete projects you've always wanted to do, but never had the bandwidth for.</p>
+                            </blockquote>
+                            <p>Send us a quick email, and
+                                <enventure>enventure</enventure>will match your startup with qualified students and aspiring entrepreneurs.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span8 offset2">
+                            <a href="mailto:team+match@enventure.org?Subject=enventure%20match" target="_blank" class="btn btn-block btn-large">Connect</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: match -->
+        <!-- start: flight school -->
+        <div class="yellow">
+            <div class="section-wrapper wrapper">
+                <div class="ribbon-wrapper">
+                    <div class="ribbon">Coming Soon!</div>
+                </div>
+                <a class="anchor" id="incubate"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <h1>
+                                <strong>flight school</strong>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <div class="featurette">
+                                <img class="featurette-image smaller pull-right" src="assets/images/flight-school.png">
+                                <h2 class="featurette-heading">Incubating your ideas
+                                    <br>
+                                    <span class="muted">through pilot stage.</span>
+                                </h2>
+                                <div class="row demo-samples">
+                                    <div class="span12">
+                                        <div class="todo mrm">
+                                            <div>
+                                                <h2 class="todo-search grey">What can
+                                                    <env-blue>
+                                                        <enventure>enventure</enventure>
+                                                    </env-blue>do for
+                                                    <env-blue>you</env-blue>?</h2>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="todo-icon fui-man-24"></div>
+                                                    <div class="todo-content">
+                                                        <h4 class="todo-name">Experienced
+                                                            <strong>mentorship</strong>
+                                                        </h4>In-house CEO to kickstart your team</div>
+                                                </li>
+                                                <li>
+                                                    <div class="todo-icon icon-money"></div>
+                                                    <div class="todo-content">
+                                                        <h4 class="todo-name">Startup
+                                                            <strong>capital</strong>
+                                                        </h4>$150k seed investment from local VC and angel investors</div>
+                                                </li>
+                                                <li>
+                                                    <div class="todo-icon icon-beaker"></div>
+                                                    <div class="todo-content">
+                                                        <h4 class="todo-name">Inspired
+                                                            <strong>surroundings</strong>
+                                                        </h4>Dedicated lab and prototyping space in the Texas Medical Center</div>
+                                                </li>
+                                                <li>
+                                                    <div class="todo-icon icon-lightbulb"></div>
+                                                    <div class="todo-content">
+                                                        <h4 class="todo-name">Relevant
+                                                            <strong>curriculum</strong>
+                                                        </h4>Weekly lectures on the topics your startup needs to succeed</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- /todo list -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span8 offset2">
+                            <a href="http://angel.co/enventure" class="btn btn-large btn-block" target="_blank">Apply via AngelList</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: flight school -->
+        <!-- start: partners -->
+        <div class="section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="separator">
+                            <div class="left">
+                                <div class="lines">
+                                    <div>
+                                        <h1>partners</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="white-content client-container thumbnail-client">
+                            <div class="client-flipper">
+                                <div class="client-front">
+                                    <img src="assets/images/client/1.png" alt="BioHouston">
+                                </div>
+                                <div class="client-back">
+                                    <span class="client-back-title">BioHouston
+                                        <a href="http://www.biohouston.org" target="_blank">
+                                            <i class="icon-external-link"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="white-content client-container thumbnail-client">
+                            <div class="client-flipper">
+                                <div class="client-front">
+                                    <img src="assets/images/client/2.png" alt="Rice Alliance">
+                                </div>
+                                <div class="client-back">
+                                    <span class="client-back-title">Rice Alliance
+                                        <a href="http://alliance.rice.edu" target="_blank">
+                                            <i class="icon-external-link"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="white-content client-container thumbnail-client">
+                            <div class="client-flipper">
+                                <div class="client-front">
+                                    <img src="assets/images/client/3.png" alt="BRC">
+                                </div>
+                                <div class="client-back">
+                                    <span class="client-back-title">Bioscience Research Collaborative
+                                        <a href="http://brc.rice.edu" target="_blank">
+                                            <i class="icon-external-link"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="white-content client-container thumbnail-client">
+                            <div class="client-flipper">
+                                <div class="client-front">
+                                    <img src="assets/images/client/4.png" alt="Sante">
+                                </div>
+                                <div class="client-back">
+                                    <span class="client-back-title">Sante Ventures
+                                        <a href="http://www.santeventures.com" target="_blank">
+                                            <i class="icon-external-link"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="white-content client-container thumbnail-client">
+                            <div class="client-flipper">
+                                <div class="client-front">
+                                    <img src="assets/images/client/5.png" alt="H20 Houston">
+                                </div>
+                                <div class="client-back">
+                                    <span class="client-back-title">Health 2.0 Houston
+                                        <a href="http://health20houston.com/" target="_blank">
+                                            <i class="icon-external-link"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="white-content client-container thumbnail-client">
+                            <div class="client-flipper">
+                                <div class="client-front">
+                                    <img src="assets/images/client/6.png" alt="NASA">
+                                </div>
+                                <div class="client-back">
+                                    <span class="client-back-title">NASA
+                                        <a href="http://www.nasa.gov/" target="_blank">
+                                            <i class="icon-external-link"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: partners -->
+        <!-- start: footer -->
+        <footer>
+            <div class="pre-footer">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="section-wrapper clearfix">
+                            <div class="span6">
+                                <div class="separator">
+                                    <div class="">
+                                        <div class="lines">
+                                            <div>
+                                                <h3 class="lines-title">tweets</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tweet"></div>
+                            </div>
+                            <div class="span6">
+                                <div class="separator">
+                                    <div class="">
+                                        <div class="lines">
+                                            <div>
+                                                <h3 class="lines-title">contact</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contact-footer">
+                                    <li>
+                                        <i class="icon-envelope-alt"></i>
+                                        <a href="mailto:team@enventure.org?Subject=Website%20Question">team@enventure.org</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-phone"></i>(832) 224-6395</li>
+                                    <li>
+                                        <i class="icon-map-marker"></i>6500 Main St #1040
+                                        <br>Houston, TX 77030</li>
+                                </ul>
+                                <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div class="mc-field-group">
+                                        <input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none">Sorry let's try that again.</div>
+                                        <div class="response" id="mce-success-response" style="display:none">
+                                            <h4>Clear some room in your inbox.</h4>
+                                            <p>We'll be sending you updates each week on Houston happenings.</p>
+                                        </div>
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark btn-large btn-block">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <blockquote>
+                                <black>
+                                    <p class="text-center">
+                                        <enventure>enventure</enventure>is building a
+                                        <strong>home</strong>for Houston’s medical innovators.
+                                        <br>
+                                        <small>Through regular
+                                            <strong>meetups</strong>, stimulating
+                                            <strong>lectures</strong>, hands-on
+                                            <strong>workshops</strong>, one-on-one
+                                            <strong>mentorship</strong>, diverse educational programs, and accessible
+                                            <strong>funding</strong>for early stage medical startups, our non-profit aims to be the
+                                            <strong>community</strong>and networking hub for young and aspiring medical entrepreneurs.</small>
+                                        <br>
+                                        <strong>Join us</strong>in giving Houston the
+                                        <strong>momentum</strong>it needs to become the
+                                        <strong>#1 city</strong>for life science entrepreneurship.</p>
+                                </black>
+                            </blockquote>
+                            <ul class="footer-links">
                                 <li>
-									<i class="icon-phone"></i> (832) 224-6395
-								</li>
+                                    <p>
+                                        <small>
+                                            <light>Copyright &copy; 2013
+                                                <enventure>enventure</enventure>. All rights reserved.
+                                                <enventure>enventure</enventure>is a not for profit community.</light>
+                                        </small>
+                                    </p>
+                                </li>
                                 <li>
-									<i class="icon-map-marker"></i> 6500 Main St #1040<br>   Houston, TX 77030
-								</li>
-							</ul>
-							
-							<form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div class="mc-field-group">
-									<input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-								</div>
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none">Sorry let's try that again.
-									</div>
-									<div class="response" id="mce-success-response" style="display:none"><h4>Clear some room in your inbox.</h4>
-										<p>We'll be sending you updates each week on Houston happenings.</p>
-									</div>
-								</div>
-								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark btn-large btn-block">
-								</div>
-							</form>
-						</div>
-						
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="post-footer">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<blockquote><black>
-							<p class="text-center"><enventure>enventure</enventure> is building a <strong>home</strong> for Houston’s medical innovators.
-								<br><small>Through regular <strong>meetups</strong>, stimulating <strong>lectures</strong>, hands-on <strong>workshops</strong>, one-on-one <strong>mentorship</strong>, diverse educational programs, and accessible <strong>funding</strong> for early stage medical startups, our non-profit aims to be the <strong>community</strong> and networking hub for young and aspiring medical entrepreneurs.</small>
-								<br><strong>Join us</strong> in giving Houston the <strong>momentum</strong> it needs to become the <strong>#1 city</strong> for life science entrepreneurship.</p>
-							</black>
-						</blockquote>
-						<ul class="footer-links">
-							<li>
-								<p><small><light>Copyright &copy; 2013 <enventure>enventure</enventure>. All rights reserved. <enventure>enventure</enventure> is a not for profit community.</light></small></p>
-							</li>
-							<li>
-								<a class="thumbnail-social-icon" href="http://www.facebook.com/enventuremed" target="_blank"><img alt="" src="assets/images/social-icon/Facebook.png"></a>
-							</li>
-							<li>
-								<a class="thumbnail-social-icon" href="http://www.twitter.com/enventuremed" target="_blank"><img alt="" src="assets/images/social-icon/Twitter.png"></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer><!-- end: footer -->
-	
-	
-	<!-- end: sticky area -->	
-	
-	
-	<!-- start: js load -->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/modernizr.js"></script>
-	<script src="assets/js/ba-cond.js"></script>
-	<script src="assets/js/slitslider.js"></script>
-	<script src="assets/js/isotope.js"></script>
-	<script src="assets/js/cookie.js"></script>
-	<script src="assets/js/checkbox_and_radio.js"></script>
-	<script src="assets/js/dropkick.js"></script>
-	<script src="assets/js/tweet.js"></script>
-	<script src="assets/js/custom.js"></script>
-	<script src="assets/js/dropdown.js"></script>
-	<script src="assets/js/bootstrap-tab.js"></script>
-	<script src="assets/js/bootstrap-carousel.js"></script>
-	<script src="api_key.js"></script>
-	<script id="config" type="text/javascript" charset="utf-8"></script>
-	
-	<!-- end: js load -->
-	<!-- start: meetup script -->
-	<script>
-		var $parameters = {
-			urlname: "enventure",
-			width: 300,
-			height:570,
-			_name: "Meetup Group Stats",
-			_description: "Shows basic stats on your favorite Meetup group."
-		};
-		var $queries = {
-			groups: function() { 
-				return mup_widget.api_call("/groups", {group_urlname: $parameters.urlname});
-			},
-			events: function() {
-				return mup_widget.api_call("/events", {group_urlname: $parameters.urlname, page: '1'});
-			}
-		};
-	</script>
-	<script type="text/javascript" charset="utf-8">
-		mup_widget.with_jquery(function($, ctx) {
-			var	group = '',
-				months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-				addLink = function( content, link ) {
-					return '<a target="_top" href="' + link + '">' + content + '</a>';
-				},
-				addImage = function( imagesrc, alt) {
-					if (imagesrc == "" ) {
-						return '';
-					} else {
-						return '<div class="mup-img-wrap"><img src="'+imagesrc+'" width="'+($parameters.width - 50)+'" alt="'+alt+'" class="mup-img"/></div>';
-					}
-				},
-				addStarRating = function(rating) {
-					var base_url = 'http://img1.meetupstatic.com/9260736631256287675/img/star_';
-					var starlink = '';
-					if (rating == 0) {
-						return 'Not Yet Rated';
-					}else if (rating < 1.25) {
-						starlink = "100.png";
-					}else if (rating < 1.75) {
-						starlink = "150.png";
-					}else if (rating < 2.25) {
-						starlink = "200.png";
-					}else if (rating < 2.75) {
-						starlink = "250.png";
-					}else if (rating < 3.25) {
-						starlink = "300.png";
-					}else if (rating < 3.75) {
-						starlink = "350.png";
-					}else if (rating < 4.25) {
-						starlink = "400.png";
-					}else if (rating < 4.75) {
-						starlink = "450.png";
-					}else {
-						starlink = "500.png";
-					}
-					return '<img src="'+base_url+starlink+'" alt="'+rating+'" />';
-					
-				},
-				addLeadingZero = function( num ) {
-					return (num < 10) ? ('0' + num) : num;
-				},
-				getFormattedDate = function( millis ) {
-					var date = new Date( millis );
-					return  months[date.getMonth()] + ' ' + addLeadingZero( date.getDate() ) + ', ' + date.getFullYear().toString();
-				},
-				getFormattedTime = function( millis ) {
-					var	time = new Date( millis ),
-						hours = time.getHours(),
-						min = time.getMinutes(),
-						ampm = (hours > 11) ? 'PM' : 'AM';
-					min = (min < 10) ? ('0' + min) : min;
-					hours = (hours == 0) ? 1 : hours;
-					hours = (hours > 12) ? hours-12 : hours;
-					return hours + ':' + min + ' ' + ampm;
-				},
-				numberFormat = function(nStr){
-					nStr += '';
-					x = nStr.split('.');
-					x1 = x[0];
-					x2 = x.length > 1 ? '.' + x[1] : '';
-					var rgx = /(\d+)(\d{3})/;
-					while (rgx.test(x1))
-						x1 = x1.replace(rgx, '$1' + ',' + '$2');
-					return x1 + x2;
-				};
-			$.getJSON($queries.groups(), function(data) {
-				if (data.results.length == 0) {
-					$('.mug-badge', ctx).width($parameters.width);
-					$('.mug-badge', ctx).append(
-						'<div class="mup-widget error">\
+                                    <a class="thumbnail-social-icon" href="http://www.facebook.com/enventuremed" target="_blank">
+                                        <img alt="" src="assets/images/social-icon/Facebook.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="thumbnail-social-icon" href="http://www.twitter.com/enventuremed" target="_blank">
+                                        <img alt="" src="assets/images/social-icon/Twitter.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: footer -->
+        <!-- end: sticky area -->
+        <!-- start: js load -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/modernizr.js"></script>
+        <script src="assets/js/ba-cond.js"></script>
+        <script src="assets/js/slitslider.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="assets/js/cookie.js"></script>
+        <script src="assets/js/checkbox_and_radio.js"></script>
+        <script src="assets/js/dropkick.js"></script>
+        <script src="assets/js/tweet.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/dropdown.js"></script>
+        <script src="assets/js/bootstrap-tab.js"></script>
+        <script src="assets/js/bootstrap-carousel.js"></script>
+        <script src="api_key.js"></script>
+        <script id="config" type="text/javascript" charset="utf-8"></script>
+        <!-- end: js load -->
+        <!-- start: meetup script -->
+        <script>
+            var $parameters = {
+                urlname: "enventure",
+                width: 300,
+                height: 570,
+                _name: "Meetup Group Stats",
+                _description: "Shows basic stats on your favorite Meetup group."
+            };
+            var $queries = {
+                groups: function() {
+                    return mup_widget.api_call("/groups", {
+                        group_urlname: $parameters.urlname
+                    });
+                },
+                events: function() {
+                    return mup_widget.api_call("/events", {
+                        group_urlname: $parameters.urlname,
+                        page: '1'
+                    });
+                }
+            };
+        </script>
+        <script type="text/javascript" charset="utf-8">
+            mup_widget.with_jquery(function($, ctx) {
+                var group = '',
+                    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    addLink = function(content, link) {
+                        return '<a target="_top" href="' + link + '">' + content + '</a>';
+                    },
+                    addImage = function(imagesrc, alt) {
+                        if (imagesrc == "") {
+                            return '';
+                        } else {
+                            return '<div class="mup-img-wrap"><img src="' + imagesrc + '" width="' + ($parameters.width - 50) + '" alt="' + alt + '" class="mup-img"/></div>';
+                        }
+                    },
+                    addStarRating = function(rating) {
+                        var base_url = 'http://img1.meetupstatic.com/9260736631256287675/img/star_';
+                        var starlink = '';
+                        if (rating == 0) {
+                            return 'Not Yet Rated';
+                        } else if (rating < 1.25) {
+                            starlink = "100.png";
+                        } else if (rating < 1.75) {
+                            starlink = "150.png";
+                        } else if (rating < 2.25) {
+                            starlink = "200.png";
+                        } else if (rating < 2.75) {
+                            starlink = "250.png";
+                        } else if (rating < 3.25) {
+                            starlink = "300.png";
+                        } else if (rating < 3.75) {
+                            starlink = "350.png";
+                        } else if (rating < 4.25) {
+                            starlink = "400.png";
+                        } else if (rating < 4.75) {
+                            starlink = "450.png";
+                        } else {
+                            starlink = "500.png";
+                        }
+                        return '<img src="' + base_url + starlink + '" alt="' + rating + '" />';
+                        
+                    },
+                    addLeadingZero = function(num) {
+                        return (num < 10) ? ('0' + num) : num;
+                    },
+                    getFormattedDate = function(millis) {
+                        var date = new Date(millis);
+                        return months[date.getMonth()] + ' ' + addLeadingZero(date.getDate()) + ', ' + date.getFullYear().toString();
+                    },
+                    getFormattedTime = function(millis) {
+                        var time = new Date(millis),
+                            hours = time.getHours(),
+                            min = time.getMinutes(),
+                            ampm = (hours > 11) ? 'PM' : 'AM';
+                        min = (min < 10) ? ('0' + min) : min;
+                        hours = (hours == 0) ? 1 : hours;
+                        hours = (hours > 12) ? hours - 12 : hours;
+                        return hours + ':' + min + ' ' + ampm;
+                    },
+                    numberFormat = function(nStr) {
+                        nStr += '';
+                        x = nStr.split('.');
+                        x1 = x[0];
+                        x2 = x.length > 1 ? '.' + x[1] : '';
+                        var rgx = /(\d+)(\d{3})/;
+                        while (rgx.test(x1))
+                            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+                        return x1 + x2;
+                    };
+                $.getJSON($queries.groups(), function(data) {
+                    if (data.results.length == 0) {
+                        $('.mug-badge', ctx).width($parameters.width);
+                        $('.mug-badge', ctx).append(
+                            '<div class="mup-widget error">\
 <div class="errorMsg">Oops. No results for "' + $parameters.urlname + '"</div>\
-	</div>');
-				}
-				else {
-					group = data.results[0];
-					$('.mug-badge', ctx);
-					$('.mug-badge', ctx).append(
-						'<div class="mup-widget">\
+        </div>');
+                    } else {
+                        group = data.results[0];
+                        $('.mug-badge', ctx);
+                        $('.mug-badge', ctx).append(
+                            '<div class="mup-widget">\
 <div class="mup-bd">\
 <h3>next meetup</h3>\
 <span class="mup-stats"><div class="next-event"></div></span>\
-<span class="mup-stats">' +numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
+<span class="mup-stats">' + numberFormat(group.members) + '<span class="mup-tlabel"> ' + group.who + '</span></span>\
 <h4><a class="btn btn-large btn-block" href="http://www.meetup.com/enventure">Join</button></a></h4>\
-	</div>\
-	</div>'
-		);
-						
-						$.getJSON($queries.events(), function(data) {
-							if (data.status && data.status.match(/^200/) == null) {
-								alert(data.status + ": " + data.details);
-							} else {
-								if (data.results.length == 0) {
-									$('.next-event', ctx).append('<span class="mup-tlabel">'+addLink('Suggest new ideas for Meetups!',group.link)+'</span>');
-								}
-								else {
-									var event = data.results[0];
-									var city;
-									if (event.venue_city == "") {
-										city = group.city;
-									} else {
-										city = event.venue_city;
-									}
-									var state_country;
-									if (event.venue_state == "") {
-										if (group.state == "") {
-											state_country = group.country.toUpperCase();
-										} else {
-											state_country = group.state;
-										}
-									} else {
-										state_country = event.venue_state;
-									}
-									var venue;
-									if (event.venue_name == "") {
-										if (event.venue_address1 == "") {
-											venue = "";
-										} else {
-											venue = event.venue_address1+ " - ";
-										}
-									} else {
-										venue = event.venue_name + " - ";
-									}
-									var location = venue + city + ", " + state_country;
-									$('.next-event', ctx).append('<h4><div class="mup-tlabel">'+getFormattedDate(parseInt(event.utc_time)) + ' &nbsp | &nbsp ' + getFormattedTime(parseInt(event.utc_time)) + "</div>" + addLink(event.name, event.event_url)+'<div class="mup-tlabel">' + location + "</div></h4>");
-								}
-							}
-						});
-					}
-			});
-		});
-	</script>
-	<!-- end: meetup script -->
-	
-	
-	
-	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
+        </div>\
+        </div>');
+                        
+                        $.getJSON($queries.events(), function(data) {
+                            if (data.status && data.status.match(/^200/) == null) {
+                                alert(data.status + ": " + data.details);
+                            } else {
+                                if (data.results.length == 0) {
+                                    $('.next-event', ctx).append('<span class="mup-tlabel">' + addLink('Suggest new ideas for Meetups!', group.link) + '</span>');
+                                } else {
+                                    var event = data.results[0];
+                                    var city;
+                                    if (event.venue_city == "") {
+                                        city = group.city;
+                                    } else {
+                                        city = event.venue_city;
+                                    }
+                                    var state_country;
+                                    if (event.venue_state == "") {
+                                        if (group.state == "") {
+                                            state_country = group.country.toUpperCase();
+                                        } else {
+                                            state_country = group.state;
+                                        }
+                                    } else {
+                                        state_country = event.venue_state;
+                                    }
+                                    var venue;
+                                    if (event.venue_name == "") {
+                                        if (event.venue_address1 == "") {
+                                            venue = "";
+                                        } else {
+                                            venue = event.venue_address1 + " - ";
+                                        }
+                                    } else {
+                                        venue = event.venue_name + " - ";
+                                    }
+                                    var location = venue + city + ", " + state_country;
+                                    $('.next-event', ctx).append('<h4><div class="mup-tlabel">' + getFormattedDate(parseInt(event.utc_time)) + ' &nbsp | &nbsp ' + getFormattedTime(parseInt(event.utc_time)) + "</div>" + addLink(event.name, event.event_url) + '<div class="mup-tlabel">' + location + "</div></h4>");
+                                }
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+        <!-- end: meetup script -->
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->	
-	
-</body>			
+<![endif]-->
+    </body>
+    
 </html>
-
