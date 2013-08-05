@@ -316,11 +316,7 @@ textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type=
 	background: #026873
 }
 
-.todo
-{
-	color: #47a1a1;
-	background: #026873
-}
+
 
 .todo-search
 {
@@ -948,7 +944,7 @@ blockquote p
 	border-radius: 2px;
 	padding: 20px;
 	position: relative;
-	font-size: 17.5px
+	font-size: 1.5em
 }
 
 
@@ -2910,7 +2906,7 @@ textarea:focus,
      
 }
 .todo li {
-    background: url("../images/flat/todo/todo.png") no-repeat scroll 92% center / 20px 20px #000000;
+    background: #444444;
 }
 .todo li.todo-done {
     color: #EEEEEE;
@@ -3499,3 +3495,16 @@ black{
 	max-height:225px;
 }
 
+.small {
+ max-height:150px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
