@@ -75,10 +75,11 @@ body.touch{
 	max-width: 860px;
 }
 
-.clear{
+
+/*.clear{
 	clear: both;
 }
-
+*/
 .clearfix{
 	clear: both;
 	overflow: hidden;
@@ -1094,11 +1095,11 @@ header #NavToggle div::after{
 	}
 	
 	.expand #SandBox{
-		padding-top: 300px;
+		padding-top: 0px;
 	}
 	
 	.fixed.expand #SandBox{
-		padding-top: 100px;
+		padding-top: 0px;
 	}
 }
 
@@ -1551,8 +1552,7 @@ body:not(.touch) #SandBox .button:not(.slider):hover{
 /* ------ SANDBOX CONTENT ------ */
 
 #SandBox{
-	padding: 100px 0 20px 0;
-	background: #000 url(im/swatch_sandbox.gif);
+	padding: 0px 0 20px 0;
 	overflow: visible;
 }
 

@@ -158,7 +158,6 @@
 							<div class="featurette">
 								<img class="featurette-image smaller pull-left" src="assets/images/texas.png">
 								<h2 class="featurette-heading">Hello, <span class="muted">Houston.</span></h2>
-								<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#map">map</button>
 								<p class="lead">Sign up to receive weekly event updates, relevant news, and educational resources.</p>
 							</div>
 						</div>
@@ -186,45 +185,222 @@
 							</div>
 						</div>
 					</div>
+                    <div class="row">
+                        <h2 align="center">What can <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#map">#htx</button> do for you?</h2>
+                    </div>
 				</div>
 			</div>
 		</div>
 		
 		<!--End mc_embed_signup-->
 		
-    <!-- start: meta map-->
-    <div id="map" class="collapse out shadow">
-        <nav class="wrapper ns wf">
-            <div class="set ib">
-        <ul>
-    <li class="filter" data-filter="dogs"></li>
-    <li class="filter" data-filter="cats"></li>
-    <li class="filter" data-filter="krakens"></li>
-    <li class="filter" data-filter="dogs cats"></li>
-</ul>
-                </div>
-           <div class="set ib">
-        <ul>
-    <li class="sort" data-sort="data-name" data-order="desc"></li>
-    <li class="sort" data-sort="data-name" data-order="asc"></li>
-    <li class="sort" data-sort="data-age" data-order="desc"></li>
-    <li class="sort" data-sort="data-age" data-order="asc"></li>
-    <li class="sort" data-sort="default" data-order="asc"></li>
-    <li class="sort" data-sort="random"></li>
-</ul>
-               </div>
-            </nav>
-         <div class="wrapper">
-    <ul class="wf ns" id="Grid">
-    <li class="mix dogs" data-name="Abby" data-age="2"></li>
-    <li class="mix cats" data-name="Bucky" data-age="9"></li>
-    <li class="mix dogs" data-name="Molly" data-age="5"></li>
-    <li class="mix krakens" data-name="Kraken" data-age="3987"></li>
-    
-</ul>
-            </div>
-    </div>
-    <!-- end: meta map-->
+        <!-- start: meta map-->
+        <div id="map" class="collapse out shadow">
+            <section id="SandBox" class="anim150">
+			<nav class="wrapper ns wf">
+				<div class="set ib">
+					<h5>Filter</h5>
+					<ul>
+						<li class="button filter anim150" data-role="button" data-filter="all">View All</li>
+						<li class="button filter anim150" data-tole="button" data-filter="dogs">Dogs</li>
+						<li class="button filter anim150" data-filter="cats">Cats</li>
+						<li class="button filter anim150" data-filter="krakens">Krakens</li>
+						<li class="break"></li>
+					</ul>
+				</div>
+				<div class="set ib">
+					<h5>Sort</h5>
+					<ul>
+						<li class="button sort arrow anim150" data-sort="data-name" data-order="desc"><span>Name <div class="arr_desc ib"></div></span></li>
+						<li class="button sort arrow anim150" data-sort="data-name" data-order="asc"><span>Name <div class="arr_asc ib"></div></span></li>
+						<li class="button sort anim150" data-sort="random">Randomize</li>
+						<li class="layout_wrapper hide">
+							<div class="button ib layout anim150 active" id="GoGrid"><ul><li></li><li></li><li></li><li></li></ul></div>
+							<div class="button ib layout anim150" id="GoList"><ul><li></li><li></li><li></li><li></li></ul></div>
+						</li>
+						<li class="break"></li>
+					</ul>
+				</div>
+				<div class="set ib effects">
+					<h5>Effects</h5>
+					<ul>
+						<li class="button effect anim150 active" data-effect="fade">Fade</li>
+						<li class="button effect anim150 active" data-effect="scale">Scale</li>
+						<li class="button effect anim150" data-effect="blur">Blur</li>
+						<li class="button effect anim150" data-effect="rotateZ">RotateZ</li>
+						<li class="button effect anim150" data-effect="rotateY">RotateY</li>
+						<li class="button effect anim150" data-effect="rotateX">RotateX</li>
+						<li class="button effect anim150" data-effect="grayscale">Grayscale</li>
+						<li id="SpeedSlider" class="button effect slider anim150">
+							<span>Speed</span><div class="ib slide">
+								<div class="scrubber">
+									<div class="tooltip anim150" data-speed="600ms"></div>
+								</div>
+							</div>
+						</li>
+						<li class="break"></li>
+					</ul>
+				</div>
+				<div class="set ib effects">
+					<h5>Easing</h5>
+					<ul>
+						<li class="button easing anim150 active" data-easing="smooth">Smooth</li>
+						<li class="button easing anim150" data-easing="snap">Snap</li>
+						<li class="button easing anim150" data-easing="windback">WindBack</li>
+						<li class="button easing anim150" data-easing="windup">WindUp</li>
+						<li class="break"></li>
+					</ul>
+				</div>
+				<div class="break ib"></div>
+			</nav>
+			<div class="wrapper">
+				<ul class="wf ns">
+					<li class="mix dogs" data-name="Walter" data-age="8">
+						<div class="content anim150">
+							<h5>Walter</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/walter.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 8</h4>
+					</li>
+					<li class="mix cats" data-name="Bucky" data-age="9">
+						<div class="content">
+							<h5>Bucky</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/bucky.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 9</h4>
+					</li>
+					<li class="mix cats" data-name="Greg" data-age="7">
+						<div class="content">
+							<h5>Greg</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/greg.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 7</h4>
+					</li>
+					<li class="mix dogs" data-name="Abby" data-age="2">
+						<div class="content">
+							<h5>Abby</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/abby.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 2</h4>
+					</li>
+					<li class="mix dogs" data-name="Molly" data-age="5">
+						<div class="content">
+							<h5>Molly</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/francis.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 5</h4>
+					</li>
+					<li class="mix krakens" data-name="Kraken" data-age="3978">
+						<div class="content">
+							<h5>The Kraken</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/kraken.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 3978</h4>
+					</li>
+					<li class="mix dogs" data-name="Lady" data-age="3">
+						<div class="content">
+							<h5>Lady</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/lady.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 3</h4>
+					</li>
+					<li class="mix cats" data-name="Theo" data-age="1">
+						<div class="content">
+							<h5>Theo</h5>
+							<div class="spinner wf">
+								<span class="side s_left">
+									<span class="fill"></span>
+								</span>
+								<span class="side s_right">
+									<span class="fill"></span>
+								</span>
+							</div>
+							<div class="img_wrapper anim150">
+								<img src="im/theo.jpg" onload="imgLoaded($(this))"/>
+							</div>
+						</div>
+						<h4>Age: 1</h4>
+					</li>
+					
+					<li class="gap ib"></li>
+					<li class="gap ib"></li>
+					<li class="gap ib"></li>
+					<li class="break ib"></li>
+				</ul>
+			</div>
+		</section>
+        </div>
+        <!-- end: meta map-->
     
 		<!-- start: section-events -->
 		<div class="section-wrapper">
@@ -1023,7 +1199,7 @@
 	<script src="assets/js/dropdown.js"></script>
 	<script src="assets/js/bootstrap-tab.js"></script>
 	<script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
 	<script src="api_key.js"></script>
 	<script id="config" type="text/javascript" charset="utf-8"></script>
 	
