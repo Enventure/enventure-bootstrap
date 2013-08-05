@@ -13,6 +13,7 @@
 <!-- end: Mobile Specific -->
 
 <!-- start: CSS -->
+<link href="mixitup.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/sticky-nav.css">
 <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
@@ -21,6 +22,8 @@
 <link href="assets/css/isotope.css" rel="stylesheet">
 <link href="assets/css/slider.css" rel="stylesheet">
 <link href="assets/css/flat-ui.css" rel="stylesheet">
+
+
 <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/meetup.css">
@@ -61,6 +64,8 @@
 <body class="home">
 	
 	<!-- start: slider -->
+    
+			<a class="anchor" id="top"></a>
 	<div id="home" class="slider-wrapper">
 		<div id="slider" class="sl-slider-wrapper">
 			<div class="sl-slider">
@@ -129,6 +134,7 @@
                                     <li class=""><a href="#learn">learn</a></li>
                                     <li class=""><a href="#match">match</a></li>
                                     <li class=""><a href="#incubate">incubate</a></li>
+                                    <li class=""><a href="#top">top</a></li>
                                 </ul>
                             </div>	
                         </div>
@@ -152,9 +158,8 @@
 							<div class="featurette">
 								<img class="featurette-image smaller pull-left" src="assets/images/texas.png">
 								<h2 class="featurette-heading">Hello, <span class="muted">Houston.</span></h2>
-								
+								<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#map">map</button>
 								<p class="lead">Sign up to receive weekly event updates, relevant news, and educational resources.</p>
-								<p class="lead">Read the most recent newsletter <a class="btn lead" href="http://eepurl.com/B9mwX" target="_blank">here.</a></p>
 							</div>
 						</div>
 					</div>
@@ -187,6 +192,40 @@
 		
 		<!--End mc_embed_signup-->
 		
+    <!-- start: meta map-->
+    <div id="map" class="collapse out shadow">
+        <nav class="wrapper ns wf">
+            <div class="set ib">
+        <ul>
+    <li class="filter" data-filter="dogs"></li>
+    <li class="filter" data-filter="cats"></li>
+    <li class="filter" data-filter="krakens"></li>
+    <li class="filter" data-filter="dogs cats"></li>
+</ul>
+                </div>
+           <div class="set ib">
+        <ul>
+    <li class="sort" data-sort="data-name" data-order="desc"></li>
+    <li class="sort" data-sort="data-name" data-order="asc"></li>
+    <li class="sort" data-sort="data-age" data-order="desc"></li>
+    <li class="sort" data-sort="data-age" data-order="asc"></li>
+    <li class="sort" data-sort="default" data-order="asc"></li>
+    <li class="sort" data-sort="random"></li>
+</ul>
+               </div>
+            </nav>
+         <div class="wrapper">
+    <ul class="wf ns" id="Grid">
+    <li class="mix dogs" data-name="Abby" data-age="2"></li>
+    <li class="mix cats" data-name="Bucky" data-age="9"></li>
+    <li class="mix dogs" data-name="Molly" data-age="5"></li>
+    <li class="mix krakens" data-name="Kraken" data-age="3987"></li>
+    
+</ul>
+            </div>
+    </div>
+    <!-- end: meta map-->
+    
 		<!-- start: section-events -->
 		<div class="section-wrapper">
 			<a class="anchor" id="events"></a>
@@ -212,7 +251,7 @@
 												<div class="todo-icon icon-laptop"></div>
 												<a href="http://www.meetup.com/enventure/events/132140902/" target="_blank"><div class="todo-content">
 													<h4 class="todo-name alignleft">
-														 <strong>Software IP and Patenting</strong>:</h4>
+														 <strong>Software IP and Patenting</strong></h4>
                                                         <h4 class="todo-name alignright">August 7</h4>
 													<div style="clear: both;"></div>
 													David McEwing clears the fog around software patenting
@@ -223,7 +262,7 @@
 												<div class="todo-icon icon-unlock"></div>
 												<div class="todo-content">
 													<h4 class="todo-name alignleft">
-														<strong>Licensing Your Technology</strong>:</h4>
+														<strong>Licensing Your Technology</strong></h4>
                                                    <h4 class="todo-name alignright">September</h4>
 													<div style="clear: both;"></div>
                                                     
@@ -235,7 +274,7 @@
 												<div class="todo-icon icon-briefcase"></div>
 												<div class="todo-content">
 													<h4 class="todo-name alignleft">
-														<strong>Company Formation and Corporate Docs</strong>:</h4>
+														<strong>Company Formation and Corporate Docs</strong></h4>
                                                     <h4 class="todo-name alignright">October</h4>
 													<div style="clear: both;"></div>
 													Meg Boulware, Patent Attorney
@@ -246,7 +285,7 @@
 												<div class="todo-icon icon-shopping-cart"></div>
 												<div class="todo-content">
 													<h4 class="todo-name alignleft">
-														<strong>Venture Deals, Mergers, and Aquisitions</strong>:</h4>
+														<strong>Venture Deals, Mergers, and Aquisitions</strong></h4>
                                                     <h4 class="todo-name alignright">November</h4>
 													<div style="clear: both;"></div>
 													Greg Guidroz: exiting CFO Tanox, Jim Graham: Santé Ventures
@@ -984,6 +1023,7 @@
 	<script src="assets/js/dropdown.js"></script>
 	<script src="assets/js/bootstrap-tab.js"></script>
 	<script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
 	<script src="api_key.js"></script>
 	<script id="config" type="text/javascript" charset="utf-8"></script>
 	

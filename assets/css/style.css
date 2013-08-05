@@ -3508,3 +3508,9 @@ black{
 .alignright {
 	float: right;
 }
+.shadow {
+   -moz-box-shadow:    inset 1px 4px 9px -6px black;
+   -webkit-box-shadow: inset 1px 4px 9px -6px black;
+   box-shadow:         inset 1px 4px 9px -6px black;
+    background-color:#ddd;
+}
