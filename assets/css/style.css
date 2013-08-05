@@ -3514,3 +3514,11 @@ black{
    box-shadow:         inset 1px 4px 9px -6px black;
     background-color:#ddd;
 }
+
+@media (min-width: 980px){
+    .anchor{
+  padding-top: 77px;
+  margin-top: -77px;
+  display: inline-block; /* required for webkit browsers */
+}
+}

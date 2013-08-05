@@ -3,7 +3,7 @@ MixItUp Marketing Site Stylesheet
 http://www.barrelny.com
 */
 
-/* ------ DEFAULTS ------ */
+/* ------ DEFAULTS ------ 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,7 +23,7 @@ time, mark, audio, video{
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-}
+}*/
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section{
@@ -656,7 +656,7 @@ section .syntaxhighlighter .line.alt2{
 	}
 }
 
-/* ------ HEADER ------ */
+/* ------ HEADER ------ 
 
 header{
 	position: absolute;
@@ -796,7 +796,7 @@ header h2{
 	font-weight: 400;
 }
 
-/* FULL WIDTH NAV */
+/* FULL WIDTH NAV 
 
 header nav li{
 	position: relative;
@@ -845,8 +845,8 @@ header .drop_down{
 	opacity: 0;
 	overflow: hidden;
 }
-
-/* DOWNLOAD AND DOWNLOAD DROP DOWN */
+*/
+/* DOWNLOAD AND DOWNLOAD DROP DOWN 
 
 @media screen and (min-width: 800px){
 
@@ -984,7 +984,7 @@ header .drop_down{
 
 }
 
-/* SMALL NAV */
+/* SMALL NAV 
 
 header #NavToggle{
 	width: 30px;
@@ -1102,7 +1102,7 @@ header #NavToggle div::after{
 		padding-top: 0px;
 	}
 }
-
+*/
 /* ------ RESIZE ME ------ */
 
 #ResizeMe{
