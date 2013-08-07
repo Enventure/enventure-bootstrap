@@ -14,7 +14,17 @@
         <!-- end: Mobile Specific -->
     
         <!-- start: required ATF CSS/scripts -->
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <!-- start: CSS -->
+                <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+
+        <link href="assets/css/mixitup.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href="assets/css/slider.css" rel="stylesheet">
+        <link href="assets/css/flat-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/meetup.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <!-- end: CSS -->
 
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -454,16 +464,7 @@ display: none;
             </section>
         </div>
         <!-- end: meta map-->
-                <!-- start: CSS -->
-        <link href="assets/css/mixitup.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/sticky-nav.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link href="assets/css/slider.css" rel="stylesheet">
-        <link href="assets/css/flat-ui.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/meetup.css">
-        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-        <!-- end: CSS -->
+                
         <!-- start: section-events -->
         <div class="section-wrapper">
             <a class="anchor" id="events"></a>
@@ -1378,7 +1379,6 @@ display: none;
         <!-- start: js load -->
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/modernizr.js"></script>
-        <script src="assets/js/ba-cond.js"></script>
         <script src="assets/js/slitslider.js"></script>
         <script src="assets/js/isotope.js"></script>
         <script src="assets/js/cookie.js"></script>
@@ -1388,8 +1388,10 @@ display: none;
         <script src="assets/js/custom.js"></script>
         <script src="assets/js/dropdown.js"></script>
         <script src="assets/js/bootstrap-tab.js"></script>
-        <script src="api_key.js"></script>
         <script id="config" type="text/javascript" charset="utf-8"></script>
+        <!-- ba-cond -->
+        <script type="text/javascript" charset="utf-8">(function($){$.fn.cond=function(){var e,a=arguments,b=0,f,d,c;while(!f&&b<a.length){f=a[b++];d=a[b++];f=$.isFunction(f)?f.call(this):f;c=!d?f:f?d.call(this,f):e}return c!==e?c:this}})(jQuery);</script>
+        <script type="text/javascript" charset="utf-8">$api_key = "69457ff312027530326461f165e67"</script>
         <!-- end: js load -->
         <!-- start: meetup script -->
         <script>
