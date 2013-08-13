@@ -1776,7 +1776,7 @@ textarea,
       border-radius: 0 0 6px 6px;
       padding-bottom: 18px; }
     .todo li.todo-done {
-      background: transparent url("../images/flat/todo/done.png") 92% center no-repeat;
+      background: transparent url("../images/flat/todo/done.png") 97% center no-repeat;
       background-size: 20px 20px;
       color: #1abc9c; }
       .todo li.todo-done .todo-name {
