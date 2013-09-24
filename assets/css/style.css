@@ -3539,3 +3539,10 @@ black{
 .first-46{
     padding-top:0px;
 }
+
+.shadow-black {
+        -moz-box-shadow: inset 1px 4px 9px -6px white;
+        -webkit-box-shadow: inset 1px 4px 9px -6px white;
+        box-shadow: inset 1px 4px 9px -6px white;
+        background-color:#000;
+    }

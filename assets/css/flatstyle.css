@@ -10343,7 +10343,10 @@ input.todo-search-field.placeholder {
         color:#CCC;
     }
     .grey {
-        background:#eeeeee
+        background:#eee
+    }
+.black {
+        background:#fff
     }
     .enventure-blue {
         background: #4384d3;
