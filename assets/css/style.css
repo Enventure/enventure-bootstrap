@@ -1,8 +1,9 @@
 body
 {
-	color: #026873;
+	color: #414141;
 	margin: 0;
-	font: 300 1em/20px "Lato",sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
 	background: #eff0e9;
 }
 
@@ -1448,22 +1449,15 @@ blockquote small:before
 	text-decoration: none
 }
 
-.modern .mordern-id
-{
-	font-family: "Lato",sans-serif
-}
-
 .section-sign a:hover,.section-sign a:active,.section-sign a:focus
 {
 	color: #eff0e9;
 	text-decoration: none;
-	font-family: "Lato",sans-serif
 }
 
 .sign-facebook
 {
 	background: #35528a;
-	font-family: "Lato",sans-serif
 }
 
 .sign-facebook:hover
