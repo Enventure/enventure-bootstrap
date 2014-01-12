@@ -1700,7 +1700,7 @@ textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type=
 .example-features h3{padding:40px 0}
 .example-features img{max-width:50%}
 .section-features .info-features{margin-bottom:30px;padding:0 3%;text-align:middle}
-.section-features .img-features{height:150px}
+.img-features{height:100px}
 .section-features .info-features>i{display:block;font-size:70px;line-height:90px;color:#026873}
 .section-features .info-features img{margin-bottom:15px}
 .section-features .info-features h5{box-shadow:none;color:#026873;display:block;font-size:22px;font-weight:400;margin-bottom:5px;padding-bottom:10px;text-decoration:none;text-transform:uppercase}

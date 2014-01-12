@@ -8197,8 +8197,8 @@ input.todo-search-field.placeholder {
         padding: 0 3%;
         text-align: middle
     }
-    .section-features .img-features {
-        height: 150px
+   .img-features {
+        height: 100px
     }
     .section-features .info-features>i {
         display: block;
