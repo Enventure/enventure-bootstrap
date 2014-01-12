@@ -61,9 +61,43 @@
     </head>
     
     <body class="home">
+        <!-- start: sticky area -->
+        <header id="header">
+            <!--start: navbar -->
+            <div id="navigation" class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+                            <span>
+                                <i class="icon-reorder"></i>
+                            </span>
+                        </a>
+                        <img src="assets/ico/apple-touch-icon-114.png" style="padding:5px; padding-left:15px; float:left; height:50px">
+                        <div id="top-navigation" class="nav-collapse subnav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <li class="">
+                                    <a href="#events">events</a>
+                                </li>
+                                <li class="">
+                                    <a href="#learn">flight school</a>
+                                </li>
+                                <li class="">
+                                    <a href="#jobs">match</a>
+                                </li>
+                                
+                                <li class="">
+                                    <a href="#top">top</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end: navbar -->
+        </header>
         <!-- start: slider -->
         
-
+        
         
         <a class="" id="top"></a>
         
@@ -73,7 +107,7 @@
             <div class="container">
                 <div class="row">
                     <div class="span5">
-                        <div class="hero-unit">
+                        <div class="hero-unit bg-grey">
                             <h1><enventure><env-blue>enventure.</env-blue></enventure></h1>
                             <p>
                                 houston's medical entrepreneurs
@@ -85,53 +119,15 @@
                 <div class="aside">
                     <div>              
                         <img class="img-features" src="assets/images/community.png" alt=""><h5>Community</h5><p>test</p>
-                       <img class="img-features" src="assets/images/community.png" alt=""><h5>Community</h5><p>test</p>
-                        <img class="img-features" src="assets/images/community.png" alt=""><h5>Community</h5><p>test</p>
-                        <img class="img-features" src="assets/images/community.png" alt=""><h5>Community</h5><p>test</p>
+                        <img class="img-features" src="assets/images/idea-machine.png" alt=""><h5>Idea Machine</h5><p>test</p>
+                        <img class="img-features" src="assets/images/flight-school.png" alt=""><h5>Flight School</h5><p>test</p>
+                        <img class="img-features" src="assets/images/match.png" alt=""><h5>Match</h5><p>test</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end: slider -->
-        <!-- start: sticky area -->
-        <header id="header">
-            <!--start: navbar -->
-            <div id="navigation" class="navbar">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
-                            <span>
-                                <i class="icon-reorder"></i>
-                            </span>
-                        </a>
-                        <a class="brand" href="#home">enventure.</a>
-                        <div id="top-navigation" class="nav-collapse subnav-collapse collapse">
-                            <ul class="nav pull-right">
-                                <li class="">
-                                    <a href="#htx">houston</a>
-                                </li>
-                                <li class="">
-                                    <a href="#events">events</a>
-                                </li>
-                                <li class="">
-                                    <a href="#learn">learn</a>
-                                </li>
-                                <li class="">
-                                    <a href="#jobs">jobs</a>
-                                </li>
-                                <li class="">
-                                    <a href="#incubate">incubate</a>
-                                </li>
-                                <li class="">
-                                    <a href="#top">top</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end: navbar -->
-        </header>
+        
         
         <!--start: live--
 <div id="live" >
@@ -166,15 +162,15 @@
                                     <enventure>enventure</enventure> is your
                                     <strong>home</strong> for medical entrepreneurship in Houston.</p>
                             </blockquote>
-                            <div class="featurette">
-                                <img class="featurette-image smaller pull-left" src="assets/images/texas.png">
-                                <h2 class="featurette-heading">Hello,
-                                    <span class="muted">Houston.</span>
-                                </h2>
-                                <p class="lead">Sign up to receive weekly event updates, relevant news, and educational resources.</p>
-                                <div id="mc_embed_signup">
-                                    <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                        <div class="span4 mc-field-group">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <p class="lead">Sign up to receive weekly event updates, relevant news, and educational resources.</p>
+                            <div id="mc_embed_signup">
+                                <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div class="row">
+                                        <div class="span8 mc-field-group">
                                             <input type="email" placeholder="me@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                                         </div>
                                         <div id="mce-responses" class="clear">
@@ -184,241 +180,19 @@
                                                 <p>We'll be sending you updates each week on Houston happenings.</p>
                                             </div>
                                         </div>
-                                        <div class="span3 clear">
+                                        <div class="span4 clear">
                                             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-block">
                                         </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <h1 align="center">What can&nbsp<button type="button" class="btn btn-large btn-danger" data-toggle="collapse" data-target="#map">Houston&nbsp<i class="icon-map-marker"></i></button> do for you? <i class="icon-sort-by-attributes"></i></h1>
-                    </div>
                 </div>
+                
             </div>
         </div>
         <!--end: Houston-->
-        <!-- start: meta map-->
-        <div id="map" class="collapse out mixxx">
-            <section id="SandBox" class="shadow anim150">
-                <nav class="wrapper ns wf">
-                    <div class="set ib">
-                        <ul>
-                            <li class="button filter anim150" data-role="button" data-filter="all">View All</li>
-                            <li class="button filter anim150" data-tole="button" data-filter="hit">
-                                <i class="icon-terminal"></i> Health IT</li>
-                            <li class="button filter anim150" data-filter="medtech">
-                                <i class="icon-stethoscope"></i> Med Tech</li>
-                            <li class="button filter anim150" data-filter="edu">
-                                <i class="icon-book"></i> Open Education</li>
-                            <li class="button filter anim150" data-filter="space">
-                                <i class="icon-group"></i> CoWorking</li>
-                            <li class="button filter anim150" data-filter="accelerator">
-                                <i class="icon-rocket"></i> Accelerator</li>
-                            <!-- <li class="button filter anim150" data-filter="seed">Seed Funding</li>
-<li class="button filter anim150" data-filter="vc">VC Funding</li>
--->
-                            <li class="button filter anim150" data-filter="jobs">
-                                <i class="icon-puzzle-piece"></i> Job Matching</li>
-                            <li class="button filter anim150" data-filter="meetup">
-                                <i class="icon-coffee"></i> Meetups</li>
-                            <li class="button filter anim150" data-filter="md"><i class="icon-user-md"></i> MDs</li>
-                            <li class="break"></li>
-                        </ul>
-                    </div>
-                    <div class="break ib"></div>
-                </nav>
-                <div class="wrapper">
-                    <ul class="wf ns">
-                        <li class="mix hit medtech edu accelerator jobs meetup md" data-name="enventure">
-                            <div class="content anim150">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="img_wrapper anim150">
-                                    <img src="assets/images/map/en.jpg" onload="imgLoaded($(this))" />
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="mix hit edu meetup" data-name="health 2.0 houston">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/h20.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://www.health20houston.com"></a>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="mix edu" data-name="rice alliance">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/ra.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://alliance.rice.edu"></a>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="mix accelerator medtech" data-name="hatrc">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/hatrc.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://www.hatrc.org"></a>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="mix hit medtech edu" data-name="biohouston">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/bh.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://www.biohouston.org"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mix edu space" data-name="platform houston">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/ph.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://www.platformhouston.com"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mix accelerator seed" data-name="owl spark">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/os.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://www.owlspark.com"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mix md" data-name="Society of Physician Entrepreneurs">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/sope.jpg" onload="imgLoaded($(this))"/>
-                                    <a href="http://sopenet.org"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mix space edu" data-name="brightwork">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/bw.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://brightworkcoresearch.com"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mix jobs" data-name="AngelList">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/al.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://angel.co"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mix medtech accelerator" data-name="HTC">
-                            <div class="content">
-                                <div class="spinner wf">
-                                    <span class="side s_left">
-                                        <span class="fill"></span>
-                                    </span>
-                                    <span class="side s_right">
-                                        <span class="fill"></span>
-                                    </span>
-                                </div>
-                                <div class="clickMe img_wrapper anim150">
-                                    <img src="assets/images/map/htc.jpg" onload="imgLoaded($(this))" />
-                                    <a href="http://www.houstontech.org"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="gap ib"></li>
-                        <li class="gap ib"></li>
-                        <li class="gap ib"></li>
-                        <li class="break ib"></li>   
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <!-- end: meta map-->
         
         <!-- start: section-events -->
         <div class="section-wrapper">
@@ -431,50 +205,49 @@
                             <a class="btn pull-right" href="calendar.html">full calendar</a>
                         </h1>
                     </div>
+                    
                 </div>
                 
                 <div class="row">
                     <div class="span4">
-                        <img class="small" src="assets/images/community.png">
-                        
-                        <div class="mug-badge"></div>
+                        <div class="mug-badge" style="padding-top:10px"></div>
                     </div>
                     <div class="span8">
                         <div class="todo mrm">
                             <div>
-                                <h2 class="todo-search grey">School is in Session: Fall 2013 Curriculum</h2>
+                                <h2 class="todo-search grey">Spring 2014 Curriculum</h2>
                             </div>
                             <ul>
-                                <li class="todo-done">
-                                    <div class="todo-icon icon-laptop"></div>
-                                    <a href="http://www.meetup.com/enventure/events/132140902/" target="_blank">
+                                <li class="">
+                                    <div class="todo-icon icon-money"></div>
+                                    <a href="http://www.meetup.com/enventure/events/159209912/" target="_blank">
                                         <div class="todo-content">
                                             <h4 class="todo-name alignleft">
-                                                <strong>Software IP and Patenting</strong>
+                                                <strong>Grants for Life Science Entrepreneurs 101</strong>
                                             </h4>
-                                            <h4 class="todo-name alignright">August 7</h4>
-                                            <div style="clear: both;"></div>David McEwing clears the fog around software patenting</div>
+                                            <h4 class="todo-name alignright">January 16</h4>
+                                            <div style="clear: both;"></div>Paradigm Partners</div>
                                     </a>
                                 </li>
-                                <li class="todo-done">
-                                    <div class="todo-icon icon-unlock"></div>
-                                    <a href="#learn">
+                                <li class="">
+                                    <div class="todo-icon icon-group"></div>
+                                    <a href="http://startupcareerfairhtx.com/" target="_blank">
                                         <div class="todo-content">
                                             <h4 class="todo-name alignleft">
-                                                <strong>Licensing Your Technology</strong>
+                                                <strong>Startup Career Fair</strong>
                                             </h4>
-                                            <h4 class="todo-name alignright">September 23</h4>
-                                            <div style="clear: both;"></div>Rice and BCM Tech Transfer; Kevin Slawin MD, founder Bellicum Pharmaceuticals; Carol Nielsen, Nielsen IP Law</div>
+                                            <h4 class="todo-name alignright">January 24</h4>
+                                            <div style="clear: both;"></div>Rice Alliance and Enventure present the first annual startup career fair with 50 companies and over 100 students.</div>
                                     </a>
                                 </li>
                                 <li>
-                                    <div class="todo-icon icon-shopping-cart"></div>
-                                    <a href="http://www.meetup.com/enventure/events/148341992/" target="_blank">
+                                    <div class="todo-icon icon-rocket"></div>
+                                    <a href="http://www.spacehealthchallenge.com" target="_blank">
                                         <div class="todo-content">
                                             <h4 class="todo-name alignleft">
-                                                <strong>Venture Deals, Mergers, and Aquisitions</strong>
+                                                <strong>NASA Space Health Challenge</strong>
                                             </h4>
-                                            <h4 class="todo-name alignright">November 14</h4>
+                                            <h4 class="todo-name alignright">February 7-9</h4>
                                             <div style="clear: both;"></div>Greg Guidroz: exiting CFO Tanox, Dan Watkins: Mercury Fund, Imran Alibhai, VP Texas Bioalliance, Moderator: Jacqueline Northcut, CEO BioHouston</div>
                                     </a>
                                 </li>
@@ -487,8 +260,10 @@
             </div>
         </div>
         <!-- end: section-events -->
+        
+        
         <!-- start: learn -->
-        <div class="enventure-blue">
+        <div class="lt-blue">
             <div class="section-wrapper">
                 <a class="anchor" id="learn"></a>
                 <div class="container">
@@ -496,7 +271,7 @@
                         <div class="span12">
                             <h1>
                                 <white>
-                                    <strong>learn</strong>
+                                    <strong>flight school</strong>
                                 </white>
                             </h1>
                         </div>
@@ -504,7 +279,7 @@
                     <div class="row">
                         <div class="span12">
                             <div class="featurette">
-                                <img class="featurette-image pull-right smaller" src="assets/images/idea-machine.png">
+                                <img class="featurette-image pull-right smaller" src="assets/images/flight-school.png">
                                 <h2 class="featurette-heading">
                                     <white>DIY
                                         <light>curriculum.</light>
@@ -543,7 +318,7 @@
                             <li>
                                 <a href="#tab4" data-toggle="tab">
                                     <whites>
-                                        <i class="icon-large icon-user-md"></i> event archive</whites>
+                                        <i class="icon-large icon-user-md"></i> event videos</whites>
                                 </a>
                             </li>
                         </ul>
@@ -572,10 +347,7 @@
                                                             <p><strong>Where:</strong> Bioscience Research Collaborative @ 6500 Main St</p>
                                                         <p>This course is available for credit and certificate</p>
                                                     </div>
-                                                </div>
-                                                
-                                                <a class="btn btn-dark btn-large btn-block" href="https://docs.google.com/forms/d/1KWbmMdciik4LZvv6r8nkYfNvR9QfN-hj2VrGmDODWbs/viewform" target="_blank">Apply by Nov 25.</a>
-                                                
+                                                </div>                                                
                                             </div>
                                             <div class="span3">
                                                 <div class="white-content">
@@ -825,12 +597,49 @@
                             </div>
                         </div>
                     </div>
-                    <div class="span12">
-                        <blockquote>
-                            <p>
-                                <enventure>enventure</enventure> wants to learn from you, too. What content would you like to see next?</p>
-                        </blockquote>
-                        <a class="btn btn-dark" href="mailto:team+learn@enventure.org?Subject=Learn%20Content%20Suggestion" target="_blank">Let us know.</a>
+                    <div class="row demo-samples">
+                        <div class="span12">
+                            <div class="todo mrm">
+                                <div>
+                                    <h2 class="todo-search grey">What can
+                                        <env-blue>
+                                            <enventure>enventure</enventure>
+                                        </env-blue>do for
+                                        <env-blue>you</env-blue>?</h2>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="todo-icon fui-man-24"></div>
+                                        <div class="todo-content">
+                                            <h4 class="todo-name">Experienced
+                                                <strong>mentorship</strong>
+                                            </h4>Access to our network of experienced entrepreneurs.</div>
+                                    </li>
+                                    <li>
+                                        <div class="todo-icon icon-money"></div>
+                                        <div class="todo-content">
+                                            <h4 class="todo-name">Startup
+                                                <strong>capital</strong>
+                                            </h4>Non-dilutive funding to develop your idea.</div>
+                                    </li>
+                                    <li>
+                                        <div class="todo-icon icon-lightbulb"></div>
+                                        <div class="todo-content">
+                                            <h4 class="todo-name">Relevant
+                                                <strong>curriculum</strong>
+                                            </h4>Year-round lectures on the topics your startup needs to succeed</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /todo list -->
+                        <div class="span12">
+                            <blockquote>
+                                <p>
+                                    <enventure>enventure</enventure> wants to learn from you, too. What content would you like to see next?</p>
+                            </blockquote>
+                            <a class="btn btn-dark" href="mailto:team+learn@enventure.org?Subject=Learn%20Content%20Suggestion" target="_blank">Let us know.</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -844,7 +653,7 @@
                     <div class="row">
                         <div class="span12">
                             <h1>
-                                <strong>jobs</strong>
+                                <strong>match</strong>
                             </h1>
                         </div>
                     </div>
@@ -881,89 +690,236 @@
                             <a href="/jobs" class="btn btn-block btn-large"><h2><strong>Jobs</strong></h2></a>
                         </div>
                     </div>
+                    <br/>
+                    <div class="row">
+                        <h1 align="center">What can&nbsp<button type="button" class="btn btn-large btn-danger" data-toggle="collapse" data-target="#map">Houston&nbsp<i class="icon-map-marker"></i></button> do for you?</h1>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- end: jobs -->
-        <!-- start: flight school -->
-        <div class="yellow">
-            <div class="section-wrapper wrapper">
-                <div class="ribbon-wrapper">
-                    <div class="ribbon">Coming Soon!</div>
-                </div>
-                <a class="anchor" id="incubate"></a>
-                <div class="container">
-                    <div class="row">
-                        <div class="span12">
-                            <h1>
-                                <strong>flight school</strong>
-                            </h1>
-                        </div>
+        
+        <!-- start: meta map-->
+        <div id="map" class="collapse out mixxx">
+            <section id="SandBox" class="shadow anim150">
+                <nav class="wrapper ns wf">
+                    <div class="set ib">
+                        <ul>
+                            <li class="button filter anim150" data-role="button" data-filter="all">View All</li>
+                            <li class="button filter anim150" data-tole="button" data-filter="hit">
+                                <i class="icon-terminal"></i> Health IT</li>
+                            <li class="button filter anim150" data-filter="medtech">
+                                <i class="icon-stethoscope"></i> Med Tech</li>
+                            <li class="button filter anim150" data-filter="edu">
+                                <i class="icon-book"></i> Open Education</li>
+                            <li class="button filter anim150" data-filter="space">
+                                <i class="icon-group"></i> CoWorking</li>
+                            <li class="button filter anim150" data-filter="accelerator">
+                                <i class="icon-rocket"></i> Accelerator</li>
+                            <!-- <li class="button filter anim150" data-filter="seed">Seed Funding</li>
+<li class="button filter anim150" data-filter="vc">VC Funding</li>
+-->
+                            <li class="button filter anim150" data-filter="jobs">
+                                <i class="icon-puzzle-piece"></i> Job Matching</li>
+                            <li class="button filter anim150" data-filter="meetup">
+                                <i class="icon-coffee"></i> Meetups</li>
+                            <li class="button filter anim150" data-filter="md"><i class="icon-user-md"></i> MDs</li>
+                            <li class="break"></li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="span12">
-                            <div class="featurette">
-                                <img class="featurette-image smaller pull-right" src="assets/images/flight-school.png">
-                                <h2 class="featurette-heading">Incubating your ideas
-                                    <br>
-                                    <span class="muted">through pilot stage.</span>
-                                </h2>
-                                <div class="row demo-samples">
-                                    <div class="span12">
-                                        <div class="todo mrm">
-                                            <div>
-                                                <h2 class="todo-search grey">What can
-                                                    <env-blue>
-                                                        <enventure>enventure</enventure>
-                                                    </env-blue>do for
-                                                    <env-blue>you</env-blue>?</h2>
-                                            </div>
-                                            <ul>
-                                                <li>
-                                                    <div class="todo-icon fui-man-24"></div>
-                                                    <div class="todo-content">
-                                                        <h4 class="todo-name">Experienced
-                                                            <strong>mentorship</strong>
-                                                        </h4>In-house CEO to kickstart your team</div>
-                                                </li>
-                                                <li>
-                                                    <div class="todo-icon icon-money"></div>
-                                                    <div class="todo-content">
-                                                        <h4 class="todo-name">Startup
-                                                            <strong>capital</strong>
-                                                        </h4>$150k seed investment from local VC and angel investors</div>
-                                                </li>
-                                                <li>
-                                                    <div class="todo-icon icon-beaker"></div>
-                                                    <div class="todo-content">
-                                                        <h4 class="todo-name">Inspired
-                                                            <strong>surroundings</strong>
-                                                        </h4>Dedicated lab and prototyping space in the Texas Medical Center</div>
-                                                </li>
-                                                <li>
-                                                    <div class="todo-icon icon-lightbulb"></div>
-                                                    <div class="todo-content">
-                                                        <h4 class="todo-name">Relevant
-                                                            <strong>curriculum</strong>
-                                                        </h4>Weekly lectures on the topics your startup needs to succeed</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- /todo list -->
+                    <div class="break ib"></div>
+                </nav>
+                <div class="wrapper">
+                    <ul class="wf ns">
+                        <li class="mix hit medtech edu accelerator jobs meetup md" data-name="enventure">
+                            <div class="content anim150">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="img_wrapper anim150">
+                                    <img src="assets/images/map/en.jpg" onload="imgLoaded($(this))" />
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span8 offset2">
-                            <a href="http://angel.co/enventure" class="btn btn-large btn-block" target="_blank">Apply via AngelList</a>
-                        </div>
-                    </div>
+                        </li>
+                        
+                        <li class="mix hit edu meetup" data-name="health 2.0 houston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/h20.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.health20houston.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="mix edu" data-name="rice alliance">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/ra.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://alliance.rice.edu"></a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="mix accelerator medtech" data-name="hatrc">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/hatrc.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.hatrc.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="mix hit medtech edu" data-name="biohouston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/bh.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.biohouston.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix edu space" data-name="platform houston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/ph.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.platformhouston.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix accelerator seed" data-name="owl spark">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/os.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.owlspark.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix md" data-name="Society of Physician Entrepreneurs">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/sope.jpg" onload="imgLoaded($(this))"/>
+                                    <a href="http://sopenet.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix space edu" data-name="brightwork">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/bw.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://brightworkcoresearch.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix jobs" data-name="AngelList">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/al.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://angel.co"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix medtech accelerator" data-name="HTC">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/htc.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.houstontech.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gap ib"></li>
+                        <li class="gap ib"></li>
+                        <li class="gap ib"></li>
+                        <li class="break ib"></li>   
+                    </ul>
                 </div>
-            </div>
+            </section>
         </div>
-        <!-- end: flight school -->
+        <!-- end: meta map-->
+        
         <!-- start: partners -->
         <div class="section-wrapper">
             <div class="container">

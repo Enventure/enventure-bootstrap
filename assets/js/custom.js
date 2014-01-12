@@ -202,33 +202,7 @@ $('a[href^="#"]:not([data-slide])').bind('click', function(e) {
 	// edit: Opera requires the "html" elm. animated
 });
 
-/*sticky nav*/
-/* Handles the page being scrolled by ensuring the navigation is always in
- * view.
- */
-function handleScroll(){
 
-  // check that this is a relatively modern browser
-  if (window.XMLHttpRequest){
-
-    // determine the distance scrolled down the page
-    var offset = window.pageYOffset
-               ? window.pageYOffset
-               : document.documentElement.scrollTop;
-
-    // set the appropriate class on the navigation
-    document.getElementById('navigation').className =
-        (window.innerWidth >= 980 ? (offset > 400 ? 'navbar navbar-fixed-top' : 'navbar'):(window.innerWidth >= 768 ? (offset > 400 ? 'navbar navbar-fixed-top' : 'navbar'):((window.innerWidth >= 480 ? (offset > 350 ? 'navbar navbar-fixed-top' : 'navbar'):(offset > 250 ? 'navbar navbar-fixed-top' : 'navbar')))));
-      document.getElementById('first').className =
-        (window.innerWidth >= 980 ? (offset > 400 ? 'first grey' : 'grey'):(window.innerWidth >= 768 ? (offset > 400 ? 'first-66 grey' : 'grey'):((window.innerWidth >= 480 ? (offset > 350 ? 'first-46 grey' : 'grey'):(offset > 250 ? 'first-46 grey' : 'grey')))));
-
-  }
-
-}
-//>=980-400-77
-//<980-400-66
-//<768-350-46
-//<480-250-46
 
 // add the scroll event listener
 if (window.addEventListener){

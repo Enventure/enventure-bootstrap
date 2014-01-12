@@ -93,11 +93,6 @@ i:hover
   margin-bottom: 0
 }
 
-.home
-{
-	padding-top: 0
-}
-
 .floatingHeader
 {
 	position: fixed;
@@ -2777,7 +2772,7 @@ body {
     color: #515151;
 }
 a {
-    color: #00B4FF;
+    color: #5AB6F8;
 }
 a:hover {
     color: #515151;
@@ -3208,7 +3203,7 @@ hr {
     background: none repeat scroll 0 0 #FFFFFF;  
 }
 .btn {
-  background: #00B4FF;
+  background: #364B7B ;
   color: white; }
   .btn:hover, .btn:focus {
     background-color: #515151;
@@ -3216,7 +3211,7 @@ hr {
 }
 
 .btn-dark {
-  background: #00B4FF;
+  background: #364B7B ;
   color: white; }
   .btn-dark:hover, .btn-dark:focus {
     background-color: #000000;
@@ -3291,11 +3286,11 @@ white-bg{
 }
 
 light{
-	color:#CCC;
+	color:#C5C5C5;
 }
 
 .grey {
-	background:#eeeeee
+	background:#eee
 }
 
 .enventure-blue {
@@ -3307,8 +3302,13 @@ color:#4384d3
 }
 
 .yellow {
-	background: #ffd707;
+	background: #FBBC55;
 }
+
+.lt-blue{
+	background: #5AB6F8 ;
+}
+
 
 .red {
 	background: red;
