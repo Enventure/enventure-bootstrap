@@ -306,10 +306,10 @@ section * {
 }
 @media (max-width: 768px) {
     .background {
-        -webkit-background-size: auto 200%;
-        -moz-background-size: auto 200%;
-        -o-background-size: auto 200%;
-        background-size: auto 200%;
+        -webkit-background-size: auto 50%;
+        -moz-background-size: auto 50%;
+        -o-background-size: auto 50%;
+        background-size: auto 50%;
     }
 }
 .container {
@@ -654,7 +654,7 @@ body section[class*=content-] {
 }
 .header-12-sub .aside {
     position: relative;
-    background: #5AB6F8;
+    background: #4384D3;
     float: right;
     text-align: center;
     padding-left: 80px;
