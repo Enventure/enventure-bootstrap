@@ -1016,21 +1016,11 @@ section * {
 }
 .header-18 .header-18-sub .header-18-section p {
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 200;
     color: #ffffff;
     line-height: 33.3px;
 }
-.header-18 .header-18-sub .bg-green-sea .btn.btn-primary {
-    background-color: #1f7970;
-}
-.header-18 .header-18-sub .bg-green-sea .btn.btn-primary:hover,
-.header-18 .header-18-sub .bg-green-sea .btn.btn-primary:focus {
-    background-color: #203f4b;
-}
-.header-18 .header-18-sub .bg-green-sea .btn.btn-primary:active,
-.header-18 .header-18-sub .bg-green-sea .btn.btn-primary.active {
-    background-color: #1b3640;
-}
+
 .header-18 .header-18-sub .additional-links {
     font-size: 12px;
     font-weight: normal;
@@ -1131,7 +1121,7 @@ section * {
     border-color: #fff;
 }
 .header-18 .header-18-sub .header-18-section.s2 .signup-form form .btn {
-    color: #c0392b;
+    color: #414141;
     font-weight: 500;
     font-size: 17px;
 }
@@ -1358,7 +1348,15 @@ section * {
 enventure{
     font-family: Georgia, "Times New Roman",
         Times, serif;
+    font-weight:300;
 }
 env{
     color:#4384d3;
+}
+
+.btn{
+ background:#5AB6F8;   
+}
+.btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle {
+ background:#d15047;   
 }
