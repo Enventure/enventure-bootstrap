@@ -328,6 +328,27 @@ footer {
 .bg-info {
   background-color: #3498db;
 }
+.bg-env {
+  background-color: #4384d3;
+}
+.bg-env-light {
+  background-color: #5AB6F8;
+}
+.bg-env-dark {
+  background-color: #364B7B;
+}
+.bg-env-grey {
+  background-color: #c5c5c5;
+}
+.bg-env-black {
+  background-color: #414141;
+}
+.bg-env-purple {
+  background-color: #5248A2;
+}
+.bg-env-purple-light {
+  background-color: #6A7ADD;
+}
 .bordered {
   border-style: solid;
 }
@@ -1328,44 +1349,8 @@ section * {
     text-align: center;
   }
 }
-body > section,
-footer > .container {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.content-3.v-center {
-  padding-top: 135px;
-  padding-bottom: 18px;
-}
-@media (max-width: 768px) {
-  .content-3.v-center {
-    padding-top: 50px;
-    padding-bottom: 0;
-  }
-  .content-3.v-center .img {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 768px) {
-  .header-6-sub {
-    margin-bottom: 40px;
-  }
-}
-.header-6-sub .background {
-  background-image: url("../img/NY_001.png");
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-.footer-10 {
-  margin-top: 72px;
-}
-@media (max-width: 768px) {
-  .footer-10 {
-    margin-top: 50px;
-  }
-}
 
-.background {
-	background-image:url('../assets/images/texas.png');
-	opacity: 1;
+.background { 
+	background-image:url('../assets/images/home-slider/home-slider-2.jpg');
+	opacity: .7;
 }
