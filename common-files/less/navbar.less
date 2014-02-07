@@ -10,9 +10,8 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    // left: 28%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -80,19 +79,31 @@
     }
   }
 
+  .has-header-dockbar {
+    top: 66px !important;
+  }
 
-  body > *,
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    .transition(left .333s);
+    left: 0;
+  }
   .navbar .nav-collapse {
-    .transition(left .4s);
+    .transition(right .333s);
   }
 
   .nav-visible {
-    body > * {
-      left: -72%;
+    body > header,
+    body > section,
+    body > div,
+    body > footer, {
+      left: -230px;
     }
 
     .navbar .nav-collapse {
-      left: 28%!important;
+      right: 0!important;
       visibility: visible;
     }
   }

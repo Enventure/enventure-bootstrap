@@ -1,0 +1,30 @@
+.content-25 {
+    position:relative;
+    padding:95px 0;
+    @media (max-width: 767px) {
+        padding: 40px 20px;
+        .svg, .nosvg {
+            display:block;
+            text-align:center;
+            float:none;
+            margin-top:45px;
+        }
+    }
+    h3 {
+        .font(30px, @h-text-color);
+        font-family:@h-font-family;
+        font-weight: 500;
+    }
+    p {
+        .font(18px);
+        font-family:@c-font-family;
+        margin-top:45px;
+        font-weight: normal;
+    }
+    svg, .svg {
+        max-width: 100%;
+    }
+    .nosvg {
+        display:none;
+    }
+}

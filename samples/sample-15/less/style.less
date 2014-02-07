@@ -1,0 +1,68 @@
+@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../../common-files/less/mixins.less';
+@import '../../../common-files/less/common.less';
+@import '../../../common-files/less/navbar.less';
+@import '../../../common-files/less/helper.less';
+
+/* header */
+@import '../../../ui-kit/ui-kit-header/less/header-8.less';
+
+/* contents */
+@import '../../../ui-kit/ui-kit-content/less/content-18.less';
+@import '../../../ui-kit/ui-kit-content/less/content-26.less';
+@import '../../../ui-kit/ui-kit-content/less/content-27.less';
+@import '../../../ui-kit/ui-kit-content/less/content-29.less';
+
+/* footer */
+@import '../../../ui-kit/ui-kit-footer/less/footer-12.less';
+
+body > section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.header-8-sub {
+    h3 {
+        color:@h-text-color;
+    }
+    .lead {
+        color: @h-text-color;
+    }
+    .background {
+        background-image: url("../img/Italy_001.png");
+        background-position: 50% 0;
+        .opacity(100);
+    }
+}
+.content-26 h3 {
+    color:@h-text-color;
+}
+.content-27 {
+    background: none repeat scroll 0 0 rgba(52, 152, 219, 0.1);
+    h3 {
+        color:@h-text-color;
+    }
+    .btns > *:not(:first-child) {
+        color:@h-text-color;
+    }
+}
+.content-18 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.content-29 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.footer-12 {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    &:before {
+        top: 0;
+    }
+    @media (max-width: 480px) {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}

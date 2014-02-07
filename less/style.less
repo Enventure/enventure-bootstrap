@@ -1,0 +1,99 @@
+@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../../common-files/less/mixins.less';
+@import '../../../common-files/less/common.less';
+@import '../../../common-files/less/navbar.less';
+@import '../../../common-files/less/helper.less';
+
+/* header */
+@import "../../../ui-kit/ui-kit-header/less/header-18.less";
+
+.header-18 .header-18-sub .header-18-section.s2 {
+    .img {
+        display: inline-block;
+        position: relative;
+        img {
+            .transition(.4s);
+        }
+        img[src*="/twitter-2@2x"] {
+            position: absolute;
+            width: 85%;
+            top: 16%;
+            left: 0;
+            .backface-visibility(visible);
+        }
+        img:first-child {
+            visibility: hidden;
+        }
+        &:hover {
+            img[src*="/twitter-2@2x"] {
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    .signup-form {
+        form {
+            margin: 20px 0;
+            .controls-row .fool {
+                display: table-cell;
+                width: 100%;
+                float:left;
+                .box-sizing(border-box);
+                input {
+                    width: 100%;
+                    .box-sizing(border-box);
+                    height: 41px;
+                }
+            }
+            .controls-row:first-child + .controls-row {
+                display: table;
+                width: 100%;
+                > div {
+                    display: table-cell;
+                    width: 50%;
+                    .box-sizing(border-box);
+                    padding-left: 5px;
+                    @media (max-width: 767px) {
+                        padding-left: 9px;
+                    }
+                    &:first-child {
+                        padding-left: 0;
+                        padding-right: 5px;
+                        @media (max-width: 767px) {
+                            padding-right: 9px;
+                        }
+                    }
+                }
+                input {
+                    width: 100%;
+                    .box-sizing(border-box);
+                    height: 41px;
+                }
+            }
+            input[type="text"], input[type="password"] {
+                border-color: #fff;
+            }
+            .btn {
+                color: #c0392b;
+                font-weight: 500;
+                font-size: 17px;
+                @media (max-width: 767px) {
+                    margin: 9px 0;
+                }
+            }
+        }
+        @media (max-width: 480px) {
+            form {
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+.header-18 .header-18-sub .pt-page-current .header-18-section .img img[src*="/twitter-1@2x"] {
+    visibility: visible;
+}

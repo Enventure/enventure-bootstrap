@@ -1,0 +1,31 @@
+/**
+ * Content 9 stylesheet  
+ * */
+ .content-9 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position:relative;
+    h3 {
+        .font(30px, @h-text-color);
+        font-family:@h-font-family;
+        margin-bottom: 24px;
+        font-weight: 300;
+    }
+    p {
+        .font(16px);
+        line-height: 30px;
+    }
+    h6 {
+        text-transform: none;
+        .font(18px, @base);
+        font-family:@c-font-family;
+        font-weight:500;
+    }
+    .span3 {
+        .font(14px);
+        margin-top: 40px;
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+    }
+}

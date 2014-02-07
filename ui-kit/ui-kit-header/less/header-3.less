@@ -1,0 +1,109 @@
+/**
+ * Header 3 stylesheet  
+ * */
+ .header-3-startup-antiflicker {
+    border-bottom:1px @silver solid;
+}
+.header-3 {
+    padding-top:0;
+    padding-bottom:0;
+    .navbar {
+        top:0 !important;
+        margin: 10px 0 0;
+        font-family: @h-font-family;
+        &.navbar-fixed-top {
+            position:fixed;
+            margin:0 auto;
+        }
+        .navbar-form, .navbar-search {
+            margin: 0;
+            padding: 20px 0 19px 35px;
+        }
+        .btn, .btn-group {
+            margin-top: -1px;
+        }
+        .btn {
+            padding-left: 26px;
+            padding-right: 26px;
+            .font(14px, white);
+            &.btn-primary {
+                .btn-background(@button-primary-active);
+            }
+        }
+        .navbar-inner {
+            background: none;
+        }
+        .brand {
+            padding-left: 0;
+            .font(25px, @midnight-blue);
+            font-weight: 600;
+            img:first-child {
+                float: left;
+                margin: -10px 15px 0 0;
+            }
+        }
+        .nav {
+            > li {
+                margin-left: 25px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                > a {
+                    padding: 29px 0 27px;
+                    .font(13px);
+                    font-weight: 500;
+                    letter-spacing:2px;
+                    .a-color(@concrete, @link-hover-color);
+                }
+                &.active > a {
+                    .a-color(@link-hover-color, @link-hover-color);
+                }
+            }
+        }
+        .btn-navbar {
+            margin: 28px 0 17px;
+            padding: 0;
+            .border-radius(0);
+            border: 0;
+            background: none!important;
+            .a-color(@silver, @link-hover-color);
+        }
+        @media (max-width: 979px) {
+            .nav-collapse {
+                padding-top: 28px;
+                .navbar-collapse;
+            }
+          .btn-navbar{
+
+            &:before{
+              content:'';
+              display: block;
+              background-image: url("../../../common-files/icons/menu-icon-dark.png");
+              width: 17px;
+              height: 12px;
+
+            }
+          }
+        }
+    }
+}
+.header-3-sub {
+    position:relative;
+    h3 {
+        .font(30px, @h-text-color);
+        font-family:@h-font-family;
+        margin-bottom:20px;
+        font-weight: 300;
+    }
+    p {
+        .font(16px, @c-text-color);
+        font-family:@c-font-family;
+    }
+    padding-top: 180px;
+    padding-bottom: 100px;
+    @media (max-width: 480px) {
+        padding-top: 100px;
+        background-attachment: scroll;
+        background-position: 50% 50%!important;
+    }
+}

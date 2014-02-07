@@ -1,0 +1,77 @@
+@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../../common-files/less/mixins.less';
+@import '../../../common-files/less/common.less';
+@import '../../../common-files/less/navbar.less';
+@import '../../../common-files/less/helper.less';
+
+/* header */
+@import '../../../ui-kit/ui-kit-header/less/header-12.less';
+
+/* contents */
+@import '../../../ui-kit/ui-kit-content/less/content-19.less';
+
+/* prices */
+@import '../../../ui-kit/ui-kit-price/less/price-common.less';
+@import '../../../ui-kit/ui-kit-price/less/price-1.less';
+
+/* footer */
+@import '../../../ui-kit/ui-kit-footer/less/footer-13.less';
+
+body > section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.logos {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    > .container {
+        display: table;
+        > div {
+            display: table-cell;
+            text-align: center;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+.header-12-sub .background {
+    background-image: url("../img/NY_001.png");
+    .opacity(30);
+}
+.header-12-sub .aside, .header-12-sub .aside:before {
+    background-color:@danger;
+}
+.content-19 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.price-1 {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    .plan .btn {
+        background-color: #e74c3c;
+    }
+    > .container {
+        > h3 {
+            text-align: center;
+            .font(35px, @h-text-color);
+        }
+        > .lead {
+            text-align: center;
+            .font(25px);
+            font-family: @h-font-family;
+            margin: 0 0 20px;
+        }
+        .plans {
+            margin-top:63px;
+        }
+    }
+}

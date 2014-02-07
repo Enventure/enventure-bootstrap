@@ -1,0 +1,117 @@
+/**
+ * Header 8 stylesheet  
+ * */
+ .header-8-startup-antiflicker {
+    border-bottom:1px @silver solid;
+}
+.header-8 {
+    padding-top:0;
+    padding-bottom:0;
+    z-index:100;
+    .navbar {
+        position:relative;
+        top:0;
+        z-index:2;
+        margin: 18px 0 10px;
+        font-family: @h-font-family;
+        &.navbar-fixed-top {
+            position:fixed;
+            margin:0 auto;
+            top:0 !important
+        }
+        .navbar-inner {
+            background: none;
+        }
+        .brand {
+            padding-left: 0;
+            padding-top: 18px;
+            .font(25px, @base);
+            img:first-child {
+                float: left;
+                margin: -10px 15px 0 0;
+            }
+        }
+        .nav {
+            @media (min-width: 980px) {
+                position: absolute;
+                width: 100%;
+                height: 0;
+                overflow: visible;
+                text-align: center;
+                > li {
+                    float: none;
+                    display: inline-block;
+                    .line-height(15px);
+                }
+            }
+            > li {
+                margin-left: 50px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                > a {
+                    padding: 25px 0 27px;
+                    .font(16px);
+                    font-weight:500;
+                    font-family:@h-font-family;
+                    .a-color(@concrete, @base);
+                }
+                &.active > a {
+                    .a-color(@base, @base);
+                }
+            }
+        }
+        .btn-navbar {
+            margin: 22px 0 17px;
+            padding: 0;
+            .border-radius(0);
+            border: 0;
+            background: none!important;
+            color: @base;
+            &:hover, &:focus {
+                color: @info;
+            }
+            &:active, &.active {
+                color: mix(@info, black, 80%);
+            }
+        }
+        @media (max-width: 979px) {
+            .nav-collapse {
+                padding-top: 42px;
+                .navbar-collapse;
+            }
+          .btn-navbar{
+              &:before{
+                content:'';
+                display: block;
+                background-image: url("../../../common-files/icons/menu-icon-header-8.png");
+                width: 17px;
+                height: 12px;
+              }
+          }
+        }
+    }
+}
+.header-8-sub {
+    position:relative;
+    padding-top:101px;
+    padding-bottom: 0;
+    h3 {
+        .font(35px);
+        color: #fff;
+        margin-bottom:42px;
+        text-align: center;
+        font-weight:300;
+    }
+    .lead {
+        .font(24px);
+        color: #fff;
+        font-family:@h-font-family;
+        text-align: center;
+        font-weight:300;
+    }
+    img {
+        .center-block;
+        margin-top: 87px;
+    }
+}

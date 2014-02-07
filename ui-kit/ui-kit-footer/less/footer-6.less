@@ -1,0 +1,145 @@
+/**
+ * Footer 6 stylesheet  
+ * */
+ .footer-6 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    color: #7f8c8d;
+    a {
+        font-weight: normal;
+    }
+    @media (max-width: 480px) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .brand {
+        display: inline-block;
+        margin-bottom: 12px;
+        .font(25px, @base);
+        font-family: @h-font-family;
+        font-weight: 500;
+        .line-height(18px);
+        &:hover, &:focus {
+            color: @firm;
+        }
+    }
+    h6 {
+        margin: 0 0 20px;
+        .font(18px, @base);
+        font-family:@h-font-family;
+        text-transform: none;
+        @media (max-width: 767px) {
+            margin: 0 0 5px;
+        }
+    }
+    nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            .font(16px, inherit);
+            li {
+                margin-bottom: 8px;
+                a {
+                    color: @asbestos;
+                    &:hover, &:focus {
+                        color: @firm;
+                    }
+                }
+            }
+        }
+        h6 {
+            @media (max-width: 480px) {
+                margin: 0 0 12px;
+            }
+        }
+        @media (max-width: 767px) {
+            .clearfix;
+            .span2 {
+                float: left;
+                width: 30%;
+                margin-left: 5%;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+    .input-append {
+        @media (max-width: 767px) {
+            display: block;
+            margin: 0 47px 0 0;
+        }
+    }
+    .input-append input[type="text"] {
+        width: 160px;
+        @media (min-width: 1200px) {
+            width: 211px;
+        }
+        @media (min-width: 768px) and (max-width: 979px) {
+            width: 106px;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        .transition(~'background-color 0.25s, border-color 0.25s');
+        &:hover {
+            border-color: #cacfd2;
+        }
+        &:focus {
+            border-color: @turquoise;
+        }
+    }
+    .social-btns {
+        white-space: nowrap;
+        > * {
+            display: inline-block;
+            margin-left: 15px;
+            .font(20px, @turquoise);
+            width: 20px;
+            height: 25px;
+            overflow: hidden;
+            text-align: center;
+            @media (max-width: 480px) {
+                margin-top: 15px;
+                margin-bottom: 7px;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            > * {
+                display: block;
+                top: 0;
+                position: relative;
+                .transition(0.25s top);
+                &:first-child {
+                    color: @silver;
+                }
+            }
+            &:hover > * {
+                top: -100%;
+            }
+        }
+        .fui-twitter:first-child {
+            margin-top: 2px;
+        }
+    }
+    @media (max-width: 767px) {
+        [class*="span"] {
+            margin-top: 15px;
+        }
+        .row:first-child {
+            margin-top: -15px;
+        }
+    }
+    @media (max-width: 480px) {
+        .control-group {
+            margin-bottom: 0;
+            .input-append {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

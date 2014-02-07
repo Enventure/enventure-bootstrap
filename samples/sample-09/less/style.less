@@ -1,0 +1,71 @@
+@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../../common-files/less/mixins.less';
+@import '../../../common-files/less/common.less';
+@import '../../../common-files/less/navbar.less';
+@import '../../../common-files/less/helper.less';
+
+/* header */
+@import "../../../ui-kit/ui-kit-header/less/header-4.less";
+
+/* contents */
+@import "../../../ui-kit/ui-kit-content/less/content-20.less";
+@import "../../../ui-kit/ui-kit-content/less/content-3.less";
+
+/* price */
+@import "../../../ui-kit/ui-kit-price/less/price-common.less";
+@import "../../../ui-kit/ui-kit-price/less/price-1.less";
+
+body > section {
+    &.v-center {
+        > div {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            @media (max-width: 768px) {
+                padding-top: 90px;
+                padding-bottom: 90px;
+            }
+        }
+    }
+}
+.content-3 {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.header-4, .content-20 {
+    padding:0;
+}
+.header-4 .background {
+    background-image:url("../img/Hawaii_001.png");
+    .opacity(100);
+    @media (max-width: 768px) {
+        .background-size(auto 200%);
+    }
+}
+.price-1 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.price-1 > div {
+    padding-top: 198px;
+    padding-bottom: 200px;
+    @media (max-width: 768px) {
+        padding-top: 98px;
+        padding-bottom: 98px;
+    }
+}
+.price-1 h3 {
+    .font(30px, @h-text-color);
+    font-family:@h-font-family;
+    margin:0 0 63px 0;
+}
+.content-3.bg-clouds .delimiter {
+    border-color: rgba(189, 195, 199, 0.4);
+}
+.content-20 {
+    background-color: #1F2225;
+    .btn-huge {
+        background-color: #14ddb3;
+    }
+}

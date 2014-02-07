@@ -1,7 +1,4 @@
 .nav-visible{
-  .dockbar {
-    display:none;
-  }
   .read-man{
     display:none;
   }
@@ -102,7 +99,15 @@
         border-left: 1px solid #272b2f;
         color: #ffffff;
       }
-
+      span{
+        content: '';
+        background-image: url("../../../common-files/icons/menu-icon.png");
+        width: 17px;
+        height: 12px;
+        &:before{
+          content: '';
+        }
+      }
     }
   }
   .main-menu {
@@ -198,12 +203,6 @@ body{
   .delimiter{
     margin-top: 30px;
   }
-  section.content-30, section.content-33 {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-
   section[class*=content-]{
     margin-top: 0; margin-bottom: 0;
   }

@@ -1,0 +1,23 @@
+@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../../common-files/less/mixins.less';
+@import '../../../common-files/less/common.less';
+@import '../../../common-files/less/navbar.less';
+@import '../../../common-files/less/helper.less';
+
+/* header */
+@import '../../../ui-kit/ui-kit-header/less/header-14.less';
+
+.header-14-sub {
+    padding-bottom:120px;
+    min-height: 960px;
+    .box-sizing(border-box);
+    @media (max-width: 480px) {
+        padding-bottom: 50px;
+    }
+}
+.header-14-sub .background {
+    background-image:url("../img/img-1.jpg");
+    .opacity(100);
+}
