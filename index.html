@@ -140,13 +140,13 @@
                                 </div>
                             </div>
                         </div>
-                        <footer class="footer-10">
+                        <section class="footer-10">
                             <div class="subscribe-form bg-env-dark" id="mc_embed_signup">
                                 <div class="container">
                                     <div class="row">
                                         <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&amp;id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                             <div class="span8 mc-field-group">
-                                                <input type="text" placeholder="weekly updates" spellcheck="false" name="EMAIL" class="required email" id="mce-EMAIL">
+                                                <div class="cursor"> </div><input type="text" placeholder="you@email.com" spellcheck="false" name="EMAIL" class="required email" id="mce-EMAIL">
                                             </div>
                                             <div class="span4">
                                                 <button class="btn btn-large" type="submit">Subscribe</button>
@@ -156,7 +156,7 @@
                                 </div>
                             </div>
                             
-                        </footer>
+                        </section>
                     </section>
                     <!-- start: section-events -->
                     <div class="section-wrapper">
@@ -174,15 +174,15 @@
                             
                             <div class="row">
                                 <div class="span4">
-                                    <div class="mug-badge" style="padding-top:10px"></div>
+                                    <div class="mug-badge mlm mbm mrm" style="padding-top:10px"></div>
                                 </div>
                                 <div class="span8">
-                                    <div class="todo mrm">
+                                    <div class="todo mlm mrm">
                                         <div>
                                             <h3 class="todo-search bg-env">Spring 2014 Curriculum</h3>
                                         </div>
                                         <ul>
-                                            <li class="">
+                                            <li class="todo-done">
                                                 <div class="todo-icon icon-money"></div>
                                                 <a href="http://www.meetup.com/enventure/events/159209912/" target="_blank">
                                                     <div class="todo-content">
@@ -193,7 +193,7 @@
                                                         <div style="clear: both;"></div>Paradigm Partners</div>
                                                 </a>
                                             </li>
-                                            <li class="">
+                                            <li class="todo-done">
                                                 <div class="todo-icon icon-group"></div>
                                                 <a href="http://startupcareerfairhtx.com/" target="_blank">
                                                     <div class="todo-content">
@@ -204,7 +204,7 @@
                                                         <div style="clear: both;"></div>Rice Alliance and Enventure present the first annual startup career fair with 50 companies and over 250 students.</div>
                                                 </a>
                                             </li>
-                                            <li>
+                                            <li class="todo-done">
                                                 <div class="todo-icon icon-rocket"></div>
                                                 <a href="http://www.spacehealthchallenge.com" target="_blank">
                                                     <div class="todo-content">
@@ -504,6 +504,9 @@ By signin up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy P
                 });
             });
         </script>
+    <script type="text/javascript" language="JavaScript">
+document.forms['mc-embedded-subscribe-form'].elements['EMAIL'].focus();
+</script>
         <!-- end: meetup script -->
     </body>
 </html>
