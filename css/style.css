@@ -1333,8 +1333,8 @@ section * {
         line-height: 27px;
         font-size: 25px;
         font-weight: normal;
-        color: inherit;
-        text-align: center;
+        color: white;
+        text-align: left;
     }
 }
 
