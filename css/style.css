@@ -41,7 +41,7 @@ textarea {
     font-size: 14px;
 }
 a {
-    color: #16a085;
+    color: #5AB6F8;
     text-decoration: none;
     -webkit-backface-visibility: hidden;
     -webkit-transition: 0.25s;
@@ -50,7 +50,7 @@ a {
     transition: 0.25s;
 }
 a:hover {
-    color: #1abc9c;
+    color: #FBBC55;
     text-decoration: none;
 }
 h1,
@@ -598,7 +598,7 @@ body > footer {
     border-top: 2px solid #ebedee;
 }
 header {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 70px;
     z-index: 100;
 }
@@ -813,7 +813,7 @@ section * {
 }
 .header-18 .header-18-sub header {
     position: absolute;
-    top: 111px;
+    top: 75px;
     left: 0;
     right: 0;
     padding-top: 0;
@@ -1362,6 +1362,8 @@ env{
 .box
 {
 border-radius:25px;
+    text-align:center;
+    color:white;
 }
 
 blockquote
@@ -1419,4 +1421,73 @@ blockquote small
 blockquote small:before
 {
 	content: ""
+}
+
+.todo li.todo-done
+{
+	color: #c3deca
+}
+
+.todo-name
+{
+	color: #eff0e9
+}
+
+.todo li.todo-done .todo-name
+{
+	color: #eff0e9
+}
+
+.todo-search-field:focus,.todo-search-field:hover,.todo-search-field:active
+{
+	border-color: #c3deca!important
+}
+
+
+.todo {
+    background-color: #515151;
+    color: #00B4FF;
+}
+.todo-search {
+     
+}
+.todo li {
+    background: #444444;
+}
+.todo li.todo-done {
+    color: #EEEEEE;
+}
+.todo-name {
+    color: #FFFFFF;
+}
+.todo li.todo-done .todo-name {
+    color: #FFFFFF;
+}
+.todo-search-field:focus,.todo-search-field:hover,.todo-search-field:active{
+    border-color: #EEEEEE !important;
+}
+
+.todo-search {
+background-image:none;
+position: relative;
+background-size: 16px 16px;
+border-radius: 6px 6px 0 0;
+color: white;
+padding: 19px 25px 20px;
+}
+
+span.tab{
+    padding: 0 80px; /* Or desired space*/
+}
+
+.subtitle {
+    font-size:1.5em;
+    color:#414141;
+    padding-left:40px;
+}
+
+@media (max-width: 520px) {
+    .subtitle {
+        font-size:1em;
+    }
 }
