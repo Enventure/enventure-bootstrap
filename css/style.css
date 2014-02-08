@@ -1356,7 +1356,7 @@ env{
  background:#5AB6F8;   
 }
 .btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle {
- background:#d15047;   
+ background:#FBBC55;   
 }
 
 .box
@@ -1364,6 +1364,15 @@ env{
 border-radius:25px;
     text-align:center;
     color:white;
+}
+
+.box img{
+    padding-top:10px;
+}
+
+.box h4{
+ color:white;
+    padding-bottom:10px;
 }
 
 blockquote

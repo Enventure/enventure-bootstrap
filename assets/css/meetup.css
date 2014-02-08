@@ -4,6 +4,9 @@
 	line-height: 1.2 !important;
 	text-align: center;
 }
+.mug-badge .mup-widget h4 {
+	font-size: 22px;
+}
 .mug-badge .mup-widget h3 {
 	font-weight: bold;
 }
