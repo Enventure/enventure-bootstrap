@@ -28,7 +28,7 @@
     border-top-color: #34495e !important;
 }
 /*only fo flat-ui free*/body {
-    color: #34495e;
+    color: #414141;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.231;
@@ -384,7 +384,7 @@ footer {
 }
 body {
     overflow-x: hidden;
-    color: #7f8c8d;
+    color: #414141;
     line-height: 1.29;
 }
 @media (max-width: 767px) {
@@ -422,7 +422,7 @@ h5,
 h6,
 .h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #2c3e50;
+    color: #414141;
 }
 h1 {
     font-weight: normal;
@@ -749,7 +749,6 @@ section * {
 }
 .header-18 .header-18-sub {
     position: relative;
-    color: white;
 }
 .header-18 .header-18-sub.v-center,
 .header-18 .header-18-sub .v-center {
@@ -1017,7 +1016,6 @@ section * {
 .header-18 .header-18-sub .header-18-section p {
     font-size: 17px;
     font-weight: 200;
-    color: #ffffff;
     line-height: 33.3px;
 }
 
@@ -1271,7 +1269,7 @@ section * {
     line-height: 59.99999999999999px;
     font-size: 50px;
     font-weight: normal;
-    color: #ffffff;
+    color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     letter-spacing: -1px;
@@ -1359,4 +1357,66 @@ env{
 }
 .btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle {
  background:#d15047;   
+}
+
+.box
+{
+border-radius:25px;
+}
+
+blockquote
+{
+	border: medium none;
+	padding: 0
+}
+
+blockquote p
+{
+	background: #fff;
+	border-radius: 2px;
+	padding: 20px;
+	position: relative;
+	font-size: 1.5em
+}
+
+
+blockquote p:after,blockquote p:before
+{
+	border: medium solid transparent;
+	content: " ";
+	height: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	width: 0
+}
+
+blockquote p:after
+{
+	border-top-color: #fff;
+	border-width: 10px;
+	left: 10%;
+	margin-left: -10px
+}
+
+
+
+blockquote p:before
+{
+	border-top-color: rgba(0,0,0,.01);
+	border-width: 11px;
+	left: 10%;
+	margin-left: -11px
+}
+
+blockquote small
+{
+	display: block;
+	padding: 12px 0 0 10px;
+	color:#555
+}
+
+blockquote small:before
+{
+	content: ""
 }
