@@ -811,9 +811,9 @@ section * {
 .header-18 .header-18-sub .h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.header-18 .header-18-sub header {
+.header-18 .header-18-sub header {    
     position: absolute;
-    top: 75px;
+    top: 35px;
     left: 0;
     right: 0;
     padding-top: 0;
