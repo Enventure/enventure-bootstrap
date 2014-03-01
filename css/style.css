@@ -872,8 +872,8 @@ section * {
     height: 100%;
 }
 .header-18 .header-18-sub .header-18-section .t-row > div {
-    padding-left: 35px;
-    padding-right: 35px;
+    /* padding-left: 35px; */
+    /* padding-right: 35px; */
     display: table-cell;
     vertical-align: middle;
     padding-top: 170px;
@@ -1007,7 +1007,7 @@ section * {
     top: 12%;
     right: 52%;
 }
-.header-18 .header-18-sub .header-18-section .todo-search h3 {
+.header-18 .header-18-sub .header-18-section h3 {
     font-size: 36px;
     font-weight: normal;
     color: #ffffff;
@@ -1947,4 +1947,27 @@ span.tab{
     display: block;
     float: none;
   }
+}
+
+.header-6  .branch{
+    padding: 10px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 111px;
+	height: 111px; 
+	border: 2px solid #414141;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.header-6 svg {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.header-6 h1 {
+    line-height: 1em;
 }

@@ -71,7 +71,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
             // social-btns
             if ($(window).width() > 480) {
-                $('footer .social-btns.mobile-processed').removeClass('mobile-processed').appendTo('footer > .container > .row > .span3:last');
+                $('footer .social-btns.mobile-processed').removeClass('mobile-processed').appendTo('footer > .container > .row > .col-sm-3:last');
             } else {
                 $('footer .social-btns:not(.mobile-processed)').addClass('mobile-processed').insertBefore('footer nav');
             }

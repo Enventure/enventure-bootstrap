@@ -7,19 +7,27 @@
     z-index:100;
     position:relative;
     .navbar {
-        @media (max-width: 767px) {
-            top: 90px;
-        }
         position: absolute;
         z-index: 2;
         top: 100px;
-        margin: 0;
-        font-family: @h-font-family;
-        .navbar-inner {
-            background: none;
+        font-family: @font-family-demo;
+        &.navbar-fixed-top {
+            position:fixed;
+        }
+        .opacity(0);
+        .loaded & {
+            .opacity(100);
+        }
+        @media (max-width: 480px) {
+            .brand > span {
+                left: 0;
+                .opacity(100);
+            }
+        }
+        @media (max-width: 767px) {
+            top: 90px;
         }
         .brand {
-            padding-left: 0;
             font-weight: 500;
             .font(25px, @base);
             position: relative;
@@ -47,112 +55,13 @@
                 }
             }
         }
-        .btn-navbar {
-            display: block!important;
-            margin: 28px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-            color: @silver;
-            &:hover, &:focus {
-                color: @firm;
-            }
-            &:active, &.active {
-                color: @base;
-            }
-            &:before {
-
-                  content:'';
-                  display: block;
-                  background-image: url("../../../common-files/icons/menu-icon-dark.png");
-                  width: 17px;
-                  height: 12px;
-
-            }
-        }
-        .opacity(0);
-        .loaded & {
-            .opacity(100);
-        }
-        @media (max-width: 480px) {
-            .brand > span {
-                left: 0;
-                .opacity(100);
-            }
-        }
-    }
-    .navbar .nav-collapse {
-        .box-sizing(border-box);
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: -230px;
-        width: 230px;
-        padding: 68px 0;
-        border-radius: 0;
-        float: none;
-        height: auto!important;
-        overflow: auto!important;
-        background: #222527;
-        font-family: @h-font-family;
-        &::-webkit-scrollbar {
-            display: none;
-        }
-        > * {
-            margin: 30px 0 0!important;
-            &:first-child {
-                margin-top: 0!important;
-            }
-        }
-        .nav {
+        .navbar-header {
             float: none;
         }
-        .nav > li {
-            margin: 0;
+        .navbar-toggle {
             display: block;
-            float: none;
-            > a {
-                display: block!important;
-                margin: 0;
-                padding: 12px 35px;
-                border-bottom: 2px solid #24292d;
-                .font(13px);
-                .a-color(#5b5e61, white);
-                font-family: @h-font-family;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-            }
-            &.active > a {
-                .a-color(white, white);
-            }
-        }
-        .subnav {
-            display: block;
-            list-style: none;
-            li > a {
-                display: block;
-                margin: 0;
-                padding: 7px 35px;
-                .font(13px);
-                .a-color(#5b5e61, #fff);
-                font-family: @h-font-family;
-                text-transform: capitalize;
-            }
-        }
-        .navbar-form, .navbar-search {
-            padding: 10px 35px;
-        }
-    }
-    .navbar .nav-collapse {
-        .transition(right .333s);
-    }
-    .nav-visible.navbar .nav-collapse {
-        right: 0 !important;
-        visibility: visible;
-        @media (max-width: 400px) {
-            right: 0 !important;
-            width: 100%;
+            background-image: url("@{startup-basePath}common-files/icons/menu-icon-dark.png");
+            margin-top: 26px;
         }
     }
 }
@@ -177,7 +86,7 @@
     }
     h1 {
         margin: 0 0 30px;
-        .font(45px, @h-text-color);
+        .font(45px, @text-color-heading);
         font-weight:300;
     }
     .btn {
@@ -257,7 +166,7 @@
         padding-top: 255px;
         padding-bottom: 100px;
         h1 {
-            .font(35px, @h-text-color);
+            .font(35px, @text-color-heading);
         }
     }
 }

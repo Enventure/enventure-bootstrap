@@ -12,20 +12,20 @@
         display: inline-block;
         padding: 3px 0 0;
         .font(25px, inherit);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight: 500;
         img:first-child {
             float: left;
             margin: -10px 15px 0 0;
         }
-        .a-color(@wet-asphalt, @danger);
+        .a-color(@wet-asphalt, @brand-danger);
     }
     p {
         .font(16px);
         .line-height(25.6px);
     }
     a {
-        .a-color(@danger);
+        .a-color(@brand-danger);
         font-weight: normal;
     }
     h6 {
@@ -43,6 +43,7 @@
         ul {
             list-style: none;
             margin: 0;
+            padding: 0;
             .font(16px, inherit);
             li {
                 margin-bottom: 8px;
@@ -51,22 +52,20 @@
         a {
             .a-color(@asbestos);
         }
-        @media (max-width: 767px) {
-            .span2 {
-                float: left;
-                width: 50%;
-            }
-            .span2 + .span2 + .span2 {
-                clear: left;
-                margin-top: 30px;
-            }
-            .span2 + .span2 + .span2 + .span2 {
-                clear: none;
-                margin-top: 30px;
-            }
-        }
     }
     @media (max-width: 767px) {
+        .col-sm-2 {
+            float: left;
+            width: 50%;
+        }
+        .col-sm-2 + .col-sm-2 + .col-sm-2 {
+            clear: left;
+            margin-top: 30px;
+        }
+        .col-sm-2 + .col-sm-2 + .col-sm-2 + .col-sm-2 {
+            clear: none;
+            margin-top: 30px;
+        }
         .box {
             margin-top: 33px;
         }
@@ -85,7 +84,7 @@
     .subscribe-form {
         padding-top: 40px;
         padding-bottom: 40px;
-        .span4 {
+        .col-sm-4 {
             text-align: right;
             @media (max-width: 767px) {
                 text-align: center;
@@ -104,8 +103,8 @@
             background: transparent;
             .line-height(60px);
             .font(50px, white);
-            font-family: @h-font-family;
-            .placeholder-color(#fff);
+            font-family: @font-family-demo;
+            .placeholder(#fff);
             font-weight: 500;
             letter-spacing: -1px;
             &::-webkit-input-placeholder {
@@ -131,7 +130,7 @@
             padding-left: 6px;
             .line-height(60px);
             .font(50px, white);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
         }
         .btn {
             margin-top: 8px;
@@ -140,10 +139,10 @@
             max-width: 100%;
         }
         @media (max-width: 767px) {
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-left: -20px;
-            margin-right: -20px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: -5px;
+            margin-right: -5px;
         }
         @media (max-width: 480px) {
             input[type="text"], .ani-placeholder {

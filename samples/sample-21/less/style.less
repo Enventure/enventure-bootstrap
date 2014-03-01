@@ -1,13 +1,16 @@
-@import '../../../flat-ui/less/config.less';
-@import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
 
-@import '../../../ui-kit/ui-kit-projects/less/project-common.less';
-@import '../../../ui-kit/ui-kit-projects/less/project-2.less';
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
+
+@import '@{startup-basePath}ui-kit/ui-kit-projects/less/project-common.less';
+@import '@{startup-basePath}ui-kit/ui-kit-projects/less/project-2.less';
 
 .header-custom {
     padding:0;
@@ -23,6 +26,7 @@
     }
 }
 .header-custom-sub {
+    position: relative;
     background-color: #1b1b1b;
     .v-center;
     height:100%;
@@ -49,7 +53,7 @@
             border:7px solid white;
             span:first-child {
                 .font(40px, white);
-                font-family:@h-font-family;
+                font-family:@font-family-demo;
                 font-weight: 600;
                 border-right:7px solid white;
                 .line-height(48px);
@@ -85,7 +89,7 @@
     .header-custom-sub .hero-unit .headline {
         span:first-child {
             .font(25px, white);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 600;
             padding: 10px;
             border-bottom: 7px solid white;

@@ -1,33 +1,9 @@
-/* 62px */
-/* 52px */
-/* 40px */
-/* 29px */
-/* 28px */
-/* 24px */
-.inline-block {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-.clearfix:after {
-  clear: both;
-}
-.drop-ie-gradient {
-  filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
-}
 .dropdown-arrow-inverse {
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
-/*only fo flat-ui free*/body {
+/* styles from flat-ui-free2.0.0-fix.less files */
+body {
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -43,7 +19,6 @@ textarea {
 a {
   color: #16a085;
   text-decoration: none;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -55,27 +30,27 @@ a:hover {
 }
 h1,
 .h1 {
-  font-size: 62.006px /* 64px */;
+  font-size: 48px /* 64px */;
 }
 h2,
 .h2 {
-  font-size: 51.996px /* 52px */;
+  font-size: 41px /* 52px */;
 }
 h3,
 .h3 {
-  font-size: 39.998000000000005px /* 40px */;
+  font-size: 32px /* 40px */;
 }
 h4,
 .h4 {
-  font-size: 28.994000000000003px /* 29px */;
+  font-size: 23px /* 29px */;
 }
 h5,
 .h5 {
-  font-size: 28px /* 28px */;
+  font-size: 21px /* 28px */;
 }
 h6,
 .h6 {
-  font-size: 23.996px /* 24px */;
+  font-size: 19px /* 24px */;
 }
 h1,
 .h1,
@@ -129,6 +104,7 @@ p {
   /* 41px */
 
   font-weight: 300;
+  margin-bottom: 20px;
 }
 small {
   font-size: 84%;
@@ -239,11 +215,6 @@ footer {
   -moz-border-radius: 6px 0 0 6px;
   border-radius: 6px 0 0 6px;
 }
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  box-shadow: none;
-}
-/* end only for flat-ui free */
 .bg-white {
   background-color: #ffffff;
 }
@@ -372,6 +343,140 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
+.btn {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  line-height: 22px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+.btn.btn-large {
+  font-size: 17px;
+  padding: 12px 18px;
+}
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
+.input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
+  line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  outline: none;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+label {
+  line-height: 20px;
+}
+.carousel {
+  line-height: 1;
+}
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+.page-wrapper {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.page-wrapper,
+.header-antiflicker,
+body > header .header-background {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+.nav-visible .page-wrapper,
+.nav-visible .navbar.navbar-fixed-top,
+.nav-visible .header-antiflicker,
+.nav-visible body > header .header-background {
+  -webkit-transform: translate3d(-230px, 0, 0);
+  -moz-transform: translate3d(-230px, 0, 0);
+  -ms-transform: translate3d(-230px, 0, 0);
+  -o-transform: translate3d(-230px, 0, 0);
+  transform: translate3d(-230px, 0, 0);
+}
+.no-csstransitions .page-wrapper,
+.no-csstransitions .header-antiflicker {
+  left: 0;
+}
+.no-csstransitions.nav-visible .page-wrapper,
+.no-csstransitions.nav-visible .navbar.navbar-fixed-top,
+.no-csstransitions.nav-visible .header-antiflicker {
+  left: -230px !important;
+  right: auto;
+}
+.carousel-indicators {
+  width: 100%;
+}
+[class^="fui-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
 body > section,
 header,
 footer {
@@ -384,9 +489,17 @@ footer {
   body > section,
   header,
   footer {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
+}
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 h1,
 .h1,
@@ -482,6 +595,8 @@ section * {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  opacity: 20;
+  filter: alpha(opacity=2000);
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
@@ -499,36 +614,10 @@ section * {
 }
 @media (max-width: 767px) {
   header {
-    padding-left: 20px;
-    padding-right: 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-}
-.nav-visible .navbar .nav-collapse .nav > li > a:hover,
-.nav-visible .navbar .nav-collapse .nav > li > li a:focus {
-  background-color: transparent;
-}
-.nav-visible .nav-collapse .navbar-form,
-.nav-visible .nav-collapse .navbar-search {
-  border-bottom: 0 none;
-  border-top: 0 none;
-  box-shadow: none;
-  margin: 10px 0;
-  padding: 10px 15px;
-}
-.nav-visible .nav-collapse .navbar-form a.btn,
-.nav-visible .nav-collapse .navbar-search a.btn {
-  border-color: white;
-  color: white;
-}
-.nav-visible .nav-collapse .navbar-form a.btn:hover,
-.nav-visible .nav-collapse .navbar-search a.btn:hover,
-.nav-visible .nav-collapse .navbar-form a.btn:focus,
-.nav-visible .nav-collapse .navbar-search a.btn:focus {
-  color: #7f8c8d;
-  background-color: white;
 }
 .projects-* .pt-perspective {
   position: relative;
@@ -612,13 +701,13 @@ section * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 55px 60px;
+  padding: 55px 60px 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
   color: #95a5a6;
-  height: 330px;
+  min-height: 330px;
   position: relative;
 }
 .projects-1 .head-box:before {
@@ -634,7 +723,6 @@ section * {
   -moz-background-size: 826px 772px;
   -o-background-size: 826px 772px;
   background-size: 826px 772px;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
@@ -642,6 +730,8 @@ section * {
 }
 @media (max-width: 700px) {
   .projects-1 .head-box:before {
+    opacity: 20;
+    filter: alpha(opacity=2000);
     opacity: 0.2;
     filter: alpha(opacity=20);
   }
@@ -712,7 +802,6 @@ section * {
   border-radius: 6px;
   overflow: hidden;
   background-color: #ecf0f1;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -729,9 +818,10 @@ section * {
   border-radius: 6px;
   overflow: hidden;
   background: 50% 50% no-repeat;
+  opacity: 30;
+  filter: alpha(opacity=3000);
   opacity: 0.3;
   filter: alpha(opacity=30);
-  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -749,7 +839,6 @@ section * {
   line-height: 220px;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -778,14 +867,18 @@ section * {
   background-color: #1abc9c;
 }
 .projects-1 .projects .project:hover .photo {
+  opacity: 40;
+  filter: alpha(opacity=4000);
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 .projects-1 .projects .project:hover .overlay {
+  opacity: 100;
+  filter: alpha(opacity=10000);
   opacity: 1;
   filter: alpha(opacity=100);
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .projects-1 .projects .project,
   .projects-1 .projects .photo-wrapper {
     width: 230px;
@@ -838,8 +931,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .projects-2.v-center.row,
   .projects-2 .v-center.row {
@@ -921,11 +1014,12 @@ section * {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
   transition: 0.6s opacity;
+  opacity: 15;
+  filter: alpha(opacity=1500);
   opacity: 0.15;
   filter: alpha(opacity=15);
   -webkit-box-sizing: border-box;
@@ -933,6 +1027,8 @@ section * {
   box-sizing: border-box;
 }
 .projects-2 > *:hover {
+  opacity: 100;
+  filter: alpha(opacity=10000);
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -953,6 +1049,7 @@ section * {
   font-weight: 800;
   letter-spacing: 0px;
   margin-bottom: 12px;
+  margin-top: 10px;
 }
 .projects-2 .project-1 .container p {
   font-size: 30px;
@@ -962,6 +1059,7 @@ section * {
   font-weight: 300;
   letter-spacing: 0px;
   padding-top: 0;
+  margin-bottom: 10px;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 480px) {
@@ -986,6 +1084,12 @@ section * {
 .projects-2 .project-3 [class*="fui-"] {
   font-size: 95px;
   line-height: 95px;
+}
+@media (max-width: 767px) {
+  .projects-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 /**
  * Project 3 stylesheet  
@@ -1030,7 +1134,6 @@ section * {
   border-radius: 50%;
   overflow: hidden;
   background-color: #ecf0f1;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -1047,9 +1150,10 @@ section * {
   border-radius: 50%;
   overflow: hidden;
   background: 50% 50% no-repeat;
+  opacity: 100;
+  filter: alpha(opacity=10000);
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -1067,7 +1171,6 @@ section * {
   line-height: 220px;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -1090,7 +1193,6 @@ section * {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
   -moz-transition: color 0.4s;
   -o-transition: color 0.4s;
@@ -1100,10 +1202,14 @@ section * {
   background-color: #1abc9c;
 }
 .projects-3 .projects .project:hover .photo {
+  opacity: 40;
+  filter: alpha(opacity=4000);
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 .projects-3 .projects .project:hover .overlay {
+  opacity: 100;
+  filter: alpha(opacity=10000);
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1152,9 +1258,10 @@ section * {
   top: 0;
   overflow: hidden;
   background: 50% 50% no-repeat;
+  opacity: 30;
+  filter: alpha(opacity=3000);
   opacity: 0.3;
   filter: alpha(opacity=30);
-  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -1193,7 +1300,6 @@ section * {
 .projects-4 .projects .name.color-pomegranate:hover,
 .projects-4 .projects .name.color-pomegranate.hover {
   color: #c0392b;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
   -moz-transition: color 0.4s;
   -o-transition: color 0.4s;
@@ -1202,7 +1308,6 @@ section * {
 .projects-4 .projects .name.color-orange:hover,
 .projects-4 .projects .name.color-orange.hover {
   color: #f39c12;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
   -moz-transition: color 0.4s;
   -o-transition: color 0.4s;
@@ -1211,7 +1316,6 @@ section * {
 .projects-4 .projects .name.color-belize-hole:hover,
 .projects-4 .projects .name.color-belize-hole.hover {
   color: #2980b9;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
   -moz-transition: color 0.4s;
   -o-transition: color 0.4s;
@@ -1220,13 +1324,14 @@ section * {
 .projects-4 .projects .name.color-green-sea:hover,
 .projects-4 .projects .name.color-green-sea.hover {
   color: #16a085;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
   -moz-transition: color 0.4s;
   -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .projects-4 .projects .project:hover .photo {
+  opacity: 40;
+  filter: alpha(opacity=4000);
   opacity: 0.4;
   filter: alpha(opacity=40);
 }

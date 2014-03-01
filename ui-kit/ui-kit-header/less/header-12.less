@@ -10,10 +10,10 @@
         width: 100%;
         top: 90px;
         margin: 0;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         .font(13px, @silver);
-        .navbar-inner {
-            background: none;
+        .navbar-header {
+            float: none;
         }
         .brand {
             padding: 0;
@@ -24,7 +24,8 @@
             }
         }
         .nav {
-            margin: 9px 0 0 100px;
+            margin: 12px 0 0 100px;
+            float: left;
             a {
                 font-weight: 500;
                 .a-color(@silver, white);
@@ -71,11 +72,11 @@
             .font(18px, rgba(255, 255, 255, 0.7));
         }
     }
-    @media (max-width: 979px) {
+    @media (max-width: 991px) {
         padding-bottom: 0;
         .row {
             float: none;
-            > .span5 {
+            > .col-sm-5 {
                 display: block;
                 float: none;
                 width: 100%;
@@ -129,17 +130,17 @@
         }
         h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
             color: white;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
         }
         h3 {
             .font(32px, white);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 500;
             margin: 0 0 30px;
         }
         p {
             .font(13px, white);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             letter-spacing: 1px;
             .line-height(24.3px);
         }
@@ -163,10 +164,10 @@
             margin-top: 100px;
             padding-left: 37px;
             padding-right: 37px;
-            color: @danger;
+            color: @brand-danger;
             .btn-background(#fff55b);
         }
-        @media (max-width: 979px) {
+        @media (max-width: 991px) {
             max-width: none;
             float: none;
             padding-left: 0;

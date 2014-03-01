@@ -8,17 +8,6 @@
     width: 100%;
     padding-top:0;
     padding-bottom:0;
-    .brand {
-        padding-left: 0;
-        .font(25px, white);
-        font-family:@h-font-family;
-        font-weight: 800;
-        .a-color(white, white);
-        img:first-child {
-            float: left;
-            margin: -10px 15px 0 0;
-        }
-    }
     > .container {
         position: relative;
     }
@@ -26,17 +15,20 @@
         position: absolute;
         z-index: 2;
         top: 45px;
-        font-family: @h-font-family;
-        font-weight:500;
+        font-family: @font-family-demo;
+        font-weight: 500;
         &.navbar-fixed-top {
-            position:fixed;
-            margin:0 auto;
+            position: fixed;
         }
-        a {
-            .transition(0.25s color);
-        }
-        .navbar-inner {
-            background: none;
+        .brand {
+            .font(25px, white);
+            font-family: @font-family-demo;
+            font-weight: 800;
+            .a-color(white, white);
+            img:first-child {
+                float: left;
+                margin: -10px 15px 0 0;
+            }
         }
         .nav {
             > li {
@@ -45,7 +37,7 @@
                     margin-left: 0;
                 }
                 > a {
-                    padding: 31px 0 27px;
+                    padding: 35px 0 27px;
                     .font(13px, white);
                     font-weight:500;
                     letter-spacing: 2px;
@@ -56,30 +48,8 @@
                 }
             }
         }
-        .btn-navbar {
-            margin: 28px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none;
-            .a-color(white, rgba(0, 0, 0, 0.4));
-        }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 40px;
-                .navbar-collapse;
-            }
-          .btn-navbar{
-            background-image: url("../../../common-files/icons/menu-icon.png");
-            width: 17px;
-            height: 12px;
-            &:before{
-              content:'';
-
-            }
-          }
-        }
     }
+
 }
 .header-1-sub {
     position:relative;
@@ -97,8 +67,8 @@
     .container {
         position: relative;
         @media (max-width: 767px) {
-            margin-right: 20px;
-            margin-left: 20px;
+            margin-right: 5px;
+            margin-left: 5px;
         }
     }
     h3 {
@@ -116,7 +86,7 @@
     .lead {
         .font(30px, white);
         font-weight: 300;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         margin-bottom: 0;
         @media (max-width: 600px) {
             .font(26px, white);
@@ -182,7 +152,7 @@
         }
         .controls > * {
             position: absolute;
-            left: 0;
+            left: 15;
             top: 415px;
             z-index: 1000;
             width: 20px;
@@ -197,7 +167,7 @@
                 top: 363px;
             }
             &.control-next {
-                left: 30px;
+                left: 45px;
             }
         }
     }

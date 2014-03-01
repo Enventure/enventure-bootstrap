@@ -5,17 +5,17 @@
     padding-top: 110px;
     text-align: center;
     > .container {
-        padding: 0 0 40px;
+        padding-bottom: 40px;
         position: relative;
     }
     a {
-        .a-color(@silver, @info);
+        .a-color(@silver, @brand-info);
         font-weight: normal;
     }
     .brand {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 15px;
         img:first-child {
             float: left;
             margin: 0 15px 0 0;
@@ -26,6 +26,7 @@
         ul {
             list-style: none;
             margin: 0;
+            padding: 0;
             .font(16px, @base);
             li {
                 display: inline-block;
@@ -45,7 +46,7 @@
         white-space: nowrap;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 15px;
         > * {
             display: inline-block;
             margin-left: 15px;
@@ -59,8 +60,8 @@
             }
             > * {
                 display: block;
-                top: 0;
                 position: relative;
+                top: 0;
                 .transition(0.25s top);
                 &:first-child {
                     color: @silver;
@@ -77,8 +78,8 @@
         padding: 50px 0;
         .font(14px, inherit);
         @media (max-width: 767px) {
-            margin-right: -20px;
-            margin-left: -20px;
+            margin-right: -5px;
+            margin-left: -5px;
             .container {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -94,7 +95,7 @@
         a {
             margin: 0 10px;
             .a-color(@concrete);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
         }
     }
     @media (max-width: 480px) {

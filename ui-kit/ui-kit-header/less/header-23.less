@@ -15,21 +15,14 @@
         position: absolute;
         z-index: 2;
         top: 60px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         &.navbar-fixed-top {
             position: fixed;
-            margin: 0 auto;
-        }
-        a {
-            .transition(0.25s color);
-        }
-        .navbar-inner {
-            background: none;
         }
         .brand {
             padding-left: 0;
             .font(25px, white);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 800;
         }
         .nav {
@@ -50,28 +43,8 @@
                 }
             }
         }
-        .btn-navbar {
-            margin: 28px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-            .a-color(white, rgba(0, 0, 0, 0.4));
-        }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 40px;
-                .navbar-collapse;
-            }
-            .btn-navbar{
-              &:before{
-                content:'';
-                display: block;
-                background-image: url("../../../common-files/icons/menu-icon.png");
-                width: 17px;
-                height: 12px;
-              }
-            }
+        .navbar-toggle {
+            margin-top: 28px;
         }
     }
 }
@@ -84,7 +57,7 @@
     padding-bottom: 270px;
     color: white;
     text-align: center;
-    @media (max-width: 979px) {
+    @media (max-width: 991px) {
         padding-top: 260px;
         padding-bottom: 170px;
     }
@@ -98,13 +71,13 @@
             font-size: 36px;
             font-weight: 800;
             letter-spacing: -2px;
-            @media (max-width: 979px) {
+            @media (max-width: 991px) {
                 display: block;
             }
         }
         span {
             font-weight: 300;
-            @media (max-width: 979px) {
+            @media (max-width: 991px) {
                 display: block;
             }
         }
@@ -116,9 +89,9 @@
             width: 67px;
             height: 67px;
             margin: 0 50px;
-            background: url(../../../common-files/img/header/btn-play.png) no-repeat;
-            @media (max-width: 979px) {
-                margin: 40px 0;
+            background: url("@{startup-basePath}common-files/img/header/btn-play.png") no-repeat;
+            @media (max-width: 991px) {
+                margin: 35px 0;
             }
         }
     }

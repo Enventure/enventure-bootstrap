@@ -6,25 +6,25 @@
     padding-bottom: 125px;
     position:relative;
     h3 {
-        .font(34px, @h-text-color);
-        font-family:@h-font-family;
+        .font(34px, @text-color-heading);
+        font-family:@font-family-demo;
         margin-bottom: 24px;
     }
     p {
         .font(18px);
-        font-family:@c-font-family;
+        font-family:@font-family-demo;
     }
     .box-video {
         margin-top: 40px;
-        .font(16px, @c-text-color);
-        font-family:@c-font-family;
+        .font(16px, @text-color-default);
+        font-family:@font-family-demo;
         p {
             .font(16px);
-            font-family:@c-font-family;
+            font-family:@font-family-demo;
         }
         h6 {
-            .font(20px, @h-text-color);
-            font-family:@c-font-family;
+            .font(20px, @text-color-heading);
+            font-family:@font-family-demo;
             text-transform: none;
         }
         .btns {
@@ -33,13 +33,14 @@
                 text-align: left;
             }
             .btn {
-                min-width: 90%;
+                min-width: 100%;
                 @media (max-width: 767px) {
                     min-width: 0;
                 }
                 [class*="fui-"] {
                     float: left;
                     .font(22px, white);
+                    margin-right: 4px;
                 }
                 + .btn {
                     margin-top: 15px;
@@ -59,13 +60,13 @@
             }
             a {
                 text-decoration: underline;
-                .a-color(@c-text-color, @link-hover-color);
+                .a-color(@text-color-default, @link-hover-color);
             }
         }
     }
     @media (max-width: 480px) {
         .box-video {
-            margin: 40px 0 0;
+            margin-top: 40px;
             .player {
                 margin-bottom: 40px;
                 width: 100%;
@@ -105,7 +106,7 @@
             width: 60px;
             margin: -20px 0 0 -30px;
             padding-left: 16px;
-            .btn-background(@button-primary-active);
+            .btn-background(@btn-primary-active-bg);
             .border-radius(3px);
         }
         > iframe {

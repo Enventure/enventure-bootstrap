@@ -10,7 +10,7 @@
         a {
             .a-color(#bdc3c7, #1abc9c);
             font-size: 13px;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 500;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -19,11 +19,11 @@
     }
     .head-box {
         .box-sizing(border-box);
-        padding: 55px 60px;
+        padding: 55px 60px 20px;
         .border-radius(6px);
         overflow: hidden;
         color: #95a5a6;
-        height: 330px;
+        min-height: 330px;
         position: relative;
         &:before {
             content:'';
@@ -33,7 +33,7 @@
             top: 0;
             right: 0;
             bottom: 0;
-            background: #ebedee url('../../../common-files/img/header/ipad@2x.png') 100% 50% no-repeat;
+            background: #ebedee url('@{startup-basePath}common-files/img/header/ipad@2x.png') 100% 50% no-repeat;
             .background-size(826px 772px);
             .transition(opacity 1s);
             @media (max-width: 700px) {
@@ -46,7 +46,7 @@
         }
         .brand {
             margin-bottom: 17px;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 500;
             font-size: 23px;
             color: #34495e;
@@ -163,7 +163,7 @@
                 .opacity(100);
             }
         }
-        @media (max-width: 979px) and (min-width: 768px) {
+        @media (max-width: 991px) and (min-width: 768px) {
             .project, .photo-wrapper {
                 width: 230px;
             }

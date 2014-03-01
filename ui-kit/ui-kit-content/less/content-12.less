@@ -6,25 +6,19 @@
     .wide {
         .box-sizing(border-box);
         display: block;
-        padding-right: 20px;
-        padding-left: 20px;
-        @media (max-width: 767px) {
-            margin-right: -20px;
-            margin-left: -20px;
-        }
     }
     .btn-wide {
         padding-top: 40px;
         padding-bottom: 40px;
         text-align: center;
         .font(40px);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         .a-color(#fff, #fff);
-        background: @firm;
+        background: @brand-secondary;
         font-weight: 300;
         .transition(~'0.25s color, 0.25s background-color');
         &:hover, &:active {
-            background: @danger;
+            background: @brand-danger;
         }
         @media (max-width: 767px) {
             font-size: 30px;

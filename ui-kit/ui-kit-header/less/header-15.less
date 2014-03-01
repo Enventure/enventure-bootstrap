@@ -7,25 +7,23 @@
 .header-15 {
     padding-top:0;
     padding-bottom:0;
-    background: #171717;
     height:80px;
     z-index:100;
+    width: 100%;
+    .header-background {
+        background: #171717;
+    }
     .navbar {
         position: absolute;
         z-index: 2;
         top: 0;
         margin: 0;
         &.navbar-fixed-top {
-            position:fixed;
-            margin:0 auto;
-            top:0 !important;
+            top: 0 !important;
         }
-        .navbar-form, .navbar-search {
-            margin: 0;
+        .navbar-form {
             padding: 20px 0 19px 20px;
-        }
-        .btn, .btn-group {
-            margin-top: -1px;
+            position: relative;
         }
         .btn {
             .box-sizing(border-box);
@@ -44,11 +42,7 @@
                 color: #171717;
             }
         }
-        .navbar-inner {
-            background: none;
-        }
         .brand {
-            padding-left: 0;
             padding-top: 21px;
             .font(25px, white);
             img:first-child {
@@ -57,7 +51,7 @@
             }
         }
         .nav {
-            @media (min-width: 980px) {
+            @media (min-width: 992px) {
                 position: absolute;
                 width: 100%;
                 height: 0;
@@ -84,27 +78,13 @@
                 }
             }
         }
-        .btn-navbar {
-            margin: 35px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-              &:before{
-                content: '';
-                display: block;
-                background-image: url("../../../common-files/icons/menu-icon.png");
-                width: 17px;
-                height: 12px;
-              }
-              &:hover, &:focus {
-                  background-color: transparent;
-              }
+        .navbar-toggle {
+            background-image: url("@{startup-basePath}common-files/icons/menu-icon.png");
+            margin-top: 26px;
         }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 18px;
-                .navbar-collapse;
-            }
+        .navbar-header {
+            position: relative;
+            z-index: 2;
         }
     }
 }
@@ -133,7 +113,7 @@
         p {
             .font(12px, white);
             font-weight: 500;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             letter-spacing: 4px;
         }
         >[class*="fui-"] {

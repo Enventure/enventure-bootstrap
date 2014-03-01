@@ -50,7 +50,7 @@
             }
             p {
                 font-size: 20px;
-                font-family: @h-font-family;
+                font-family: @font-family-demo;
                 font-weight: normal;
                 line-height: normal;
             }
@@ -86,7 +86,7 @@
         }
         .submitted {
             font-size: 12px;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.19em;
@@ -138,11 +138,11 @@
         color: #2c3e50;
         background: #f5f6f6;
         font-size: 30px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         text-align: center;
         letter-spacing: -1px;
         &:before {
-            content: url('../../../common-files/icons/quote-down.png');
+            content: url('@{startup-basePath}common-files/icons/quote-down.png');
             display: block;
             margin: 0 auto 35px;
             text-align: center;
@@ -152,7 +152,7 @@
             font-size: 18px;
             font-weight: 500;
             color: #2980b9;
-            font-family: @base-font-family;
+            font-family: @font-family-demo;
             letter-spacing: 0;
         }
         @media (max-width: 767px) {
@@ -183,12 +183,12 @@
         }
         @media (min-width: 1200px) {
             .box-2, .box-3, .box-4 {
-                width: 384.666px;
+                width: 374.666px;
             }
         }
-        @media (max-width: 979px) and (min-width: 768px) {
+        @media (max-width: 991px) and (min-width: 768px) {
             .box-2, .box-3, .box-4 {
-                width: 236px;
+                width: 234.666px;
             }
         }
         @media (max-width: 767px) {
@@ -201,7 +201,7 @@
     }
     .tags {
         font-size: 12px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.19em;
@@ -214,6 +214,7 @@
             list-style: none;
             display: block;
             margin: 0;
+            padding: 0;
         }
         li {
             display: inline-block;

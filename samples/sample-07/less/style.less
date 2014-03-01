@@ -1,13 +1,16 @@
-@import '../../../flat-ui/less/config.less';
-@import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
+
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
 
 /* header */
-@import "../../../ui-kit/ui-kit-header/less/header-18.less";
+@import "@{startup-basePath}ui-kit/ui-kit-header/less/header-18.less";
 
 .header-18 .header-18-sub .header-18-section.s2 {
     .img {
@@ -96,4 +99,57 @@
 }
 .header-18 .header-18-sub .pt-page-current .header-18-section .img img[src*="/twitter-1@2x"] {
     visibility: visible;
+}
+.signup-form {
+  form {
+    font-family:@font-family-demo;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    .form-group:first-child + .form-group {
+      display: table;
+      width: 100%;
+      > div {
+        display: table-cell;
+        width: 50%;
+        padding-left: 5px;
+        @media (max-width: 767px) {
+          padding-left: 9px;
+        }
+        &:first-child {
+          padding-left: 0;
+          padding-right: 5px;
+          @media (max-width: 767px) {
+            padding-right: 9px;
+          }
+        }
+      }
+      input {
+        width: 100%;
+      }
+    }
+    .btn {
+      @media (max-width: 767px) {
+        margin: 9px 0;
+      }
+      &.btn-info {
+        &:hover, &:focus {
+          background-color: @btn-primary-active-bg;
+        }
+        &:active, &.active {
+          background-color: mix(@btn-primary-active-bg, black, 85%);
+        }
+      }
+    }
+    input[type="text"], input[type="password"] {
+      border-color: white!important;
+      @media (max-width: 767px) {
+        height: 41px;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    form {
+      margin-top: 25px;
+    }
+  }
 }

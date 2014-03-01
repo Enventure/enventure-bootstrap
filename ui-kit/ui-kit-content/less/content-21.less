@@ -4,7 +4,7 @@
     padding-bottom: 0;
     h3, {
         .font(30px, white);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         text-align: center;
         margin-bottom:55px;
         font-weight: 300;
@@ -24,7 +24,7 @@
                 width: 33%;
                 text-align: center;
                 .font(12px, @silver);
-                font-family: @h-font-family;
+                font-family: @font-family-demo;
                 letter-spacing: 3px;
                 border-left: 2px solid #304357;
                 cursor: pointer;
@@ -50,9 +50,9 @@
         }
         .features-bodies {
             position: relative;
-            background: #ebedee url('../../../common-files/img/content/screen@2x.png') 0 50% no-repeat;
+            background: #ebedee url('@{startup-basePath}common-files/img/content/screen@2x.png') 0 50% no-repeat;
             .background-size(322px 418px);
-            @media (max-width: 979px) {
+            @media (max-width: 991px) {
                 background-position: -15% 50%;
             }
             @media (max-width: 600px) {
@@ -78,8 +78,8 @@
             h6 {
                 text-transform: none;
                 margin: 0 0 30px;
-                .font(20px, @h-text-color);
-                font-family: @c-font-family;
+                .font(20px, @text-color-heading);
+                font-family: @font-family-demo;
                 font-weight: 500;
             }
             p {

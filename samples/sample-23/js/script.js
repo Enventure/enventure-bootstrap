@@ -47,7 +47,7 @@ function fadedEls(el, shift) {
         $('.content-23.first').parallax('50%', 0.3, true);
 
         // Faded elements
-        $('.features [class*="box-"], .content-9 .span5 img').each(function() {
+        $('.features [class*="box-"], .content-9 .col-sm-5 img').each(function() {
             fadedEls($(this), 'h');
         });
       

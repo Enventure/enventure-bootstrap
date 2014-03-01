@@ -4,11 +4,11 @@
     overflow: hidden;
     padding:80px 0;
     @media (max-width: 767px) {
-        padding: 40px;
+        padding: 40px 25px;
     }
     h3 {
         .font(30px, white);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         margin:40px 0;
         font-weight: 300;
         @media (max-width: 767px) {
@@ -18,16 +18,16 @@
     }
     h6 {
         .font(18px, white);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         font-weight:500;
         text-transform: none;
     }
     p {
         .font(18px, @silver);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         margin-bottom:50px;
     }
-    .span8 {
+    .col-sm-8 {
         position: relative;
         padding-top: 600px;
         @media (max-width: 767px) {
@@ -36,10 +36,10 @@
     }
     .description {
         .font(14px, @silver);
-        font-family:@c-font-family;
+        font-family:@font-family-demo;
         position: relative;
         max-width: 220px;
-        background:url("../../../common-files/img/content/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
+        background:url("@{startup-basePath}common-files/img/content/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
         padding-top:110px;
         img {
             position: absolute;
@@ -117,16 +117,16 @@
         padding: 7px 26px 8px;
         background: none;
         border: 2px solid #2ecc71;
-        .font(14px, @emerland);
-        font-family: @h-font-family;
+        .font(14px, @emerald);
+        font-family: @font-family-demo;
         font-weight: 500;
         &:hover, &:focus {
-            background: @emerland;
+            background: @emerald;
             color: white;
         }
         &:active, &.active {
-            border-color: mix(@emerland, black, 85%);
-            background: mix(@emerland, black, 85%);
+            border-color: mix(@emerald, black, 85%);
+            background: mix(@emerald, black, 85%);
             color: rgba(255, 255, 255, 0.75);
         }
     }

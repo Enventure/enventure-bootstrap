@@ -2,7 +2,7 @@
  * Copntact 4 stylesheet  
  * */
  .contacts-4 {
-    background: #34495e url('../../../common-files/img/map.png') 50% 50% no-repeat;
+    background: #34495e url('@{startup-basePath}common-files/img/map.png') 50% 50% no-repeat;
     .background-size(cover);
     color: #bdc3c7;
     text-align: right;
@@ -38,7 +38,7 @@
             height: 38px;
             overflow: hidden;
             text-align: center;
-            color: #1abc9c; // hover color
+            color: #1abc9c;
             &:first-child {
                 margin-left: 0;
             }
@@ -47,7 +47,7 @@
                 position: relative;
                 .transition(0.25s top);
                 &:first-child {
-                    color: #fff; // normal color
+                    color: #fff;
                 }
             }
             &:hover > * {
@@ -58,7 +58,7 @@
     .links {
         margin: 35px 0 0;
         font-size: 47px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight: 700;
         word-break: break-all;
         a {

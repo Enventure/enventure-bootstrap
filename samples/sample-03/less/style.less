@@ -1,23 +1,26 @@
-@import '../../../flat-ui/less/config.less';
-@import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
+
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
 
 /* header */
-@import '../../../ui-kit/ui-kit-header/less/header-11.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-11.less';
 
 /* price */
-@import '../../../ui-kit/ui-kit-price/less/price-common.less';
-@import '../../../ui-kit/ui-kit-price/less/price-1.less';
+@import '@{startup-basePath}ui-kit/ui-kit-price/less/price-common.less';
+@import '@{startup-basePath}ui-kit/ui-kit-price/less/price-1.less';
 
 /* content */
-@import '../../../ui-kit/ui-kit-content/less/content-13.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-13.less';
 
 /* footer */
-@import '../../../ui-kit/ui-kit-footer/less/footer-2.less';
+@import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-2.less';
 
 .header-11-sub .background {
     background-image: url("../img/Brazil_002.png");
@@ -28,7 +31,7 @@
 }
 .header-11-sub {
     h3 {
-        color:@h-text-color;
+        color:@text-color-heading;
     }
     p {
         color:#7f8c8d;
@@ -70,7 +73,7 @@
     }
     .lead {
         font-size: 25px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         text-align: center;
         margin-bottom: 55px;
     }

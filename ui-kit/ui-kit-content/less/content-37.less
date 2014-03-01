@@ -3,11 +3,11 @@
     padding-top: 130px;
     padding-bottom: 130px;
     @media (max-width: 767px) {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     h3 {
-        .font(30px, @h-text-color);
+        .font(30px, @text-color-heading);
         font-weight: 300;
         margin: 0 0 38px;
         text-align: center;
@@ -20,17 +20,8 @@
             }
             input, button {
                 float: left;
-                width: 21.8%;
-                margin: 0 0 0 2.3%;
-                @media (min-width: 1200px) {
-                    width: 22%;
-                }
-                @media (max-width: 979px) and (min-width: 768px) {
-                    width: 21.4%;
-                }
-                @media (max-width: 767px) {
-                    width: 23.2%;
-                }
+                width: 23%;
+                margin: 0 1%;
                 @media (max-width: 480px) {
                     width: 100%;
                     margin: 10px 0 0;
@@ -39,12 +30,9 @@
                     height: 41px;
                     .box-sizing(border-box);
                 }
-                &:first-child {
-                    margin: 0;
-                }
             }
             input:focus {
-                border-color: @info !important;
+                border-color: @brand-info !important;
             }
         }
     }

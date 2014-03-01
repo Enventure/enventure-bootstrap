@@ -18,7 +18,7 @@
     }
     .social-btns {
         margin-top:15px;
-        @media (max-width: 979px) {
+        @media (max-width: 991px) {
             margin-bottom: 25px;
         }
     }
@@ -34,12 +34,13 @@
             margin: 0 0 20px;
             .font(16px, white);
             .line-height(16px);
-            font-family:@h-font-family;
+            font-family:@font-family-demo;
             text-transform: none;
         }
         ul {
             list-style: none;
             margin: 0;
+            padding: 0;
             .font(16px, @silver);
             li {
                 margin-bottom: 5px;
@@ -69,15 +70,15 @@
         }
     }
     @media (max-width: 767px) {
-        .span6 {
+        .col-sm-6 {
             margin-bottom: 20px;
         }
-        nav .span2, .buy-btn {
+        nav .col-sm-2, .buy-btn {
             float: left;
             width: 30%;
             margin-left: 5%;
         }
-        nav .span2:first-child {
+        nav .col-sm-2:first-child {
             margin-left: 0;
         }
     }
@@ -88,13 +89,13 @@
             float: none;
             clear: both;
             width: auto;
-            padding: 15px 0 0;
+            padding-top: 15px;
             margin: 0;
             .btn {
                 margin: 0 0 10px;
             }
         }
-        nav .span2 {
+        nav .col-sm-2 {
             width: 47%;
             margin-left: 6%;
         }

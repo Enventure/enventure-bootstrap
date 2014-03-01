@@ -48,7 +48,7 @@ function fadedEls(el, shift) {
         });
 
         // Faded elements
-        fadedEls($('.content-3 .span6 + .span6 img'), 'h');
+        fadedEls($('.content-3 .col-sm-6 + .col-sm-6 img'), 'h');
         fadedEls($('.content-3 .features'), 75);
 
         // Parallax

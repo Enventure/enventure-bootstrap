@@ -48,7 +48,7 @@ $(function() {
   $(window).resize(function() {
     var h = 0;
 
-    $('body > section:not(.header-9-sub)').each(function() {
+    $('body > .page-wrapper > section:not(.header-9-sub)').each(function() {
       h += $(this).outerHeight();
     });
 
@@ -61,9 +61,9 @@ $(function() {
 
 
   // Faded elements
-  fadedEls($('.content-features .span7.offset1 img'), $('.content-features .span7.offset1 img').outerHeight()/3*2);
+  fadedEls($('.content-features .col-sm-7.col-sm-offset-3 img'), $('.content-features .col-sm-7.col-sm-offset-3 img').outerHeight()/3*2);
   fadedEls($('.content-features .box [class*="fui-"]'), 'h');
-  fadedEls($('.content-9 .span3 img'), 'h');
+  fadedEls($('.content-9 .col-sm-3 img'), 'h');
 
 
 

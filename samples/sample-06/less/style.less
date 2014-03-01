@@ -1,23 +1,26 @@
-@import '../../../flat-ui/less/config.less';
-@import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
+
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
 
 /* header */
-@import '../../../ui-kit/ui-kit-header/less/header-3.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-3.less';
 
 /* content */
-@import '../../../ui-kit/ui-kit-content/less/content-2.less';
-@import '../../../ui-kit/ui-kit-content/less/content-9.less';
-@import '../../../ui-kit/ui-kit-content/less/content-12.less';
-@import '../../../ui-kit/ui-kit-content/less/content-28.less';
-@import '../../../ui-kit/ui-kit-content/less/content-30.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-2.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-9.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-12.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-28.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-30.less';
 
 /* footer */
-@import '../../../ui-kit/ui-kit-footer/less/footer-4.less';
+@import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-4.less';
 
 body > section, footer {
     padding-top: 80px;
@@ -47,7 +50,7 @@ body > section, footer {
 }
 .content-28 {
     background-color: #f4f5f6;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding-top: 105px;
         padding-bottom: 0;
     }
@@ -55,9 +58,12 @@ body > section, footer {
 .content-9 {
     padding-top: 130px;
     padding-bottom: 0;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding-top: 105px;
         padding-bottom: 0;
+        .hidden-phone{
+          margin-top: 40px;
+        }
     }
 }
 .content-12 {
@@ -94,15 +100,15 @@ body > section, footer {
     }
     h3 {
         .font(30px, white);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         margin-bottom:20px;
     }
     .container > img {
         margin-bottom: 50px;
     }
     .lead {
-        .font(15px, @firm);
-        font-family:@c-font-family;
+        .font(15px, @brand-secondary);
+        font-family:@font-family-demo;
         font-weight: 500;
         text-transform: uppercase;
     }

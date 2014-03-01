@@ -8,56 +8,42 @@
     z-index:100;
     width:100%;
     .navbar {
-        margin: 107px 0 0;
-        font-family: @h-font-family;
+        margin-top: 107px;
+        font-family: @font-family-demo;
         &.navbar-fixed-top {
-            position:fixed;
-            margin:0 auto;
+            position: fixed;
+            margin-top: 0;
         }
-        @media (max-width: 979px) {
+        @media (max-width: 991px) {
             margin: 30px 0 0;
         }
         @media (max-width: 480px) {
             margin: -5px 0 0;
         }
-        .navbar-form, .navbar-search {
-            margin: 0;
-            padding: 20px 0 0 20px;
-            .btn, .btn-group {
-                margin-top: -1px;
-            }
-            .btn {
-                .box-sizing(border-box);
-                padding: 7px 26px 8px;
-                background: none;
-                border: 2px solid @danger;
-                color: @danger;
-                &:hover, &:focus {
-                    background: @danger;
-                    color: white;
-                }
-                &:active, &.active {
-                    border-color: @button-danger-active;
-                    background: @button-danger-active;
-                    color: white;
-                }
-            }
+        .navbar-form {
+            padding: 18px 0 0 20px;
+            position: relative;
         }
-        .nav-collapse {
-            @media (max-width: 979px) {
-                .btn {
-                    padding: 2px 8px 2px;
-                }
-            }
-        }
-        .navbar-inner {
+        .btn {
+            .box-sizing(border-box);
+            padding: 7px 26px 8px;
             background: none;
+            border: 2px solid @brand-danger;
+            color: @brand-danger;
+            &:hover, &:focus {
+                background: @brand-danger;
+                color: white;
+            }
+            &:active, &.active {
+                border-color: @btn-danger-active-bg;
+                background: @btn-danger-active-bg;
+                color: white;
+            }
         }
         .brand {
-            padding-left: 0;
             padding-top: 18px;
             padding-bottom:0;
-            .font(25px, @danger);
+            .font(25px, @brand-danger);
             font-weight: 800;
             img:first-child {
                 float: left;
@@ -65,7 +51,7 @@
             }
         }
         .nav {
-            @media (min-width: 980px) {
+            @media (min-width: 992px) {
                 position: absolute;
                 width: 100%;
                 height: 0;
@@ -78,56 +64,36 @@
             }
             > li {
                 > a {
-                    padding: 29px 10px 0;
-                    .font(13px, @lightgray);
-                    font-family:@h-font-family;
+                    padding: 30px 10px 0;
+                    .font(13px, @gray-light);
+                    font-family:@font-family-demo;
                     font-weight: 500;
                     letter-spacing: 2px;
-                    .a-color(@lightgray, @danger);
+                    .a-color(@gray-light, @brand-danger);
                 }
                 &.active > a {
-                    .a-color(@danger, @danger);
+                    .a-color(@brand-danger, @brand-danger);
                 }
             }
         }
-        .btn-navbar {
-            margin: 28px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-            color: @danger;
-            &:hover, &:focus {
-                color: @button-danger-hover;
-            }
-            &:active {
-                color: @button-danger-active;
-            }
+        .navbar-toggle {
+            background-image: url("@{startup-basePath}common-files/icons/menu-icon-header-21.png");
+            margin-top: 22px;
         }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 48px;
-                .navbar-collapse;
-            }
-          .btn-navbar{
-            &:before{
-              content:'';
-              display: block;
-              background-image: url("../../../common-files/icons/menu-icon-header-21.png");
-              width: 17px;
-              height: 12px;
-            }
-          }
+        .navbar-header {
+            position: relative;
+            z-index: 2;
         }
     }
 }
 .header-21-sub {
     position:relative;
     z-index:50;
+    background: #fff;
     .v-center;
     h3 {
         text-align: center;
-        .font(35px, @h-text-color);
+        .font(35px, @text-color-heading);
         img {
             .center-block;
             margin-bottom: 35px;
@@ -143,7 +109,7 @@
     .lead {
         text-align: center;
         .font(25px, @silver);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight:300;
     }
     .control-btn {
@@ -154,14 +120,14 @@
         padding: 0;
         border-radius: 50%;
         text-align: center;
-        .font(18px, @lightgray);
+        .font(18px, @gray-light);
         background: @clouds;
         &:hover, &:focus {
             color: white;
             background: @base;
         }
         &:active {
-            color: @lightgray;
+            color: @gray-light;
         }
         position: absolute;
         left: 50%;
@@ -174,6 +140,6 @@
     padding-top: 20px;
     padding-bottom: 135px;
     .lead {
-        color: @lightgray;
+        color: @gray-light;
     }
 }

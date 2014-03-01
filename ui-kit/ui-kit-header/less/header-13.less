@@ -44,16 +44,16 @@
     color: @silver;
     h3 {
         .font(29px, white);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         margin-bottom:26px;
         font-weight:300;
     }
     .lead {
         .font(22px, @silver);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight:300;
     }
-    .span5.offset1 {
+    .col-sm-5.col-sm-offset-1 {
         margin-top: 220px;
         @media (max-width: 767px) {
             margin-top: 0;
@@ -63,8 +63,9 @@
         font-size: 22px;
         line-height: 21px;
         padding: 15px 20px 16px;
+        display: block;
     }
-    .span5.offset1 {
+    .col-sm-5.col-sm-offset-1 {
         position: relative;
         left: -15%;
         .opacity(0);
@@ -74,7 +75,7 @@
             .opacity(100);
         }
     }
-    .span4.offset1 {
+    .col-sm-4.col-sm-offset-1 {
         position: relative;
         right: -100px;
         .opacity(0);
@@ -89,7 +90,7 @@
         > div > .container {
             padding-top:180px;
         }
-        .span5.offset1, .span4.offset1 {
+        .col-sm-5.col-sm-offset-1, .col-sm-4.offset-1 {
             .transition-duration(0)!important;
             .transition-delay(0)!important;
         }

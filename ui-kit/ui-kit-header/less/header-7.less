@@ -7,7 +7,7 @@
     @media (max-width: 767px) {
         max-height:100%;
         .pt-controls {
-            margin: -60px 0 !important;
+            margin:-60px 0  !important;
             padding:0 !important;
         }
     }
@@ -25,7 +25,7 @@
         font-weight: 500;
     }
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         color: white;
     }
     .pt-perspective {
@@ -69,6 +69,7 @@
         .pt-indicators {
             list-style: none;
             margin: 0;
+            padding: 0;
             li {
                 float: none;
                 display: block;
@@ -111,25 +112,25 @@
         border-color: rgba(0, 0, 0, 0.2);
     }
     .pt-controls li.active {
-        background: @warning;
+        background: @brand-warning;
     }
     .page-transitions.pt-item-1 + .pt-controls li.active {
-        background: @warning;
+        background: @brand-warning;
     }
     .page-transitions.pt-item-2 + .pt-controls li.active {
-        background: @danger;
+        background: @brand-danger;
     }
     .page-transitions.pt-item-3 + .pt-controls li.active {
-        background: @warning;
+        background: @brand-warning;
     }
     .page-transitions.pt-item-4 + .pt-controls li.active {
         background: @base;
     }
     .page-transitions.pt-item-5 + .pt-controls li.active {
-        background: @warning;
+        background: @brand-warning;
     }
     .page-transitions.pt-item-6 + .pt-controls li.active {
-        background: @warning;
+        background: @brand-warning;
     }
     h3 {
         margin: 0 0 30px;
@@ -139,7 +140,7 @@
     }
     .brand {
         .font(25px, white);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight: 500;
         img:first-child {
             float: left;
@@ -168,17 +169,17 @@
     }
     section {
         > div {
-            padding-left:20px;
-            padding-right:20px;
+            padding-left:5px;
+            padding-right:5px;
         }
         height:100%;
         display: table;
         width: 100%;
         background: #2c3e50;
         h6 {
-            font-family: @c-font-family;
+            font-family: @font-family-demo;
         }
-        .span8 {
+        .col-sm-8 {
             text-align: center;
             > * {
                 position: relative;
@@ -190,7 +191,7 @@
         .lead {
             .font(22px, @silver);
             font-weight:300;
-            font-family:@h-font-family;
+            font-family:@font-family-demo;
             margin-bottom: 130px;
         }
         > div {
@@ -210,8 +211,8 @@
     }
     .h-7-section-1 {
         > div {
-            padding-left:20px;
-            padding-right:20px;
+            padding-left:5px;
+            padding-right:5px;
         }
         .box {
             .box-sizing(border-box);

@@ -76,7 +76,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
                     }
                 }
             });
-        })($('.content-27 .span4'));
+        })($('.content-27 .col-sm-4'));
 
         $(window).resize().scroll();
 

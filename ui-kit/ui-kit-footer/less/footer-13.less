@@ -21,17 +21,18 @@
     }
     nav {
         .font(12px, inherit);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight:500;
         letter-spacing: 1px;
         ul {
             list-style: none;
             margin: 0;
+            padding: 0;
             li {
                 float: left;
                 margin-left: 130px;
                 .line-height(25px);
-                @media (max-width: 979px) {
+                @media (max-width: 991px) {
                     margin-left: 70px;
                 }
                 @media (max-width: 767px) {
@@ -46,9 +47,15 @@
             }
         }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 620px){
+      > .container >[class*="fui-"] {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
         nav {
-            float: none;
+            float: none !important;
             text-align: left;
             &.pull-right {
                 margin-top: 18px;
@@ -61,8 +68,6 @@
                 margin-top: 0;
             }
         }
-        > .container >[class*="fui-"] {
-            display: none;
-        }
+
     }
 }

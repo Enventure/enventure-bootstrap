@@ -1,19 +1,22 @@
-@import '../../../flat-ui/less/config.less';
-@import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
+
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
 
 /* header */
-@import '../../../ui-kit/ui-kit-header/less/header-5.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-5.less';
 
 /* projects */
-@import '../../../ui-kit/ui-kit-projects/less/project-3.less';
+@import '@{startup-basePath}ui-kit/ui-kit-projects/less/project-3.less';
 
 /* footer */
-@import '../../../ui-kit/ui-kit-footer/less/footer-7.less';
+@import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-7.less';
 
 body > section {
     padding-top: 110px;
@@ -30,10 +33,10 @@ body > section {
     .navbar-search {
         .transition(0.6s);
     }
-    .navbar-inner {
+    .navbar-header {
         .transition(0.6s);
     }
-    .navbar-inner .btn-navbar, .navbar-inner .nav {
+    .navbar-header .btn-navbar, .navbar-header .nav {
         .loaded & {
             .transition(~'1.2s 1.4s opacity');
         }
@@ -44,7 +47,7 @@ body > section {
         }
     }
     @media (max-width: 480px) {
-        .navbar-inner .btn-navbar, .navbar-inner .nav, .navbar-btns {
+        .navbar-header .btn-navbar, .navbar-header .nav, .navbar-btns {
             .transition-duration(0)!important;
             .transition-delay(0)!important;
         }
@@ -80,14 +83,14 @@ body > section {
 }
 .tpl-10-section-1 {
     &, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-        color: @c-text-color;
+        color: @text-color-default;
     }
     a {
-        .a-color(@silver, @h-text-color);
+        .a-color(@silver, @text-color-heading);
     }
     h3 {
-        .font(30px, @h-text-color);
-        font-family:@h-font-family;
+        .font(30px, @text-color-heading);
+        font-family:@font-family-demo;
         font-weight:300;
         text-align:center;
         margin:0 0 30px;
@@ -135,10 +138,10 @@ body > section {
         }
     }
     .box-icon {
-        color:@h-text-color;
+        color:@text-color-heading;
         margin: 0 auto 50px;
         text-align: center;
-        .font(16px, @h-text-color);
+        .font(16px, @text-color-heading);
         > * {
             display: inline-block;
             vertical-align: middle;
@@ -148,10 +151,10 @@ body > section {
             width: 95px;
             height: 95px;
             margin: 0 50px;
-            border: 7px solid @h-text-color;
+            border: 7px solid @text-color-heading;
             overflow: hidden;
             .border-radius(50%);
-            .font(48px, @h-text-color);
+            .font(48px, @text-color-heading);
             .line-height(81px);
         }
     }

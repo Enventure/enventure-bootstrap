@@ -48,7 +48,7 @@
             }
             p {
                 font-size: 20px;
-                font-family: @h-font-family;
+                font-family: @font-family-demo;
                 font-weight: normal;
                 line-height: normal;
             }
@@ -96,7 +96,7 @@
         }
         h3 {
             font-size: 30px;
-            color: @h-text-color;
+            color: @text-color-heading;
             .line-height(36px);
             letter-spacing: 0;
             margin: 0;
@@ -104,7 +104,7 @@
         }
         .submitted {
             font-size: 12px;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.19em;
@@ -120,14 +120,14 @@
             content:'';
             display: block;
             position: absolute;
-            left: 0;
+            left: 15px;
             bottom: 0;
             width: 48px;
             border-top: 3px solid #3498db;
         }
         &, & * {
             font-size: 12px;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.19em;
@@ -147,6 +147,7 @@
             list-style: none;
             display: block;
             margin: 0;
+            padding: 0;
         }
         li {
             display: block;
@@ -185,12 +186,12 @@
         }
         @media (min-width: 1200px) {
             .box-2, .box-3, .box-4 {
-                width: 384.666px;
+                width: 374.666px;
             }
         }
-        @media (max-width: 979px) and (min-width: 768px) {
+        @media (max-width: 991px) and (min-width: 768px) {
             .box-2, .box-3, .box-4 {
-                width: 236px;
+                width: 234.666px;
             }
         }
         @media (max-width: 767px) {

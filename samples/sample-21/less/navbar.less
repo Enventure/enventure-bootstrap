@@ -1,6 +1,7 @@
+// There is a path to Startup framework
+@startup-basePath: "../../../";
 
-@import '../../../common-files/less/navbar.less';
-
+@import '@{startup-basePath}common-files/less/navbar.less';
 
 .navbar {
   position: absolute;
@@ -8,10 +9,10 @@
   width: 100%;
   top: 30px;
   margin: 0;
-  font-family: @h-font-family;
+  font-family: @font-family-demo;
   font-size: 13px;
 
-  .navbar-inner {
+  .navbar-header {
     background: none;
   }
 

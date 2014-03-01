@@ -25,4 +25,8 @@ $(document).ready(function() {
 
         });
     });
+
+    $('.content-23').each(function() {
+        $(this).parallax('50%', 0.3, true);
+    });
 });

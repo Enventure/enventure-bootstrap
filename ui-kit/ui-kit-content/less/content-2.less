@@ -6,14 +6,14 @@
     padding-bottom: 130px;
     position:relative;
     h3 {
-        .font(30px, @h-text-color);
-        font-family:@h-font-family;
+        .font(30px, @text-color-heading);
+        font-family:@font-family-demo;
         margin-bottom: 35px;
         font-weight: 300;
     }
     p {
         .font(18px);
-        font-family:@c-font-family;
+        font-family:@font-family-demo;
         .line-height(30px);
     }
     .btns {
@@ -24,7 +24,7 @@
             margin-right: 28px;
             >[class^="fui-"] {
                 .font(26px, white);
-                margin: 0 12px 0 0;
+                margin: -2px 12px 0 0;
             }
         }
     }
@@ -32,7 +32,7 @@
         .btns {
             margin-top: 35px;
         }
-        .span5.offset1 {
+        .col-sm-5.col-sm-offset-1 {
             margin-top: 45px;
         }
     }

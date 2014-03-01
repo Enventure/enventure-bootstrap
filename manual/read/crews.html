@@ -8,7 +8,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free)-->
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -18,17 +17,17 @@
     <script src="../../common-files/js/jquery-1.10.2.min.js"></script>
   </head>
   <body>
-    <nav class="dockbar navbar-fixed-top">
+    <nav class="dockbar navbar-fixed-top" id="header-dockbar">
       <menu class="main-menu">
         <div class="container">
           <div class="row">
-            <a href="index.html" class="man-brand span3">
+            <a href="index.html" class="man-brand col-sm-3">
               <span class="logotype">Startup</span>
               <span class="doc-title">user manual</span>
             </a>
             <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
             </button>
-            <dl class="span8 ">
+            <dl class="col-sm-8 ">
               <dd><a class="active">overview</a>
               </dd>
               <dd><a href="how_to_install.html">how to install</a>
@@ -44,8 +43,8 @@
       <menu class="sub-menu">
         <div class="container">
           <div class="row">
-            <span class="sm-title span3">components</span>
-            <dl class="span9">
+            <span class="sm-title col-sm-3">components</span>
+            <dl class="col-sm-9">
               <dd><a href="headers.html">Header</a>
               </dd>
               <dd><a href="contents.html">Content 1</a>
@@ -102,513 +101,515 @@
       </menu>
     </nav>
     <div class="mcontent">
-      <!-- demo sections-->
-      <!-- crew-1 -->
-      <button class="read-man" id="crew-1">
-        ?
-      </button>
-      <div class="crew-1 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="crew-1">
-        <div class="container">
-          <h3>Features of Startup Design Framework</h3>
-          <div class="members">
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/vladimir-k.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Vladimir Kudinov</div>
-                  UI Designer
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/sergey-s.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Sergey Shmidt</div>
-                  UI Designer
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/adrian-v.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Adrian Valeanu</div>
-                  Founder
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="members">
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/edvard-k.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Vladimir Kudinov</div>
-                  UI Designer
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/oxana-n.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Sergey Shmidt</div>
-                  UI Designer
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/tatiana-y.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Adrian Valeanu</div>
-                  Founder
-                </div>
+      <div class="page-wrapper">
+        <!-- demo sections-->
+        <!-- crew-1 -->
+        <button class="read-man" id="crew-1">
+          ?
+        </button>
+        <div class="crew-1-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
               </div>
             </div>
           </div>
         </div>
-        <!--/.container-->
-      </section>
-      <!-- crew-2 -->
-      <button class="read-man" id="crew-2">
-        ?
-      </button>
-      <div class="crew-2 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="crew-2">
-        <div class="container">
-          <h3>Features of Startup Design Framework</h3>
-          <div class="members">
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/vladimir-k.png" alt="">
+        <section class="crew-1">
+          <div class="container">
+            <h3>Features of Startup Design Framework</h3>
+            <div class="members">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/vladimir-k.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
                   </div>
-                  <div class="name">Vladimir K.</div>
-                  <div class="position">UI Designer</div>
+                  <div class="info">
+                    <div class="name">Vladimir Kudinov</div>
+                    UI Designer
+                  </div>
                 </div>
-                <div class="info">
-                  Easy to change and easy to create new elements with color swatches.
-                  <div class="social-btns">
-                    <a href="#">
-                      <div class="fui-vimeo"></div>
-                      <div class="fui-vimeo"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-facebook"></div>
-                      <div class="fui-facebook"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-twitter"></div>
-                      <div class="fui-twitter"></div>
-                    </a>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/sergey-s.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="name">Sergey Shmidt</div>
+                    UI Designer
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/adrian-v.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="name">Adrian Valeanu</div>
+                    Founder
                   </div>
                 </div>
               </div>
             </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/sergey-s.png" alt="">
+            <div class="members">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/edvard-k.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
                   </div>
-                  <div class="name">Sergey S.</div>
-                  <div class="position">UI Designer</div>
-                </div>
-                <div class="info">
-                  Easy to change and easy to create new elements with color swatches.
-                  <div class="social-btns">
-                    <a href="#">
-                      <div class="fui-vimeo"></div>
-                      <div class="fui-vimeo"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-facebook"></div>
-                      <div class="fui-facebook"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-twitter"></div>
-                      <div class="fui-twitter"></div>
-                    </a>
+                  <div class="info">
+                    <div class="name">Vladimir Kudinov</div>
+                    UI Designer
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/adrian-v.png" alt="">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/oxana-n.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
                   </div>
-                  <div class="name">Adrian V.</div>
-                  <div class="position">Founder</div>
+                  <div class="info">
+                    <div class="name">Sergey Shmidt</div>
+                    UI Designer
+                  </div>
                 </div>
-                <div class="info">
-                  Easy to change and easy to create new elements with color swatches.
-                  <div class="social-btns">
-                    <a href="#">
-                      <div class="fui-vimeo"></div>
-                      <div class="fui-vimeo"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-facebook"></div>
-                      <div class="fui-facebook"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-twitter"></div>
-                      <div class="fui-twitter"></div>
-                    </a>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/tatiana-y.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="name">Adrian Valeanu</div>
+                    Founder
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="members">
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/edvard-k.png" alt="">
-                  </div>
-                  <div class="name">Vladimir K.</div>
-                  <div class="position">UI Designer</div>
-                </div>
-                <div class="info">
-                  Easy to change and easy to create new elements with color swatches.
-                  <div class="social-btns">
-                    <a href="#">
-                      <div class="fui-vimeo"></div>
-                      <div class="fui-vimeo"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-facebook"></div>
-                      <div class="fui-facebook"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-twitter"></div>
-                      <div class="fui-twitter"></div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/oxana-n.png" alt="">
-                  </div>
-                  <div class="name">Sergey S.</div>
-                  <div class="position">UI Designer</div>
-                </div>
-                <div class="info">
-                  Easy to change and easy to create new elements with color swatches.
-                  <div class="social-btns">
-                    <a href="#">
-                      <div class="fui-vimeo"></div>
-                      <div class="fui-vimeo"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-facebook"></div>
-                      <div class="fui-facebook"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-twitter"></div>
-                      <div class="fui-twitter"></div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/tatiana-y.png" alt="">
-                  </div>
-                  <div class="name">Adrian V.</div>
-                  <div class="position">Founder</div>
-                </div>
-                <div class="info">
-                  Easy to change and easy to create new elements with color swatches.
-                  <div class="social-btns">
-                    <a href="#">
-                      <div class="fui-vimeo"></div>
-                      <div class="fui-vimeo"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-facebook"></div>
-                      <div class="fui-facebook"></div>
-                    </a>
-                    <a href="#">
-                      <div class="fui-twitter"></div>
-                      <div class="fui-twitter"></div>
-                    </a>
-                  </div>
-                </div>
+          <!--/.container-->
+        </section>
+        <!-- crew-2 -->
+        <button class="read-man" id="crew-2">
+          ?
+        </button>
+        <div class="crew-2-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
               </div>
             </div>
           </div>
         </div>
-        <!--/.container-->
-      </section>
-      <!-- crew-3 -->
-      <button class="read-man" id="crew-3">
-        ?
-      </button>
-      <div class="crew-3 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <section class="crew-2">
+          <div class="container">
+            <h3>Features of Startup Design Framework</h3>
+            <div class="members">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/vladimir-k.png" alt="">
+                    </div>
+                    <div class="name">Vladimir K.</div>
+                    <div class="position">UI Designer</div>
+                  </div>
+                  <div class="info">
+                    Easy to change and easy to create new elements with color swatches.
+                    <div class="social-btns">
+                      <a href="#">
+                        <div class="fui-vimeo"></div>
+                        <div class="fui-vimeo"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/sergey-s.png" alt="">
+                    </div>
+                    <div class="name">Sergey S.</div>
+                    <div class="position">UI Designer</div>
+                  </div>
+                  <div class="info">
+                    Easy to change and easy to create new elements with color swatches.
+                    <div class="social-btns">
+                      <a href="#">
+                        <div class="fui-vimeo"></div>
+                        <div class="fui-vimeo"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/adrian-v.png" alt="">
+                    </div>
+                    <div class="name">Adrian V.</div>
+                    <div class="position">Founder</div>
+                  </div>
+                  <div class="info">
+                    Easy to change and easy to create new elements with color swatches.
+                    <div class="social-btns">
+                      <a href="#">
+                        <div class="fui-vimeo"></div>
+                        <div class="fui-vimeo"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="members">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/edvard-k.png" alt="">
+                    </div>
+                    <div class="name">Vladimir K.</div>
+                    <div class="position">UI Designer</div>
+                  </div>
+                  <div class="info">
+                    Easy to change and easy to create new elements with color swatches.
+                    <div class="social-btns">
+                      <a href="#">
+                        <div class="fui-vimeo"></div>
+                        <div class="fui-vimeo"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/oxana-n.png" alt="">
+                    </div>
+                    <div class="name">Sergey S.</div>
+                    <div class="position">UI Designer</div>
+                  </div>
+                  <div class="info">
+                    Easy to change and easy to create new elements with color swatches.
+                    <div class="social-btns">
+                      <a href="#">
+                        <div class="fui-vimeo"></div>
+                        <div class="fui-vimeo"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/tatiana-y.png" alt="">
+                    </div>
+                    <div class="name">Adrian V.</div>
+                    <div class="position">Founder</div>
+                  </div>
+                  <div class="info">
+                    Easy to change and easy to create new elements with color swatches.
+                    <div class="social-btns">
+                      <a href="#">
+                        <div class="fui-vimeo"></div>
+                        <div class="fui-vimeo"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                      </a>
+                      <a href="#">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/.container-->
+        </section>
+        <!-- crew-3 -->
+        <button class="read-man" id="crew-3">
+          ?
+        </button>
+        <div class="crew-3-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <section class="crew-3">
-        <div class="container">
-          <h3>Startup Framework<br/>
+        <section class="crew-3">
+          <div class="container">
+            <h3>Startup Framework<br/>
             The Second Sneak-Peek </h3>
-          <div class="title">
-            <a href="#">musican</a>
-            <a href="#" class="active">designer</a>
-            <a href="#">founder</a>
-            <a href="#">photographer</a>
-            <a href="#">analytic</a>
-            <a href="#">good girl</a>
-            <a href="#" class="active">tourist</a>
-            <span class="social-btns">
+            <div class="title">
+              <a href="#">musican</a>
+              <a href="#" class="active">designer</a>
+              <a href="#">founder</a>
+              <a href="#">photographer</a>
+              <a href="#">analytic</a>
+              <a href="#">good girl</a>
+              <a href="#" class="active">tourist</a>
+              <span class="social-btns">
 						<a href="#"><span class="fui-vimeo"></span>
-            </a>
-            <a href="#"><span class="fui-facebook"></span></a>
-            <a href="#"><span class="fui-twitter"></span></a>
-            </span>
+              </a>
+              <a href="#"><span class="fui-facebook"></span></a>
+              <a href="#"><span class="fui-twitter"></span></a>
+              </span>
+            </div>
+            <div class="members">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/vladimir-k.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                    <div class="name">Vladimir K.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/sergey-s.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                    <div class="name">Sergey S.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/adrian-v.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                    <div class="name">Adrian V.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="members">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/edvard-k.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                    <div class="name">Vladimir K.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/oxana-n.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                    <div class="name">Sergey S.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/tatiana-y.png" alt="">
+                    </div>
+                    <div class="overlay"><span class="fui-eye"></span>
+                    </div>
+                    <div class="name">Adrian V.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="members">
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/vladimir-k.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                  <div class="name">Vladimir K.</div>
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/sergey-s.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                  <div class="name">Sergey S.</div>
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/adrian-v.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                  <div class="name">Adrian V.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="members">
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/edvard-k.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                  <div class="name">Vladimir K.</div>
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/oxana-n.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                  <div class="name">Sergey S.</div>
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/tatiana-y.png" alt="">
-                  </div>
-                  <div class="overlay"><span class="fui-eye"></span>
-                  </div>
-                  <div class="name">Adrian V.</div>
-                </div>
+          <!--/.container-->
+        </section>
+        <!-- crew-4 -->
+        <button class="read-man" id="crew-4">
+          ?
+        </button>
+        <div class="crew-4-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
               </div>
             </div>
           </div>
         </div>
-        <!--/.container-->
-      </section>
-      <!-- crew-4 -->
-      <button class="read-man" id="crew-4">
-        ?
-      </button>
-      <div class="crew-4 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="crew-4">
-        <div class="container">
-          <h3>Startup Framework<br/>
+        <section class="crew-4">
+          <div class="container">
+            <h3>Startup Framework<br/>
             The Second Sneak-Peek of Startup Framework</h3>
-          <div class="members">
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/vladimir-k.png" alt="">
+            <div class="members">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/vladimir-k.png" alt="">
+                    </div>
+                    <div class="overlay">
+                      <a href="#"><span class="fui-vimeo"></span></a>
+                      <a href="#"><span class="fui-facebook"></span></a>
+                      <a href="#"><span class="fui-twitter"></span></a>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <a href="#"><span class="fui-vimeo"></span></a>
-                    <a href="#"><span class="fui-facebook"></span></a>
-                    <a href="#"><span class="fui-twitter"></span></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Vladimir Kudinov</div>
-                  <b>Designer</b> who makes easy to change and easy to create new elements.
-                  <div class="contacts">
-                    <a href="#">http://vladimirkudinov.com</a>
-                    <br>
-                    <a href="#">@stSilent</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/sergey-s.png" alt="">
-                  </div>
-                  <div class="overlay">
-                    <a href="#"><span class="fui-vimeo"></span></a>
-                    <a href="#"><span class="fui-facebook"></span></a>
-                    <a href="#"><span class="fui-twitter"></span></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <div class="name">Sergey Shmidt</div>
-                  <b>Designer</b> who makes easy to change and easy to create new elements.
-                  <div class="contacts">
-                    <a href="#">http://vladimirkudinov.com</a>
-                    <br>
-                    <a href="#">@stSilent</a>
+                  <div class="info">
+                    <div class="name">Vladimir Kudinov</div>
+                    <b>Designer</b> who makes easy to change and easy to create new elements.
+                    <div class="contacts">
+                      <a href="#">http://vladimirkudinov.com</a>
+                      <br>
+                      <a href="#">@stSilent</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="member-wrapper">
-              <div class="member">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <img src="../../common-files/img/crew/adrian-v.png" alt="">
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/sergey-s.png" alt="">
+                    </div>
+                    <div class="overlay">
+                      <a href="#"><span class="fui-vimeo"></span></a>
+                      <a href="#"><span class="fui-facebook"></span></a>
+                      <a href="#"><span class="fui-twitter"></span></a>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <a href="#"><span class="fui-vimeo"></span></a>
-                    <a href="#"><span class="fui-facebook"></span></a>
-                    <a href="#"><span class="fui-twitter"></span></a>
+                  <div class="info">
+                    <div class="name">Sergey Shmidt</div>
+                    <b>Designer</b> who makes easy to change and easy to create new elements.
+                    <div class="contacts">
+                      <a href="#">http://vladimirkudinov.com</a>
+                      <br>
+                      <a href="#">@stSilent</a>
+                    </div>
                   </div>
                 </div>
-                <div class="info">
-                  <div class="name">Adrian Valeanu</div>
-                  <b>Designer</b> who makes easy to change and easy to create new elements.
-                  <div class="contacts">
-                    <a href="#">http://vladimirkudinov.com</a>
-                    <br>
-                    <a href="#">@stSilent</a>
+              </div>
+              <div class="member-wrapper">
+                <div class="member">
+                  <div class="photo-wrapper">
+                    <div class="photo">
+                      <img src="../../common-files/img/crew/adrian-v.png" alt="">
+                    </div>
+                    <div class="overlay">
+                      <a href="#"><span class="fui-vimeo"></span></a>
+                      <a href="#"><span class="fui-facebook"></span></a>
+                      <a href="#"><span class="fui-twitter"></span></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="name">Adrian Valeanu</div>
+                    <b>Designer</b> who makes easy to change and easy to create new elements.
+                    <div class="contacts">
+                      <a href="#">http://vladimirkudinov.com</a>
+                      <br>
+                      <a href="#">@stSilent</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!--/.container-->
-      </section>
+          <!--/.container-->
+        </section>
+      </div>
       <!-- manual sections -->
       <div class="manual">
         <a href="index.html" class="man-brand"> <span class="logotype">Startup</span>  <span class="doc-title">user manual</span>

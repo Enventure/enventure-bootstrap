@@ -1,13 +1,16 @@
-@import '../../../flat-ui/less/config.less';
-@import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
+
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
 
 /* header */
-@import '../../../ui-kit/ui-kit-header/less/header-7.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-7.less';
 
 .header-7-sub {
     overflow:visible;
@@ -21,7 +24,7 @@
     }
     .h-7-section-2 {
         background: #2d2e2e;
-        .span8 > img {
+        .col-sm-8 > img {
             margin-bottom: 70px;
         }
         .lead {
@@ -29,8 +32,8 @@
         }
     }
     .h-7-section-3 {
-        background: @firm;
-        .span8 > img {
+        background: @brand-secondary;
+        .col-sm-8 > img {
             margin-bottom: 70px;
         }
         .lead {
@@ -38,7 +41,7 @@
         }
     }
     .h-7-section-4 {
-        background: @danger;
+        background: @brand-danger;
         .img {
             display: inline-block;
             position: relative;
@@ -92,7 +95,7 @@
                     background-color: #f1c40f;
                 }
             }
-            .controls-row:first-child + .controls-row {
+            .form-group:first-child + .form-group {
                 display: table;
                 width: 100%;
                 > div {

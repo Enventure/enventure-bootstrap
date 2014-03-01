@@ -2,14 +2,26 @@
   padding-top: 130px;
   padding-bottom: 130px;
   position: relative;
+  h3 {
+    .font(30px, @text-color-heading);
+    font-family:@font-family-demo;
+    padding-bottom:40px;
+    font-weight: 300;
+    text-align: center;
+  }
+  p {
+    .font(22px);
+    text-align: center;
+    padding-bottom: 35px;
+  }
   .player {
     .border-radius(6px);
     background: rgba(52, 152, 219, 0.1);
     position: relative;
     overflow: hidden;
-    width: 1024px;
-    height: 576px;
-    margin: 40px auto 50px;
+    width: 1140px;
+    height: 640px;
+    margin: 40px auto 105px;
     .btn-play {
       .box-sizing(border-box);
       position: absolute;
@@ -26,27 +38,42 @@
       border: 0;
       display: block;
     }
-    @media (max-width: 1200px) {
-
-      width: 768px;
-      height: 432px;
+   @media (max-width: 1200px) {
+     width: 100%;
+     height: 530px;
     }
     @media (max-width: 1000px) {
-      width: 720px;
       height: 406px;
     }
-
     @media (max-width: 840px) {
-      width: 568px;
-      height: 319px;
+      height: 406px;
     }
     @media (max-width: 768px) {
-      width: 500px;
-      max-height: 270px;
+      max-height: 330px;
     }
     @media (max-width: 568px) {
-      width: 300px;
+      max-height: 280px;
+    }
+    @media (max-width: 400px) {
       max-height: 180px;
     }
   }
+  .features {
+    > * {
+      margin-top: 67px;
+    }
+    h6 {
+      text-transform: none;
+      margin-top: 37px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    @media (max-width: 767px){
+      margin-top: -52px;
+    }
+  }
 }
+
+
+

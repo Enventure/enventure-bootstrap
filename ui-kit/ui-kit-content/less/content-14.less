@@ -12,7 +12,7 @@
         margin: 0 0 5px;
         text-align: center;
         .font(35px, @base);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         font-weight: 500;
         @media (max-width: 767px) {
             margin-bottom: 15px;
@@ -20,7 +20,7 @@
     }
     .lead {
         .font(25px);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         text-align: center;
         font-weight: 300;
         @media (max-width: 767px) {
@@ -33,16 +33,16 @@
         .v-center;
         h6 {
             text-transform: none;
-            color: @danger;
+            color: @brand-danger;
             font-size: 18px;
-            font-family: @c-font-family;
+            font-family: @font-family-demo;
             font-weight: 500;
         }
         .row {
             margin-top: 70px;
             color: @concrete;
         }
-        .span6 {
+        .col-sm-6 {
             @media (max-width: 767px) {
                 display: none;
             }
@@ -50,7 +50,7 @@
                 .center-block;
             }
         }
-        .span2 {
+        .col-sm-2 {
             position: relative;
         }
         [class*="box"] {
@@ -81,28 +81,28 @@
         .box-1, .box-5 {
             top: 112px;
             .box-font;
-            @media (max-width: 979px) and (min-width: 768px) {
+            @media (max-width: 991px) and (min-width: 768px) {
                 top: 220px;
             }
         }
         .box-2, .box-6 {
             top: 375px;
             .box-font;
-            @media (max-width: 979px) and (min-width: 768px) {
+            @media (max-width: 991px) and (min-width: 768px) {
                 top: 440px;
             }
         }
         .box-3, .box-7 {
             top: 625px;
             .box-font;
-            @media (max-width: 979px) and (min-width: 768px) {
+            @media (max-width: 991px) and (min-width: 768px) {
                 top: 660px;
             }
         }
         .box-4, .box-8 {
             top: 880px;
             .box-font;
-            @media (max-width: 979px) and (min-width: 768px) {
+            @media (max-width: 991px) and (min-width: 768px) {
                 top: 10px;
             }
         }

@@ -8,7 +8,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free)-->
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -18,17 +17,17 @@
     <script src="../../common-files/js/jquery-1.10.2.min.js"></script>
   </head>
   <body>
-    <nav class="dockbar navbar-fixed-top">
+    <nav class="dockbar navbar-fixed-top" id="header-dockbar">
       <menu class="main-menu">
         <div class="container">
           <div class="row">
-            <a href="index.html" class="man-brand span3">
+            <a href="index.html" class="man-brand col-sm-3">
               <span class="logotype">Startup</span>
               <span class="doc-title">user manual</span>
             </a>
             <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
             </button>
-            <dl class="span8">
+            <dl class="col-sm-8">
               <dd><a class="active">overview</a>
               </dd>
               <dd><a href="how_to_install.html">how to install</a>
@@ -44,8 +43,8 @@
       <menu class="sub-menu">
         <div class="container">
           <div class="row">
-            <span class="sm-title span3">components</span>
-            <dl class="span9">
+            <span class="sm-title col-sm-3">components</span>
+            <dl class="col-sm-9">
               <dd><a href="headers.html">Header</a>
               </dd>
               <dd><a href="contents.html">Content 1</a>
@@ -102,154 +101,150 @@
       </menu>
     </nav>
     <div class="mcontent">
-      <!-- demo sections-->
-      <!-- footer-1 -->
-      <button class="read-man" id="footer-1">
-        ?
-      </button>
-      <div class="footer-1 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+      <div class="page-wrapper">
+        <!-- demo sections-->
+        <!-- footer-1 -->
+        <button class="read-man" id="footer-1">
+          ?
+        </button>
+        <div class="footer-1-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-1 bg-midnight-blue">
-        <div class="container">
-          <div class="row">
-            <div class="span5">
-              <p class="lead"><b>200,000</b> users registered since January</p>
-              We’ve created the product that will help your startup to look even better.
-              <p class="social-btns">
-                <img src="../../common-files/img/content/social-icons.png" alt="">
-              </p>
-            </div>
-            <nav>
-              <div class="span2 offset1">
-                <h6>Categories</h6>
-                <ul>
-                  <li><a href="#">About Us</a>
-                  </li>
-                  <li><a href="#">Blog</a>
-                  </li>
-                  <li><a href="#">Teem</a>
-                  </li>
-                  <li><a href="#">Career</a>
-                  </li>
-                  <li><a href="#">Contact</a>
-                  </li>
-                </ul>
+        <footer class="footer-1 bg-midnight-blue">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-5">
+                <p class="lead"><b>200,000</b> users registered since January</p>
+                We’ve created the product that will help your startup to look even better.
+                <p class="social-btns">
+                  <img src="../../common-files/img/content/social-icons.png" alt="">
+                </p>
               </div>
-              <div class="span2">
-                <h6>Follow Us</h6>
-                <ul>
-                  <li><a href="#">Facebook</a>
-                  </li>
-                  <li><a href="#">Twitter</a>
-                  </li>
-                  <li><a href="#">Instagram</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            <div class="span2 buy-btn">
-              <a class="btn btn-danger btn-block" href="#">Buy App</a>
+              <nav>
+                <div class="col-sm-2 col-sm-offset-1">
+                  <h6>Categories</h6>
+                  <ul>
+                    <li><a href="#">About Us</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li><a href="#">Team</a>
+                    </li>
+                    <li><a href="#">Career</a>
+                    </li>
+                    <li><a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <h6>Follow Us</h6>
+                  <ul>
+                    <li><a href="#">Facebook</a>
+                    </li>
+                    <li><a href="#">Twitter</a>
+                    </li>
+                    <li><a href="#">Instagram</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="col-sm-2 buy-btn">
+                <a class="btn btn-danger btn-block" href="#">Buy App</a>
 or <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-5 additional-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Special Terms</a>
+                <a href="#">Privacy Policy</a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="span5 additional-links">
-              <a href="#">Terms of Service</a>
-              <a href="#">Special Terms</a>
-              <a href="#">Privacy Policy</a>
-            </div>
-          </div>
+        </footer>
+        <div class="delimiter">
         </div>
-      </footer>
-      <div class="delimiter">
-      </div>
-      <!-- footer-2 -->
-      <button class="read-man" id="footer-2">
-        ?
-      </button>
-      <div class="footer-2 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-2 bg-midnight-blue">
-        <div class="container">
-          <nav class="pull-left">
-            <ul>
-              <li class="active"><a href="#">Home</a>
-              </li>
-              <li><a href="#">Company</a>
-              </li>
-              <li><a href="#">Portfolio</a>
-              </li>
-              <li><a href="#">Blog</a>
-              </li>
-              <li><a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="social-btns pull-right">
-            <a href="#">
-              <div class="fui-vimeo"></div>
-              <div class="fui-vimeo"></div>
-            </a>
-            <a href="#">
-              <div class="fui-facebook"></div>
-              <div class="fui-facebook"></div>
-            </a>
-            <a href="#">
-              <div class="fui-twitter"></div>
-              <div class="fui-twitter"></div>
-            </a>
-          </div>
-          <div class="additional-links">
-            Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-          </div>
-        </div>
-      </footer>
-      <div class="delimiter">
-      </div>
-      <!-- footer-3 -->
-      <button class="read-man" id="footer-3">
-        ?
-      </button>
-      <div class="footer-3 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <!-- footer-2 -->
+        <button class="read-man" id="footer-2">
+          ?
+        </button>
+        <div class="footer-2-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-3">
-        <div class="container">
-          <div class="row v-center">
-            <div class="span2">
-              <div class="span2">
+        <footer class="footer-2 bg-midnight-blue">
+          <div class="container">
+            <nav class="pull-left">
+              <ul>
+                <li class="active"><a href="#">Home</a>
+                </li>
+                <li><a href="#">Company</a>
+                </li>
+                <li><a href="#">Portfolio</a>
+                </li>
+                <li><a href="#">Blog</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="social-btns pull-right">
+              <a href="#">
+                <div class="fui-vimeo"></div>
+                <div class="fui-vimeo"></div>
+              </a>
+              <a href="#">
+                <div class="fui-facebook"></div>
+                <div class="fui-facebook"></div>
+              </a>
+              <a href="#">
+                <div class="fui-twitter"></div>
+                <div class="fui-twitter"></div>
+              </a>
+            </div>
+            <div class="additional-links">
+              Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+        <div class="delimiter">
+        </div>
+        <!-- footer-3 -->
+        <button class="read-man" id="footer-3">
+          ?
+        </button>
+        <div class="footer-3-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer-3">
+          <div class="container">
+            <div class="row v-center">
+              <div class="col-sm-2">
                 <a class="brand" href="#">Startup</a>
               </div>
-            </div>
-            <div class="span7">
-              <div class="span7">
+              <div class="col-sm-7">
                 <div class="additional-links">
                   Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
                 </div>
               </div>
-            </div>
-            <div class="span3">
-              <div class="span3">
+              <div class="col-sm-3">
                 <h6>New York, NY</h6>
                 <div class="address">
                   62 West 55th Street, Suite 302
@@ -258,581 +253,580 @@ or <a href="#">Learn More</a>
               </div>
             </div>
           </div>
+        </footer>
+        <div class="delimiter">
         </div>
-      </footer>
-      <div class="delimiter">
-      </div>
-      <!-- footer-4 -->
-      <button class="read-man" id="footer-4">
-        ?
-      </button>
-      <div class="footer-4 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-4 bg-midnight-blue">
-        <div class="container">
-          <a class="brand" href="#">Startup</a>
-        </div>
-      </footer>
-      <div class="delimiter">
-      </div>
-      <!-- footer-5 -->
-      <button class="read-man" id="footer-5">
-        ?
-      </button>
-      <div class="footer-5 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-5 bg-wet-asphalt">
-        <div class="container">
-          <a class="brand" href="#">
-            <img src="../../common-files/icons/Infinity-Loop@2x.png" width="35" height="35" alt="">
-          </a>
-          <div class="row">
-            <div class="span6 offset3">
-              <div class="text">
-                Startup Framework will help you to find an awesome form for your
-                <br/>startup project in a short time
-              </div>
-            </div>
-          </div>
-          <a class="btn btn-small" href="#"><span class="fui-twitter"> </span> Follow @Designmodo</a>
-        </div>
-      </footer>
-      <div class="delimiter-big">
-      </div>
-      <!-- footer-6 -->
-      <button class="read-man" id="footer-6">
-        ?
-      </button>
-      <div class="footer-6 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-6">
-        <div class="container">
-          <div class="row">
-            <div class="span3">
-              <div><a class="brand" href="#">Startup</a>
-              </div>
-            </div>
-            <nav>
-              <div class="span2">
-                <h6>About</h6>
-                <ul>
-                  <li><a href="#">About Us</a>
-                  </li>
-                  <li><a href="#">Blog</a>
-                  </li>
-                  <li><a href="#">Teem</a>
-                  </li>
-                  <li><a href="#">Career</a>
-                  </li>
-                  <li><a href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="span2">
-                <h6>Work</h6>
-                <ul>
-                  <li><a href="#">Our Portfolio</a>
-                  </li>
-                  <li><a href="#">Latest Work</a>
-                  </li>
-                  <li><a href="#">Brands</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="span2">
-                <h6>Stuff</h6>
-                <ul>
-                  <li><a href="#">Privacy</a>
-                  </li>
-                  <li><a href="#">Terms</a>
-                  </li>
-                  <li><a href="#">Advertise</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            <div class="span3">
-              <h6>Subscribe</h6>
-              <div class="control-group">
-                <div class="input-append">
-                  <input type="text">
-                  <button class="btn" type="button">
-                    <span class="fui-arrow-right"> </span>
-                  </button>
-                </div>
-              </div>
-              <div class="social-btns">
-                <a href="#">
-                  <div class="fui-facebook"></div>
-                  <div class="fui-facebook"></div>
-                </a>
-                <a href="#">
-                  <div class="fui-twitter"></div>
-                  <div class="fui-twitter"></div>
-                </a>
-                <a href="#">
-                  <div class="fui-vimeo"></div>
-                  <div class="fui-vimeo"></div>
-                </a>
+        <!-- footer-4 -->
+        <button class="read-man" id="footer-4">
+          ?
+        </button>
+        <div class="footer-4-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- footer-7 -->
-      <button class="read-man" id="footer-7">
-        ?
-      </button>
-      <div class="footer-7 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <footer class="footer-4 bg-midnight-blue">
+          <div class="container">
+            <a class="brand" href="#">Startup</a>
+          </div>
+        </footer>
+        <div class="delimiter">
+        </div>
+        <!-- footer-5 -->
+        <button class="read-man" id="footer-5">
+          ?
+        </button>
+        <div class="footer-5-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-7 ">
-        <div class="container">
-          <a href="#"><span class="fui-home"> </span></a>
-          <nav>
-            <ul>
-              <li><a href="#">HOME</a>
-              </li>
-              <li><a href="#">WORK</a>
-              </li>
-              <li class="scroll-btn">
-                <a href="#" class="scroll-top fui-arrow-up"></a>
-              </li>
-              <li><a href="#">BLOG</a>
-              </li>
-              <li><a href="#">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="social-btns">
-            <a href="#">
-              <div class="fui-vimeo"></div>
-              <div class="fui-vimeo"></div>
+        <footer class="footer-5 bg-wet-asphalt">
+          <div class="container">
+            <a class="brand" href="#">
+              <img src="../../common-files/icons/Infinity-Loop@2x.png" width="35" height="35" alt="">
             </a>
-            <a href="#">
-              <div class="fui-facebook"></div>
-              <div class="fui-facebook"></div>
-            </a>
-            <a href="#">
-              <div class="fui-twitter"></div>
-              <div class="fui-twitter"></div>
-            </a>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="text">Startup Framework will help you to find an awesome form for your
+                  <br/>startup project in a short time</div>
+              </div>
+            </div>
+            <a class="btn btn-small" href="#"><span class="fui-twitter"> </span> Follow @Designmodo</a>
           </div>
+        </footer>
+        <div class="delimiter-big">
         </div>
-      </footer>
-      <!-- footer-8 -->
-      <button class="read-man" id="footer-8">
-        ?
-      </button>
-      <div class="footer-8 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <!-- footer-6 -->
+        <button class="read-man" id="footer-6">
+          ?
+        </button>
+        <div class="footer-6-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-8">
-        <div class="container">
-          <nav>
-            <ul>
-              <li class="active"><a href="#">Home</a>
-              </li>
-              <li><a href="#">Company</a>
-              </li>
-              <li><a href="#">Portfolio</a>
-              </li>
-              <li><a href="#">Blog</a>
-              </li>
-              <li><a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="additional-links">
-            Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-          </div>
-        </div>
-      </footer>
-      <div class="delimiter-big">
-      </div>
-      <!-- footer-9 -->
-      <button class="read-man" id="footer-9">
-        ?
-      </button>
-      <div class="footer-9 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="footer-9-map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=40.714353,-74.005973&amp;spn=0.04554,0.072956&amp;z=12&amp;output=embed"></iframe>
-      </section>
-      <footer class="footer-9 v-center">
-        <div>
+        <footer class="footer-6">
           <div class="container">
             <div class="row">
-              <div class="span3">
+              <div class="col-sm-3">
+                <div><a class="brand" href="#">Startup</a>
+                </div>
+              </div>
+              <nav>
+                <div class="col-sm-2">
+                  <h6>About</h6>
+                  <ul>
+                    <li><a href="#">About Us</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li><a href="#">Team</a>
+                    </li>
+                    <li><a href="#">Career</a>
+                    </li>
+                    <li><a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <h6>Work</h6>
+                  <ul>
+                    <li><a href="#">Our Portfolio</a>
+                    </li>
+                    <li><a href="#">Latest Work</a>
+                    </li>
+                    <li><a href="#">Brands</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <h6>Stuff</h6>
+                  <ul>
+                    <li><a href="#">Privacy</a>
+                    </li>
+                    <li><a href="#">Terms</a>
+                    </li>
+                    <li><a href="#">Advertise</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="col-sm-3">
+                <h6>Subscribe</h6>
+                <div class="input-group">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                        <button class="btn" type="button">
+                            <span class="fui-arrow-right"> </span>
+                  </button>
+                  </span>
+                </div>
+                <div class="social-btns">
+                  <a href="#">
+                    <div class="fui-facebook"></div>
+                    <div class="fui-facebook"></div>
+                  </a>
+                  <a href="#">
+                    <div class="fui-twitter"></div>
+                    <div class="fui-twitter"></div>
+                  </a>
+                  <a href="#">
+                    <div class="fui-vimeo"></div>
+                    <div class="fui-vimeo"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer-7 -->
+        <button class="read-man" id="footer-7">
+          ?
+        </button>
+        <div class="footer-7-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer-7 ">
+          <div class="container">
+            <a href="#"><span class="fui-home"> </span></a>
+            <nav>
+              <ul>
+                <li><a href="#">HOME</a>
+                </li>
+                <li><a href="#">WORK</a>
+                </li>
+                <li class="scroll-btn">
+                  <a href="#" class="scroll-top fui-arrow-up"></a>
+                </li>
+                <li><a href="#">BLOG</a>
+                </li>
+                <li><a href="#">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="social-btns">
+              <a href="#">
+                <div class="fui-vimeo"></div>
+                <div class="fui-vimeo"></div>
+              </a>
+              <a href="#">
+                <div class="fui-facebook"></div>
+                <div class="fui-facebook"></div>
+              </a>
+              <a href="#">
+                <div class="fui-twitter"></div>
+                <div class="fui-twitter"></div>
+              </a>
+            </div>
+          </div>
+        </footer>
+        <!-- footer-8 -->
+        <button class="read-man" id="footer-8">
+          ?
+        </button>
+        <div class="footer-8-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer-8">
+          <div class="container">
+            <nav>
+              <ul>
+                <li class="active"><a href="#">Home</a>
+                </li>
+                <li><a href="#">Company</a>
+                </li>
+                <li><a href="#">Portfolio</a>
+                </li>
+                <li><a href="#">Blog</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="additional-links">
+              Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+        <div class="delimiter-big">
+        </div>
+        <!-- footer-9 -->
+        <button class="read-man" id="footer-9">
+          ?
+        </button>
+        <div class="footer-9-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="footer-9-map">
+          <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=40.714353,-74.005973&amp;spn=0.04554,0.072956&amp;z=12&amp;output=embed"></iframe>
+        </section>
+        <footer class="footer-9 v-center">
+          <div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="box box-first">
+                    <h6>New York, NY</h6>
+                    <p>62 West 55th Street, Suite 302 New York, NY, 10230</p>
+                  </div>
+                  <br class="hidden-xs">
+                  <div class="box">
+                    <h6>San Francisco, CA</h6>
+                    <p>560 Judah St &amp; 15th Ave, Apt 5 San Francisco, CA, 230903</p>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-1 box">
+                  <h6>Help</h6>
+                  <p>Need help? Don’t hestiate to ask us something. Email us directly <a href="#">info@designmodo.com</a> or call us at 1-347-567-8670. You can checkout our <a href="#">FAQ</a> and <a href="#">Help</a> page to get more information about our products.</p>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1 box">
+                  <h6>Financial Inquiries</h6>
+                  <p>As a Harvard professor, he was one of the first to explore the relationship between chemical equilibrium and the reaction rate of chemical processes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="delimiter-big">
+        </div>
+        <!-- footer-10 -->
+        <button class="read-man" id="footer-10">
+          ?
+        </button>
+        <div class="footer-10-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer-10">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2">
+                <nav>
+                  <h6>Company</h6>
+                  <ul>
+                    <li><a href="#">About Us</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li><a href="#">Team</a>
+                    </li>
+                    <li><a href="#">Career</a>
+                    </li>
+                    <li><a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-sm-2 col-sm-offset-1">
+                <nav>
+                  <h6>Our Products</h6>
+                  <ul>
+                    <li><a href="#">What we doing?</a>
+                    </li>
+                    <li><a href="#">Portfolio</a>
+                    </li>
+                    <li><a href="#">Clients</a>
+                    </li>
+                    <li><a href="#">Success Story</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-sm-2 col-sm-offset-1">
+                <nav>
+                  <h6>Blog</h6>
+                  <ul>
+                    <li><a href="#">Tutorials</a>
+                    </li>
+                    <li><a href="#">Some thoughts</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-sm-2 col-sm-offset-1">
+                <nav>
+                  <h6>Newsletter</h6>
+                  <ul>
+                    <li><a href="#">News</a>
+                    </li>
+                    <li><a href="#">Design</a>
+                    </li>
+                    <li><a href="#">Development</a>
+                    </li>
+                    <li><a href="#">Drawing</a>
+                    </li>
+                    <li><a href="#">Tutorials</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe-form bg-midnight-blue">
+            <form>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <input type="text" placeholder="Enter your e-mail" spellcheck="false">
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="btn btn-large btn-danger" type="submit">Subscribe now</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <a class="brand" href="#">
+                  <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup
+                </a>
+              </div>
+              <div class="col-sm-3">
                 <div class="box box-first">
                   <h6>New York, NY</h6>
                   <p>62 West 55th Street, Suite 302 New York, NY, 10230</p>
                 </div>
-                <br class="hidden-phone">
+                <br class="hidden-xs">
                 <div class="box">
                   <h6>San Francisco, CA</h6>
                   <p>560 Judah St &amp; 15th Ave, Apt 5 San Francisco, CA, 230903</p>
                 </div>
               </div>
-              <div class="span4 offset1 box">
+              <div class="col-sm-4 col-sm-offset-1 box">
                 <h6>Help</h6>
                 <p>Need help? Don’t hestiate to ask us something. Email us directly
                   <a href="#">info@designmodo.com</a> or call us at 1-347-567-8670. You can checkout our <a href="#">FAQ</a> and <a href="#">Help</a>
 page to get more information about our products.
                 </p>
               </div>
-              <div class="span3 offset1 box">
-                <h6>Financial Inquiries</h6>
-                <p style="margin: 0">
-                  As a Harvard professor, he was one of the first to explore the relationship between chemical equilibrium and the reaction rate of chemical processes.
-                </p>
-              </div>
             </div>
           </div>
+        </footer>
+        <div class="delimiter-big">
         </div>
-      </footer>
-      <div class="delimiter-big">
-      </div>
-      <!-- footer-10 -->
-      <button class="read-man" id="footer-10">
-        ?
-      </button>
-      <div class="footer-10 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-10">
-        <div class="container">
-          <div class="row">
-            <nav>
-              <div class="span2">
-                <h6>Company</h6>
-                <ul>
-                  <li><a href="#">About Us</a>
-                  </li>
-                  <li><a href="#">Blog</a>
-                  </li>
-                  <li><a href="#">Teem</a>
-                  </li>
-                  <li><a href="#">Career</a>
-                  </li>
-                  <li><a href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="span2 offset1">
-                <h6>Our Products</h6>
-                <ul>
-                  <li><a href="#">What we doing?</a>
-                  </li>
-                  <li><a href="#">Portfolio</a>
-                  </li>
-                  <li><a href="#">Clients</a>
-                  </li>
-                  <li><a href="#">Success Story</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="span2 offset1">
-                <h6>Blog</h6>
-                <ul>
-                  <li><a href="#">Tutorials</a>
-                  </li>
-                  <li><a href="#">Some thoughts</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="span2 offset1">
-                <h6>Newsletter</h6>
-                <ul>
-                  <li><a href="#">News</a>
-                  </li>
-                  <li><a href="#">Design</a>
-                  </li>
-                  <li><a href="#">Development</a>
-                  </li>
-                  <li><a href="#">Drawing</a>
-                  </li>
-                  <li><a href="#">Tutorials</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="subscribe-form bg-midnight-blue">
+        <!-- footer-11 -->
+        <button class="read-man" id="footer-11">
+          ?
+        </button>
+        <div class="footer-11-mask mask">
           <div class="container">
-            <div class="row">
-              <form>
-                <div class="span8">
-                  <input type="text" placeholder="Enter your e-mail" spellcheck="false">
-                </div>
-                <div class="span4">
-                  <button class="btn btn-large btn-danger" type="submit">Subscribe now</button>
-                </div>
-              </form>
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="span3">
-              <a class="brand" href="#">
-                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup
+        <footer class="footer-11">
+          <div class="container">
+            <a class="brand" href="#">
+              <img src="../../common-files/icons/infinity-bw@2x.png" width="42" height="21" alt="">
+            </a>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a>
+                </li>
+                <li><a href="#">Blog</a>
+                </li>
+                <li><a href="#">Portfolio</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="social-btns">
+              <a href="#">
+                <div class="fui-vimeo"></div>
+                <div class="fui-vimeo"></div>
+              </a>
+              <a href="#">
+                <div class="fui-facebook"></div>
+                <div class="fui-facebook"></div>
+              </a>
+              <a href="#">
+                <div class="fui-twitter"></div>
+                <div class="fui-twitter"></div>
               </a>
             </div>
-            <div class="span3">
-              <div class="box box-first">
-                <h6>New York, NY</h6>
-                <p>62 West 55th Street, Suite 302 New York, NY, 10230</p>
-              </div>
-              <br class="hidden-phone">
-              <div class="box">
-                <h6>San Francisco, CA</h6>
-                <p>560 Judah St &amp; 15th Ave, Apt 5 San Francisco, CA, 230903</p>
-              </div>
-            </div>
-            <div class="span4 offset1 box">
-              <h6>Help</h6>
-              <p>Need help? Don’t hestiate to ask us something. Email us directly
-                <a href="#">info@designmodo.com</a> or call us at 1-347-567-8670. You can checkout our <a href="#">FAQ</a> and <a href="#">Help</a>
-page to get more information about our products.
-              </p>
+          </div>
+          <div class="additional-links">
+            <div class="container">
+              <p class="lead"><b>200,000</b> users registered since January</p>
+              <a href="#">Terms &amp; Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Advertise</a>
+              <a href="#">Affiliate Program</a>
+              <a href="#">Contact Us</a>
             </div>
           </div>
-        </div>
-      </footer>
-      <div class="delimiter-big">
-      </div>
-      <!-- footer-11 -->
-      <button class="read-man" id="footer-11">
-        ?
-      </button>
-      <div class="footer-11 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-11">
-        <div class="container">
-          <a class="brand" href="#">
-            <img src="../../common-files/icons/infinity-bw@2x.png" width="42" height="21" alt="">
-          </a>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a>
-              </li>
-              <li><a href="#">Blog</a>
-              </li>
-              <li><a href="#">Portfolio</a>
-              </li>
-              <li><a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="social-btns">
-            <a href="#">
-              <div class="fui-vimeo"></div>
-              <div class="fui-vimeo"></div>
-            </a>
-            <a href="#">
-              <div class="fui-facebook"></div>
-              <div class="fui-facebook"></div>
-            </a>
-            <a href="#">
-              <div class="fui-twitter"></div>
-              <div class="fui-twitter"></div>
-            </a>
-          </div>
-        </div>
-        <div class="additional-links">
+        </footer>
+        <!-- footer-12 -->
+        <button class="read-man" id="footer-12">
+          ?
+        </button>
+        <div class="footer-12-mask mask">
           <div class="container">
-            <p class="lead"><b>200,000</b> users registered since January</p>
-            <a href="#">Terms &amp; Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Advertise</a>
-            <a href="#">Affiliate Program</a>
-            <a href="#">Contact Us</a>
-          </div>
-        </div>
-      </footer>
-      <!-- footer-12 -->
-      <button class="read-man" id="footer-12">
-        ?
-      </button>
-      <div class="footer-12 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-12">
-        <div class="container">
-          Made with <span class="fui-heart"> </span> in New York
+        <footer class="footer-12">
+          <div class="container">
+            Made with <span class="fui-heart"> </span> in New York
+          </div>
+        </footer>
+        <div class="delimiter-big">
         </div>
-      </footer>
-      <div class="delimiter-big">
-      </div>
-      <!-- footer-13 -->
-      <button class="read-man" id="footer-13">
-        ?
-      </button>
-      <div class="footer-13 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <!-- footer-13 -->
+        <button class="read-man" id="footer-13">
+          ?
+        </button>
+        <div class="footer-13-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-13">
-        <div class="container">
-          <nav class="pull-left">
-            <ul>
-              <li><a href="#">UPCOMING EVENTS</a>
-              </li>
-              <li><a href="#">SUBSCRIPTIONS</a>
-              </li>
-            </ul>
-          </nav>
-          <span class="fui-cmd"> </span>
-          <nav class="pull-right">
-            <ul>
-              <li><a href="#">HOME</a>
-              </li>
-              <li><a href="#">BLOG</a>
-              </li>
-              <li><a href="#">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
+        <footer class="footer-13">
+          <div class="container">
+            <nav class="pull-left">
+              <ul>
+                <li><a href="#">UPCOMING EVENTS</a>
+                </li>
+                <li><a href="#">SUBSCRIPTIONS</a>
+                </li>
+              </ul>
+            </nav>
+            <span class="fui-cmd"> </span>
+            <nav class="pull-right">
+              <ul>
+                <li><a href="#">HOME</a>
+                </li>
+                <li><a href="#">BLOG</a>
+                </li>
+                <li><a href="#">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+        <div class="delimiter">
         </div>
-      </footer>
-      <div class="delimiter">
-      </div>
-      <!-- footer-14 -->
-      <button class="read-man" id="footer-14">
-        ?
-      </button>
-      <div class="footer-14 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <!-- footer-14 -->
+        <button class="read-man" id="footer-14">
+          ?
+        </button>
+        <div class="footer-14-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-14">
-        <div class="container">
-          <a class="brand" href="#">
-            <img src="../../common-files/icons/logo-red@2x.png" width="41" height="21" alt="">
-          </a>
-          <nav>
-            <ul>
-              <li class="active"><a href="#">Home</a>
-              </li>
-              <li><a href="#">Blog</a>
-              </li>
-              <li><a href="#">Portfolio</a>
-              </li>
-              <li><a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="social-btns">
-            <a href="#">
-              <div class="fui-twitter"></div>
-              <div class="fui-twitter"></div>
+        <footer class="footer-14">
+          <div class="container">
+            <a class="brand" href="#">
+              <img src="../../common-files/icons/logo-red@2x.png" width="41" height="21" alt="">
             </a>
-            <a href="#">
-              <div class="fui-facebook"></div>
-              <div class="fui-facebook"></div>
-            </a>
-            <a href="#">
-              <div class="fui-vimeo"></div>
-              <div class="fui-vimeo"></div>
-            </a>
+            <nav>
+              <ul>
+                <li class="active"><a href="#">Home</a>
+                </li>
+                <li><a href="#">Blog</a>
+                </li>
+                <li><a href="#">Portfolio</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="social-btns">
+              <a href="#">
+                <div class="fui-twitter"></div>
+                <div class="fui-twitter"></div>
+              </a>
+              <a href="#">
+                <div class="fui-facebook"></div>
+                <div class="fui-facebook"></div>
+              </a>
+              <a href="#">
+                <div class="fui-vimeo"></div>
+                <div class="fui-vimeo"></div>
+              </a>
+            </div>
           </div>
+        </footer>
+        <div class="delimiter">
         </div>
-      </footer>
-      <div class="delimiter">
-      </div>
-      <!-- footer-15 -->
-      <button class="read-man" id="footer-15">
-        ?
-      </button>
-      <div class="footer-15 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <!-- footer-15 -->
+        <button class="read-man" id="footer-15">
+          ?
+        </button>
+        <div class="footer-15-mask mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer-15">
-        <div class="container">
-          <span>You can Sign In with popular Social Networks</span>
-          <div class="btns">
-            <a href="#" class="btn">Sign In with Twitter</a><a href="#" class="btn">Sign In with Facebook</a>
+        <footer class="footer-15">
+          <div class="container">
+            <span>You can Sign In with popular Social Networks</span>
+            <div class="btns">
+              <a href="#" class="btn btn-default">Sign In with Twitter</a><a href="#" class="btn btn-default">Sign In with Facebook</a>
+            </div>
           </div>
+        </footer>
+        <div class="delimiter">
         </div>
-      </footer>
-      <div class="delimiter">
       </div>
       <!-- manual sections -->
       <div class="manual">
@@ -863,7 +857,7 @@ page to get more information about our products.
                 <pre class="language-markup"><code class="language-markup"><footer class="footer-1 bg-midnight-blue">
     <div class="container">
         <div class="row">
-            <div class="span5">
+            <div class="col-sm-5">
                 <p class="lead"><b>200,000</b> users registered since January</p>
                 We’ve created the product that will help your startup to look even better.
                 <p class="social-btns">
@@ -871,17 +865,17 @@ page to get more information about our products.
                 </p>
             </div>
             <nav>
-                <div class="span2 offset1">
+                <div class="col-sm-2 col-sm-offset-1">
                     <h6>Categories</h6>
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Teem</a></li>
+                        <li><a href="#">Team</a></li>
                         <li><a href="#">Career</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <h6>Follow Us</h6>
                     <ul>
                         <li><a href="#">Facebook</a></li>
@@ -890,13 +884,13 @@ page to get more information about our products.
                     </ul>
                 </div>
             </nav>
-            <div class="span2 buy-btn">
+            <div class="col-sm-2 buy-btn">
                 <a class="btn btn-danger btn-block" href="#">Buy App</a>
                 or <a href="#">Learn More</a>
             </div>
         </div>
         <div class="row">
-            <div class="span5 additional-links">
+            <div class="col-sm-5 additional-links">
                 <a href="#">Terms of Service</a>
                 <a href="#">Special Terms</a>
                 <a href="#">Privacy Policy</a>
@@ -1044,24 +1038,18 @@ page to get more information about our products.
                 <pre class="language-markup"><code class="language-markup"><footer class="footer-3">
     <div class="container">
         <div class="row v-center">
-            <div class="span2">
-                <div class="span2">
-                    <a class="brand" href="#">Startup</a>
+            <div class="col-sm-2">
+                <a class="brand" href="#">Startup</a>
+            </div>
+            <div class="col-sm-7">
+                <div class="additional-links">
+                    Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
                 </div>
             </div>
-            <div class="span7">
-                <div class="span7">
-                    <div class="additional-links">
-                        Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-            <div class="span3">
-                <div class="span3">
-                    <h6>New York, NY</h6>
-                    <div class="address">
-                        62 West 55th Street, Suite 302<br>New York, NY, 10230
-                    </div>
+            <div class="col-sm-3">
+                <h6>New York, NY</h6>
+                <div class="address">
+                    62 West 55th Street, Suite 302<br>New York, NY, 10230
                 </div>
             </div>
         </div>
@@ -1181,13 +1169,12 @@ page to get more information about our products.
                 </p>
                 <pre class="language-markup"><code class="language-markup"><footer class="footer-5 bg-wet-asphalt">
     <div class="container">
-        <a class="brand" href="#"><img src="../../common-files/icons/Infinity-Loop@2x.png" width="35" height="35" alt=""></a>
+        <a class="brand" href="#">
+            <img src="../../common-files/icons/Infinity-Loop@2x.png" width="35" height="35" alt="">
+        </a>
         <div class="row">
-            <div class="span6 offset3">
-                <div class="text">
-                    Startup Framework will help you to find an awesome form for your <br/>startup project in a short
-                    time
-                </div>
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="text">Startup Framework will help you to find an awesome form for your <br/>startup project in a short time</div>
             </div>
         </div>
         <a class="btn btn-small" href="#"><span class="fui-twitter"> </span> Follow @Designmodo</a>
@@ -1251,21 +1238,21 @@ page to get more information about our products.
                 <pre class="language-markup"><code class="language-markup"><footer class="footer-6">
     <div class="container">
         <div class="row">
-            <div class="span3">
+            <div class="col-sm-3">
                 <div><a class="brand" href="#">Startup</a></div>
             </div>
             <nav>
-                <div class="span2">
+                <div class="col-sm-2">
                     <h6>About</h6>
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Teem</a></li>
+                        <li><a href="#">Team</a></li>
                         <li><a href="#">Career</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <h6>Work</h6>
                     <ul>
                         <li><a href="#">Our Portfolio</a></li>
@@ -1273,7 +1260,7 @@ page to get more information about our products.
                         <li><a href="#">Brands</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <h6>Stuff</h6>
                     <ul>
                         <li><a href="#">Privacy</a></li>
@@ -1282,15 +1269,15 @@ page to get more information about our products.
                     </ul>
                 </div>
             </nav>
-            <div class="span3">
+            <div class="col-sm-3">
                 <h6>Subscribe</h6>
-                <div class="control-group">
-                    <div class="input-append">
-                        <input type="text">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
                         <button class="btn" type="button">
                             <span class="fui-arrow-right"> </span>
                         </button>
-                    </div>
+                    </span>
                 </div>
                 <div class="social-btns">
                     <a href="#">
@@ -1528,31 +1515,24 @@ page to get more information about our products.
     <div>
         <div class="container">
             <div class="row">
-                <div class="span3">
+                <div class="col-sm-3">
                     <div class="box box-first">
                         <h6>New York, NY</h6>
                         <p>62 West 55th Street, Suite 302 New York, NY, 10230</p>
                     </div>
-                    <br class="hidden-phone">
+                    <br class="hidden-xs">
                     <div class="box">
                         <h6>San Francisco, CA</h6>
                         <p>560 Judah St &amp; 15th Ave, Apt 5 San Francisco, CA, 230903</p>
                     </div>
                 </div>
-                <div class="span4 offset1 box">
+                <div class="col-sm-4 col-sm-offset-1 box">
                     <h6>Help</h6>
-                    <p> Need help? Don’t hestiate to ask us something. Email us directly
-                        <a href="#">info@designmodo.com</a> or call us at 1-347-567-8670.
-                        You can checkout our <a href="#">FAQ</a> and <a href="#">Help</a>
-                        page to get more information about our products.
-                    </p>
+                    <p> Need help? Don’t hestiate to ask us something. Email us directly <a href="#">info@designmodo.com</a> or call us at 1-347-567-8670. You can checkout our <a href="#">FAQ</a> and <a href="#">Help</a> page to get more information about our products.</p>
                 </div>
-                <div class="span3 offset1 box">
+                <div class="col-sm-3 col-sm-offset-1 box">
                     <h6>Financial Inquiries</h6>
-                    <p style="margin: 0">
-                        As a Harvard professor, he was one of the first to explore the relationship between chemical
-                        equilibrium and the reaction rate of chemical processes.
-                    </p>
+                    <p>As a Harvard professor, he was one of the first to explore the relationship between chemical equilibrium and the reaction rate of chemical processes.</p>
                 </div>
             </div>
         </div>
@@ -1618,18 +1598,20 @@ page to get more information about our products.
                 <pre class="language-markup"><code class="language-markup"><footer class="footer-10">
     <div class="container">
         <div class="row">
-            <nav>
-                <div class="span2">
+            <div class="col-sm-2">
+                <nav>
                     <h6>Company</h6>
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Teem</a></li>
+                        <li><a href="#">Team</a></li>
                         <li><a href="#">Career</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
-                <div class="span2 offset1">
+                </nav>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1">
+                <nav>
                     <h6>Our Products</h6>
                     <ul>
                         <li><a href="#">What we doing?</a></li>
@@ -1637,15 +1619,19 @@ page to get more information about our products.
                         <li><a href="#">Clients</a></li>
                         <li><a href="#">Success Story</a></li>
                     </ul>
-                </div>
-                <div class="span2 offset1">
+                </nav>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1">
+                <nav>
                     <h6>Blog</h6>
                     <ul>
                         <li><a href="#">Tutorials</a></li>
                         <li><a href="#">Some thoughts</a></li>
                     </ul>
-                </div>
-                <div class="span2 offset1">
+                </nav>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1">
+                <nav>
                     <h6>Newsletter</h6>
                     <ul>
                         <li><a href="#">News</a></li>
@@ -1654,42 +1640,43 @@ page to get more information about our products.
                         <li><a href="#">Drawing</a></li>
                         <li><a href="#">Tutorials</a></li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </div>
     <div class="subscribe-form bg-midnight-blue">
-        <div class="container">
-            <div class="row">
-                <form>
-                    <div class="span8">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
                         <input type="text" placeholder="Enter your e-mail" spellcheck="false">
                     </div>
-                    <div class="span4">
+                    <div class="col-sm-4">
                         <button class="btn btn-large btn-danger" type="submit">Subscribe now</button>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
     <div class="container">
         <div class="row">
-            <div class="span3">
-                <a class="brand" href="#"><img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">
-                    Startup</a>
+            <div class="col-sm-3">
+                <a class="brand" href="#">
+                    <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup
+                </a>
             </div>
-            <div class="span3">
+            <div class="col-sm-3">
                 <div class="box box-first">
                     <h6>New York, NY</h6>
                     <p>62 West 55th Street, Suite 302 New York, NY, 10230</p>
                 </div>
-                <br class="hidden-phone">
+                <br class="hidden-xs">
                 <div class="box">
                     <h6>San Francisco, CA</h6>
                     <p>560 Judah St &amp; 15th Ave, Apt 5 San Francisco, CA, 230903</p>
                 </div>
             </div>
-            <div class="span4 offset1 box">
+            <div class="col-sm-4 col-sm-offset-1 box">
                 <h6>Help</h6>
                 <p>Need help? Don’t hestiate to ask us something. Email us directly
                     <a href="#">info@designmodo.com</a> or call us at 1-347-567-8670.
@@ -1764,7 +1751,9 @@ page to get more information about our products.
                 </p>
                 <pre class="language-markup"><code class="language-markup"><footer class="footer-11">
     <div class="container">
-        <a class="brand" href="#"><img src="../../common-files/icons/infinity-bw@2x.png" width="42" height="21" alt=""></a>
+        <a class="brand" href="#">
+            <img src="../../common-files/icons/infinity-bw@2x.png" width="42" height="21" alt="">
+        </a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -1994,7 +1983,9 @@ page to get more information about our products.
                 </p>
                 <pre class="language-markup"><code class="language-markup"><footer class="footer-14">
     <div class="container">
-        <a class="brand" href="#"><img src="../../common-files/icons/logo-red@2x.png" width="41" height="21" alt=""></a>
+        <a class="brand" href="#">
+            <img src="../../common-files/icons/logo-red@2x.png" width="41" height="21" alt="">
+        </a>
         <nav>
             <ul>
                 <li class="active"><a href="#">Home</a></li>
@@ -2074,7 +2065,7 @@ page to get more information about our products.
     <div class="container">
         <span>You can Sign In with popular Social Networks</span>
         <div class="btns">
-            <a href="#" class="btn">Sign In with Twitter</a><a href="#" class="btn">Sign In with Facebook</a>
+            <a href="#" class="btn btn-default">Sign In with Twitter</a><a href="#" class="btn btn-default">Sign In with Facebook</a>
         </div>
     </div>
 </footer></code></pre>

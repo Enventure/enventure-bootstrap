@@ -8,29 +8,30 @@
     .navbar {
         position: absolute;
         z-index: 2;
-        top: 22px;
-        margin: 0;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
+        top: -50px;
         &.navbar-fixed-top {
             position:fixed;
-            margin:0 auto;
-            .navbar-inner {
-                background: none;
-                padding-top: 32px;
-            }
-            .social-btns {
-                top:32px;
+            margin-top: 28px;
+        }
+        .opacity(0);
+        .loaded & {
+            top: 90px;
+            .opacity(100);
+            @media (max-width: 768px) {
+                top:65px;
             }
         }
-        .navbar-inner {
-            background: none;
-            padding-top: 5px;
+        @media (max-width: 480px) {
+            .social-btns {
+                display: none;
+            }
         }
         .brand {
             position: absolute;
             top: 0;
-            left: 0;
-            padding: 0;
+            left: 15px;
+            padding: 0 !important;
             .font(25px, white);
             img:first-child {
                 float: left;
@@ -44,7 +45,8 @@
             white-space: nowrap;
             position: absolute;
             top: 7px;
-            right: 0;
+            right: 15px;
+            z-index: 2;
             > * {
                 display: inline-block;
                 margin-left: 15px;
@@ -70,7 +72,7 @@
             }
         }
         .nav {
-            @media (min-width: 980px) {
+            @media (min-width: 992px) {
                 position: absolute;
                 width: 100%;
                 height: 0;
@@ -84,7 +86,7 @@
             }
             > li {
                 > a {
-                    padding: 0;
+                    padding: 12px 0 0;
                     .font(13px);
                     font-weight: 500;
                     letter-spacing:2px;
@@ -96,57 +98,15 @@
                 }
             }
         }
-        .btn-navbar {
-            @media (max-width: 768px) {
-                float: right;
-            }
+        .navbar-toggle {
             float: none;
-            margin: 0 auto 25px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-            color: white;
-            &:hover, &:focus {
-                color: @silver;
-            }
-            &:active, &.active {
-                color: #494b4c;
-            }
-        }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 75px;
-                .navbar-collapse;
-            }
-            .btn-navbar{
-              &:before{
-                content:'';
-                display: block;
-                background-image: url("../../../common-files/icons/menu-icon.png");
-                width: 17px;
-                height: 12px;
-              }
-            }
-        }
-        top: -50px;
-        .opacity(0);
-        .loaded & {
-            .transition(~'.4s .8s top, 1.2s .8s opacity');
-            top: 90px;
-            .opacity(100);
+            margin: 4px auto 0;
+            display: block;
             @media (max-width: 768px) {
-                top:65px;
-            }
-        }
-        @media (max-width: 480px) {
-            .transition-duration(0)!important;
-            .transition-delay(0)!important;
-            .social-btns {
-                display: none;
-            }
-            .btn-navbar {
                 float: right;
+            }
+            @media (min-width: 992px) {
+                display: none;
             }
         }
     }
@@ -178,7 +138,7 @@
     .lead {
         .font(24px, rgba(255, 255, 255, 0.7));
         font-weight: 300;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
     }
     .container > .row:first-child {
         .opacity(0);
@@ -238,21 +198,12 @@
             padding: 17px;
             .border-radius(6px);
             background: white;
-            input, button {
+            input,
+            button {
                 float: left;
-                width: 23.8%;
-                height: 41px;
+                width: 23.5%;
                 .box-sizing(border-box);
-                margin: 0 0 0 2.3%;
-                @media (min-width: 1200px) {
-                  width: 23.8%;
-                }
-                @media (max-width: 979px) and (min-width: 768px) {
-                    width: 23.8%;
-                }
-                @media (max-width: 767px) {
-                    width: 23.8%;
-                }
+                margin: 0 0 0 2%;
                 @media (max-width: 480px) {
                     width: 100%;
                     margin: 10px 0 0;
@@ -264,7 +215,7 @@
                 }
             }
             button{
-              width: 22%;
+              width: 23.5%;
               margin-left: 2%;
               @media (max-width: 480px) {
                 width: 100%;
@@ -275,4 +226,7 @@
             }
         }
     }
+}
+.header-antiflicker {
+    .opacity(0);
 }

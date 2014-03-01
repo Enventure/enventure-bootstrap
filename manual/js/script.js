@@ -5,25 +5,12 @@
             $(this).text($(this).html());
         });
 
-        $('#open-close-menu').click(function () {
-            $('body').toggleClass('colapsed-menu-active');
-        });
-
-
-
-        $('html').click(function (e) {
-            // console.warn('element clicked = ',$(e.target).attr('class'), '\n parent element = ', $(e.target).parents().attr('class'));
-            if (!$(e.target).hasClass('menu-btn') && !$(e.target).hasClass('colapsed-menu') && !$(e.target).parents().hasClass('colapsed-menu') && !$(e.target).parents().hasClass('menu-btn')) {
-                $('body').removeClass('colapsed-menu-active');
-            }
-        });
-
         $('.manual > div').hide('fast');
 
         var helpButton = $('.read-man');
         helpButton.each(function () {
-            $(this).hover(function () {
-                $('body').toggleClass('hovered');
+            $(this).on('mouseenter', function () {
+                $('body').addClass('hovered');
                 var id = $(this).attr('id');
                 var heightMask = 0;
                 if(id.indexOf('header') != -1) {
@@ -49,35 +36,26 @@
                 }
 
                 if (heightMask > $(window).height()) {
-                    $('.' + id + '.mask').addClass('big');
+                    $('.' + id + '-mask').addClass('big');
                 } else if (heightMask <= 80) {
-                    $('.' + id + '.mask').addClass('small');
+                    $('.' + id + '-mask').addClass('small');
                     heightMask += 30;
                 }
-                $('.' + id + '.mask').height(heightMask);
-                $('.' + id + '.mask').toggleClass('active');
+                $('.' + id + '-mask').height(heightMask);
+                $('.' + id + '-mask').addClass('active');
+            });
+
+            $(this).on('mouseleave', function () {
+                var id = $(this).attr('id');
+                $('body').removeClass('hovered');
+                $('.' + id + '-mask').height(0);
+                $('.' + id + '-mask').removeClass('active');
             });
 
             $(this).click(function () {
                 var id = $(this).attr('id');
                 $('.manual .' + id).show();
-
                 $('html').addClass('read-manual');
-
-//                var elem = $('.mcontent > .' + id + ':not(.mask)');
-//                if (elem.length == 0) {
-//                    elem = $('.mcontent > .' + id + '-sub');
-//                }
-//                var elemPos = 0;
-//                if ($('.' + id + '-map').length != 0) {
-//                    elemPos = $(this).position().top + 110;
-//                } else {
-//                    elemPos = elem.position().top;
-//                }
-//                $(window).scrollTop(elemPos - 110);
-//
-//                $('.manual').scrollTop(0);
-
                 $('html').click(function (e) {
                     var clickedElem = $(e.target);
                     var parentCE = $(e.target).parents();

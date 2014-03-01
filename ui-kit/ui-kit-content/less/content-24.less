@@ -5,7 +5,7 @@
     overflow: hidden;
     h3 {
         .font(30px, white);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         margin-bottom:40px;
         font-weight: 300;
     }
@@ -15,7 +15,7 @@
         right: 50%;
         margin-right:100px;
     }
-    .span6.offset6 {
+    .col-sm-6.col-sm-offset-6 {
         position: relative;
     }
     .features.features-clear {
@@ -66,35 +66,17 @@
         padding: 7px 26px 8px;
         background: none;
         border: 2px solid #2ecc71;
-        .font(14px, @emerland);
-        font-family: @h-font-family;
+        .font(14px, @emerald);
+        font-family: @font-family-demo;
         font-weight: 500;
         &:hover, &:focus {
-            background: @emerland;
+            background: @emerald;
             color: white;
         }
         &:active, &.active {
-            border-color: mix(@emerland, black, 85%);
-            background: mix(@emerland, black, 85%);
+            border-color: mix(@emerald, black, 85%);
+            background: mix(@emerald, black, 85%);
             color: rgba(255, 255, 255, 0.75);
-        }
-    }
-}
-@media (max-width: 480px) {
-    .content-24 {
-        padding:35px;
-        img.image {
-            position:relative;
-            margin-bottom: 48px;
-            right:0;
-        }
-        .features.features-clear {
-            .features-header {
-                margin-bottom: 48px;
-            }
-            .features-body p {
-                margin-bottom: 48px;
-            }
         }
     }
 }
@@ -113,6 +95,10 @@
             .features-body p {
                 margin-bottom: 48px;
             }
+        }
+        .container {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }

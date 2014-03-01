@@ -1,23 +1,26 @@
-@import '../../../flat-ui/less/config.less';
-@import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
+
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
 
 /* header */
-@import '../../../ui-kit/ui-kit-header/less/header-12.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-12.less';
 
 /* contents */
-@import '../../../ui-kit/ui-kit-content/less/content-19.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-19.less';
 
 /* prices */
-@import '../../../ui-kit/ui-kit-price/less/price-common.less';
-@import '../../../ui-kit/ui-kit-price/less/price-1.less';
+@import '@{startup-basePath}ui-kit/ui-kit-price/less/price-common.less';
+@import '@{startup-basePath}ui-kit/ui-kit-price/less/price-1.less';
 
 /* footer */
-@import '../../../ui-kit/ui-kit-footer/less/footer-13.less';
+@import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-13.less';
 
 body > section {
     position: relative;
@@ -47,7 +50,7 @@ body > section {
     .opacity(30);
 }
 .header-12-sub .aside, .header-12-sub .aside:before {
-    background-color:@danger;
+    background-color:@brand-danger;
 }
 .content-19 {
     padding-top: 100px;
@@ -62,12 +65,12 @@ body > section {
     > .container {
         > h3 {
             text-align: center;
-            .font(35px, @h-text-color);
+            .font(35px, @text-color-heading);
         }
         > .lead {
             text-align: center;
             .font(25px);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             margin: 0 0 20px;
         }
         .plans {

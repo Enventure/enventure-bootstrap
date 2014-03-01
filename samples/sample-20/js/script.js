@@ -47,7 +47,7 @@ function fadedEls(el, shift) {
         });
 
         // Faded elements
-        fadedEls($('.features .span7 img'), 'h');
+        fadedEls($('.features .col-sm-7 img'), 'h');
         fadedEls($('.content-7 .row > *'), 'h/2');
 
         // Ani screen

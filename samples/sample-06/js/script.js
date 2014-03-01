@@ -35,18 +35,18 @@ function fadedEls(el, shift) {
     $(function() {
 
         (function(el) {
-            $('.span10 > img', el).css('opacity', 0);
+            $('.col-sm-10 > img', el).css('opacity', 0);
 
             $(window).resize(function() {
                 if (!el.hasClass('ani-processed')) {
-                    $('.span10 > img', el).css('top', $('.span10 > img', el).height());
+                    $('.col-sm-10 > img', el).css('top', $('.col-sm-10 > img', el).height());
                     el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight());
                 }
             }).scroll(function() {
                 if (!el.hasClass('ani-processed')) {
                     if ($(window).scrollTop() >= el.data('scrollPos')) {
                         el.addClass('ani-processed');
-                        $('.span10 > img', el).animate({
+                        $('.col-sm-10 > img', el).animate({
                             top : 0,
                             opacity : 1
                         }, 500);
@@ -56,7 +56,7 @@ function fadedEls(el, shift) {
         })($('.content-28'));
 
         // Faded elements
-        fadedEls($('.content-9 .span5 img'), 'h/2');
+        fadedEls($('.content-9 .col-sm-5 img'), 'h/2');
 
         // Parallax
        
