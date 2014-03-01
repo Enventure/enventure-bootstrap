@@ -11,8 +11,8 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link href="assets/css/mixitup.css" rel="stylesheet">
         <link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="flat-ui/css/flat-ui.css">
         <!-- Using only with Flat-UI (free)-->
         <link rel="stylesheet" href="common-files/css/icon-font.css">
@@ -37,7 +37,9 @@
                 s.parentNode.insertBefore(ga, s);
             })();
         </script>
-        
+            <script src="common-files/js/jquery-1.10.2.min.js"></script>
+        <script src="assets/js/mixitup.js"></script>
+        <script src="assets/js/mixitupextra.js"></script>
         <!--[if IE 9]>
 
 <![endif]-->
@@ -308,8 +310,236 @@
 	                                                    <a href="https://www.twitter.com/enventuremed"><div class="fui-twitter"></div><div class="fui-twitter"></div></a>
 	                                                </div>
 	                                            </div>
+	                                         
                                    
                                 </header>
+                                <div class="container" style="padding-top:100px;padding-bottom:100px;z-index:200">
+                                   <div class="row">
+	                                   <div class="col-md-12">
+					                       <h1 class="text-center"><white>What can&nbsp<button type="button" class="btn btn-large btn-danger" data-toggle="collapse" data-target="#map">Houston&nbsp<i class="fa fa-map-marker"></i>
+				                           </button> do for you? <i class="icon-sort-by-attributes"></i></white></h1>
+					                   </div>
+				                   </div>
+				                                             <!-- start: meta map-->
+								 <div id="map" class="collapse out">
+            <section id="SandBox" class="shadow anim150 bg-env-grey">
+                <nav class="wrapper ns wf">
+                    <div class="set ib">
+                        <ul>
+                            <li class="button filter anim150" data-role="button" data-filter="all">View All</li>
+                            <li class="button filter anim150" data-tole="button" data-filter="hit">
+                                <i class="fa fa-terminal"></i> Health IT</li>
+                            <li class="button filter anim150" data-filter="medtech">
+                                <i class="fa fa-stethoscope"></i> Med Tech</li>
+                            <li class="button filter anim150" data-filter="edu">
+                                <i class="fa fa-book"></i> Open Education</li>
+                            <li class="button filter anim150" data-filter="space">
+                                <i class="fa fa-group"></i> CoWorking</li>
+                            <li class="button filter anim150" data-filter="accelerator">
+                                <i class="fa fa-rocket"></i> Accelerator</li>
+                            <!-- <li class="button filter anim150" data-filter="seed">Seed Funding</li>
+<li class="button filter anim150" data-filter="vc">VC Funding</li>
+-->
+                            <li class="button filter anim150" data-filter="jobs">
+                                <i class="fa fa-puzzle-piece"></i> Job Matching</li>
+                            <li class="button filter anim150" data-filter="meetup">
+                                <i class="fa fa-coffee"></i> Meetups</li>
+                            <li class="button filter anim150" data-filter="md"><i class="fa fa-user-md"></i> MDs</li>
+                            <li class="break"></li>
+                        </ul>
+                    </div>
+                    <div class="break ib"></div>
+                </nav>
+                <div class="wrapper">
+                    <ul class="wf ns">
+                        <li class="mix hit medtech edu accelerator jobs meetup md" data-name="enventure">
+                            <div class="content anim150">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="img_wrapper anim150">
+                                    <img src="assets/images/map/en.jpg" onload="imgLoaded($(this))" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix hit edu meetup" data-name="health 2.0 houston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/h20.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.health20houston.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix edu" data-name="rice alliance">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/ra.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://alliance.rice.edu"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix accelerator medtech" data-name="hatrc">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/hatrc.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.hatrc.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="mix hit medtech edu" data-name="biohouston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/bh.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.biohouston.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix edu space" data-name="platform houston">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/ph.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.platformhouston.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix accelerator seed" data-name="owl spark">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/os.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.owlspark.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix md" data-name="Society of Physician Entrepreneurs">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/sope.jpg" onload="imgLoaded($(this))"/>
+                                    <a href="http://sopenet.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix space edu" data-name="brightwork">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/bw.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://brightworkcoresearch.com"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix jobs" data-name="AngelList">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/al.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://angel.co"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mix medtech accelerator" data-name="HTC">
+                            <div class="content">
+                                <div class="spinner wf">
+                                    <span class="side s_left">
+                                        <span class="fill"></span>
+                                    </span>
+                                    <span class="side s_right">
+                                        <span class="fill"></span>
+                                    </span>
+                                </div>
+                                <div class="clickMe img_wrapper anim150">
+                                    <img src="assets/images/map/htc.jpg" onload="imgLoaded($(this))" />
+                                    <a href="http://www.houstontech.org"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gap ib"></li>
+                        <li class="gap ib"></li>
+                        <li class="gap ib"></li>
+                        <li class="break ib"></li>   
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- end: meta map-->
+                                </div>
+                                
+      
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -375,7 +605,7 @@
                                                         <h3><strong>BrainCheck: Mobile Concussion Detection iOS Developer</strong></h3>
                                                     </a>
                                                 </div>
-                                                <div id="collapseTwo" class="panel-collapse collapse in">
+                                                <div id="collapseTwo" class="panel-collapse collapse">
                                                     <div class="panel-body">
                                                         <p>BrainCheck is a Houston startup that uses interactive tasks on mobile tablets to detect concussion. The company is founded by Baylor College of Medicine neuroscientist David Eagleman.</p>
                                                         <h4>Position Available</h4>
@@ -478,7 +708,6 @@
     </div>
     
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="common-files/js/jquery-1.10.2.min.js"></script>
     <script src="flat-ui/js/bootstrap.min.js"></script>
     <script src="common-files/js/modernizr.custom.js"></script>
     <script src="common-files/js/page-transitions.js"></script>

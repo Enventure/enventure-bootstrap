@@ -17,3 +17,9 @@ var mup_widget = {
         return "http://api.meetup.com" + path + "?callback=?&" + jQuery.param(jQuery.extend({ key: $api_key }, params));
     }
 };
+
+//clickable divs
+$(".clickMe").click(function(){
+     myWindow=window.open($(this).find("a").attr("href"),'_blank'); 
+     return false;
+});
