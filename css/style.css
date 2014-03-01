@@ -17,7 +17,7 @@ textarea {
   font-size: 14px;
 }
 a {
-  color: #16a085;
+  color: #5AB6F8;
   text-decoration: none;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
@@ -25,7 +25,7 @@ a {
   transition: 0.25s;
 }
 a:hover {
-  color: #1abc9c;
+  color: #ffffff;
   text-decoration: none;
 }
 h1,
@@ -807,10 +807,10 @@ section * {
 }
 @media (max-width: 768px) {
   .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
+    /* -webkit-background-size: auto 200%; */
+    /* -moz-background-size: auto 200%; */
+    /* -o-background-size: auto 200%; */
+    /* background-size: auto 200%; */
   }
 }
 .container {
@@ -969,7 +969,7 @@ section * {
 }
 .header-18 .header-18-sub header {
   position: absolute;
-  top: 111px;
+  top: 30px;
   left: 0;
   right: 0;
   padding-top: 0;
@@ -977,7 +977,7 @@ section * {
 }
 @media (max-width: 767px) {
   .header-18 .header-18-sub header {
-    top: 50px;
+    /* top: 50px; */
   }
 }
 .header-18 .header-18-sub.pt-perspective {
@@ -1165,10 +1165,10 @@ section * {
   right: 52%;
 }
 .header-18 .header-18-sub .header-18-section h3 {
-  font-size: 36px;
-  font-weight: normal;
-  color: #ffffff;
-  margin: 0 0 30px;
+  /* font-size: 36px; */
+  /* font-weight: normal; */
+  /* color: #ffffff; */
+  /* margin: 0 0 30px; */
 }
 .header-18 .header-18-sub .header-18-section p {
   font-size: 17px;
@@ -1592,7 +1592,7 @@ section * {
   margin-top: 28px;
 }
 .loaded .header-6 .navbar {
-  top: 90px;
+  top: 0px;
   opacity: 100;
   filter: alpha(opacity=10000);
   opacity: 1;
@@ -1600,7 +1600,7 @@ section * {
 }
 @media (max-width: 768px) {
   .loaded .header-6 .navbar {
-    top: 65px;
+    top: 0px;
   }
 }
 @media (max-width: 480px) {
@@ -1630,7 +1630,7 @@ section * {
 }
 @media (max-width: 768px) {
   .header-6 .navbar .social-btns {
-    display: none;
+    /* display: none; */
   }
 }
 .header-6 .navbar .social-btns > * {
@@ -1638,7 +1638,7 @@ section * {
   margin-left: 15px;
   font-size: 16px;
   font-weight: normal;
-  color: #cccccc;
+  color: #5AB6F8;
   width: 16px;
   height: 19px;
   overflow: hidden;
@@ -1891,7 +1891,8 @@ env{
 }
 
 .btn{
- background:#5AB6F8;   
+ background:#5AB6F8;
+	color: #fff;
 }
 .btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle {
  background:#FBBC55;   
