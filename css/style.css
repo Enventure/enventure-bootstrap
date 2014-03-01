@@ -71,7 +71,7 @@ h1 {
 }
 h2 {
   font-weight: 700;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
 }
 h3 {
   font-weight: 700;
@@ -1180,7 +1180,7 @@ section * {
 	
 	@media (max-width: 520px) {
 	.header-18 .header-18-sub .header-18-section p {
-        font-size:0.75em;
+        font-size:1em;
         line-height: 1.5;
 }
 }
@@ -1647,7 +1647,7 @@ section * {
   margin-left: 15px;
   font-size: 16px;
   font-weight: normal;
-  color: #4384D3;
+  color: #5AB6F8;
   width: 16px;
   height: 19px;
   overflow: hidden;
@@ -1665,7 +1665,7 @@ section * {
   transition: 0.25s top;
 }
 .header-6 .navbar .social-btns > * > *:first-child {
-  color: #5AB6F8;
+  color: #4384D3;
 }
 .header-6 .navbar .social-btns > *:hover > * {
   top: -100%;
@@ -2078,6 +2078,10 @@ span.tab{
     line-height: 1em;
 }
 
+white {
+	color:white;
+}
+
 .bg-env {
     background-color: #4384d3;
 }
@@ -2111,4 +2115,11 @@ span.tab{
 
 .grey {
 	color:#7f8c8d;
+}
+
+.panel-default > .panel-heading h3{
+	color:#5AB6F8;
+}
+.panel-default > .panel-heading h3:hover{
+	text-decoration: underline;
 }
