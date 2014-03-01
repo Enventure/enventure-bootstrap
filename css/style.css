@@ -2061,9 +2061,9 @@ span.tab{
 
 .circle {
 	border-radius: 50%;
-	width: 111px;
-	height: 111px; 
-	border: 2px solid #414141;
+	width: 131px;
+	height: 131px; 
+	border: 1px solid white;
 	/* width and height can be anything, as long as they're equal */
 }
 
