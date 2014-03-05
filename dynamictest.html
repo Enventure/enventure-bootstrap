@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- start: Meta -->
+		<meta charset="utf-8">
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link href="assets/css/mixitup.css" rel="stylesheet">
+		<link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="flat-ui/css/flat-ui.css">
+		<!-- Using only with Flat-UI (free)-->
+		<link rel="stylesheet" href="common-files/css/icon-font.css">
+		<!-- end -->
+		<link rel="stylesheet" href="common-files/css/animations.css">
+		
+		<link rel="stylesheet" href="css/style.css">
+		
+		<link rel="stylesheet" href="assets/css/meetup.css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	</head>
+	<body>
+<h3>Upcoming Google Developer Events</h3>
+
+<div id="agenda"></div>
+
+<script>
+  function listEvents(root) {
+    var feed = root.feed;
+    var entries = feed.entry || [];
+    var html = ['<ul>'];
+
+    for (var i = 0; i < entries.length; ++i) {
+      var entry = entries[i];
+
+      var title = (entry.title.type == 'html') ? entry.title.$t : escape(entry.title.$t);
+      var start = (entry['gd$when']) ? entry['gd$when'][0].startTime : " ";
+title=title.replaceAll("%20"," ");
+      html.push('<li>', start, ' ', title, '</li>');
+    }
+
+    html.push('</ul>');
+    document.getElementById("agenda").innerHTML = html.join("");
+  }
+</script>
+
+<!--script src="https://spreadsheets.google.com/feeds/list/0AsSAaiRMFf9EdDJEbDRtVkpvQkF2aExYMm9tYVZMWWc/od6/public/values?alt=json-in-script&callback=listEvents">
+</script-->
+
+<script src="https://www.google.com/calendar/feeds/40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com/public/full?alt=json-in-script&callback=listEvents">
+</script>
+
+	</body>
