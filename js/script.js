@@ -28,20 +28,3 @@ var button = $('#toggle');
 button.on('click', function () {
   $(this).toggleClass('active');
 });
-
-var button = $('#toggle2');
-button.on('click', function () {
-  $(this).toggleClass('active');
-});
-
-var button = $('#toggle3');
-button.on('click', function () {
-  $(this).toggleClass('active');
-});
-
-var button = $('#toggle4');
-button.on('click', function () {
-  $(this).toggleClass('active');
-});
-
-$(':radio').radio();

@@ -304,16 +304,15 @@
 							</div>
 						</div>
 						<div class="">
-							<div class="container">
-									<div class="row">
-										<div class="col-md-12">
-										<h2 class="text-center"><white>Find your</white>
-											<span class="muted">Match.</span>
-										</h2>
-											
-										</div>
-								   </div>
-									<div class="branch">
+							<div style="z-index:999" class="container">
+								<div class="row">
+									<div class="col-md-12">
+									<h2 class="text-center"><white>Find your</white>
+										<span class="muted">Match.</span>
+									</h2>
+									</div>
+								</div>
+								<div class="branch">
 										 <div class="circle center-block">
 											  <svg class="center-block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="170px" viewBox="0 0 170 170" enable-background="new 0 0 170 170" xml:space="preserve">
 												<g>
@@ -332,51 +331,67 @@
 											</svg>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-xs-12">
-											<h3 class="text-center"><white>i am...</white></h3>
+								<br/>
+								<div class="row">
+									<div class="col-xs-4 col-xs-offset-4">
+										<div class="dropdown">
+											<button class="btn btn-primary btn-block dropdown-toggle" data-toggle="dropdown">I am...<span class="caret"></span></button>
+											<span class="dropdown-arrow"></span>
+											<ul class="dropdown-menu">
+												<li><a data-toggle="collapse" data-parent="matchaccordion" data-target="#entr">an entrepreneur</a></li>
+												<li><a data-toggle="collapse" data-parent="matchaccordion" data-target="#company">looking for talent</a></li>
+												<li><a data-toggle="collapse" data-parent="matchaccordion" data-target="#resource">a resource</a></li>
+												<li><a data-toggle="collapse" data-parent="matchaccordion" data-target="#mentor">a mentor</a></li>
+											</ul>
 										</div>
-									</div>
-									<div class="row">
-									<div class="btn-space" id="matchaccordion">
-										<div class=" panel-default">
-											<div class="col-xs-6 col-sm-3">
-											    <button id="toggle" type="button" class="btn btn-large btn-block" data-toggle="collapse" data-parent="#matchaccordion" data-target="#entr">an Entrepreneur<i class="fa"></i></button>
-											</div>
-											<div class="col-xs-6 col-sm-3">
-											    <button id="toggle2" type="button" class="btn btn-large btn-block" data-toggle="collapse" data-parent="#matchaccordion" data-target="#company">looking for talent<i class="fa"></i></button>
-											</div>
-											<div class="col-xs-6 col-sm-3">
-											    <button id="toggle3" type="button" class="btn btn-large btn-block" data-toggle="collapse" data-parent="#matchaccordion" data-target="#resource">a resource<i class="fa"></i></button>
-											</div>
-											<div class="col-xs-6 col-sm-3">
-											    <button id="toggle4" type="button" class="btn btn-large btn-block" data-toggle="collapse" data-parent="#matchaccordion" data-target="#mentor">a mentor<i class="fa"></i></button>
-											</div>
-										</div>
-								   </div>
 									</div>
 								</div>
+							</div>
 						</div>
 						<!-- start: meta map-->
-						<div id="entr" class="panel-collapse collapse">
-							<section id="SandBox" class="shadow anim150 bg-env-grey">
-								<div id="entrmix">
-									<div class="mix category-1" data-myorder="2"></div>
-									<div class="mix category-2" data-myorder="4"></div>
-									<div class="mix category-1" data-myorder="1"></div>
-									<div class="mix category-2" data-myorder="8"></div>
-								</div>	   
-							</section>
-						</div>
-						<div id="company" class="panel-collapse collapse">
-							<section id="SandBox" class="shadow anim150 bg-env-grey">
-								<div id="companymix">
-									<div class="mix category-1" data-myorder="2"></div>
-									<div class="mix category-2" data-myorder="4"></div>
-									<div class="mix category-1" data-myorder="1"></div>
-									<div class="mix category-2" data-myorder="8"></div>
-								</div>	   
-							</section>
+						<div class="panel-group" id="matchaccordion">
+							<div class=" panel-default">
+								<div id="entr" class="panel-collapse collapse">
+									<section id="SandBox" class="shadow anim150 bg-env-grey">
+										<div id="entrmix">
+											<div class="mix category-1" data-myorder="2"></div>
+											<div class="mix category-2" data-myorder="4"></div>
+											<div class="mix category-1" data-myorder="1"></div>
+											<div class="mix category-2" data-myorder="8"></div>
+										</div>	   
+									</section>
+								</div>
+								<div id="company" class="panel-collapse collapse">
+									<section id="SandBox" class="shadow anim150 bg-env-grey">
+										<div id="companymix">
+											<div class="mix category-1" data-myorder="2"></div>
+											<div class="mix category-2" data-myorder="4"></div>
+											<div class="mix category-1" data-myorder="1"></div>
+											<div class="mix category-2" data-myorder="8"></div>
+										</div>	   
+									</section>
+								</div>
+								<div id="resource" class="panel-collapse collapse">
+									<section id="SandBox" class="shadow anim150 bg-env-grey">
+										<div id="companymix">
+											<div class="mix category-1" data-myorder="2"></div>
+											<div class="mix category-2" data-myorder="4"></div>
+											<div class="mix category-1" data-myorder="1"></div>
+											<div class="mix category-2" data-myorder="8"></div>
+										</div>	   
+									</section>
+								</div>
+								<div id="mentor" class="panel-collapse collapse">
+									<section id="SandBox" class="shadow anim150 bg-env-grey">
+										<div id="companymix">
+											<div class="mix category-1" data-myorder="2"></div>
+											<div class="mix category-2" data-myorder="4"></div>
+											<div class="mix category-1" data-myorder="1"></div>
+											<div class="mix category-2" data-myorder="8"></div>
+										</div>	   
+									</section>
+								</div>
+							</div>
 						</div>
 						<!-- end: meta map-->
 						
