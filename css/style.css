@@ -2259,3 +2259,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .btn-space button{
 	margin-bottom: 20px;
 }
+
+.btn:active, .btn.active {
+	background-color: #6A7ADD;
+}
