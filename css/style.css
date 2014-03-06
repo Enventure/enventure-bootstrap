@@ -2190,11 +2190,11 @@ lt-grey {
 }
 
 .match {
-	-webkit-transition: background-color 3s;
--moz-transition: background-color 3s;
--o-transition: background-color 3s;
--ms-transition: background-color 3s;
-transition: background-color 3s;
+	-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-o-transition: background-color 1s;
+-ms-transition: background-color 1s;
+transition: background-color 1s;
 }
 
 .match:hover{
@@ -2202,11 +2202,11 @@ transition: background-color 3s;
 }
 
 .comm {
-	-webkit-transition: background-color 3s;
--moz-transition: background-color 3s;
--o-transition: background-color 3s;
--ms-transition: background-color 3s;
-transition: background-color 3s;
+	-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-o-transition: background-color 1s;
+-ms-transition: background-color 1s;
+transition: background-color 1s;
 }
 
 .comm:hover{
@@ -2214,11 +2214,11 @@ transition: background-color 3s;
 }
 
 .idea {
-	-webkit-transition: background-color 3s;
--moz-transition: background-color 3s;
--o-transition: background-color 3s;
--ms-transition: background-color 3s;
-transition: background-color 3s;
+	-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-o-transition: background-color 1s;
+-ms-transition: background-color 1s;
+transition: background-color 1s;
 }
 
 .idea:hover{
@@ -2226,11 +2226,11 @@ transition: background-color 3s;
 }
 
 .flight {
-	-webkit-transition: background-color 3s;
--moz-transition: background-color 3s;
--o-transition: background-color 3s;
--ms-transition: background-color 3s;
-transition: background-color 3s;
+	-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-o-transition: background-color 1s;
+-ms-transition: background-color 1s;
+transition: background-color 1s;
 }
 
 .flight:hover{

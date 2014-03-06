@@ -29,9 +29,32 @@
 	
 		<h3>Upcoming Enventure Events</h3>
 	
+		<div id="match"></div>
 		<div id="agenda"></div>
 	
-	<script type="text/javascript">
+
+ 
+ <script type="text/javascript">
+  function insertMatch(root) {
+    var feed = root.feed;
+    var entries = feed.entry || [];
+    var html = ['<ul>'];
+
+    for (var i = 0; i < entries.length; ++i) {
+      var entry = entries[i];
+
+      var title = entry.gsx$name.$t;
+      var color = entry.gsx$color.$t;
+      var pic = entry.gsx$picture.$t;
+      html.push('<li style="color:', color, '">', title, ' <img src="'+pic+'"></li>');
+    }
+
+    html.push('</ul>');
+    document.getElementById("match").innerHTML = html.join("");
+  }
+</script>
+
+<script type="text/javascript">
 <!--
 /**
  * Converts an xs:date or xs:dateTime formatted string into the local timezone
@@ -169,10 +192,7 @@ function insertAgenda(root) {
 //-->
 </script>
 	
-	<!--script type="text/javascript" src="http://www.google.com/calendar/feeds/developer-calendar@google.com/public/full?alt=json-in-script&amp;callback=insertAgenda&amp;orderby=starttime&amp;max-results=15&amp;singleevents=true&amp;sortorder=ascending&amp;futureevents=true"></script-->
-	
+	<script type="text/javascript" src="http://spreadsheets.google.com/feeds/list/0AsSAaiRMFf9EdDJEbDRtVkpvQkF2aExYMm9tYVZMWWc/od6/public/values?alt=json-in-script&callback=insertMatch"></script>
 	<script type="text/javascript" src="https://www.google.com/calendar/feeds/40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com/public/full?alt=json-in-script&callback=insertAgenda"></script>
-
-	
 	</body>
 </html>

@@ -35,7 +35,6 @@
 
       var title = (entry.title.type == 'html') ? entry.title.$t : escape(entry.title.$t);
       var start = (entry['gd$when']) ? entry['gd$when'][0].startTime : " ";
-title=title.replaceAll("%20"," ");
       html.push('<li>', start, ' ', title, '</li>');
     }
 
