@@ -37,8 +37,7 @@
 				s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
 		<!--[if IE 9]>
 
 <![endif]-->
@@ -336,19 +335,33 @@
 						</div>
 						<!-- start: meta map-->
 						<section id="" class="shadow anim150 bg-env-grey">
-							<div class="filter" data-filter="all">Show All</div>
-							<div class="filter" data-filter=".category-1">Category 1</div>
-							<div class="filter" data-filter=".category-2">Category 2</div>
-							<div class="sort" data-sort="default">Default</div>
-							<div class="sort" data-sort="myorder:asc">Ascending</div>
-							<div class="sort" data-sort="myorder:desc">Descending</div>
-							<div class="sort" data-sort="random">Random</div>
-							<div id="parentMix">
-								<div class="mix category-1" data-myorder="2">an entrepreneur</div>
-								<div class="mix category-2" data-myorder="4">looking for talent</div>
-								<div class="mix category-1" data-myorder="1">a resource</div>
-								<div class="mix category-2" data-myorder="8">a mentor</div>
-							</div>	   
+							<div class="controls">
+							  <label>Filter:</label>
+							  
+							  <button class="filter" data-filter="all">All</button>
+							  <button class="filter" data-filter=".category-1">Talent</button>
+							  <button class="filter active" data-filter=".category-2">Startups</button>							  
+							  <button class="filter active" data-filter=".category-2">Resources</button>							  
+							  <button class="filter active" data-filter=".category-2">Mentors</button>
+							  
+							  <label>Sort:</label>
+							  
+							  <button class="sort" data-sort="myorder:asc">Asc</button>
+							  <button class="sort" data-sort="myorder:desc">Desc</button>
+							</div>
+							<div id="Container" class="containerMix">
+<!--  <div class="mix category-1" data-myorder="1"></div>
+  <div class="mix category-1" data-myorder="2"></div>
+  <div class="mix category-1" data-myorder="3"></div>
+  <div class="mix category-2" data-myorder="4"></div>
+  <div class="mix category-1" data-myorder="5"></div>
+  <div class="mix category-1" data-myorder="6"></div>
+  <div class="mix category-2" data-myorder="7"></div>
+  <div class="mix category-2" data-myorder="8"></div>
+  
+  <div class="gap"></div>
+  <div class="gap"></div>-->
+</div>  
 						</section>
 						<!-- end: meta map-->
 						
@@ -520,8 +533,34 @@
 				</div>
 			</div>
 		</div>
+		
+		<!--dynamic content-->
+	<script type="text/javascript">
+	  function insertMatch(root) {
+	    var feed = root.feed;
+	    var entries = feed.entry || [];
+	    var html = [''];
+	
+	    for (var i = 0; i < entries.length; ++i) {
+	      var entry = entries[i];
+	
+	      var name = entry.gsx$name.$t;
+	      var color = entry.gsx$color.$t;
+	      var pic = entry.gsx$picture.$t;
+	      var category = entry.gsx$category.$t;
+	      html.push('<div class="mix category-',category,'" data-myorder="2"><p>', name, '</p></div>');
+	    }
+	
+	    html.push('<div class="gap"></div><div class="gap"></div>');
+	    document.getElementById("Container").innerHTML = html.join("");
+	  }
+	</script>
+	<script type="text/javascript" src="http://spreadsheets.google.com/feeds/list/0AsSAaiRMFf9EdDJEbDRtVkpvQkF2aExYMm9tYVZMWWc/od6/public/values?alt=json-in-script&callback=insertMatch"></script>
+	<!--END dynamic content-->
 	
 	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 	<script src="flat-ui/js/bootstrap.min.js"></script>
 	<script src="common-files/js/modernizr.custom.js"></script>
 	<script src="common-files/js/page-transitions.js"></script>

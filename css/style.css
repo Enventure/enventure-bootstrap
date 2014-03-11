@@ -2270,14 +2270,10 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   box-sizing: border-box;
 }
 
-body, button{
-  font-family: 'Helvetica Neue', arial, sans-serif;
-}
 
 .controls{
   padding: 2%;
-  background: #333;
-  color: #eee;
+  color: #414141;
 }
 
 label{
@@ -2298,7 +2294,7 @@ button{
 }
 
 button.active{
-  background: #68b8c4;
+  background: #5ab6f8;
 }
 
 button:focus{
@@ -2309,43 +2305,41 @@ button + label{
   margin-left: 1em;
 }
 
-.container{
+.containerMix{
   padding: 2% 2% 0;
   text-align: justify;
-  font-size: 0.1px;
-  background: #68b8c4;
-  
+  color:#414141;
   -webkit-backface-visibility: hidden;
 }
 
-.container:after{
+.containerMix:after{
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-.container .mix,
-.container .gap{
+.containerMix .mix,
+.containerMix .gap{
   display: inline-block;
   width: 49%;
 }
 
-.container .mix{
+.containerMix .mix{
   text-align: left;
-  background: #03899c;
+  background: #4384d3;
   margin-bottom: 2%;
   display: none;
 }
 
-.container .mix.category-1{
-  border-top: 2px solid limegreen;
+.containerMix .mix.category-1{
+  border-top: 2px solid #6A7ADD;
 }
 
-.container .mix.category-2{
-  border-top: 2px solid yellow;
+.containerMix .mix.category-2{
+  border-top: 2px solid #FBBC55;
 }
 
-.container .mix:after{
+.containerMix .mix:after{
   content: attr(data-myorder);
   color: white;
   font-size: 16px;
@@ -2355,22 +2349,22 @@ button + label{
   font-weight: 700;
 }
 
-.container .mix:before{
+.containerMix .mix:before{
   content: '';
   display: inline-block;
   padding-top: 60%;
 }
 
 @media all and (min-width: 420px){
-  .container .mix,
-  .container .gap{
+  .containerMix .mix,
+  .containerMix .gap{
     width: 32%;
   }
 }
 
 @media all and (min-width: 640px){
-  .container .mix,
-  .container .gap{
+  .containerMix .mix,
+  .containerMix .gap{
     width: 23.5%;
   }
 }
