@@ -2263,3 +2263,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .btn:active, .btn.active {
 	background-color: #6A7ADD;
 }
+
+#parentMix .mix{
+	display: none;
+}
