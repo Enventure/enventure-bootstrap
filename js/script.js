@@ -24,7 +24,12 @@ $(".clickMe").click(function(){
      return false;
 });
 
-var button = $('#toggle');
-button.on('click', function () {
-  $(this).toggleClass('active');
+// On document ready:
+
+$(function(){
+
+	// Instantiate MixItUp:
+
+	$('#Container').mixItUp();
+
 });
