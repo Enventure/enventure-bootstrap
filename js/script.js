@@ -27,9 +27,13 @@ $(".clickMe").click(function(){
 // On document ready:
 
 $(function(){
-
-	// Instantiate MixItUp:
-
-	$('#Container').mixItUp();
-
+  $('#Container').mixItUp({
+    load: {
+		sort: 'name:asc',
+	}
+    
+  });
+  $('img#GoList').on('click', function(){
+					$('#Container').mixItUp('layoutChange', 'block');
+				});
 });
