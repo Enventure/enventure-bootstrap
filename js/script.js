@@ -37,3 +37,5 @@ $(function(){
 					$('#Container').mixItUp('layoutChange', 'block');
 				});
 });
+
+$('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'});

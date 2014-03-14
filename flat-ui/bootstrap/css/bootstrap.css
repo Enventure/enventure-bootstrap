@@ -5203,7 +5203,7 @@ button.close {
 }
 .tooltip {
   position: absolute;
-  z-index: 1030;
+  z-index: 1930;
   display: block;
   font-size: 12px;
   line-height: 1.4;
