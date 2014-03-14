@@ -3808,7 +3808,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   border-radius: 0 0 6px 6px;
 }
 .todo li {
-  background: #34495e url(../images/todo/todo.png) 92% center no-repeat;
+  background: #34495f url(../images/todo/todo.png) 92% center no-repeat;
   background-size: 20px 20px;
   cursor: pointer;
   font-size: 14px;
@@ -3836,22 +3836,11 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 }
 .todo-search {
   position: relative;
-  background: #1abc9c;
+  background: #4384D3;
   background-size: 16px 16px;
   border-radius: 6px 6px 0 0;
   color: #34495e;
   padding: 19px 25px 20px;
-}
-.todo-search:before {
-  position: absolute;
-  font-family: 'Flat-UI-Icons';
-  content: "\e01c";
-  font-size: 16px;
-  line-height: 17px;
-  display: inline-block;
-  top: 50%;
-  left: 92%;
-  margin: -0.5em 0 0 -1em;
 }
 input.todo-search-field {
   background: none;

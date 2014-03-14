@@ -2021,7 +2021,7 @@ blockquote small:before
 
 .todo li.todo-done
 {
-	color: #c3deca
+	color: #4384D3
 }
 
 .todo-name
@@ -2036,7 +2036,7 @@ blockquote small:before
 
 .todo-search-field:focus,.todo-search-field:hover,.todo-search-field:active
 {
-	border-color: #c3deca!important
+	border-color: #4384D3!important
 }
 
 
@@ -2127,6 +2127,10 @@ white {
 .bg-env-light {		   
     background-color: #5AB6F8;
 }
+.bg-env-light .btn {
+	background-color: rgba(255,255,255,.5);
+}
+
 .bg-env-dark {
     background-color: #364B7B;
 }
@@ -2434,7 +2438,7 @@ button + label{
 
 .section-blog .popular a:hover
 {
-	color: #c3deca
+	color: #4384D3
 }
 
 .section-blog .popular img
@@ -2527,6 +2531,55 @@ button + label{
 	opacity: 1
 }
 
+.mrm,.mhm,.mam
+{
+	margin-right: 0
+}
+
+.featurette-divider {
+    margin: 80px 0; 
+}
+.featurette {
+    padding-top: 120px; 
+    overflow: hidden; 
+}
+.featurette-image {
+    margin-top: -120px;
+    margin-bottom: 20px;
+    max-width:40%;
+    
+}
+
+.featurette-image.pull-left {
+    margin-right: 20px;
+}
+.featurette-image.pull-right {
+    margin-left: 20px;
+}
+.featurette-image.smaller {
+    max-height: 300px;
+}
+
+
+@media (max-width: 979px) {
+    
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+.featurette-image.pull-left,
+.featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+    
+}
+.featurette-image.smaller {
+    max-height: 200px;
+}
+}
+
 /*end old style*/
 .btn {
 margin-bottom: 10px;
@@ -2538,4 +2591,12 @@ blockquote{
 
 .toppad {
 	padding-top: 180px;
+}
+
+.nav-tabs a{
+	color:white;
+}
+
+.nav-tabs > li > a:hover {
+	background-color: rgba(255,255,255,.5);
 }
