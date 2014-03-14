@@ -35,6 +35,13 @@ $(function(){
   
 });
 
+$("#entry_1240969321").characterCounter(
 
+{
+onExceed: function(count){document.getElementById("ss-submit").disabled = true;},
+onDeceed: function(count){document.getElementById("ss-submit").disabled = false;}
+}
+
+);
 
 $('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'});

@@ -638,8 +638,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: rgba(209,80,71,.5);
+  border-color: rgba(209,80,71,.5);
 }
 .btn-info {
   color: #ffffff;
@@ -1168,7 +1168,7 @@ label {
 }
 .form-group.focus .form-control,
 .form-control:focus {
-  border-color: #1abc9c;
+  border-color: #5ab6f8;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
