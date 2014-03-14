@@ -2026,7 +2026,8 @@ blockquote small:before
 
 .todo-name
 {
-	color: #eff0e9
+	color: #eff0e9;
+	font-weight:300;
 }
 
 .todo li.todo-done .todo-name
@@ -2077,9 +2078,19 @@ span.tab{
 }
 
 .subtitle {
-    font-size:1.3em;
+    font-size:1.5em;
+    font-style: italic;
     color:#414141;
     padding-left:40px;
+    font-weight: 200;
+}
+
+subtitle {
+    font-size:1.5em;
+    font-style: italic;
+    color:#414141;
+    padding-left:40px;
+    font-weight: 200;
 }
 
 @media (max-width: 520px) {
@@ -2378,7 +2389,9 @@ button + label{
 .section-blog .white-content
 {
 	border-radius: 3px;
-	background: #c5c5c5;
+	background-color: rgba(255,255,255,.5);
+	color:#414141;
+	font-size:0.8em;
 }
 
 .section-blog .category ul
@@ -2424,54 +2437,6 @@ button + label{
 	margin-top: 30px
 }
 
-.section-blog .popular
-{
-	box-shadow: none;
-	min-height: 95px;
-	padding-top: 3px
-}
-
-.section-blog .popular a
-{
-	color: #47a1a1
-}
-
-.section-blog .popular a:hover
-{
-	color: #4384D3
-}
-
-.section-blog .popular img
-{
-	max-width: 20%;
-	float: left;
-	padding-right: 10px;
-	padding-top: 20px;
-	padding-left: 10px
-}
-
-.section-blog .popular p
-{
-	padding: 15px
-}
-
-.section-blog .tags .separator
-{
-	margin-bottom: 10px
-}
-
-.section-blog .tags ul
-{
-	list-style: none;
-	margin: 0
-}
-
-.section-blog .tags ul li
-{
-	display: inline-block;
-	margin: 0 10px 10px 0
-}
-
 .section-blog .wrapper
 {
 	color: #47a1a1;
@@ -2505,7 +2470,7 @@ button + label{
 	border-radius: 5px;
 	margin-bottom: 20px;
 	padding: 10px;
-	background: #c5c5c5;
+	background: rbga(255,255,255,.5);
 }
 
 .white-content h5
@@ -2540,7 +2505,7 @@ button + label{
     margin: 80px 0; 
 }
 .featurette {
-    padding-top: 120px; 
+    padding-top: 60px; 
     overflow: hidden; 
 }
 .featurette-image {
@@ -2578,6 +2543,19 @@ button + label{
 .featurette-image.smaller {
     max-height: 200px;
 }
+
+}
+
+
+.hover-mask:hover
+{
+    opacity: .9;
+    background: #47a1a1
+}
+
+.white-content .img-mask .hover-mask
+{
+    position: relative
 }
 
 /*end old style*/
@@ -2590,7 +2568,7 @@ blockquote{
 }
 
 .toppad {
-	padding-top: 180px;
+	padding-top: 220px;
 }
 
 .nav-tabs a{
@@ -2599,4 +2577,34 @@ blockquote{
 
 .nav-tabs > li > a:hover {
 	background-color: rgba(255,255,255,.5);
+}
+
+
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.white-content p{
+font-size:1.2em;
+	font-weight: 200;
+}
+
+.blog-img-content img{
+	float:left;
+	margin:10px 10px 10px 0;
+	width:33%;
 }
