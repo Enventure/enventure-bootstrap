@@ -28,14 +28,13 @@ $(".clickMe").click(function(){
 
 $(function(){
   $('#Container').mixItUp({
-    load: {
-		sort: 'name:asc',
+	animation: {
+		animateResizeTargets: true
 	}
-    
-  });
-  $('img#GoList').on('click', function(){
-					$('#Container').mixItUp('layoutChange', 'block');
-				});
 });
+  
+});
+
+
 
 $('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'});

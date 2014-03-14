@@ -128,7 +128,7 @@
 							</div>
 						</div>
 						<!-- start: meta map-->
-						<section id="" class="shadow anim150 bg-env-grey">
+						<section id="" class="shadow anim150 bg-white">
 							<div class="controls">
 							  <label>Filter:</label>
 							  
@@ -136,14 +136,7 @@
 							  <button class="filter" data-filter=".category-1">Talent</button>
 							  <button class="filter" data-filter=".category-2">Startups</button>							  
 							  <button class="filter" data-filter=".category-3">Resources</button>							  
-							  <button class="filter" data-filter=".category-4">Mentors</button>
-							  <br/>
-							  <label>Badge:</label>
-							  
-							  <button class="sort active" data-sort="myorder:asc">Asc</button>
-							  <button class="sort" data-sort="myorder:desc">Desc</button>
-							  <div class="switch_medias"><img src="http://galaxyfoot.soixanteseize-lab.com/wp-content/uploads/grid.jpg" style="vertical-align:middle;background-color:blue;padding:5px" id="GoGrid" class="button.layout"/> | <img src="http://galaxyfoot.soixanteseize-lab.com/wp-content/uploads/list.jpg" style="vertical-align:middle;background-color:blue;padding:5px" id="GoList" class="button.layout"/></div>
-							</div>
+							  <button class="filter" data-filter=".category-4">Mentors</button>							</div>
 							<div id="Container" class="containerMix">
 	
 							</div>  
@@ -253,7 +246,7 @@
 	      var link = entry.gsx$link.$t;
 	      var icon = entry.gsx$icon.$t;
 	      var description = entry.gsx$description.$t;
-	      html.push('<div class="mix category-',category,'" data-myorder="'+i+'"><h5 class="lead">'+name+' <i class="fa '+icon+'"></i></h5><p>'+description+'</p></div>');
+	      html.push('<div class="mix category-',category,'" data-myorder="'+i+'"><div class="content"><h5 class="lead"><white>'+name+'</white><br><a class="fa '+icon+'"></a></h5><p>'+description+'</p></div></div>');
 	    }
 	
 	    html.push('<div class="gapMix"></div><div class="gapMix"></div>');

@@ -2201,7 +2201,6 @@ lt-grey {
    -moz-box-shadow:    inset 1px 4px 9px -6px black;
    -webkit-box-shadow: inset 1px 4px 9px -6px black;
    box-shadow:         inset 1px 4px 9px -6px black;
-    background-color:#ddd;
 }
 
 .match {
@@ -2324,7 +2323,11 @@ button + label{
   padding: 2% 2% 0;
   text-align: justify;
   color:#414141;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;  
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: flex-start;
 }
 
 .containerMix:after{
@@ -2341,7 +2344,7 @@ button + label{
 
 .containerMix .mix{
   text-align: left;
-  background: #4384d3;
+  background: rgba(67,132,211,.5);
   margin-bottom: 2%;
   display: none;
 }
@@ -2352,6 +2355,14 @@ button + label{
 
 .containerMix .mix.category-2{
   border-top: 2px solid #FBBC55;
+}
+
+.containerMix .mix.category-3{
+  border-top: 2px solid #D15047;
+}
+
+.containerMix .mix.category-4{
+  border-top: 2px solid #338E68;
 }
 
 .containerMix .mix:after{
@@ -2367,7 +2378,6 @@ button + label{
 .containerMix .mix:before{
   content: '';
   display: inline-block;
-  padding-top: 60%;
 }
 
 @media all and (min-width: 420px){
@@ -2382,6 +2392,10 @@ button + label{
   .containerMix .gapMix{
     width: 23.5%;
   }
+}
+
+.mix .content {
+	padding: 10px;
 }
 
 /* from old stylesheet*/
