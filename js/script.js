@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(".todo li").click(function() {
         $(this).toggleClass("todo-done");
     });
-	
+    
 });
 
 /* meetup widget */
@@ -30,6 +30,9 @@ $(function(){
   $('#Container').mixItUp({
 	animation: {
 		animateResizeTargets: true
+	},
+	load: {
+		sort: 'random'
 	}
 	
 });
